@@ -108,6 +108,38 @@ h1, h2, h3 { font-family: var(--font-heading); font-weight: 700; }
 .service-card li i { color: var(--primary); margin-right: 10px; font-size: 0.8rem; }
 
 /* BOTONES PREMIUM */
+/* SELECTOR DE IDIOMAS MEJORADO */
+.lang-selector { 
+  display: flex; 
+  gap: 8px; 
+  align-items: center;
+}
+
+.lang-btn { 
+  padding: 6px 12px; 
+  border: 1px solid rgba(255,255,255,0.15); 
+  color: rgba(255,255,255,0.8) !important; 
+  text-decoration: none !important; 
+  font-size: 0.7rem; 
+  border-radius: 6px; 
+  font-weight: 700;
+  letter-spacing: 1px;
+  transition: all 0.3s ease;
+  background: rgba(255,255,255,0.03);
+}
+
+.lang-btn:hover {
+  border-color: var(--primary);
+  color: var(--primary) !important;
+  background: rgba(194, 163, 93, 0.05);
+}
+
+.lang-btn.active { 
+  background: var(--primary) !important; 
+  border-color: var(--primary) !important; 
+  color: var(--bg-dark) !important; 
+}
+
 .btn-premium {
   display: inline-block; padding: 1.2rem 3rem;
   background: var(--primary); color: var(--bg-dark);

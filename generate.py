@@ -2,7 +2,7 @@ import os
 
 BASE_DIR = "/Users/mohamedbentaoit/Downloads/ProyectosAnti-gravity/tigafab-web-nueva"
 
-# --- DICCIONARIO MAESTRO REFORZADO AL 100% ---
+# --- DICCIONARIO MAESTRO ---
 TRANSLATIONS = {
     'es': {
         'nav_home': "Inicio", 'nav_services': "Servicios", 'nav_contact': "Contacto", 'nav_location': "Localización",
@@ -20,14 +20,14 @@ TRANSLATIONS = {
         'home_cta_btn': "SOLICITAR PRESUPUESTO",
         'footer_rights': "© 2026 TIGAFAB S.L. Boutique de Traducción Jurada.",
         'exp_verificadas': "EXPERIENCIAS VERIFICADAS", 'orig_label': "Original",
-        'r1': "Servicio impecable y muy profesional. Fátima resolvió la traducción jurada de mis documentos en tiempo récord para un trámite urgente. Totalmente recomendados.",
-        'r2': "Llevamos años confiando en Tigafab para la tramitación de visados y traducción técnica hacia el árabe de los expedientes de nuestra empresa. Rápidos y eficaces.",
-        'r3': "Trato directo y tarifas muy buenas. Me ayudaron muchísimo con el registro de mi filial y servicios en Libia, desde los contratos hasta el asesoramiento. Un 10.",
-        'r4': "Gran equipo de traductores profesionales. Resolvieron toda la papeleta de extranjería y certificados de la Cámara de Comercio rapidísimo.",
-        'r5': "Excelente servicio en Madrid. Me tradujeron el pasaporte y un contrato societario con un rigor absoluto.",
-        'r6': "Tigafab nos asesoró desde Fuenlabrada para la apertura de una filial en el norte de África. La calidad humana de su equipo es increíble.",
-        'r7': "Puntualidad británica y un nivel de confidencialidad brutal. Trabajar con doña Fátima tranquiliza todas nuestras gestiones internacionales.",
-        'r8': "No hay competencia real en los plazos que manejan. Todo el paquete de traducciones juradas del árabe listo impecablemente.",
+        'r1': "Servicio impecable y muy profesional. Fátima resolvió la traducción jurada de mis documentos en tiempo récord.",
+        'r2': "Llevamos años confiando en Tigafab para la tramitación de visados. Rápidos y eficaces.",
+        'r3': "Trato directo y tarifas muy buenas. Me ayudaron muchísimo con el registro en Libia. Un 10.",
+        'r4': "Gran equipo de traductores profesionales. Resolvieron toda la papeleta de extranjería.",
+        'r5': "Excelente servicio en Madrid. Me tradujeron el pasaporte con un rigor absoluto.",
+        'r6': "La calidad humana de su equipo es increíble.",
+        'r7': "Puntualidad británica y un nivel de confidencialidad brutal.",
+        'r8': "No hay competencia real en los plazos que manejan.",
         'n1': "María G.", 'n2': "Constructor S.A.", 'n3': "Dr. Carlos S.", 'n4': "Ana M.", 'n5': "Hassan B.", 'n6': "Francisco T.", 'n7': "Empresa K.", 'n8': "Youssef L."
     },
     'en': {
@@ -37,7 +37,7 @@ TRANSLATIONS = {
         'hero_subtitle': "ARABIC • SPANISH • ENGLISH • GERMAN • FRENCH",
         'home_welcome': "15+ Years of International Prestige",
         'home_text_1': "Official sworn native translators led by Ms. Fatima Benamar Bahamad. Legal rigor and elite quality.",
-        'home_text_2': "Leaders in merchant advisory for the LIBYAN market. Legal registration and strategic support.",
+        'home_text_2': "Leaders in merchant advisory for the LIBYAN market. Strategic and legal support.",
         'srv_header': "Boutique Services",
         'srv_sworn': "Sworn Translations",
         'srv_tech': "Technical Translation",
@@ -72,23 +72,53 @@ def get_nav(lang, rel_path):
     t = TRANSLATIONS.get(lang, TRANSLATIONS['es'])
     links = ""
     for l_code, l_folder in LANG_FOLDERS.items():
-        links += f'<a href="{rel_path + (l_folder + "/index.html" if l_folder else "index.html")}" class="lang-btn {"active" if l_code == lang else ""}">{l_code.upper()}</a>'
-    return f"""<nav id="navbar"><div class="nav-container"><a href="{rel_path}index.html" class="logo" style="font-family: 'Playfair Display', serif; font-size:1.8rem; font-weight:900; color:white; text-decoration:none;">TIGAFAB<span style="color:#c2a35d;">.</span></a><ul class="nav-links"><li><a href="index.html" style="color:white; text-decoration:none; font-size:0.95rem;">{t['nav_home']}</a></li><li><a href="servicios.html" style="color:white; text-decoration:none; font-size:0.95rem;">{t['nav_services']}</a></li><li><a href="contacto.html" style="color:white; text-decoration:none; font-size:0.95rem;">{t['nav_contact']}</a></li><li><a href="localizacion.html" style="color:white; text-decoration:none; font-size:0.95rem;">{t['nav_location']}</a></li></ul><div class="lang-selector">{links}</div></div></nav>"""
+        active = "active" if l_code == lang else ""
+        href = rel_path + (l_folder + "/index.html" if l_folder else "index.html")
+        links += f'<a href="{href}" class="lang-btn {active}">{l_code.upper()}</a>'
+    return f"""
+<nav id="navbar">
+  <div class="nav-container">
+    <a href="{rel_path}index.html" class="logo">TIGAFAB<span>.</span></a>
+    <ul class="nav-links">
+      <li><a href="index.html">{t['nav_home']}</a></li>
+      <li><a href="servicios.html">{t['nav_services']}</a></li>
+      <li><a href="contacto.html">{t['nav_contact']}</a></li>
+      <li><a href="localizacion.html">{t['nav_location']}</a></li>
+    </ul>
+    <div class="lang-selector">{links}</div>
+  </div>
+</nav>
+"""
 
 def generate_page(lang, filename, title_key, content):
     rel_path = "../" if lang != 'es' else ""
     t = TRANSLATIONS.get(lang, TRANSLATIONS['es'])
     t_es = TRANSLATIONS['es']
     is_rtl = 'dir="rtl"' if lang == 'ar' else 'dir="ltr"'
-    full_html = f"""<!DOCTYPE html><html lang="{lang}" {is_rtl}><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>{t[title_key]} | TIGAFAB</title><link rel="stylesheet" href="{rel_path}styles.css?v={os.urandom(2).hex()}"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"><link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Inter:wght@400;500;700&display=swap" rel="stylesheet"><link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet"></head><body>{get_nav(lang, rel_path)}<main>{content}</main><footer style="background: rgba(0,0,0,0.2); backdrop-filter: blur(10px); color:white; padding:4rem 2rem; text-align:center; border-top: 1px solid rgba(255,255,255,0.05);"><div style="font-family: 'Playfair Display', serif; font-size:2rem; margin-bottom:1rem;">TIGAFAB<span style="color:#c2a35d;">.</span></div><p>{t['footer_rights']}</p></footer><script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script><script src="{rel_path}js/main.js?v=999"></script><script>AOS.init();</script></body></html>"""
-    
-    # CORRECCIÓN DE SINTAXIS AQUÍ: Fusionar diccionarios correctamente
-    merged_t = t_es.copy()
-    merged_t.update(t)
-    
-    for k in sorted(merged_t.keys(), key=len, reverse=True):
+    full_html = f"""<!DOCTYPE html><html lang="{lang}" {is_rtl}>
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{t[title_key]} | TIGAFAB</title>
+  <link rel="stylesheet" href="{rel_path}styles.css?v={os.urandom(2).hex()}">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
+</head>
+<body class="page-{filename.replace('.html','')}">
+  {get_nav(lang, rel_path)}
+  <main>{content}</main>
+  <footer style="background: rgba(0,0,0,0.2); backdrop-filter: blur(10px); color:white; padding:4rem 2rem; text-align:center; border-top: 1px solid rgba(255,255,255,0.05);">
+    <div style="font-family: 'Playfair Display', serif; font-size:2rem; margin-bottom:1rem;">TIGAFAB<span>.</span></div>
+    <p>{t['footer_rights']}</p>
+  </footer>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+  <script src="{rel_path}js/main.js?v=999"></script>
+  <script>AOS.init();</script>
+</body>
+</html>"""
+    merged_t = t_es.copy(); merged_t.update(t)
+    for k in sorted(merged_t.keys(), key=len, reverse=True): 
         full_html = full_html.replace(f't-{k.replace("_","-")}', str(merged_t[k]))
-    
     target_dir = os.path.join(BASE_DIR, LANG_FOLDERS[lang])
     os.makedirs(target_dir, exist_ok=True)
     with open(os.path.join(target_dir, filename), "w") as f: f.write(full_html)
@@ -103,9 +133,9 @@ def get_review_cards(lang):
     return "".join(items) + "".join(items)
 
 for lang in LANG_FOLDERS:
-    index_html = f"""<section class="hero"><div class="container" data-aos="fade-up"><p>t-hero-subtitle</p><h1 style="color:white; margin:1rem 0;">t-hero-title</h1><a href="contacto.html" class="btn-premium">t-home-cta-btn</a></div></section><section style="padding:10rem 0;"><div class="container" style="max-width:1000px; text-align:center;" data-aos="fade-up"><h2 style="font-size:3.5rem; margin-bottom:3rem; color:white;">t-home-welcome</h2><p style="font-size:1.4rem; color:#94a3b8; line-height:2;">t-home-text-1</p><div style="width:50px; height:2px; background:#c2a35d; margin: 3rem auto;"></div><p style="font-size:1.4rem; color:#94a3b8; line-height:2;">t-home-text-2</p></div></section><section style="padding-bottom: 8rem;"><div class="container" style="text-align:center; margin-bottom:5rem;"><h2 style="font-size:3.5rem; margin-bottom:1rem; color:white;">t-reviews-title</h2><p style="color:#c2a35d; letter-spacing:4px; font-weight:700;">t-exp-verificadas</p></div><div class="marquee-container" id="reviewSlider"><div class="marquee-inner">{get_review_cards(lang)}</div></div></section>"""
-    generate_page(lang, "index.html", 'nav_home', index_html)
+    p_home = f"""<section class="hero"><div class="container" data-aos="fade-up"><p>t-hero-subtitle</p><h1>t-hero-title</h1><a href="contacto.html" class="btn-premium">t-home-cta-btn</a></div></section><section style="padding:10rem 0;"><div class="container" style="max-width:1000px; text-align:center;" data-aos="fade-up"><h2>t-home-welcome</h2><p style="font-size:1.4rem; color:#94a3b8; line-height:2;">t-home-text-1</p><div style="width:50px; height:2px; background:#c2a35d; margin: 3rem auto;"></div><p style="font-size:1.4rem; color:#94a3b8; line-height:2;">t-home-text-2</p></div></section><section style="padding-bottom: 8rem;"><div class="container" style="text-align:center; margin-bottom:5rem;"><h2 style="font-size:3.5rem; margin-bottom:1rem; color:white;">t-reviews-title</h2><p style="color:#c2a35d; letter-spacing:4px; font-weight:700;">t-exp-verificadas</p></div><div class="marquee-container" id="reviewSlider"><div class="marquee-inner">{get_review_cards(lang)}</div></div></section>"""
+    generate_page(lang, "index.html", 'nav_home', p_home)
     generate_page(lang, "servicios.html", 'nav_services', '<section class="hero"><h1>t-srv-header</h1></section>')
     for p in ["contacto.html", "localizacion.html", "aviso-legal.html", "privacidad.html"]: generate_page(lang, p, 'nav_home', f'<section class="hero"><h1>{p}</h1></section>')
 
-print("✅ ÉXITO: Fondos restaurados y alineación corregida.")
+print("✅ ÉXITO: Selector de idiomas arreglado y ahora es premium.")
