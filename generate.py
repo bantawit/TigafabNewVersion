@@ -20,16 +20,12 @@ TRANSLATIONS = {
         'h6': "Nuestras tarifas de precios sin competencia y nuestro equipo técnico especializado hacen de nosotros un punto de referencia en el sector. Hemos realizado proyectos para diferentes empresas. Estamos avalados por muchas grandes empresas españolas e internacionales.",
         'srv_header_main': "Nuestras Especialidades",
         'srv_header_sub': "Servicios de élite en Traducción, Gestión y Asesoramiento Internacional",
-        'srv_jurada_title': "Traducciones Juradas",
-        'srv_tecnica_title': "Traducciones Técnicas",
-        'srv_organismos_title': "Gestión ante Organismos",
-        'srv_visados_title': "Gestión de Visados",
-        'srv_libia_title': "Asesoramiento Especializado LIBIA",
-        'srv_libia_desc': "Introducimos empresas en el mercado LIBIO con apoyo técnico, contactos reales y acompañamiento en reuniones estratégicas.",
-        'srv_libia_btn': "Solicitar Información Mercado Libio",
+        'srv_jurada_list': ["Pasaportes al Árabe", "Escrituras y Contratos", "Poderes Notariales", "Estatutos de Sociedades", "Auditorías y Cuentas Anuales", "Autorizaciones y Actas", "Certificados de Cámara y Mercantil", "Certificados de Origen", "Facturas Comerciales", "Asuntos Académicos"],
+        'srv_tecnica_list': ["Catálogos y Presentaciones", "Planes de Negocio", "Manuales de Ingeniería", "Páginas Web", "Listados de Precios"],
+        'srv_organismos_list': ["Asuntos Exteriores", "Justicia y Sanidad", "Cámara de Comercio", "Colegio de Notarios", "Embajadas (Libia, Argelia, Egipto...)"],
+        'srv_libia_desc': "Introducimos empresas en el mercado LIBIO con apoyo técnico, contactos reales y asesoramiento estratégico.",
         'hero_contact_title': "Contacte con Nosotros",
         'form_btn': "ENVIAR SOLICITUD",
-        'reviews_title': "Confianza Global", 'exp_verificadas': "EXPERIENCIAS VERIFICADAS",
         'footer_rights': "© 2026 TIGAFAB S.L. Boutique de Traducción Jurada."
     }
 }
@@ -37,19 +33,17 @@ TRANSLATIONS = {
 def get_nav(lang, rel_path):
     t = TRANSLATIONS.get(lang, TRANSLATIONS['es'])
     links = "".join([f'<a href="{rel_path + (LANG_FOLDERS[lc] + "/index.html" if LANG_FOLDERS[lc] else "index.html")}">{LANG_NAMES[lc]}</a>' for lc in LANG_NAMES])
-    return f"""<nav id="navbar" dir="ltr"><div class="container nav-container"><a href="{rel_path}index.html" class="logo">TIGAFAB<span>.</span></a><ul class="nav-links"><li><a href="index.html">{t['nav_home']}</a></li><li><a href="servicios.html">{t['nav_services']}</a></li><li><a href="contacto.html">{t['nav_contact']}</a></li></ul><div class="lang-selector" id="langSelector"><div class="lang-current">{t['nav_lang']} <i class="fas fa-chevron-down"></i></div><div class="lang-dropdown" id="langDropdown">{links}</div></div></div></nav>"""
+    return f"""<nav id="navbar"><div class="container nav-container"><a href="{rel_path}index.html" class="logo">TIGAFAB<span>.</span></a><ul class="nav-links"><li><a href="index.html">{t['nav_home']}</a></li><li><a href="servicios.html">{t['nav_services']}</a></li><li><a href="contacto.html">{t['nav_contact']}</a></li></ul><div class="lang-selector" id="langSelector"><div class="lang-current">{t['nav_lang']} <i class="fas fa-chevron-down"></i></div><div class="lang-dropdown" id="langDropdown">{links}</div></div></div></nav>"""
 
 def get_review_cards():
     reviews_data = [
-        ("Marta (Google)", "Servicio impecable y muy profesional. Fátima resolvió la traducción jurada de mis documentos en tiempo récord."),
-        ("Mohamed (Google)", "Gente muy profesional y muy amable. Lo recomiendo 100% para cualquier gestión."),
-        ("Juan Carlos (Google)", "Atención excepcional y rapidez. Necesitaba una traducción jurada de árabe y estuvo listo antes del plazo."),
-        ("Laila (Google)", "La mejor agencia de Madrid para árabe. Son extremadamente serios con los plazos."),
-        ("Constructor S.A. (Google)", "Indispensables para nuestras licitaciones en el mercado LIBIO. Conocimiento técnico insuperable."),
-        ("Karim (Google)", "Expertos reales en el mercado árabe y español. Máximo rigor jurídico.")
+        ("Marta (Google)", "Servicio impecable y muy profesional."),
+        ("Mohamed (Google)", "Gente muy profesional y muy amable."),
+        ("Juan Carlos (Google)", "Atención excepcional y rapidez."),
+        ("Constructor S.A. (Google)", "Indispensables para nuestras licitaciones.")
     ]
-    cards = "".join([f'<div class="review-card-premium"><div style="color:#c2a35d; margin-bottom:1.1rem;"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div><p>{txt}</p><div style="font-weight:700; color:white; border-left:2px solid var(--primary); padding-left:1rem;">{name}</div></div>' for name, txt in reviews_data])
-    return cards * 4
+    cards = "".join([f'<div class="review-card-premium"><p>{txt}</p><strong>{name}</strong></div>' for name, txt in reviews_data])
+    return cards * 6
 
 def generate_page(lang, filename, title_key, content):
     rel_path = "../" if lang != 'es' else ""
@@ -66,25 +60,25 @@ for lang in LANG_FOLDERS:
     # 1. HOME
     home = f"""<section class="hero"><div class="container" data-aos="fade-up"><p>t-hero-subtitle</p><h1>t-hero-title</h1><a href="contacto.html" class="btn-premium">t-home-cta-btn</a></div></section>
     <section style="padding:10rem 0;"><div class="container" style="max-width:1100px;"><div style="display:grid; grid-template-columns:1.2fr 1fr; gap:5rem; align-items:start;"><div data-aos="fade-right"><h2 style="font-size:2.8rem; margin-bottom:3rem;">Tradición y Rigor</h2><p style="font-size:1.25rem; color:#f8fafc; line-height:1.8; margin-bottom:2rem;">t-h1</p><div style="background:rgba(194,163,93,0.1); border-left:4px solid var(--primary); padding:2rem; margin-bottom:2.5rem;"><p style="font-size:1.4rem; font-weight:700; color:var(--primary); margin-bottom:1rem;">t-h2</p><p style="color:#94a3b8; font-size:1.1rem;">t-h3</p></div><p style="font-size:1.1rem; color:#94a3b8; font-style:italic;">t-h4</p></div><div data-aos="fade-left" style="background:rgba(255,255,255,0.02); border:1px solid var(--glass-border); padding:3rem; border-radius:20px;"><p style="font-size:1.2rem; color:#f8fafc; line-height:1.8; margin-bottom:2rem;">t-h5</p><p style="font-size:1.2rem; color:#94a3b8; line-height:1.8;">t-h6</p></div></div></div></section>
-    <section style="padding-bottom:10rem;"><div class="container" style="text-align:center; margin-bottom:5rem;"><h2>t-reviews-title</h2><p>t-exp-verificadas</p></div><div class="marquee-container"><div class="marquee-inner">{get_review_cards()}</div></div></section>"""
+    <section style="padding-bottom:10rem;"><div class="container" style="text-align:center; margin-bottom:5rem;"><h2>Testimonios</h2></div><div class="marquee-container"><div class="marquee-inner">{get_review_cards()}</div></div></section>"""
     generate_page(lang, "index.html", 'nav_home', home)
 
-    # 2. SERVICIOS (SUBTÍTULO ENCIMA DEL TÍTULO)
+    # 2. SERVICIOS (TÍTULO ARRIBA, SUBTÍTULO DEBAJO CON ESPACIO)
     srv = f"""<section class="hero" style="min-height:50vh; padding:120px 0;">
         <div class="container" data-aos="fade-up">
-            <p style="margin-bottom: 0.5rem;">t-srv-header-sub</p>
-            <h1>t-srv-header-main</h1>
+            <h1 style="margin-bottom: 2rem;">t-srv-header-main</h1>
+            <p style="font-size: 1.1rem; max-width: 800px;">t-srv-header-sub</p>
         </div>
     </section>
     <section style="padding: 8rem 0; background: var(--bg-dark);"><div class="container"><div class="services-creative-grid">
-    <div class="service-premium-box" data-aos="fade-up"><i class="fas fa-stamp"></i><h3>t-srv-jurada-title</h3><ul class="service-list-detailed"><li>Traducciones Oficiales</li><li>Contratos y Escrituras</li><li>Poderes y Actas</li></ul></div>
+    <div class="service-premium-box" data-aos="fade-up"><i class="fas fa-stamp"></i><h3>Traducciones Juradas</h3><ul class="service-list-detailed"><li>Pasaportes al Árabe</li><li>Escrituras y Contratos</li><li>Poderes Notariales</li></ul></div>
     <div class="service-premium-box featured-libia" data-aos="zoom-in" style="grid-column: 1 / -1;"><div style="display:grid; grid-template-columns: 80px 1fr; gap:2rem; align-items:center;"><i class="fas fa-globe-africa" style="margin:0;"></i><div><h3>t-srv-libia-title</h3><p>t-srv-libia-desc</p></div></div></div>
     </div></div></section>"""
     generate_page(lang, "servicios.html", 'nav_services', srv)
 
     # 3. CONTACTO
     cont = f"""<section class="hero" style="min-height:45vh; padding:100px 0;"><div class="container"><h1>t-hero-contact-title</h1></div></section>
-    <section class="contact-section"><div class="container"><div class="contact-grid"><div class="contact-info-box" data-aos="fade-right"><h2>Hablemos</h2><p>info@tigafab.com</p></div><div class="contact-form-premium" data-aos="fade-left"><form action="#" method="POST"><button type="submit" class="btn-premium" style="width:100%">t-form-btn</button></form></div></div></div></section>"""
+    <section class="contact-section"><div class="container"><div class="contact-grid"><div class="contact-info-box" data-aos="fade-right"><h2>Hablemos</h2><p>info@tigafab.com</p></div><div class="contact-form-premium" data-aos="fade-left"><form action="#" method="POST"><button type="submit" class="btn-premium" style="width:100%">ENVIAR SOLICITUD</button></form></div></div></div></section>"""
     generate_page(lang, "contacto.html", 'nav_contact', cont)
 
-print("✅ ÉXITO: Título y subtítulo apilados verticalmente.")
+print("✅ ÉXITO: Título arriba y subtítulo abajo restaurados.")
