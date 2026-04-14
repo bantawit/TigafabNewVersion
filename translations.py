@@ -4,10 +4,20 @@
 
 TRANSLATIONS = {
     'es': {
-        'nav_home': "Inicio", 'nav_services': "Servicios", 'nav_contact': "Contacto", 'nav_lang': "Idioma",
+        'nav_home': "Inicio", 'nav_about': "Quiénes Somos", 'nav_services': "Servicios", 'nav_contact': "Contacto", 'nav_lang': "Idioma",
         'hero_title': "Excelencia en Traducción", 'hero_subtitle': "ÁRABE • ESPAÑOL • INGLÉS • ALEMÁN • FRANCÉS",
         'home_cta_btn': "SOLICITAR PRESUPUESTO",
         
+        # QUIENES SOMOS (NUEVA SECCIÓN)
+        'about_title': "Quiénes Somos",
+        'about_subtitle': "Traducciones, Interpretación, Gestión y Asesoramiento",
+        'about_text': "Somos un despacho de traductores e intérpretes oficiales, jurados, nativos profesionales, encabezados por doña Fatima Benamar, con más de 15 años de experiencia. Ofrecemos a nuestros clientes un servicio rápido, personalizado, puntualidad, máxima calidad, confidencialidad, asesoramiento, trato directo y tarifas ajustadas.",
+        'about_cat_1': "TRADUCCIÓN - INTERPRETACIÓN",
+        'about_langs': "Arabe, Español, Inglés, Alemán y Francés",
+        'about_name': "FATIMA BENAMAR BAHAMAD",
+        'about_role': "Traductora, interprete, gestora de documentos mercantiles, visados y asesora",
+        'about_cat_2': "GESTIÓN - ASESORAMIENTO",
+
         # TEXTOS HOME
         'home_section_title': "Tradición y Rigor",
         'h1': "Somos un despacho de traductores e interpretes oficiales, jurados, nativos profesionales, encabezados por doña Fatima Benamar, con más de 15 años de experiencia. Ofrecemos a nuestros clientes un servicio rápido, personalizado, puntualidad, máxima calidad, confidencialidad, asesoramiento, trato directo y tarifas ajustadas.",
@@ -85,9 +95,20 @@ TRANSLATIONS = {
         'privacy_title': "Política de Privacidad"
     },
     'en': {
-        'nav_home': "Home", 'nav_services': "Services", 'nav_contact': "Contact", 'nav_lang': "Language",
+        'nav_home': "Home", 'nav_about': "About Us", 'nav_services': "Services", 'nav_contact': "Contact", 'nav_lang': "Language",
         'hero_title': "Excellence in Translation", 'hero_subtitle': "ARABIC • SPANISH • ENGLISH • GERMAN • FRENCH",
         'home_cta_btn': "GET A QUOTE",
+        
+        # ABOUT
+        'about_title': "About Us",
+        'about_subtitle': "Translations, Interpretation, Management and Consulting",
+        'about_text': "Professional boutique translation firm led by Ms. Fatima Benamar, with over 15 years of excellence. We offer fast, personalized, and high-quality services.",
+        'about_cat_1': "TRANSLATION - INTERPRETATION",
+        'about_langs': "Arabic, Spanish, English, German and French",
+        'about_name': "FATIMA BENAMAR BAHAMAD",
+        'about_role': "Translator, interpreter, manager of commercial documents, visas and international advisor",
+        'about_cat_2': "MANAGEMENT - CONSULTING",
+
         'home_section_title': "Tradition and Rigor",
         'h1': "Professional translation firm led by Ms. Fatima Benamar, with over 15 years of experience.",
         'h2': "Integral service in sworn translation and advice for document processing.",
@@ -118,9 +139,20 @@ TRANSLATIONS = {
         'legal_title': "Legal Notice", 'privacy_title': "Privacy"
     },
     'ar': {
-        'nav_home': "الرئيسية", 'nav_services': "خدماتنا", 'nav_contact': "اتصل بنا", 'nav_lang': "اللغة",
+        'nav_home': "الرئيسية", 'nav_about': "من نحن", 'nav_services': "خدماتنا", 'nav_contact': "اتصل بنا", 'nav_lang': "اللغة",
         'hero_title': "رواد الترجمة المعتمدة", 'hero_subtitle': "العربية • الإسبانية • الإنجليزية • الألمانية • الفرنسية",
         'home_cta_btn': "طلب عرض سعر",
+        
+        # ABOUT
+        'about_title': "من نحن",
+        'about_subtitle': "الترجمة، الترجمة الفورية، الإدارة والاستشارات",
+        'about_text': "نحن مكتب مترجمين ومترجمين شفويين رسميين ومحلفين ومحترفين، تترأسنا السيدة فاطمة بن عمار، بخبرة تزيد عن ١٥ عاماً. نقدم لعملائنا خدمة سريعة وشخصية، دقة في المواعيد، جودة قصوى، سرية، استشارات، تعامل مباشر وأسعار تنافسية.",
+        'about_cat_1': "الترجمة - الترجمة الفورية",
+        'about_langs': "العربية، الإسبانية، الإنجليزية، الألمانية والفرنسية",
+        'about_name': "فاطمة بن عمار باحماد",
+        'about_role': "مترجمة، مترجمة فورية، مسؤولة وثائق تجارية، تأشيرات ومستشارة دولية",
+        'about_cat_2': "الإدارة - الاستشارات",
+
         'home_section_title': "التقاليد والدقة",
         'h1': "مكتب ترجمة ومترجمين شفويين محلفين ومعتمدين رسمياً، بخبرة تمتد لأكثر من ١٥ عاماً لمساعدة الشركات والأفراد. نحن نقدم دقة وسرعة وسرية تامة.",
         'h2': "خدمات متكاملة في الترجمة المعتمدة وإدارة المعاملات لجميع مستنداتكم.",

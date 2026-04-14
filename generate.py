@@ -10,7 +10,7 @@ LANG_FOLDERS = {'es': '', 'en': 'en', 'fr': 'fr', 'de': 'de', 'ar': 'ar'}
 def get_nav(lang, rel_path):
     t = TRANSLATIONS.get(lang, TRANSLATIONS['es'])
     links = "".join([f'<a href="{rel_path + (LANG_FOLDERS[lc] + "/index.html" if LANG_FOLDERS[lc] else "index.html")}">{LANG_NAMES[lc]}</a>' for lc in LANG_NAMES])
-    return f"""<nav id="navbar" dir="ltr"><div class="container nav-container"><a href="{rel_path}index.html" class="logo">TIGAFAB<span>.</span></a><ul class="nav-links"><li><a href="index.html">{t['nav_home']}</a></li><li><a href="servicios.html">{t['nav_services']}</a></li><li><a href="contacto.html">{t['nav_contact']}</a></li></ul><div class="lang-selector" id="langSelector"><div class="lang-current">{t['nav_lang']} <i class="fas fa-chevron-down"></i></div><div class="lang-dropdown" id="langDropdown">{links}</div></div></div></nav>"""
+    return f"""<nav id="navbar" dir="ltr"><div class="container nav-container"><a href="{rel_path}index.html" class="logo">TIGAFAB<span>.</span></a><ul class="nav-links"><li><a href="index.html">{t['nav_home']}</a></li><li><a href="quienes-somos.html">{t['nav_about']}</a></li><li><a href="servicios.html">{t['nav_services']}</a></li><li><a href="contacto.html">{t['nav_contact']}</a></li></ul><div class="lang-selector" id="langSelector"><div class="lang-current">{t['nav_lang']} <i class="fas fa-chevron-down"></i></div><div class="lang-dropdown" id="langDropdown">{links}</div></div></div></nav>"""
 
 def get_list_html(key, lang):
     t = TRANSLATIONS.get(lang, TRANSLATIONS['es'])
@@ -89,7 +89,41 @@ for lang in LANG_FOLDERS:
     </div></div></section>"""
     generate_page(lang, "contacto.html", 'nav_contact', cont)
     
-    # 4. LEGAL
+    # 4. QUIENES SOMOS (NUEVA PAGINA)
+    about = f"""<section class="hero" style="min-height:45vh; padding:100px 0;"><div class="container" data-aos="fade-up"><h1>t-about-title</h1><p>t-about-subtitle</p></div></section>
+    <section style="padding:8rem 0;"><div class="container"><div style="display:grid; grid-template-columns:1fr 1.2fr; gap:6rem; align-items:start;">
+    <div data-aos="fade-right" style="position:sticky; top:120px;">
+        <div style="background:rgba(255,255,255,0.02); border:1px solid var(--glass-border); padding:3.5rem; border-radius:30px; backdrop-filter:blur(10px);">
+            <i class="fas fa-user-tie" style="font-size:3rem; color:var(--primary); margin-bottom:2rem;"></i>
+            <h2 style="font-size:1.8rem; margin-bottom:0.5rem; color:white;">t-about-name</h2>
+            <p style="color:var(--primary); font-weight:700; font-size:1.1rem; margin-bottom:2rem;">t-about-role</p>
+            <div style="border-top:1px solid rgba(255,255,255,0.1); padding-top:2rem;">
+                <p style="color:#94a3b8; line-height:1.8;">t-about-text</p>
+            </div>
+        </div>
+    </div>
+    <div data-aos="fade-left">
+        <div style="margin-bottom:4rem;">
+            <div style="display:flex; align-items:center; gap:1.5rem; margin-bottom:1.5rem;">
+                <span style="width:50px; height:2px; background:var(--primary);"></span>
+                <h3 style="margin-bottom:0;">t-about-cat-1</h3>
+            </div>
+            <div style="background:rgba(194,163,93,0.05); border-left:4px solid var(--primary); padding:2rem; border-radius:0 20px 20px 0;">
+                <p style="font-size:1.3rem; color:white; font-weight:500;">t-about-langs</p>
+            </div>
+        </div>
+        <div>
+            <div style="display:flex; align-items:center; gap:1.5rem; margin-bottom:1.5rem;">
+                <span style="width:50px; height:2px; background:var(--primary);"></span>
+                <h3 style="margin-bottom:0;">t-about-cat-2</h3>
+            </div>
+            <p style="font-size:1.1rem; color:#94a3b8; line-height:1.8;">TIGAFAB ofrece un asesoramiento íntegro y profesional para empresas que buscan expandirse internacionalmente, con especial foco en mercados estratégicos y gestión documental compleja.</p>
+        </div>
+    </div>
+    </div></div></section>"""
+    generate_page(lang, "quienes-somos.html", 'nav_about', about)
+
+    # 5. LEGAL
     legal = """<section class="hero" style="min-height:40vh; padding:100px 0;"><div class="container"><h1>t-legal-title</h1></div></section><section style="padding:8rem 0;"><div class="container" style="max-width:800px;"><p>t-privacy-title</p><p>Documentación legal completa de Tigafab S.L.</p></div></section>"""
     generate_page(lang, "aviso-legal.html", 'legal_title', legal)
 
