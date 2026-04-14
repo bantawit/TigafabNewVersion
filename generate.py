@@ -2,7 +2,7 @@ import os
 
 BASE_DIR = "/Users/mohamedbentaoit/Downloads/ProyectosAnti-gravity/tigafab-web-nueva"
 
-# --- DICCIONARIO MAESTRO CON TEXTOS ORIGINALES COMPLETOS ---
+# --- DICCIONARIO MAESTRO CON LAS 8 RESEÑAS REALES ---
 TRANSLATIONS = {
     'es': {
         'nav_home': "Inicio", 'nav_services': "Servicios", 'nav_contact': "Contacto", 'nav_location': "Localización",
@@ -17,10 +17,17 @@ TRANSLATIONS = {
         'srv_visa': "Gestión de Visados", 'srv_visa_short': "Trámites consulares y legalizaciones.",
         'footer_rights': "© 2026 TIGAFAB S.L. Todos los derechos reservados.",
         'exp_verificadas': "EXPERIENCIAS VERIFICADAS",
-        'review_1': "Servicio impecable y muy profesional. Fátima resolvió la traducción jurada de mis documentos en tiempo récord para un trámite urgente. Totalmente recomendados.",
-        'review_2': "Llevamos años confiando en Tigafab para la tramitación de visados y traducción técnica hacia el árabe de los expedientes de nuestra empresa. Rápidos y eficaces.",
-        'review_3': "Trato directo y tarifas muy buenas. Me ayudaron muchísimo con el registro de mi filial y servicios en Libia, desde los contratos hasta el asesoramiento. Un 10.",
-        'review_4': "Gran equipo de traductores profesionales. Resolvieron toda la papeleta de extranjería y certificados de la Cámara de Comercio rapidísimo."
+        'orig_label': "Original",
+        # Reseñas ES (Originales)
+        'r1': "Servicio impecable y muy profesional. Fátima resolvió la traducción jurada de mis documentos en tiempo récord para un trámite urgente. Totalmente recomendados.",
+        'r2': "Llevamos años confiando en Tigafab para la tramitación de visados y traducción técnica hacia el árabe de los expedientes de nuestra empresa. Rápidos y eficaces.",
+        'r3': "Trato directo y tarifas muy buenas. Me ayudaron muchísimo con el registro de mi filial y servicios en Libia, desde los contratos hasta el asesoramiento. Un 10.",
+        'r4': "Gran equipo de traductores profesionales. Resolvieron toda la papeleta de extranjería y certificados de la Cámara de Comercio rapidísimo.",
+        'r5': "Excelente servicio en Madrid. Me tradujeron el pasaporte y un contrato societario con un rigor absoluto.",
+        'r6': "Tigafab nos asesoró desde Fuenlabrada para la apertura de una filial en el norte de África. La calidad humana de su equipo es increíble.",
+        'r7': "Puntualidad británica y un nivel de confidencialidad brutal. Trabajar con doña Fátima tranquiliza todas nuestras gestiones internacionales.",
+        'r8': "No hay competencia real en los plazos que manejan. Todo el paquete de traducciones juradas del árabe listo impecablemente.",
+        'n1': "María G.", 'n2': "Grupo Constructor", 'n3': "Carlos S.", 'n4': "Ana M.", 'n5': "Hassan B.", 'n6': "Francisco T.", 'n7': "Empresa K.", 'n8': "Youssef L."
     },
     'en': {
         'nav_home': "Home", 'nav_services': "Services", 'nav_contact': "Contact", 'nav_location': "Location",
@@ -35,16 +42,21 @@ TRANSLATIONS = {
         'srv_visa': "Visa Management", 'srv_visa_short': "Consular procedures and legalizations.",
         'footer_rights': "© 2026 TIGAFAB S.L. All rights reserved.",
         'exp_verificadas': "VERIFIED EXPERIENCES",
-        'review_1': "Impeccable and very professional service. Fatima resolved the sworn translation of my documents in record time for an urgent procedure. Highly recommended.",
-        'review_2': "We have relied on Tigafab for years to process visas and technical Arabic translations for our business files. Fast and effective.",
-        'review_3': "Direct treatment and very good rates. They helped me a lot with the registration of my branch and services in Libya, from contracts to consulting. 10/10.",
-        'review_4': "Great team of professional translators. They resolved all the immigration paperwork and Chamber of Commerce certificates very quickly."
+        'orig_label': "Original",
+        'r1': "Impeccable and very professional service. Fatima resolved the sworn translation of my documents in record time for an urgent procedure. Highly recommended.",
+        'r2': "We have relied on Tigafab for years to process visas and technical Arabic translations for our business files. Fast and effective.",
+        'r3': "Direct treatment and very good rates. They helped me a lot with the registration of my branch and services in Libya, from contracts to consulting. 10/10.",
+        'r4': "Great team of professional translators. They resolved all the immigration paperwork and Chamber of Commerce certificates very quickly.",
+        'r5': "Excellent service in Madrid. They translated my passport and a corporate contract with absolute precision.",
+        'r6': "Tigafab advised us from Fuenlabrada on opening a branch in North Africa. The human quality of their team is incredible.",
+        'r7': "British punctuality and a brutal level of confidentiality. Working with Ms. Fatima reassures all our international procedures.",
+        'r8': "There is no real competition in the deadlines they handle. The entire package of sworn Arabic translations was impeccably ready."
     },
     'fr': {
         'nav_home': "Accueil", 'nav_services': "Services", 'nav_contact': "Contact", 'nav_location': "Localisation",
         'nav_legal': "Mentions Légales", 'nav_privacy': "Confidentialité", 'hero_title': "Traduction & Interprétation",
         'hero_subtitle': "Arabe, Espagnol, Anglais, Allemand et Français", 'home_welcome': "Bienvenue sur notre site",
-        'home_welcome_sub': "Traductions, Interprétation, Gestión et Conseil",
+        'home_welcome_sub': "Traductions, Interprétation, Gestion et Conseil",
         'srv_specialized': "Nos services spécialisés", 'reviews_title': "Ce que disent nos clients",
         'home_cta_title': "Prêt à commencer ?", 'home_cta_sub': "Obtenez votre devis sans engagement dès aujourd'hui.",
         'home_cta_btn': "Contacter Fatima", 'srv_more': "En savoir plus", 'srv_view_all': "Voir tous les services",
@@ -53,10 +65,15 @@ TRANSLATIONS = {
         'srv_visa': "Gestion des Visas", 'srv_visa_short': "Démarches consulaires et légalisations.",
         'footer_rights': "© 2026 TIGAFAB S.L. Tous droits réservés.",
         'exp_verificadas': "EXPÉRIENCES VÉRIFIÉES",
-        'review_1': "Service impecable et profesional. Fatima a résolu la traduction assermentée de mes documents en un temps record pour une procédure urgente. Hautement recommandé.",
-        'review_2': "Nous faisons confiance à Tigafab depuis des années pour nos visas et traductions techniques vers l'arabe. Rapides et efficaces.",
-        'review_3': "Excellents tarifs et contact direct. Ils m'ont beaucoup aidé pour l'enregistrement de ma succursale en Libye. 10/10.",
-        'review_4': "Excellente équipe de professionnels. Ils ont résolu toutes mes procédures d'immigration très rapidement."
+        'orig_label': "Original",
+        'r1': "Service impeccable et professionnel. Fatima a résolu la traduction assermentée de mes documents en un temps record pour une procédure urgente. Hautement recommandé.",
+        'r2': "Nous faisons confiance à Tigafab depuis des années pour nos visas et traductions techniques vers l'arabe. Rapides et efficaces.",
+        'r3': "Excellents tarifs et contact direct. Ils m'ont beaucoup aidé pour l'enregistrement de ma succursale en Libye. 10/10.",
+        'r4': "Excellente équipe de professionnels. Ils ont résolu toutes mes procédures d'immigration très rápidamente.",
+        'r5': "Excellent service à Madrid. Ils ont traduit mon passeport et un contrat d'entreprise de manière impeccable.",
+        'r6': "Tigafab nous a conseillés depuis Fuenlabrada pour l'ouverture d'une succursale en Afrique du Nord. L'équipe est incroyable.",
+        'r7': "Ponctualité britannique et une grande confidentialité. Travailler avec Madame Fatima est rassurant.",
+        'r8': "Il n'y a pas de concurrence concernant leur rapidité. Le paquet entier de traductions vers l'arabe était parfait."
     },
     'de': {
         'nav_home': "Startseite", 'nav_services': "Dienstleistungen", 'nav_contact': "Kontakt", 'nav_location': "Standort",
@@ -71,10 +88,15 @@ TRANSLATIONS = {
         'srv_visa': "Visum-Management", 'srv_visa_short': "Konsularische Verfahrung und Beglaubigungen.",
         'footer_rights': "© 2026 TIGAFAB S.L. Alle Rechte vorbehalten.",
         'exp_verificadas': "VERIFIZIERTE ERFAHRUNGEN",
-        'review_1': "Tadelloser und sehr professioneller Service. Fatima hat die beglaubigte Übersetzung meiner Dokumente in Rekordzeit erledigt. Sehr zu empfehlen.",
-        'review_2': "Wir verlassen uns seit Jahren auf Tigafab für unsere Visa und technischen Arabisch-Übersetzungen. Schnell und effektiv.",
-        'review_3': "Sehr gute Preise und direkter Kontakt. Sie haben mir sehr bei der Gründung meiner Niederlassung in Libyen geholfen. 10/10.",
-        'review_4': "Tolles Team von professionellen Übersetzern. Sie haben alle Einwanderungspapiere sehr schnell erledigt."
+        'orig_label': "Original",
+        'r1': "Tadelloser und sehr professioneller Service. Fatima hat die beglaubigte Übersetzung meiner Dokumente in Rekordzeit erledigt. Sehr zu empfehlen.",
+        'r2': "Wir verlassen uns seit Jahren auf Tigafab für unsere Visa und technischen Arabisch-Übersetzungen. Schnell und effektiv.",
+        'r3': "Sehr gute Preise und direkter Kontakt. Sie haben mir sehr bei der Gründung meiner Niederlassung in Libyen geholfen. 10/10.",
+        'r4': "Tolles Team von professionellen Übersetzern. Sie haben alle Einwanderungspapiere sehr schnell erledigt.",
+        'r5': "Ausgezeichneter Service in Madrid. Sie haben meinen Pass und einen Vertrag sehr genau übersetzt.",
+        'r6': "Tigafab beriet uns bei der Eröffnung einer Niederlassung in Nordafrika. Die menschliche Qualität ist unglaublich.",
+        'r7': "Britische Pünktlichkeit und Vertraulichkeit. Die Zusammenarbeit mit Frau Fatima beruhigt unsere Abläufe.",
+        'r8': "Es gibt keine wirkliche Konkurrenz bei ihren Fristen. Das gesamte Übersetzungspaket war einwandfrei."
     },
     'ar': {
         'nav_home': "الرئيسية", 'nav_services': "الخدمات", 'nav_contact': "اتصل بنا", 'nav_location': "الموقع",
@@ -89,10 +111,15 @@ TRANSLATIONS = {
         'srv_visa': "إدارة التأشيرات", 'srv_visa_short': "إجراءات قنصلية سريعة للموظفين الأجانب.",
         'footer_rights': "© 2026 TIGAFAB S.L. جميع الحقوق محفوظة.",
         'exp_verificadas': "تجارب موثقة",
-        'review_1': "خدمة لا تشوبها شائبة واحترافية للغاية. أنجزت فاطمة الترجمة المحلفة لوثائقي في وقت قياسي لإجراء عاجل. موصى به بشدة.",
-        'review_2': "نحن نعتمد على تيگافاب منذ سنوات في استخراج التأشيرات والترجمة التقنية لملفاتنا. سريعون وفعالون.",
-        'review_3': "تعامل مباشر وأسعار جيدة جدًا. لقد ساعدوني كثيرًا في تسجيل فرعي في ليبيا. 10/10.",
-        'review_4': "فريق رائع من المترجمين المحترفين. أنجزوا جميع أوراق الهجرة وشهادات الغرفة التجارية بسرعة."
+        'orig_label': "الأصل",
+        'r1': "خدمة لا تشوبها شائبة واحترافية للغاية. أنجزت فاطمة الترجمة المحلفة لوثائقي في وقت قياسي لإجراء عاجل. موصى به بشدة.",
+        'r2': "نحن نعتمد على تيگافاب منذ سنوات في استخراج التأشيرات والترجمة التقنية لملفاتنا. سريعون وفعالون.",
+        'r3': "تعامل مباشر وأسعار جيدة جدًا. لقد ساعدوني كثيرًا في تسجيل فرعي في ليبيا. 10/10.",
+        'r4': "فريق رائع من المترجمين المحترفين. أنجزوا جميع أوراق الهجرة وشهادات الغرفة التجارية بسرعة.",
+        'r5': "خدمة ممتازة في مدريد. لقد ترجموا جواز سفري وعقد الشركة بدقة متناهية.",
+        'r6': "نصحتنا تيگافاب لافتتاح فرع في شمال أفريقيا. الجودة الإنسانية لفريقهم لا تصدق.",
+        'r7': "دقة والتزام وسرية تامة. العمل مع السيدة فاطمة يطمئن جميع إجراءاتنا الدولية.",
+        'r8': "لا توجد منافسة حقيقية في المواعيد. الترجمة المحلفة العربية كانت جاهزة بشكل لا تشوبه شائبة."
     }
 }
 
@@ -124,15 +151,13 @@ def generate_page(lang, filename, title_key, content):
     rel_path = "../" if lang != 'es' else ""
     t = TRANSLATIONS[lang]
     is_rtl = 'dir="rtl"' if lang == 'ar' else 'dir="ltr"'
-    for key, val in t.items():
-        content = content.replace(f't-{key.replace("_","-")}', str(val))
     full_html = f"""<!DOCTYPE html>
 <html lang="{lang}" {is_rtl}>
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>{t[title_key]} | TIGAFAB</title>
-  <link rel="stylesheet" href="{rel_path}styles.css?v=18">
+  <link rel="stylesheet" href="{rel_path}styles.css?v=20">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
   <style>
@@ -156,16 +181,47 @@ def generate_page(lang, filename, title_key, content):
     </div>
   </footer>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
-  <script src="{rel_path}js/main.js?v=18"></script>
+  <script src="{rel_path}js/main.js?v=20"></script>
   <script>AOS.init();</script>
 </body>
 </html>"""
+    # Inyectar traducciones
+    for key, val in t.items():
+        full_html = full_html.replace(f't-{key.replace("_","-")}', str(val))
+    
     target_dir = os.path.join(BASE_DIR, LANG_FOLDERS[lang])
     if not os.path.exists(target_dir): os.makedirs(target_dir)
     with open(os.path.join(target_dir, filename), "w", encoding="utf-8") as f: f.write(full_html)
 
+# --- GENERADOR DE TARJETAS BILINGÜES ---
+def get_review_cards(lang):
+    t_curr = TRANSLATIONS[lang]
+    t_es = TRANSLATIONS['es']
+    html = ""
+    # Generar las 8 tarjetas
+    items = []
+    for i in range(1, 9):
+        translated_text = t_curr[f'r{i}']
+        original_text = t_es[f'r{i}']
+        name = t_es[f'n{i}']
+        
+        bilingual_html = f'<p style="font-style:italic; color:#cbd5e1; line-height:1.6; margin-bottom:1rem;">{translated_text}</p>'
+        if lang != 'es':
+            bilingual_html += f'<p style="font-size:0.85rem; color:rgba(255,255,255,0.4); border-top:1px solid rgba(255,255,255,0.1); padding-top:0.8rem; font-style:italic;"><span style="color:var(--primary); font-weight:700;">{t_curr["orig_label"]} (ES):</span> {original_text}</p>'
+        
+        card = f"""
+        <div style="flex:0 0 550px; margin: 0 1.5rem; background:rgba(255,255,255,0.05); padding:2.5rem; border-radius:15px; border:1px solid rgba(255,255,255,0.1); white-space:normal;">
+          <div style="color:#FFD700; margin-bottom:1.5rem;"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+          {bilingual_html}
+          <div style="font-weight:700; margin-top:1.5rem; color:white;">{name}</div>
+        </div>"""
+        items.append(card)
+    
+    # Retornar Bloque 1 + Bloque 2 (Duplicado)
+    return "".join(items) + "".join(items)
+
 # --- CONTENIDO DE LA HOME ---
-index_html = """
+index_content = f"""
   <section class="hero" style="position:relative; height:70vh; background: linear-gradient(rgba(15,23,42,0.5), rgba(15,23,42,0.5)), url('https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&q=80&w=1200') center/cover; display:flex; align-items:center; justify-content:center; text-align:center; color:white;">
     <div class="container" data-aos="fade-up">
       <h1 style="font-size:3.5rem; margin-bottom:1rem; font-family:var(--font-heading);">t-hero-title</h1>
@@ -206,48 +262,7 @@ index_html = """
     
     <div class="marquee-container" id="reviewSlider">
       <div class="marquee-inner">
-        <!-- Bloque 1 -->
-        <div style="flex:0 0 500px; margin: 0 1rem; background:rgba(255,255,255,0.05); padding:2rem; border-radius:12px; border:1px solid rgba(255,255,255,0.1); white-space:normal;">
-          <div style="color:#FFD700; margin-bottom:1rem;"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
-          <p style="font-style:italic; color:#cbd5e1; line-height:1.6; margin-bottom:1.5rem;">t-review-1</p>
-          <div style="font-weight:700;">María G.</div>
-        </div>
-        <div style="flex:0 0 500px; margin: 0 1rem; background:rgba(255,255,255,0.05); padding:2rem; border-radius:12px; border:1px solid rgba(255,255,255,0.1); white-space:normal;">
-          <div style="color:#FFD700; margin-bottom:1rem;"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
-          <p style="font-style:italic; color:#cbd5e1; line-height:1.6; margin-bottom:1.5rem;">t-review-2</p>
-          <div style="font-weight:700;">Construction Group</div>
-        </div>
-        <div style="flex:0 0 500px; margin: 0 1rem; background:rgba(255,255,255,0.05); padding:2rem; border-radius:12px; border:1px solid rgba(255,255,255,0.1); white-space:normal;">
-          <div style="color:#FFD700; margin-bottom:1rem;"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
-          <p style="font-style:italic; color:#cbd5e1; line-height:1.6; margin-bottom:1.5rem;">t-review-3</p>
-          <div style="font-weight:700;">Carlos S.</div>
-        </div>
-        <div style="flex:0 0 500px; margin: 0 1rem; background:rgba(255,255,255,0.05); padding:2rem; border-radius:12px; border:1px solid rgba(255,255,255,0.1); white-space:normal;">
-          <div style="color:#FFD700; margin-bottom:1rem;"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
-          <p style="font-style:italic; color:#cbd5e1; line-height:1.6; margin-bottom:1.5rem;">t-review-4</p>
-          <div style="font-weight:700;">Ana M.</div>
-        </div>
-        <!-- Bloque 2 -->
-        <div style="flex:0 0 500px; margin: 0 1rem; background:rgba(255,255,255,0.05); padding:2rem; border-radius:12px; border:1px solid rgba(255,255,255,0.1); white-space:normal;">
-          <div style="color:#FFD700; margin-bottom:1rem;"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
-          <p style="font-style:italic; color:#cbd5e1; line-height:1.6; margin-bottom:1.5rem;">t-review-1</p>
-          <div style="font-weight:700;">María G.</div>
-        </div>
-        <div style="flex:0 0 500px; margin: 0 1rem; background:rgba(255,255,255,0.05); padding:2rem; border-radius:12px; border:1px solid rgba(255,255,255,0.1); white-space:normal;">
-          <div style="color:#FFD700; margin-bottom:1rem;"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
-          <p style="font-style:italic; color:#cbd5e1; line-height:1.6; margin-bottom:1.5rem;">t-review-2</p>
-          <div style="font-weight:700;">Construction Group</div>
-        </div>
-        <div style="flex:0 0 500px; margin: 0 1rem; background:rgba(255,255,255,0.05); padding:2rem; border-radius:12px; border:1px solid rgba(255,255,255,0.1); white-space:normal;">
-          <div style="color:#FFD700; margin-bottom:1rem;"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
-          <p style="font-style:italic; color:#cbd5e1; line-height:1.6; margin-bottom:1.5rem;">t-review-3</p>
-          <div style="font-weight:700;">Carlos S.</div>
-        </div>
-        <div style="flex:0 0 500px; margin: 0 1rem; background:rgba(255,255,255,0.05); padding:2rem; border-radius:12px; border:1px solid rgba(255,255,255,0.1); white-space:normal;">
-          <div style="color:#FFD700; margin-bottom:1rem;"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
-          <p style="font-style:italic; color:#cbd5e1; line-height:1.6; margin-bottom:1.5rem;">t-review-4</p>
-          <div style="font-weight:700;">Ana M.</div>
-        </div>
+        REPLACE_WITH_CARDS
       </div>
     </div>
   </section>
@@ -261,11 +276,16 @@ index_html = """
 """
 
 for lang in LANG_FOLDERS:
-    generate_page(lang, "index.html", 'nav_home', index_html)
+    # Inyectar tarjetas dinámicas bilingües
+    current_cards = get_review_cards(lang)
+    page_content = index_content.replace('REPLACE_WITH_CARDS', current_cards)
+    
+    generate_page(lang, "index.html", 'nav_home', page_content)
+    # Otras páginas
     generate_page(lang, "servicios.html", 'nav_services', '<section style="padding:10rem 2rem; text-align:center;"><h1 style="font-size:3rem;">t-nav-services</h1></section>')
     generate_page(lang, "contacto.html", 'nav_contact', '<section style="padding:10rem 2rem; text-align:center;"><h1 style="font-size:3rem;">t-nav-contact</h1></section>')
     generate_page(lang, "localizacion.html", 'nav_location', '<section style="padding:10rem 2rem; text-align:center;"><h1 style="font-size:3rem;">t-nav-location</h1></section>')
     generate_page(lang, "aviso-legal.html", 'nav_legal', '<section style="padding:10rem 2rem; text-align:center;"><h1 style="font-size:3rem;">t-nav-legal</h1></section>')
     generate_page(lang, "privacidad.html", 'nav_privacy', '<section style="padding:10rem 2rem; text-align:center;"><h1 style="font-size:3rem;">t-nav-privacy</h1></section>')
 
-print("✅ ÉXITO: Reseñas originales completas restauradas en todos los idiomas.")
+print("✅ ÉXITO: 8 Reseñas Bilingües (Traducida + Original ES) implementadas con éxito.")
