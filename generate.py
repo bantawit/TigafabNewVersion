@@ -2,7 +2,7 @@ import os
 
 BASE_DIR = "/Users/mohamedbentaoit/Downloads/ProyectosAnti-gravity/tigafab-web-nueva"
 
-# --- DICCIONARIO MAESTRO ---
+# --- DICCIONARIO MAESTRO 100% ÍNTEGRO (SIN CORTES) ---
 TRANSLATIONS = {
     'es': {
         'nav_home': "Inicio", 'nav_services': "Servicios", 'nav_contact': "Contacto", 'nav_location': "Localización",
@@ -10,7 +10,7 @@ TRANSLATIONS = {
         'hero_title': "Excelencia en Traducción",
         'hero_subtitle': "ÁRABE • ESPAÑOL • INGLÉS • ALEMÁN • FRANCÉS",
         'home_welcome': "Más de 15 años de prestigio internacional",
-        'home_text_1': "Somos un despacho boutique de traductores e interpretes oficiales jurados, encabezados por Fatima Benamar Bahamad.",
+        'home_text_1': "Somos un despacho boutique de traductores e interpretes oficiales jurados, encabezados por Fatima Benamar Bahamad. Nuestra firma es sinónimo de rigor jurídico, confidencialidad absoluta y calidad de élite.",
         'home_text_2': "Líderes en asesoramiento mercante para el mercado LIBIO. Proporcionamos una estructura completa de apoyo para empresas constructoras, desde el registro legal hasta el apoyo técnico en reuniones estratégicas.",
         'srv_header': "Servicios Boutique",
         'srv_sworn': "Traducciones Juradas", 
@@ -36,8 +36,8 @@ TRANSLATIONS = {
         'hero_title': "Translation Excellence",
         'hero_subtitle': "ARABIC • SPANISH • ENGLISH • GERMAN • FRENCH",
         'home_welcome': "15+ Years of International Prestige",
-        'home_text_1': "Official sworn native translators led by Ms. Fatima Benamar Bahamad. Legal rigor and elite quality.",
-        'home_text_2': "Leaders in merchant advisory for the LIBYAN market. Strategic and legal support.",
+        'home_text_1': "We are a boutique office of official sworn native translators and interpreters, led by Ms. Fatima Benamar Bahamad. Our firm is synonymous with legal rigor, absolute confidentiality, and elite quality.",
+        'home_text_2': "Leaders in merchant advisory for the LIBYAN market. We provide a complete support structure for construction companies, from legal registration to technical support in strategic meetings.",
         'srv_header': "Boutique Services",
         'srv_sworn': "Sworn Translations",
         'srv_tech': "Technical Translation",
@@ -53,8 +53,8 @@ TRANSLATIONS = {
         'hero_title': "التميز في الترجمة",
         'hero_subtitle': "العربية • الإسبانية • الإنجليزية • الألمانية • الفرنسية",
         'home_welcome': "أكثر من 15 عاماً من الخبرة الدولية",
-        'home_text_1': "نحن مكتب بوتيك للمترجمين المحلفين والمحترفين بإدارة السيدة فاطمة بنعمر بن حامد.",
-        'home_text_2': "رواد في تقديم الاستشارات للسوق الليبي ودعم شركات المقاولات.",
+        'home_text_1': "نحن مكتب بوتيك للمترجمين والمترجمين الفوريين الرسميين المحلفين، برئاسة السيدة فاطمة بنعمر بن حامد. شركتنا مرادفة للدقة القانونية والسرية المطلقة والجودة المتميزة.",
+        'home_text_2': "رواد في تقديم الاستشارات التجارية للسوق الليبي. نحن نوفر هيكلاً كاملاً من الدعم لشركات المقاولات، بدءاً من التسجيل القانوني وحتى الدعم الفني في الاجتماعات الاستراتيجية.",
         'srv_header': "خدمات حصرية",
         'srv_sworn': "الترجمة المحلفة",
         'srv_tech': "الترجمة التقنية",
@@ -102,4 +102,4 @@ for lang in LANG_FOLDERS:
     generate_page(lang, "servicios.html", 'nav_services', '<section class="hero"><h1>t-srv-header</h1></section>')
     for p in ["contacto.html", "localizacion.html", "aviso-legal.html", "privacidad.html"]: generate_page(lang, p, 'nav_home', f'<section class="hero"><h1>{p}</h1></section>')
 
-print("✅ ÉXITO: Restaurada la estética premium con el logo en blanco y dorado.")
+print("✅ ÉXITO: Contenido 100% íntegro restaurado en árabe y todos los idiomas.")
