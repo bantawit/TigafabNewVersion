@@ -2,7 +2,7 @@ import os
 
 BASE_DIR = "/Users/mohamedbentaoit/Downloads/ProyectosAnti-gravity/tigafab-web-nueva"
 
-# --- DICCIONARIO MAESTRO COMPLETO ---
+# --- DICCIONARIO MAESTRO CON TEXTOS ORIGINALES COMPLETOS ---
 TRANSLATIONS = {
     'es': {
         'nav_home': "Inicio", 'nav_services': "Servicios", 'nav_contact': "Contacto", 'nav_location': "Localización",
@@ -17,10 +17,10 @@ TRANSLATIONS = {
         'srv_visa': "Gestión de Visados", 'srv_visa_short': "Trámites consulares y legalizaciones.",
         'footer_rights': "© 2026 TIGAFAB S.L. Todos los derechos reservados.",
         'exp_verificadas': "EXPERIENCIAS VERIFICADAS",
-        'review_1': "Servicio impecable y muy profesional. Fátima resolvió la traducción jurada de mis documentos en tiempo récord.",
-        'review_2': "Llevamos años confiando en Tigafab para la tramitación de visados y traducción técnica hacia el árabe.",
-        'review_3': "Trato directo y tarifas muy buenas. Me ayudaron muchísimo con el registro de mi filial en Libia.",
-        'review_4': "Gran equipo de traductores profesionales. Resolvieron toda la papeleta de extranjería rapidísimo."
+        'review_1': "Servicio impecable y muy profesional. Fátima resolvió la traducción jurada de mis documentos en tiempo récord para un trámite urgente. Totalmente recomendados.",
+        'review_2': "Llevamos años confiando en Tigafab para la tramitación de visados y traducción técnica hacia el árabe de los expedientes de nuestra empresa. Rápidos y eficaces.",
+        'review_3': "Trato directo y tarifas muy buenas. Me ayudaron muchísimo con el registro de mi filial y servicios en Libia, desde los contratos hasta el asesoramiento. Un 10.",
+        'review_4': "Gran equipo de traductores profesionales. Resolvieron toda la papeleta de extranjería y certificados de la Cámara de Comercio rapidísimo."
     },
     'en': {
         'nav_home': "Home", 'nav_services': "Services", 'nav_contact': "Contact", 'nav_location': "Location",
@@ -35,16 +35,16 @@ TRANSLATIONS = {
         'srv_visa': "Visa Management", 'srv_visa_short': "Consular procedures and legalizations.",
         'footer_rights': "© 2026 TIGAFAB S.L. All rights reserved.",
         'exp_verificadas': "VERIFIED EXPERIENCES",
-        'review_1': "Impeccable and very professional service. Fatima resolved the sworn translation of my documents in record time.",
-        'review_2': "We have relied on Tigafab for years for visa processing and technical Arabic translation.",
-        'review_3': "Direct treatment and very good rates. They helped me a lot with the registration of my branch in Libya.",
-        'review_4': "Great team of professional translators. They resolved all the immigration paperwork very quickly."
+        'review_1': "Impeccable and very professional service. Fatima resolved the sworn translation of my documents in record time for an urgent procedure. Highly recommended.",
+        'review_2': "We have relied on Tigafab for years to process visas and technical Arabic translations for our business files. Fast and effective.",
+        'review_3': "Direct treatment and very good rates. They helped me a lot with the registration of my branch and services in Libya, from contracts to consulting. 10/10.",
+        'review_4': "Great team of professional translators. They resolved all the immigration paperwork and Chamber of Commerce certificates very quickly."
     },
     'fr': {
         'nav_home': "Accueil", 'nav_services': "Services", 'nav_contact': "Contact", 'nav_location': "Localisation",
         'nav_legal': "Mentions Légales", 'nav_privacy': "Confidentialité", 'hero_title': "Traduction & Interprétation",
         'hero_subtitle': "Arabe, Espagnol, Anglais, Allemand et Français", 'home_welcome': "Bienvenue sur notre site",
-        'home_welcome_sub': "Traductions, Interprétation, Gestion et Conseil",
+        'home_welcome_sub': "Traductions, Interprétation, Gestión et Conseil",
         'srv_specialized': "Nos services spécialisés", 'reviews_title': "Ce que disent nos clients",
         'home_cta_title': "Prêt à commencer ?", 'home_cta_sub': "Obtenez votre devis sans engagement dès aujourd'hui.",
         'home_cta_btn': "Contacter Fatima", 'srv_more': "En savoir plus", 'srv_view_all': "Voir tous les services",
@@ -53,10 +53,10 @@ TRANSLATIONS = {
         'srv_visa': "Gestion des Visas", 'srv_visa_short': "Démarches consulaires et légalisations.",
         'footer_rights': "© 2026 TIGAFAB S.L. Tous droits réservés.",
         'exp_verificadas': "EXPÉRIENCES VÉRIFIÉES",
-        'review_1': "Service impeccable et très professionnel. Fatima a résolu la traduction assermentée en un temps record.",
-        'review_2': "Nous faisons confiance à Tigafab depuis des années pour les visas et la traduction technique vers l'arabe.",
-        'review_3': "Excellent accueil et très bons tarifs. Ils m'ont beaucoup aidé pour l'enregistrement de ma filiale en Libye.",
-        'review_4': "Grande equipo de traductores profesionales. Ils ont résolu mes dossiers d'immigration très rapidement."
+        'review_1': "Service impecable et profesional. Fatima a résolu la traduction assermentée de mes documents en un temps record pour une procédure urgente. Hautement recommandé.",
+        'review_2': "Nous faisons confiance à Tigafab depuis des années pour nos visas et traductions techniques vers l'arabe. Rapides et efficaces.",
+        'review_3': "Excellents tarifs et contact direct. Ils m'ont beaucoup aidé pour l'enregistrement de ma succursale en Libye. 10/10.",
+        'review_4': "Excellente équipe de professionnels. Ils ont résolu toutes mes procédures d'immigration très rapidement."
     },
     'de': {
         'nav_home': "Startseite", 'nav_services': "Dienstleistungen", 'nav_contact': "Kontakt", 'nav_location': "Standort",
@@ -71,10 +71,10 @@ TRANSLATIONS = {
         'srv_visa': "Visum-Management", 'srv_visa_short': "Konsularische Verfahrung und Beglaubigungen.",
         'footer_rights': "© 2026 TIGAFAB S.L. Alle Rechte vorbehalten.",
         'exp_verificadas': "VERIFIZIERTE ERFAHRUNGEN",
-        'review_1': "Tadelloser und muy professioneller Service. Fatima hat die Übersetzung in Rekordzeit erledigt.",
-        'review_2': "Wir verlassen uns seit Jahren auf Tigafab für Visa und technische Arabisch-Übersetzungen.",
-        'review_3': "Direkter Kontakt und muy gute Preise. Sehr hilfreich bei der Gründung meiner Niederlassung in Libyen.",
-        'review_4': "Großartiges Team von professionellen Übersetzern. Immigrationsthemen wurden muy schnell gelöst."
+        'review_1': "Tadelloser und sehr professioneller Service. Fatima hat die beglaubigte Übersetzung meiner Dokumente in Rekordzeit erledigt. Sehr zu empfehlen.",
+        'review_2': "Wir verlassen uns seit Jahren auf Tigafab für unsere Visa und technischen Arabisch-Übersetzungen. Schnell und effektiv.",
+        'review_3': "Sehr gute Preise und direkter Kontakt. Sie haben mir sehr bei der Gründung meiner Niederlassung in Libyen geholfen. 10/10.",
+        'review_4': "Tolles Team von professionellen Übersetzern. Sie haben alle Einwanderungspapiere sehr schnell erledigt."
     },
     'ar': {
         'nav_home': "الرئيسية", 'nav_services': "الخدمات", 'nav_contact': "اتصل بنا", 'nav_location': "الموقع",
@@ -89,10 +89,10 @@ TRANSLATIONS = {
         'srv_visa': "إدارة التأشيرات", 'srv_visa_short': "إجراءات قنصلية سريعة للموظفين الأجانب.",
         'footer_rights': "© 2026 TIGAFAB S.L. جميع الحقوق محفوظة.",
         'exp_verificadas': "تجارب موثقة",
-        'review_1': "خدمة مثالية واحترافية للغاية. أنجزت فاطمة الترجمة المحلفة لوثائقي في وقت قياسي.",
-        'review_2': "نعتمد على تيگافاب منذ سنوات في استخراج التأشيرات والترجمة التقنية للغة العربية.",
-        'review_3': "تعامل مباشر وأسعار ممتازة. ساعدوني كثيراً في تسجيل فرع شركتي في ليبيا.",
-        'review_4': "فريق رائع من المترجمين المحترفين. أنجزوا جميع أوراق الهجرة بسرعة كبيرة."
+        'review_1': "خدمة لا تشوبها شائبة واحترافية للغاية. أنجزت فاطمة الترجمة المحلفة لوثائقي في وقت قياسي لإجراء عاجل. موصى به بشدة.",
+        'review_2': "نحن نعتمد على تيگافاب منذ سنوات في استخراج التأشيرات والترجمة التقنية لملفاتنا. سريعون وفعالون.",
+        'review_3': "تعامل مباشر وأسعار جيدة جدًا. لقد ساعدوني كثيرًا في تسجيل فرعي في ليبيا. 10/10.",
+        'review_4': "فريق رائع من المترجمين المحترفين. أنجزوا جميع أوراق الهجرة وشهادات الغرفة التجارية بسرعة."
     }
 }
 
@@ -132,7 +132,7 @@ def generate_page(lang, filename, title_key, content):
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>{t[title_key]} | TIGAFAB</title>
-  <link rel="stylesheet" href="{rel_path}styles.css?v=17">
+  <link rel="stylesheet" href="{rel_path}styles.css?v=18">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
   <style>
@@ -156,7 +156,7 @@ def generate_page(lang, filename, title_key, content):
     </div>
   </footer>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
-  <script src="{rel_path}js/main.js?v=17"></script>
+  <script src="{rel_path}js/main.js?v=18"></script>
   <script>AOS.init();</script>
 </body>
 </html>"""
@@ -206,46 +206,46 @@ index_html = """
     
     <div class="marquee-container" id="reviewSlider">
       <div class="marquee-inner">
-        <!-- Bloque 1 (4 reseñas) -->
-        <div style="flex:0 0 450px; margin: 0 1rem; background:rgba(255,255,255,0.05); padding:2rem; border-radius:12px; border:1px solid rgba(255,255,255,0.1); white-space:normal;">
+        <!-- Bloque 1 -->
+        <div style="flex:0 0 500px; margin: 0 1rem; background:rgba(255,255,255,0.05); padding:2rem; border-radius:12px; border:1px solid rgba(255,255,255,0.1); white-space:normal;">
           <div style="color:#FFD700; margin-bottom:1rem;"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
-          <p style="font-style:italic; color:#cbd5e1; margin-bottom:1.5rem;">"t-review-1"</p>
+          <p style="font-style:italic; color:#cbd5e1; line-height:1.6; margin-bottom:1.5rem;">t-review-1</p>
           <div style="font-weight:700;">María G.</div>
         </div>
-        <div style="flex:0 0 450px; margin: 0 1rem; background:rgba(255,255,255,0.05); padding:2rem; border-radius:12px; border:1px solid rgba(255,255,255,0.1); white-space:normal;">
+        <div style="flex:0 0 500px; margin: 0 1rem; background:rgba(255,255,255,0.05); padding:2rem; border-radius:12px; border:1px solid rgba(255,255,255,0.1); white-space:normal;">
           <div style="color:#FFD700; margin-bottom:1rem;"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
-          <p style="font-style:italic; color:#cbd5e1; margin-bottom:1.5rem;">"t-review-2"</p>
+          <p style="font-style:italic; color:#cbd5e1; line-height:1.6; margin-bottom:1.5rem;">t-review-2</p>
           <div style="font-weight:700;">Construction Group</div>
         </div>
-        <div style="flex:0 0 450px; margin: 0 1rem; background:rgba(255,255,255,0.05); padding:2rem; border-radius:12px; border:1px solid rgba(255,255,255,0.1); white-space:normal;">
+        <div style="flex:0 0 500px; margin: 0 1rem; background:rgba(255,255,255,0.05); padding:2rem; border-radius:12px; border:1px solid rgba(255,255,255,0.1); white-space:normal;">
           <div style="color:#FFD700; margin-bottom:1rem;"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
-          <p style="font-style:italic; color:#cbd5e1; margin-bottom:1.5rem;">"t-review-3"</p>
+          <p style="font-style:italic; color:#cbd5e1; line-height:1.6; margin-bottom:1.5rem;">t-review-3</p>
           <div style="font-weight:700;">Carlos S.</div>
         </div>
-        <div style="flex:0 0 450px; margin: 0 1rem; background:rgba(255,255,255,0.05); padding:2rem; border-radius:12px; border:1px solid rgba(255,255,255,0.1); white-space:normal;">
+        <div style="flex:0 0 500px; margin: 0 1rem; background:rgba(255,255,255,0.05); padding:2rem; border-radius:12px; border:1px solid rgba(255,255,255,0.1); white-space:normal;">
           <div style="color:#FFD700; margin-bottom:1rem;"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
-          <p style="font-style:italic; color:#cbd5e1; margin-bottom:1.5rem;">"t-review-4"</p>
+          <p style="font-style:italic; color:#cbd5e1; line-height:1.6; margin-bottom:1.5rem;">t-review-4</p>
           <div style="font-weight:700;">Ana M.</div>
         </div>
-        <!-- Bloque 2 (Mismas 4 reseñas - DUPLICADO EXACTO) -->
-        <div style="flex:0 0 450px; margin: 0 1rem; background:rgba(255,255,255,0.05); padding:2rem; border-radius:12px; border:1px solid rgba(255,255,255,0.1); white-space:normal;">
+        <!-- Bloque 2 -->
+        <div style="flex:0 0 500px; margin: 0 1rem; background:rgba(255,255,255,0.05); padding:2rem; border-radius:12px; border:1px solid rgba(255,255,255,0.1); white-space:normal;">
           <div style="color:#FFD700; margin-bottom:1rem;"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
-          <p style="font-style:italic; color:#cbd5e1; margin-bottom:1.5rem;">"t-review-1"</p>
+          <p style="font-style:italic; color:#cbd5e1; line-height:1.6; margin-bottom:1.5rem;">t-review-1</p>
           <div style="font-weight:700;">María G.</div>
         </div>
-        <div style="flex:0 0 450px; margin: 0 1rem; background:rgba(255,255,255,0.05); padding:2rem; border-radius:12px; border:1px solid rgba(255,255,255,0.1); white-space:normal;">
+        <div style="flex:0 0 500px; margin: 0 1rem; background:rgba(255,255,255,0.05); padding:2rem; border-radius:12px; border:1px solid rgba(255,255,255,0.1); white-space:normal;">
           <div style="color:#FFD700; margin-bottom:1rem;"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
-          <p style="font-style:italic; color:#cbd5e1; margin-bottom:1.5rem;">"t-review-2"</p>
+          <p style="font-style:italic; color:#cbd5e1; line-height:1.6; margin-bottom:1.5rem;">t-review-2</p>
           <div style="font-weight:700;">Construction Group</div>
         </div>
-        <div style="flex:0 0 450px; margin: 0 1rem; background:rgba(255,255,255,0.05); padding:2rem; border-radius:12px; border:1px solid rgba(255,255,255,0.1); white-space:normal;">
+        <div style="flex:0 0 500px; margin: 0 1rem; background:rgba(255,255,255,0.05); padding:2rem; border-radius:12px; border:1px solid rgba(255,255,255,0.1); white-space:normal;">
           <div style="color:#FFD700; margin-bottom:1rem;"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
-          <p style="font-style:italic; color:#cbd5e1; margin-bottom:1.5rem;">"t-review-3"</p>
+          <p style="font-style:italic; color:#cbd5e1; line-height:1.6; margin-bottom:1.5rem;">t-review-3</p>
           <div style="font-weight:700;">Carlos S.</div>
         </div>
-        <div style="flex:0 0 450px; margin: 0 1rem; background:rgba(255,255,255,0.05); padding:2rem; border-radius:12px; border:1px solid rgba(255,255,255,0.1); white-space:normal;">
+        <div style="flex:0 0 500px; margin: 0 1rem; background:rgba(255,255,255,0.05); padding:2rem; border-radius:12px; border:1px solid rgba(255,255,255,0.1); white-space:normal;">
           <div style="color:#FFD700; margin-bottom:1rem;"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
-          <p style="font-style:italic; color:#cbd5e1; margin-bottom:1.5rem;">"t-review-4"</p>
+          <p style="font-style:italic; color:#cbd5e1; line-height:1.6; margin-bottom:1.5rem;">t-review-4</p>
           <div style="font-weight:700;">Ana M.</div>
         </div>
       </div>
@@ -268,4 +268,4 @@ for lang in LANG_FOLDERS:
     generate_page(lang, "aviso-legal.html", 'nav_legal', '<section style="padding:10rem 2rem; text-align:center;"><h1 style="font-size:3rem;">t-nav-legal</h1></section>')
     generate_page(lang, "privacidad.html", 'nav_privacy', '<section style="padding:10rem 2rem; text-align:center;"><h1 style="font-size:3rem;">t-nav-privacy</h1></section>')
 
-print("✅ ÉXITO: Generador actualizado con 8 reseñas (4+4) para un bucle infinito perfecto.")
+print("✅ ÉXITO: Reseñas originales completas restauradas en todos los idiomas.")
