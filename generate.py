@@ -73,13 +73,13 @@ def get_nav(lang, rel_path):
     links = ""
     for l_code, l_folder in LANG_FOLDERS.items():
         links += f'<a href="{rel_path + (l_folder + "/index.html" if l_folder else "index.html")}" class="lang-btn {"active" if l_code == lang else ""}">{l_code.upper()}</a>'
-    return f"""<nav id="navbar"><div class="container nav-container"><a href="{rel_path}index.html" class="logo">TIGAFAB<span>.</span></a><ul class="nav-links"><li><a href="index.html">{t['nav_home']}</a></li><li><a href="servicios.html">{t['nav_services']}</a></li><li><a href="contacto.html">{t['nav_contact']}</a></li><li><a href="localizacion.html">{t['nav_location']}</a></li><li><div class="lang-selector">{links}</div></li></ul></div></nav>"""
+    return f"""<nav id="navbar"><div class="container nav-container"><a href="{rel_path}index.html" class="logo">tiga<span class="logo-f">f</span>ab</a><ul class="nav-links"><li><a href="index.html">{t['nav_home']}</a></li><li><a href="servicios.html">{t['nav_services']}</a></li><li><a href="contacto.html">{t['nav_contact']}</a></li><li><a href="localizacion.html">{t['nav_location']}</a></li><li><div class="lang-selector">{links}</div></li></ul></div></nav>"""
 
 def generate_page(lang, filename, title_key, content):
     rel_path = "../" if lang != 'es' else ""
     t = TRANSLATIONS.get(lang, TRANSLATIONS['es'])
     t_es = TRANSLATIONS['es']
-    full_html = f"""<!DOCTYPE html><html lang="{lang}" dir="{'rtl' if lang=='ar' else 'ltr'}"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>{t[title_key]} | TIGAFAB</title><link rel="stylesheet" href="{rel_path}styles.css?v={os.urandom(2).hex()}"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"><link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Inter:wght@400;500;700&display=swap" rel="stylesheet"><link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet"></head><body>{get_nav(lang, rel_path)}<main>{content}</main><footer style="background: rgba(0,0,0,0.2); backdrop-filter: blur(10px); color:white; padding:4rem 2rem; text-align:center; border-top: 1px solid rgba(255,255,255,0.05);"><div style="font-family: 'Playfair Display', serif; font-size:2rem; margin-bottom:1rem;">TIGAFAB<span>.</span></div><p>{t['footer_rights']}</p></footer><script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script><script src="{rel_path}js/main.js?v=999"></script><script>AOS.init();</script></body></html>"""
+    full_html = f"""<!DOCTYPE html><html lang="{lang}" dir="{'rtl' if lang=='ar' else 'ltr'}"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>{t[title_key]} | TIGAFAB</title><link rel="stylesheet" href="{rel_path}styles.css?v={os.urandom(2).hex()}"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"><link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Inter:wght@400;500;700&display=swap" rel="stylesheet"><link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet"></head><body>{get_nav(lang, rel_path)}<main>{content}</main><footer style="background: rgba(0,0,0,0.2); backdrop-filter: blur(10px); color:white; padding:4rem 2rem; text-align:center; border-top: 1px solid rgba(255,255,255,0.05);"><div style="font-family: 'Playfair Display', serif; font-size:2rem; margin-bottom:1rem; color:#349df8;">tiga<span style="color:#ed1c24;">f</span>ab</div><p>{t['footer_rights']}</p></footer><script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script><script src="{rel_path}js/main.js?v=999"></script><script>AOS.init();</script></body></html>"""
     merged_t = t_es.copy(); merged_t.update(t)
     for k in sorted(merged_t.keys(), key=len, reverse=True): 
         full_html = full_html.replace(f't-{k.replace("_","-")}', str(merged_t[k]))
@@ -93,7 +93,7 @@ def get_review_cards(lang):
     for i in range(1, 9):
         bilingual = f'<p style="font-style:italic; color:#e2e8f0; line-height:1.6; margin-bottom:1rem;">{t_curr.get(f"r{i}", t_es.get(f"r{i}", "" ))}</p>'
         if lang != 'es': bilingual += f'<p style="font-size:0.8rem; color:rgba(255,255,255,0.4); border-top:1px solid rgba(255,255,255,0.1); padding-top:0.8rem; font-style:italic;"><span style="color:#c2a35d;">{t_curr.get("orig_label", "Original")} (ES):</span> {t_es.get(f"r{i}", "")}</p>'
-        items.append(f'<div class="review-card-premium"><div style="color:#c2a35d; margin-bottom:1rem;"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>{bilingual}<div style="font-weight:700; margin-top:1.2rem; color:white;">{t_es.get(f"n{i}", "Cliente")}</div></div>')
+        items.append(f'<div class="review-card-premium"><div style="color:#c2a35d; margin-bottom:1rem;"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>{bilingual}<div style="font-weight:700; margin-top:12rem; color:white;">{t_es.get(f"n{i}", "Cliente")}</div></div>')
     return "".join(items) + "".join(items)
 
 for lang in LANG_FOLDERS:
@@ -102,4 +102,4 @@ for lang in LANG_FOLDERS:
     generate_page(lang, "servicios.html", 'nav_services', '<section class="hero"><h1>t-srv-header</h1></section>')
     for p in ["contacto.html", "localizacion.html", "aviso-legal.html", "privacidad.html"]: generate_page(lang, p, 'nav_home', f'<section class="hero"><h1>{p}</h1></section>')
 
-print("✅ ÉXITO: Menú y logo restaurados al 100% con estilo premium.")
+print("✅ ÉXITO: Colores corporativos integrados en el logo premium.")
