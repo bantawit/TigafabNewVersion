@@ -49,13 +49,33 @@ h1, h2, h3 { font-family: var(--font-heading); }
   display: flex; align-items: center; line-height: 1;
 }
 
-.lang-selector { display: flex; gap: 8px; align-items: center; }
-.lang-btn { 
-  padding: 6px 14px; border: 1px solid var(--glass-border); 
-  color: #fff !important; text-decoration: none !important; 
-  font-size: 0.75rem; border-radius: 6px; font-weight: 700;
+.lang-selector { position: relative; margin-left: 1.5rem; }
+.lang-current { 
+  display: flex; align-items: center; gap: 8px; cursor: pointer;
+  padding: 8px 16px; border: 1px solid var(--glass-border);
+  border-radius: 50px; background: rgba(255,255,255,0.05);
+  color: #fff; font-size: 0.85rem; font-weight: 700; transition: 0.3s;
 }
-.lang-btn.active { background: var(--primary); border-color: var(--primary); color: var(--bg-dark) !important; }
+.lang-current:hover { background: rgba(255,255,255,0.1); border-color: var(--primary); }
+.lang-current i { font-size: 0.7rem; color: var(--primary); }
+
+.lang-dropdown { 
+  position: absolute; top: calc(100% + 10px); right: 0;
+  background: rgba(15, 23, 42, 0.95); backdrop-filter: blur(20px);
+  border: 1px solid var(--glass-border); border-radius: 12px;
+  min-width: 140px; padding: 10px; display: none;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+}
+.lang-dropdown.show { display: block; animation: slideIn 0.3s ease; }
+.lang-dropdown a { 
+  display: block; padding: 10px 15px; color: #fff !important;
+  text-decoration: none !important; font-size: 0.85rem;
+  border-radius: 6px; transition: 0.2s; opacity: 0.7;
+}
+.lang-dropdown a:hover { background: rgba(194, 163, 93, 0.1); opacity: 1; color: var(--primary) !important; }
+.lang-dropdown a.active { color: var(--primary) !important; font-weight: 700; opacity: 1; }
+
+@keyframes slideIn { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
 
 .hero {
   height: 70vh; display: flex; align-items: center; justify-content: center; text-align: center;

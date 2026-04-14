@@ -42,11 +42,34 @@ function initPremiumMarquee() {
     animationId = requestAnimationFrame(step);
   };
 
-  // Iniciar motor
-  animationId = requestAnimationFrame(step);
+  // Inicwindow.onload = function() {
+    // Dropdown Toggle
+    const langSelector = document.getElementById('langSelector');
+    const langDropdown = document.getElementById('langDropdown');
 
-  slider.addEventListener('mouseenter', () => { isHovered = true; });
-  slider.addEventListener('mouseleave', () => { isHovered = false; isDown = false; });
+    if (langSelector) {
+        langSelector.addEventListener('click', function(e) {
+            e.stopPropagation();
+            langDropdown.classList.toggle('show');
+        });
+    }
+
+    // Cerrar al hacer clic fuera
+    document.addEventListener('click', function() {
+        if (langDropdown && langDropdown.classList.contains('show')) {
+            langDropdown.classList.remove('show');
+        }
+    });
+
+    // Slider reviews (Marquee)
+    const marquee = document.querySelector('.marquee-inner');
+    if (marquee) {
+        let isPaused = false;
+        marquee.addEventListener('mouseenter', () => isPaused = true);
+        marquee.addEventListener('mouseleave', () => isPaused = false);
+    }
+}
+ isDown = false; });
 
   slider.addEventListener('mousedown', (e) => {
     isDown = true;
