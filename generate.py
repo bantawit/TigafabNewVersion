@@ -77,11 +77,14 @@ def get_list_html(key, lang):
 
 def get_review_cards():
     reviews_data = [
-        ("Marta (Google)", "Servicio impecable y muy profesional. Fátima resolvió la traducción jurada en tiempo récord."),
-        ("Mohamed (Google)", "Lo recomiendo 100% para cualquier gestión de traducción o visados Libia."),
-        ("Raúl (Google)", "Traducciones técnicas de alta calidad. Entienden perfectamente el lenguaje de ingeniería.")
+        ("Marta (Google)", "Servicio impecable y muy profesional. Fátima resolvió la traducción jurada de mis documentos en tiempo récord para un trámite urgente. Su trato y rapidez son excelentes."),
+        ("Mohamed (Google)", "Gente muy profesional y muy amable. Lo recomiendo 100% para cualquier gestión de traducción o visados. Me ayudaron con el registro en un tiempo récord."),
+        ("Juan Carlos (Google)", "Atención excepcional y rapidez. Necesitaba una traducción jurada de árabe a español para el ministerio y lo tuvieron listo antes del plazo. Rigurosos."),
+        ("Laila (Google)", "La mejor agencia de Madrid para árabe. Son extremadamente serios con los plazos de entrega, algo vital para licitaciones. Trato exquisito."),
+        ("Raúl (Google)", "Traducciones técnicas de alta calidad. Entienden perfectamente el lenguaje de ingeniería y construcción pesada."),
+        ("Constructor S.A. (Google)", "Indispensables para nuestras licitaciones en Libia. Su conocimiento del mercado nos ha permitido cerrar contratos con éxito.")
     ]
-    cards = "".join([f'<div class="review-card-premium"><div style="color:#c2a35d; margin-bottom:1rem;"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div><p>{txt}</p><strong>{name}</strong></div>' for name, txt in reviews_data])
+    cards = "".join([f'<div class="review-card-premium"><div style="color:#c2a35d; margin-bottom:1.1rem;"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div><p style="margin-bottom:1.5rem;">{txt}</p><div style="font-weight:700; color:var(--primary); font-size:0.9rem; border-top:1px solid rgba(255,255,255,0.1); padding-top:1rem;">{name}</div></div>' for name, txt in reviews_data])
     return cards * 4
 
 def generate_page(lang, filename, title_key, content):
