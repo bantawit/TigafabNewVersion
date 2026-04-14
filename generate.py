@@ -49,20 +49,20 @@ for lang in LANG_FOLDERS:
     rel_path = "../" if lang != 'es' else ""
     
     # 1. HOME
-    home = f"""<section class="hero"><div class="container" data-aos="fade-up"><p>t-hero-subtitle</p><h1>t-hero-title</h1><a href="contacto.html" class="btn-premium">t-home-cta-btn</a></div></section>
-    <section style="padding:10rem 0;"><div class="container" style="max-width:1150px;"><div style="display:grid; grid-template-columns:1.2fr 1fr; gap:5rem; align-items:start;"><div data-aos="fade-right"><h2>t-home-section-title</h2><p style="font-size:1.3rem; line-height:1.8; margin-bottom:2.5rem;">t-h1</p><div style="background:rgba(194,163,93,0.1); border-left:4px solid var(--primary); padding:2.5rem; margin-bottom:2.5rem;"><p style="font-size:1.5rem; font-weight:700; color:var(--primary); margin-bottom:1rem;">t-h2</p><p style="color:#f8fafc; font-size:1.1rem; line-height:1.6;">t-h3</p></div><p style="font-style:italic; color:#94a3b8; font-size:1.1rem;">t-h4</p></div><div data-aos="fade-left" style="background:rgba(255,255,255,0.02); border:1px solid var(--glass-border); padding:3.5rem; border-radius:24px; box-shadow: 0 10px 30px rgba(0,0,0,0.2);"><p style="margin-bottom:2.5rem; font-size:1.2rem; color:#f8fafc; line-height:1.8;">t-h5</p><p style="font-size:1.2rem; color:#94a3b8; line-height:1.8;">t-h6</p></div></div></div></section>
+    home = f"""<section class="hero hero-home"><div class="container" data-aos="fade-up"><p>t-hero-subtitle</p><h1>t-hero-title</h1><a href="contacto.html" class="btn-premium">t-home-cta-btn</a></div></section>
+    <section class="bg-home-about" style="padding:10rem 0;"><div class="container" style="max-width:1150px;"><div style="display:grid; grid-template-columns:1.2fr 1fr; gap:5rem; align-items:start;"><div data-aos="fade-right"><h2>t-home-section-title</h2><p style="font-size:1.3rem; line-height:1.8; margin-bottom:2.5rem;">t-h1</p><div style="background:rgba(194,163,93,0.1); border-left:4px solid var(--primary); padding:2.5rem; margin-bottom:2.5rem;"><p style="font-size:1.5rem; font-weight:700; color:var(--primary); margin-bottom:1rem;">t-h2</p><p style="color:#f8fafc; font-size:1.1rem; line-height:1.6;">t-h3</p></div><p style="font-style:italic; color:#94a3b8; font-size:1.1rem;">t-h4</p></div><div data-aos="fade-left" style="background:rgba(255,255,255,0.02); border:1px solid var(--glass-border); padding:3.5rem; border-radius:24px; box-shadow: 0 10px 30px rgba(0,0,0,0.2);"><p style="margin-bottom:2.5rem; font-size:1.2rem; color:#f8fafc; line-height:1.8;">t-h5</p><p style="font-size:1.2rem; color:#94a3b8; line-height:1.8;">t-h6</p></div></div></div></section>
     
-    <section style="padding:5rem 0 10rem 0;"><div class="container">
+    <section class="bg-home-clients" style="padding:5rem 0 10rem 0;"><div class="container">
     <div style="text-align:center; margin-bottom:5rem;" data-aos="fade-up"><h2>t-clients-title</h2><p style="letter-spacing:2px; font-weight:700; color:var(--primary);">t-clients-subtitle</p></div>
     <div class="clients-grid" style="opacity:0.8;">{get_clients_html(rel_path)}</div>
     <div style="text-align:center; margin-top:4rem;"><a href="clientes.html" class="btn-premium" style="padding:1rem 2rem; font-size:0.9rem;">t-clients-btn</a></div>
     </div></section>
 
-    <section style="padding-bottom:10rem;"><div class="container" style="text-align:center; margin-bottom:5rem;"><h2>t-reviews-title</h2><p style="letter-spacing:2px; font-weight:700; color:var(--primary);">t-exp-verificadas</p></div><div class="marquee-container"><div class="marquee-inner">{get_review_cards(t)}</div></div></section>"""
+    <section class="bg-home-reviews" style="padding:10rem 0;"><div class="container" style="text-align:center; margin-bottom:5rem;"><h2>t-reviews-title</h2><p style="letter-spacing:2px; font-weight:700; color:var(--primary);">t-exp-verificadas</p></div><div class="marquee-container"><div class="marquee-inner">{get_review_cards(t)}</div></div></section>"""
     generate_page(lang, "index.html", 'nav_home', home)
     
     # 2. QUIENES SOMOS
-    about = f"""<section class="hero" style="min-height:45vh; padding:100px 0;"><div class="container" data-aos="fade-up"><h1>t-about-title</h1><p>t-about-subtitle</p></div></section>
+    about = f"""<section class="hero hero-about" style="min-height:45vh; padding:100px 0;"><div class="container" data-aos="fade-up"><h1>t-about-title</h1><p>t-about-subtitle</p></div></section>
     <section style="padding:8rem 0;"><div class="container"><div style="display:grid; grid-template-columns:1fr 1.2fr; gap:6rem; align-items:start;">
     <div data-aos="fade-right" style="position:sticky; top:120px;">
         <div style="background:rgba(255,255,255,0.02); border:1px solid var(--glass-border); padding:3.5rem; border-radius:30px; backdrop-filter:blur(10px);">
@@ -96,7 +96,7 @@ for lang in LANG_FOLDERS:
     generate_page(lang, "quienes-somos.html", 'nav_about', about)
 
     # 3. CLIENTES
-    clients_sec = f"""<section class="hero" style="min-height:45vh; padding:100px 0;"><div class="container" data-aos="fade-up"><h1>t-clients-title</h1><p>t-clients-subtitle</p></div></section>
+    clients_sec = f"""<section class="hero hero-clients" style="min-height:45vh; padding:100px 0;"><div class="container" data-aos="fade-up"><h1>t-clients-title</h1><p>t-clients-subtitle</p></div></section>
     <section style="padding:10rem 0;"><div class="container">
     <div style="max-width:900px; margin: 0 auto 6rem auto; text-align:center; color:#94a3b8; font-size:1.2rem; line-height:2;" data-aos="fade-up">
         <p>t-clients-text</p>
@@ -106,7 +106,7 @@ for lang in LANG_FOLDERS:
     generate_page(lang, "clientes.html", 'nav_clients', clients_sec)
 
     # 4. SERVICIOS
-    srv = f"""<section class="hero" style="min-height:50vh; padding:120px 0;"><div class="container" data-aos="fade-up"><h1>t-srv-header-main</h1><p>t-srv-header-sub</p></div></section>
+    srv = f"""<section class="hero hero-services" style="min-height:50vh; padding:120px 0;"><div class="container" data-aos="fade-up"><h1>t-srv-header-main</h1><p>t-srv-header-sub</p></div></section>
     <section style="padding: 8rem 0; background: var(--bg-dark);"><div class="container"><div class="services-creative-grid">
     <div class="service-premium-box" data-aos="fade-up"><i class="fas fa-stamp"></i><h3>t-srv-jurada-title</h3><ul class="service-list-detailed">{get_list_html('srv_jurada_list', lang)}</ul></div>
     <div class="service-premium-box" data-aos="fade-up" data-aos-delay="100"><i class="fas fa-file-invoice"></i><h3>t-srv-tecnica-title</h3><ul class="service-list-detailed">{get_list_html('srv_tecnica_list', lang)}</ul></div>
@@ -120,7 +120,7 @@ for lang in LANG_FOLDERS:
     def itm(icon, title, content): return f'<div class="contact-item"><i class="fas {icon}"></i><div><h4>{title}</h4><div class="contact-details-content">{content}</div></div></div>'
     emails_html = "".join([f'<p>{e}</p>' for e in t.get('info_emails', [])])
     phones_html = "".join([f'<p class="contact-phone">{p}</p>' for p in t.get('info_phones', [])])
-    cont = f"""<section class="hero" style="min-height:45vh; padding:100px 0;"><div class="container"><h1>t-hero-contact-title</h1></div></section>
+    cont = f"""<section class="hero hero-contact" style="min-height:45vh; padding:100px 0;"><div class="container"><h1>t-hero-contact-title</h1></div></section>
     <section style="padding:8rem 0;"><div class="container"><div class="contact-grid">
     <div class="contact-info-box" data-aos="fade-right"><h2>t-contact-title</h2>{itm('fa-map-marker-alt', t.get('info_address_title_1'), f'<p>{t.get("info_address_text_1")}</p>')}{itm('fa-map-marker-alt', t.get('info_address_title_2'), f'<p>{t.get("info_address_text_2")}</p>')}{itm('fa-envelope', t.get('info_email_title'), emails_html)}{itm('fa-phone-alt', t.get('info_phone_title'), phones_html)}{itm('fa-fax', t.get('info_fax_title'), f'<p>{t.get("info_fax")}</p>')}</div>
     <div class="contact-form-premium" data-aos="fade-left"><form action="#" method="POST"><div class="form-group-premium"><input type="text" placeholder="{t['form_name']}" required></div><div class="form-group-premium"><input type="email" placeholder="{t['form_email']}" required></div><div class="form-group-premium"><input type="tel" placeholder="{t['form_phone']}"></div><div class="form-group-premium"><textarea rows="5" placeholder="{t['form_message']}" required></textarea></div><button type="submit" class="btn-premium" style="width:100%">t-form-btn</button></form></div>
@@ -128,7 +128,7 @@ for lang in LANG_FOLDERS:
     generate_page(lang, "contacto.html", 'nav_contact', cont)
     
     # 6. LOCALIZACION
-    loc = f"""<section class="hero" style="min-height:45vh; padding:100px 0;"><div class="container" data-aos="fade-up"><h1>t-loc-title</h1><p>t-loc-subtitle</p></div></section>
+    loc = f"""<section class="hero hero-loc" style="min-height:45vh; padding:100px 0;"><div class="container" data-aos="fade-up"><h1>t-loc-title</h1><p>t-loc-subtitle</p></div></section>
     <section style="padding:8rem 0;"><div class="container">
     <div style="display:grid; grid-template-columns: repeat(auto-fit, minmax(450px, 1fr)); gap:40px;">
         <div class="map-box-premium" data-aos="fade-right">
@@ -156,10 +156,10 @@ for lang in LANG_FOLDERS:
     generate_page(lang, "localizacion.html", 'nav_location', loc)
 
     # 7. LEGAL PAGES
-    legal_content_html = """<section class="hero" style="min-height:40vh; padding:100px 0;"><div class="container"><h1>t-legal-title</h1></div></section><section style="padding:8rem 0;"><div class="container legal-container">t-legal-body</div></section>"""
+    legal_content_html = """<section class="hero hero-legal" style="min-height:40vh; padding:100px 0;"><div class="container"><h1>t-legal-title</h1></div></section><section style="padding:8rem 0;"><div class="container legal-container">t-legal-body</div></section>"""
     generate_page(lang, "aviso-legal.html", 'legal_title', legal_content_html)
     
-    privacy_content_html = """<section class="hero" style="min-height:40vh; padding:100px 0;"><div class="container"><h1>t-privacy-title</h1></div></section><section style="padding:8rem 0;"><div class="container legal-container">t-privacy-body</div></section>"""
+    privacy_content_html = """<section class="hero hero-legal" style="min-height:40vh; padding:100px 0;"><div class="container"><h1>t-privacy-title</h1></div></section><section style="padding:8rem 0;"><div class="container legal-container">t-privacy-body</div></section>"""
     generate_page(lang, "politica-privacidad.html", 'privacy_title', privacy_content_html)
 
     # 7. LEGAL REDIRECTS (Compatibility with old links)
