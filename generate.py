@@ -218,7 +218,7 @@ index_html = """
     </div>
     
     <div style="white-space:nowrap; overflow:hidden; position:relative;">
-      <div style="display:inline-block; animation: marquee 30s linear infinite;">
+      <div class="marquee-inner" style="display:inline-block; animation: marquee 35s linear infinite;">
         <!-- Card 1 -->
         <div style="display:inline-block; width:400px; margin: 0 1rem; background:rgba(255,255,255,0.05); padding:2rem; border-radius:12px; border:1px solid rgba(255,255,255,0.1); white-space:normal; vertical-align:top;">
           <div style="color:#FFD700; margin-bottom:1rem;"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
@@ -245,7 +245,7 @@ index_html = """
         </div>
       </div>
       <!-- Clon para efecto infinito -->
-      <div style="display:inline-block; animation: marquee 30s linear infinite;">
+      <div class="marquee-inner" style="display:inline-block; animation: marquee 35s linear infinite;">
         <div style="display:inline-block; width:400px; margin: 0 1rem; background:rgba(255,255,255,0.05); padding:2rem; border-radius:12px; border:1px solid rgba(255,255,255,0.1); white-space:normal; vertical-align:top;">
           <div style="color:#FFD700; margin-bottom:1rem;"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
           <p style="font-style:italic; color:#cbd5e1; margin-bottom:1rem;">"t-review-1"</p>
