@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Services | TIGAFAB</title>
-  <link rel="stylesheet" href="../styles.css?v=21">
+  <link rel="stylesheet" href="../styles.css?v=22">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
   <style>
@@ -13,7 +13,8 @@
     .marquee-container { cursor: grab; overflow: hidden; display: flex; position: relative; width: 100%; white-space: nowrap; }
     .marquee-container:active { cursor: grabbing; }
     .marquee-inner { display: flex; flex-shrink: 0; flex-wrap: nowrap; }
-    .service-card { background: #fff; padding: 2.5rem; border-radius: 12px; box-shadow: 0 10px 30px rgba(0,0,0,0.05); transition: all 0.3s ease; text-decoration:none; display:block; height:100%; }
+    .service-card { background: #fff; padding: 2.5rem; border-radius: 12px; box-shadow: 0 10px 30px rgba(0,0,0,0.05); transition: all 0.3s ease; text-decoration:none; display:block; height:100%; color:inherit; }
+    .service-card:hover { transform: translateY(-10px); color: var(--primary); }
   </style>
 </head>
 <body class="page-servicios">
@@ -31,7 +32,53 @@
     </div>
   </nav>
 
-  <section style="padding:10rem 2rem; text-align:center;"><h1 style="font-size:3rem;">Services</h1></section>
+  
+  <section style="padding:10rem 2rem; background:var(--bg-dark); color:white; text-align:center;">
+    <div class="container" data-aos="zoom-in">
+      <h1 style="font-size:4rem; font-family:var(--font-heading);">Services</h1>
+      <p style="color:var(--primary); font-size:1.2rem;">Soluciones profesionales en 5 idiomas</p>
+    </div>
+  </section>
+  <section style="padding:6rem 2rem; background:var(--bg-light);">
+    <div class="container">
+      <div style="display:grid; grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); gap:3rem;">
+        <div class="service-card" data-aos="fade-up">
+          <div style="font-size:3rem; color:var(--primary); margin-bottom:1rem;"><i class="fas fa-file-contract"></i></div>
+          <h2 style="font-size:1.8rem; margin-bottom:1rem;">Sworn Translations</h2>
+          <p style="margin-bottom:1rem; color:#4a5568;">Certified texts and documentation with legal validity.</p>
+          <ul style="list-style:none; padding:0; line-height:2;">
+            <li><i class="fas fa-check" style="color:green; margin-right:10px;"></i> Pasaportes y Títulos</li>
+            <li><i class="fas fa-check" style="color:green; margin-right:10px;"></i> Escrituras y Poderes</li>
+          </ul>
+        </div>
+        <div class="service-card" data-aos="fade-up" data-aos-delay="100">
+          <div style="font-size:3rem; color:var(--primary); margin-bottom:1rem;"><i class="fas fa-gears"></i></div>
+          <h2 style="font-size:1.8rem; margin-bottom:1rem;">Technical Translations</h2>
+          <p style="margin-bottom:1rem; color:#4a5568;">Specialists in manuals and corporate texts.</p>
+          <ul style="list-style:none; padding:0; line-height:2;">
+            <li><i class="fas fa-check" style="color:green; margin-right:10px;"></i> Manuales Industriales</li>
+            <li><i class="fas fa-check" style="color:green; margin-right:10px;"></i> Textos Científicos</li>
+          </ul>
+        </div>
+        <div class="service-card" data-aos="fade-up" data-aos-delay="200">
+          <div style="font-size:3rem; color:var(--primary); margin-bottom:1.5rem;"><i class="fas fa-passport"></i></div>
+          <h2 style="font-size:1.8rem; margin-bottom:1rem;">Visa Management</h2>
+          <p style="margin-bottom:1rem; color:#4a5568;">Consular procedures and legalizations.</p>
+        </div>
+        <div class="service-card" data-aos="fade-up">
+          <div style="font-size:3rem; color:var(--primary); margin-bottom:1.5rem;"><i class="fas fa-building-columns"></i></div>
+          <h2 style="font-size:1.8rem; margin-bottom:1rem;">Document Management</h2>
+          <p style="margin-bottom:1rem; color:#4a5568;">Direct bureaucracy with ministries and embassies.</p>
+        </div>
+        <div class="service-card" data-aos="fade-up" data-aos-delay="100">
+          <div style="font-size:3rem; color:var(--primary); margin-bottom:1.5rem;"><i class="fas fa-briefcase"></i></div>
+          <h2 style="font-size:1.8rem; margin-bottom:1rem;">Libya Consulting</h2>
+          <p style="margin-bottom:1rem; color:#4a5568;">Experts in business setup for the Libyan market.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <footer style="background:var(--bg-dark); color:white; padding:4rem 2rem; text-align:center;">
     <div style="font-family:var(--font-heading); font-size:2rem; margin-bottom:1rem;">TIGAFAB<span>.</span></div>
     <p>© 2026 TIGAFAB S.L. All rights reserved.</p>
@@ -41,7 +88,7 @@
     </div>
   </footer>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
-  <script src="../js/main.js?v=21"></script>
+  <script src="../js/main.js?v=22"></script>
   <script>AOS.init();</script>
 </body>
 </html>
