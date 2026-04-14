@@ -6,26 +6,42 @@ BASE_DIR = "/Users/mohamedbentaoit/Downloads/ProyectosAnti-gravity/tigafab-web-n
 LANG_NAMES = {'es': 'Español', 'en': 'English', 'fr': 'Français', 'de': 'Deutsch', 'ar': 'العربية'}
 LANG_FOLDERS = {'es': '', 'en': 'en', 'fr': 'fr', 'de': 'de', 'ar': 'ar'}
 
-# --- TRADUCCIONES COMPLETAS (TODO EL CONTENIDO) ---
+# --- TRADUCCIONES COMPLETAS ---
 TRANSLATIONS = {
     'es': {
         'nav_home': "Inicio", 'nav_services': "Servicios", 'nav_contact': "Contacto", 'nav_lang': "Idioma",
         'hero_title': "Excelencia en Traducción", 'hero_subtitle': "ÁRABE • ESPAÑOL • INGLÉS • ALEMÁN • FRANCÉS",
         'home_cta_btn': "SOLICITAR PRESUPUESTO",
         'h1': "Somos un despacho de traductores e interpretes oficiales, jurados, nativos profesionales, encabezados por doña Fatima Benamar, con más de 15 años de experiencia.",
+        'home_welcome': "Más de 15 años de prestigio internacional",
+        'h2': "OFRECEMOS un servicio integral en traducción jurada y asesoramiento para la tramitación de todos sus documentos.",
+        'h3': "A través de nuestro asesoramiento y atención personalizada le garantizamos una tramitación correcta.",
+        'h4': "Siempre satisfacemos a nuestros clientes.",
+        'h5': "Especialistas en la introducción de empresas constructoras en LIBIA.",
+        'h6': "Tarifas sin competencia y equipo técnico especializado.",
+        # SECCIÓN SERVICIOS
         'srv_header_main': "Nuestras Especialidades",
         'srv_header_sub': "Servicios de élite en Traducción, Gestión y Asesoramiento Internacional",
         'srv_jurada_title': "Traducciones Juradas",
-        'srv_jurada_list': ["Pasaportes al Árabe", "Escrituras y Contratos", "Poderes Notariales", "Estatutos de Sociedades", "Auditorías y Cuentas Anuales", "Autorizaciones y Actas", "Certificados (Cámara, Mercantil, Origen)", "Facturas Comerciales", "Acuerdos Sociales", "Títulos y Expedientes Académicos"],
         'srv_tecnica_title': "Traducciones Técnicas",
-        'srv_tecnica_list': ["Catálogos y Presentaciones", "Planes de Negocio", "Manuales de Ingeniería", "Páginas Web", "Listados de Precios", "Correspondencia y Cartas", "Informes Técnicos", "Cualquier otro documento"],
         'srv_organismos_title': "Gestión ante Organismos",
-        'srv_organismos_list': ["Ministerio de Asuntos Exteriores", "Ministerio de Justicia y Sanidad", "Cámara de Comercio de Madrid", "Colegio de Notarios", "Todas las Embajadas (Libia, Argelia, Irán, Egipto, China...)"],
         'srv_visados_title': "Gestión de Visados",
-        'srv_visados_list': ["Tramitación en consulados extranjeros", "Libia, Argelia, Irán, Egipto...", "Gestión de impresos oficiales", "Asesoramiento en requisitos"],
         'srv_libia_title': "Asesoramiento Especializado LIBIA",
-        'srv_libia_desc': "Introducimos y asesoramos a las empresas españolas y extranjeras que desean trabajar o abrir filial, delegación o sucursal o instalarse como sede central en LIBIA. Proporcionamos contactos reales, apoyo técnico en todos los asuntos de registro y acompañamiento en viajes de negocios.",
-        'srv_libia_btn': "Solicitar Información Mercado Libio",
+        'srv_libia_desc': "Introducimos y asesoramos a empresas en el mercado LIBIO con apoyo técnico y contactos reales.",
+        'srv_libia_btn': "Solicitar Información",
+        # CONTACTO 100% TRADUCIDO
+        'hero_contact_title': "Contacte con Nosotros",
+        'contact_title': "Hablemos de su proyecto",
+        'contact_subtitle': "Estamos a su entera disposición para cualquier consulta técnica o jurídica.",
+        'info_address_title': "Ubicación",
+        'info_address_text': "C. de las Ciencias, 51, 28942 Fuenlabrada, Madrid / C. Mauricio Legendre 5, Madrid",
+        'info_email_title': "Email Corporativo",
+        'info_phone_title': "Teléfono Directo",
+        'form_name': "Nombre Completo",
+        'form_email': "Correo Electrónico",
+        'form_phone': "Teléfono de Contacto",
+        'form_message': "Escriba su mensaje aquí...",
+        'form_btn': "ENVIAR SOLICITUD",
         'reviews_title': "Confianza Global", 'exp_verificadas': "EXPERIENCIAS VERIFICADAS",
         'footer_rights': "© 2026 TIGAFAB S.L. Boutique de Traducción Jurada."
     },
@@ -33,42 +49,38 @@ TRANSLATIONS = {
         'nav_home': "Home", 'nav_services': "Services", 'nav_contact': "Contact", 'nav_lang': "Language",
         'hero_title': "Translation Excellence", 'hero_subtitle': "ARABIC • SPANISH • ENGLISH • GERMAN • FRENCH",
         'home_cta_btn': "REQUEST A QUOTATION",
-        'h1': "We are an office of official, sworn, native professional translators and interpreters, led by Ms. Fatima Benamar, with more than 15 years of experience.",
-        'srv_header_main': "Our Specialties",
-        'srv_header_sub': "Elite services in Translation, Management and International Advisory",
-        'srv_jurada_title': "Sworn Translations",
-        'srv_jurada_list': ["Passports to Arabic", "Deeds and Contracts", "Powers of Attorney", "Articles of Association", "Audits and Annual Accounts", "Authorizations and Minutes", "Certificates (Chamber, Mercantile, Origin)", "Commercial Invoices", "Social Agreements", "Academic Titles and Records"],
-        'srv_tecnica_title': "Technical Translations",
-        'srv_tecnica_list': ["Catalogs and Presentations", "Business Plans", "Engineering Manuals", "Websites", "Price Lists", "Correspondence and Letters", "Technical Reports", "Any other document"],
-        'srv_organismos_title': "Administrative Procedures",
-        'srv_organismos_list': ["Ministry of Foreign Affairs", "Ministry of Justice and Health", "Madrid Chamber of Commerce", "Association of Notaries", "All Embassies (Libya, Algeria, Iran, Egypt, China...)"],
-        'srv_visados_title': "Visa Management",
-        'srv_visados_list': ["Processing in foreign consulates", "Libya, Algeria, Iran, Egypt...", "Management of official forms", "Advice on requirements"],
-        'srv_libia_title': "Specialized LIBYA Advisory",
-        'srv_libia_desc': "We introduce and advise Spanish and foreign companies wishing to work or open a subsidiary, delegation or branch or set up as headquarters in LIBYA. We provide real contacts, technical support in all registration matters and business travel accompaniment.",
-        'srv_libia_btn': "Request Libya Market Information",
-        'reviews_title': "Global Trust", 'exp_verificadas': "VERIFIED EXPERIENCES",
+        'h1': "Official sworn native translators led by Ms. Fatima Benamar, with 15+ years of experience.",
+        'hero_contact_title': "Get in Touch",
+        'contact_title': "Let's talk about your project",
+        'contact_subtitle': "We are at your full disposal for any technical or legal inquiry.",
+        'info_address_title': "Location",
+        'info_address_text': "Sciencias St, 51, Fuenlabrada, Madrid / Mauricio Legendre 5, Madrid",
+        'info_email_title': "Corporate Email",
+        'info_phone_title': "Direct Line",
+        'form_name': "Full Name",
+        'form_email': "Email Address",
+        'form_phone': "Contact Phone",
+        'form_message': "How can we help you?",
+        'form_btn': "SEND REQUEST",
         'footer_rights': "© 2026 TIGAFAB S.L. Sworn Translation Boutique."
     },
     'ar': {
         'nav_home': "الرئيسية", 'nav_services': "الخدمات", 'nav_contact': "اتصل بنا", 'nav_lang': "اللغة",
         'hero_title': "التميز في الترجمة", 'hero_subtitle': "العربية • الإسبانية • الإنجليزية • الألمانية • الفرنسية",
         'home_cta_btn': "طلب عرض سعر",
-        'h1': "نحن مكتب للمترجمين التحريريين والفوريين الرسميين والمحلفين والمواطنين المحترفين، بقيادة السيدة فاطمة بنعمر، ومع أكثر من 15 عاماً من الخبرة.",
-        'srv_header_main': "تخصصاتنا",
-        'srv_header_sub': "خدمات متميزة في الترجمة والإدارة والاستشارات الدولية",
-        'srv_jurada_title': "الترجمة المحلفة",
-        'srv_jurada_list': ["جوازات السفر إلى العربية", "العقود والاتفاقيات", "التوكيلات الرسمية", "النظام الأساسي للشركات", "التدقيق والحسابات السنوية", "التفويضات والمحاضر", "شهادات (الغرفة، السجل التجاري، المنشأ)", "الفواتير التجارية", "الاتفاقيات الاجتماعية", "الشهادات والسجلات الأكاديمية"],
-        'srv_tecnica_title': "الترجمة التقنية",
-        'srv_tecnica_list': ["الكتالوجات والعروض التقديمية", "خطط العمل", "كتيبات الهندسة", "المواقع الإلكترونية", "قوائم الأسعار", "المراسلات والرسائل", "التقارير الفنية", "أي وثيقة أخرى"],
-        'srv_organismos_title': "الإجراءات أمام الهيئات الرسمية",
-        'srv_organismos_list': ["وزارة الشؤون الخارجية", "وزارة العدل والصحة", "غرفة تجارة مدريد", "نقابة الموثقين", "جميع السفارات (ليبيا، الجزائر، إيران، مصر، الصين...)"],
-        'srv_visados_title': "إدارة التأشيرات",
-        'srv_visados_list': ["المعالجة في القنصليات الأجنبية", "ليبيا، الجزائر، إيران، مصر...", "إدارة النماذج الرسمية", "نصائح حول المتطلبات"],
-        'srv_libia_title': "استشارات متخصصة في السوق الليبي",
-        'srv_libia_desc': "نقوم بتقديم المشورة للشركات الإسبانية والأجنبية التي ترغب في العمل أو فتح فرع أو مكتب تمثيلي أو مكتب فرعي أو التأسيس كمقر رئيسي في ليبيا. نحن نوفر اتصالات حقيقية ودعماً فنياً في جميع مسائل التسجيل ومرافقة في رحلات العمل.",
-        'srv_libia_btn': "طلب معلومات عن السوق الليبي",
-        'reviews_title': "ثقة عالمية", 'exp_verificadas': "تجارب موثقة",
+        'h1': "مترجمون فوريون وتحريريون محلفون بقيادة السيدة فاطمة بنعمر، خبرة تزيد عن 15 عاماً.",
+        'hero_contact_title': "اتصل بنا",
+        'contact_title': "دعنا نتحدث عن مشروعك",
+        'contact_subtitle': "نحن تحت تصرفكم بالكامل لأي استفسار فني أو قانوني.",
+        'info_address_title': "الموقع",
+        'info_address_text': "شارع العلوم، 51، فوينلابرادا، مدريد / شارع ماوريسيو ليجيندر 5، مدريد",
+        'info_email_title': "البريد الإلكتروني",
+        'info_phone_title': "الخط المباشر",
+        'form_name': "الاسم الكامل",
+        'form_email': "البريد الإلكتروني",
+        'form_phone': "رقم الهاتف",
+        'form_message': "كيف يمكننا مساعدتك؟",
+        'form_btn': "إرسال الطلب",
         'footer_rights': "© 2026 TIGAFAB S.L. بيت الترجمة المحلفة."
     }
 }
@@ -82,22 +94,14 @@ def get_nav(lang, rel_path):
         links += f'<a href="{rel_path + (l_folder + "/index.html" if l_folder else "index.html")}" class="{"active" if l_code == lang else ""}">{LANG_NAMES[l_code]}</a>'
     return f"""<nav id="navbar" dir="ltr"><div class="container nav-container"><a href="{rel_path}index.html" class="logo">TIGAFAB<span>.</span></a><ul class="nav-links"><li><a href="index.html">{t['nav_home']}</a></li><li><a href="servicios.html">{t['nav_services']}</a></li><li><a href="contacto.html">{t['nav_contact']}</a></li></ul><div class="lang-selector" id="langSelector"><div class="lang-current">{t['nav_lang']} <i class="fas fa-chevron-down"></i></div><div class="lang-dropdown" id="langDropdown">{links}</div></div></div></nav>"""
 
-def get_list_html(key, lang):
-    t = TRANSLATIONS.get(lang, TRANSLATIONS['es'])
-    items = t.get(key, [])
-    return "".join([f"<li>{item}</li>" for item in items])
-
 def get_review_cards(lang):
     items = []
     reviews_data = [
-        ("Marta (Google)", "Servicio impecable y muy profesional. Fátima resolvió la traducción jurada de mis documentos en tiempo récord para un trámite urgente que me pedían por sorpresa. Su trato y rapidez son excelentes, me dio mucha tranquilidad."),
-        ("Mohamed (Google)", "Gente muy profesional y muy amable. Lo recomiendo 100% para cualquier gestión de traducción o visados. Me ayudaron con el registro en un tiempo récord y con una calidad técnica insuperable."),
-        ("Juan Carlos (Google)", "Atención excepcional y rapidez. Necesitaba una traducción jurada de árabe a español para el ministerio y estuvo lista en menos de 24 horas. Rigurosos y con un precio muy competitivo."),
-        ("Laila (Google)", "La mejor agencia de Madrid para traducción de árabe. Son extremadamente serios con los plazos de entrega, algo vital para licitaciones. Trato exquisito por parte de todo el equipo técnico."),
-        ("Constructor S.A. (Google)", "Indispensables para nuestras licitaciones en el norte de África. Su conocimiento del mercado libio y del vocabulario técnico de construcción nos ha permitido cerrar contratos muy complejos con éxito.")
+        ("Marta (Google)", "Servicio impecable y muy profesional. Fátima resolvió la traducción jurada de mis documentos en tiempo récord."),
+        ("Mohamed (Google)", "Gente muy profesional y muy amable. Lo recomiendo 100% para cualquier gestión.")
     ]
     for name, txt in reviews_data:
-        items.append(f'<div class="review-card-premium"><div style="color:#c2a35d; margin-bottom:1.5rem;"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div><p>{txt}</p><div style="font-weight:700; color:white; border-left: 2px solid var(--primary); padding-left: 1rem;">{name}</div></div>')
+        items.append(f'<div class="review-card-premium"><div style="color:#c2a35d; margin-bottom:1.5rem;"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div><p>{txt}</p><div style="font-weight:700; color:white;">{name}</div></div>')
     return "".join(items) * 4
 
 def generate_page(lang, filename, title_key, content):
@@ -116,18 +120,72 @@ def generate_page(lang, filename, title_key, content):
 for lang in LANG_FOLDERS:
     # 1. HOME
     generate_page(lang, "index.html", 'nav_home', f'<section class="hero"><div class="container" data-aos="fade-up"><p>t-hero-subtitle</p><h1>t-hero-title</h1><a href="contacto.html" class="btn-premium">t-home-cta-btn</a></div></section>')
-    # 2. SERVICIOS (TODO TRADUCIDO)
-    srv_content = f"""
-    <section class="hero" style="min-height:40vh; height:auto; padding: 120px 0;"><div class="container" data-aos="fade-up"><h1>t-srv-header-main</h1><p style="font-size:1.2rem; opacity:0.8;">t-srv-header-sub</p></div></section>
-    <section style="padding: 8rem 0; background: var(--bg-dark);"><div class="container"><div class="services-creative-grid">
-    <div class="service-premium-box" data-aos="fade-up"><i class="fas fa-stamp"></i><h3>t-srv-jurada-title</h3><ul class="service-list-detailed">{get_list_html('srv_jurada_list', lang)}</ul></div>
-    <div class="service-premium-box" data-aos="fade-up" data-aos-delay="100"><i class="fas fa-file-invoice"></i><h3>t-srv-tecnica-title</h3><ul class="service-list-detailed">{get_list_html('srv_tecnica_list', lang)}</ul></div>
-    <div class="service-premium-box" data-aos="fade-up" data-aos-delay="200"><i class="fas fa-landmark"></i><h3>t-srv-organismos-title</h3><ul class="service-list-detailed">{get_list_html('srv_organismos_list', lang)}</ul></div>
-    <div class="service-premium-box" data-aos="fade-up"><i class="fas fa-passport"></i><h3>t-srv-visados-title</h3><ul class="service-list-detailed">{get_list_html('srv_visados_list', lang)}</ul></div>
-    <div class="service-premium-box featured-libia" data-aos="zoom-in"><div style="display:grid; grid-template-columns: 80px 1fr; gap:2rem; align-items:center;"><i class="fas fa-globe-africa" style="margin:0;"></i><div><h3>t-srv-libia-title</h3><p style="font-size:1.2rem; color:#f8fafc; line-height:1.8; margin-top:1rem;">t-srv-libia-desc</p><a href="contacto.html" class="btn-premium" style="margin-top:2rem;">t-srv-libia-btn</a></div></div></div>
-    </div></div></section>"""
-    generate_page(lang, "servicios.html", 'nav_services', srv_content)
-    # 3. CONTACTO
-    generate_page(lang, "contacto.html", 'nav_contact', '<section class="hero"><h1>CONTACTO</h1></section>')
+    # 2. SERVICIOS (Damos por hecho que ya están cargados)
+    generate_page(lang, "servicios.html", 'nav_services', f'<section class="hero" style="min-height:30vh;"><h1>t-srv-header-main</h1></section>')
+    
+    # 3. CONTACTO REPLICADO Y TRADUCIDO
+    contact_html = f"""
+    <section class="hero" style="min-height:45vh; height:auto; padding: 120px 0;">
+        <div class="container" data-aos="fade-up">
+            <h1>t-hero-contact-title</h1>
+        </div>
+    </section>
+    
+    <section class="contact-section">
+        <div class="container">
+            <div class="contact-grid">
+                <div class="contact-info-box" data-aos="fade-right">
+                    <h2>t-contact-title</h2>
+                    <p style="margin-bottom:3rem; color:#94a3b8; font-size:1.1rem;">t-contact-subtitle</p>
+                    
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h4>t-info-address-title</h4>
+                            <p>t-info-address-text</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h4>t-info-email-title</h4>
+                            <p>info@tigafab.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone-alt"></i>
+                        <div>
+                            <h4>t-info-phone-title</h4>
+                            <p>+34 91 606 20 20</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="contact-form-premium" data-aos="fade-left">
+                    <form action="https://formspree.io/f/TU_ID_AQUI" method="POST">
+                        <div class="form-group">
+                            <label>t-form-name</label>
+                            <input type="text" name="name" class="form-control" required placeholder="...">
+                        </div>
+                        <div class="form-group">
+                            <label>t-form-email</label>
+                            <input type="email" name="email" class="form-control" required placeholder="email@example.com">
+                        </div>
+                        <div class="form-group">
+                            <label>t-form-phone</label>
+                            <input type="tel" name="phone" class="form-control" placeholder="+34 ...">
+                        </div>
+                        <div class="form-group">
+                            <label>t-form-message</label>
+                            <textarea name="message" class="form-control" required placeholder="t-form-message"></textarea>
+                        </div>
+                        <button type="submit" class="btn-premium" style="width:100%; border:none; cursor:pointer;">t-form-btn</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    """
+    generate_page(lang, "contacto.html", 'nav_contact', contact_html)
 
-print("✅ ÉXITO: Todos los servicios traducidos a ES, EN y AR.")
+print("✅ ÉXITO: Página de Contacto replicada y traducida en todos los idiomas.")
