@@ -2,7 +2,7 @@ import os
 
 BASE_DIR = "/Users/mohamedbentaoit/Downloads/ProyectosAnti-gravity/tigafab-web-nueva"
 
-# --- DICCIONARIO MAESTRO 100% ÍNTEGRO (SIN CORTES) ---
+# --- DICCIONARIO MAESTRO ---
 TRANSLATIONS = {
     'es': {
         'nav_home': "Inicio", 'nav_services': "Servicios", 'nav_contact': "Contacto", 'nav_location': "Localización",
@@ -71,15 +71,21 @@ LANG_FOLDERS = {'es': '', 'en': 'en', 'fr': 'fr', 'de': 'de', 'ar': 'ar'}
 def get_nav(lang, rel_path):
     t = TRANSLATIONS.get(lang, TRANSLATIONS['es'])
     links = ""
-    for l_code, l_folder in LANG_FOLDERS.items():
+    # Mantenemos el orden ES, EN, FR, DE, AR siempre
+    for l_code in ['es', 'en', 'fr', 'de', 'ar']:
+        l_folder = LANG_FOLDERS[l_code]
         links += f'<a href="{rel_path + (l_folder + "/index.html" if l_folder else "index.html")}" class="lang-btn {"active" if l_code == lang else ""}">{l_code.upper()}</a>'
-    return f"""<nav id="navbar"><div class="container nav-container"><a href="{rel_path}index.html" class="logo">TIGAFAB<span>.</span></a><ul class="nav-links"><li><a href="index.html">{t['nav_home']}</a></li><li><a href="servicios.html">{t['nav_services']}</a></li><li><a href="contacto.html">{t['nav_contact']}</a></li><li><a href="localizacion.html">{t['nav_location']}</a></li><li><div class="lang-selector">{links}</div></li></ul></div></nav>"""
+    
+    # Forzamos dir="ltr" en el navbar para que no se invierta el logo
+    return f"""<nav id="navbar" dir="ltr"><div class="container nav-container"><a href="{rel_path}index.html" class="logo">TIGAFAB<span>.</span></a><ul class="nav-links"><li><a href="index.html">{t['nav_home']}</a></li><li><a href="servicios.html">{t['nav_services']}</a></li><li><a href="contacto.html">{t['nav_contact']}</a></li><li><a href="localizacion.html">{t['nav_location']}</a></li><li><div class="lang-selector">{links}</div></li></ul></div></nav>"""
 
 def generate_page(lang, filename, title_key, content):
     rel_path = "../" if lang != 'es' else ""
     t = TRANSLATIONS.get(lang, TRANSLATIONS['es'])
     t_es = TRANSLATIONS['es']
-    full_html = f"""<!DOCTYPE html><html lang="{lang}" dir="{'rtl' if lang=='ar' else 'ltr'}"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>{t[title_key]} | TIGAFAB</title><link rel="stylesheet" href="{rel_path}styles.css?v={os.urandom(2).hex()}"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"><link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Inter:wght@400;500;700&display=swap" rel="stylesheet"><link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet"></head><body>{get_nav(lang, rel_path)}<main>{content}</main><footer style="background: rgba(0,0,0,0.2); backdrop-filter: blur(10px); color:white; padding:4rem 2rem; text-align:center; border-top: 1px solid rgba(255,255,255,0.05);"><div style="font-family: 'Playfair Display', serif; font-size:2rem; margin-bottom:1rem;">TIGAFAB<span style="color:#c2a35d;">.</span></div><p>{t['footer_rights']}</p></footer><script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script><script src="{rel_path}js/main.js?v=999"></script><script>AOS.init();</script></body></html>"""
+    # Solo el cuerpo de la página será RTL para árabe, el encabezado será LTR fijo
+    is_rtl = 'dir="rtl"' if lang == 'ar' else 'dir="ltr"'
+    full_html = f"""<!DOCTYPE html><html lang="{lang}" {is_rtl}><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>{t[title_key]} | TIGAFAB</title><link rel="stylesheet" href="{rel_path}styles.css?v={os.urandom(2).hex()}"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"><link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Inter:wght@400;500;700&display=swap" rel="stylesheet"><link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet"></head><body>{get_nav(lang, rel_path)}<main>{content}</main><footer style="background: rgba(0,0,0,0.2); backdrop-filter: blur(10px); color:white; padding:4rem 2rem; text-align:center; border-top: 1px solid rgba(255,255,255,0.05);"><div style="font-family: 'Playfair Display', serif; font-size:2rem; margin-bottom:1rem;">TIGAFAB<span style="color:#c2a35d;">.</span></div><p>{t['footer_rights']}</p></footer><script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script><script src="{rel_path}js/main.js?v=999"></script><script>AOS.init();</script></body></html>"""
     merged_t = t_es.copy(); merged_t.update(t)
     for k in sorted(merged_t.keys(), key=len, reverse=True): 
         full_html = full_html.replace(f't-{k.replace("_","-")}', str(merged_t[k]))
@@ -102,4 +108,4 @@ for lang in LANG_FOLDERS:
     generate_page(lang, "servicios.html", 'nav_services', '<section class="hero"><h1>t-srv-header</h1></section>')
     for p in ["contacto.html", "localizacion.html", "aviso-legal.html", "privacidad.html"]: generate_page(lang, p, 'nav_home', f'<section class="hero"><h1>{p}</h1></section>')
 
-print("✅ ÉXITO: Contenido 100% íntegro restaurado en árabe y todos los idiomas.")
+print("✅ ÉXITO: Encabezado fijado LTR. Logo a la izquierda siempre, incluso en Árabe.")
