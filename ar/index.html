@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>الرئيسية | TIGAFAB</title>
-  <link rel="stylesheet" href="../styles.css?v=16">
+  <link rel="stylesheet" href="../styles.css?v=17">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
   <style>
@@ -12,7 +12,7 @@
     [lang="ar"] { font-family: 'Tajawal', sans-serif !important; }
     .marquee-container { cursor: grab; overflow: hidden; display: flex; position: relative; width: 100%; white-space: nowrap; }
     .marquee-container:active { cursor: grabbing; }
-    .marquee-inner { display: flex; flex-shrink: 0; }
+    .marquee-inner { display: flex; flex-shrink: 0; flex-wrap: nowrap; }
     .service-card { background: #fff; padding: 2.5rem; border-radius: 12px; box-shadow: 0 10px 30px rgba(0,0,0,0.05); transition: all 0.3s ease; text-decoration:none; display:block; height:100%; }
   </style>
 </head>
@@ -72,7 +72,7 @@
     
     <div class="marquee-container" id="reviewSlider">
       <div class="marquee-inner">
-        <!-- Grupo 1 -->
+        <!-- Bloque 1 (4 reseñas) -->
         <div style="flex:0 0 450px; margin: 0 1rem; background:rgba(255,255,255,0.05); padding:2rem; border-radius:12px; border:1px solid rgba(255,255,255,0.1); white-space:normal;">
           <div style="color:#FFD700; margin-bottom:1rem;"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
           <p style="font-style:italic; color:#cbd5e1; margin-bottom:1.5rem;">"خدمة مثالية واحترافية للغاية. أنجزت فاطمة الترجمة المحلفة لوثائقي في وقت قياسي."</p>
@@ -93,7 +93,7 @@
           <p style="font-style:italic; color:#cbd5e1; margin-bottom:1.5rem;">"فريق رائع من المترجمين المحترفين. أنجزوا جميع أوراق الهجرة بسرعة كبيرة."</p>
           <div style="font-weight:700;">Ana M.</div>
         </div>
-        <!-- Duplicado -->
+        <!-- Bloque 2 (Mismas 4 reseñas - DUPLICADO EXACTO) -->
         <div style="flex:0 0 450px; margin: 0 1rem; background:rgba(255,255,255,0.05); padding:2rem; border-radius:12px; border:1px solid rgba(255,255,255,0.1); white-space:normal;">
           <div style="color:#FFD700; margin-bottom:1rem;"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
           <p style="font-style:italic; color:#cbd5e1; margin-bottom:1.5rem;">"خدمة مثالية واحترافية للغاية. أنجزت فاطمة الترجمة المحلفة لوثائقي في وقت قياسي."</p>
@@ -103,6 +103,16 @@
           <div style="color:#FFD700; margin-bottom:1rem;"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
           <p style="font-style:italic; color:#cbd5e1; margin-bottom:1.5rem;">"نعتمد على تيگافاب منذ سنوات في استخراج التأشيرات والترجمة التقنية للغة العربية."</p>
           <div style="font-weight:700;">Construction Group</div>
+        </div>
+        <div style="flex:0 0 450px; margin: 0 1rem; background:rgba(255,255,255,0.05); padding:2rem; border-radius:12px; border:1px solid rgba(255,255,255,0.1); white-space:normal;">
+          <div style="color:#FFD700; margin-bottom:1rem;"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+          <p style="font-style:italic; color:#cbd5e1; margin-bottom:1.5rem;">"تعامل مباشر وأسعار ممتازة. ساعدوني كثيراً في تسجيل فرع شركتي في ليبيا."</p>
+          <div style="font-weight:700;">Carlos S.</div>
+        </div>
+        <div style="flex:0 0 450px; margin: 0 1rem; background:rgba(255,255,255,0.05); padding:2rem; border-radius:12px; border:1px solid rgba(255,255,255,0.1); white-space:normal;">
+          <div style="color:#FFD700; margin-bottom:1rem;"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+          <p style="font-style:italic; color:#cbd5e1; margin-bottom:1.5rem;">"فريق رائع من المترجمين المحترفين. أنجزوا جميع أوراق الهجرة بسرعة كبيرة."</p>
+          <div style="font-weight:700;">Ana M.</div>
         </div>
       </div>
     </div>
@@ -124,7 +134,7 @@
     </div>
   </footer>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
-  <script src="../js/main.js?v=16"></script>
+  <script src="../js/main.js?v=17"></script>
   <script>AOS.init();</script>
 </body>
 </html>

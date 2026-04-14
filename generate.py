@@ -56,7 +56,7 @@ TRANSLATIONS = {
         'review_1': "Service impeccable et très professionnel. Fatima a résolu la traduction assermentée en un temps record.",
         'review_2': "Nous faisons confiance à Tigafab depuis des années pour les visas et la traduction technique vers l'arabe.",
         'review_3': "Excellent accueil et très bons tarifs. Ils m'ont beaucoup aidé pour l'enregistrement de ma filiale en Libye.",
-        'review_4': "Grande équipe de traducteurs professionnels. Ils ont résolu mes dossiers d'immigration très rapidement."
+        'review_4': "Grande equipo de traductores profesionales. Ils ont résolu mes dossiers d'immigration très rapidement."
     },
     'de': {
         'nav_home': "Startseite", 'nav_services': "Dienstleistungen", 'nav_contact': "Kontakt", 'nav_location': "Standort",
@@ -71,10 +71,10 @@ TRANSLATIONS = {
         'srv_visa': "Visum-Management", 'srv_visa_short': "Konsularische Verfahrung und Beglaubigungen.",
         'footer_rights': "© 2026 TIGAFAB S.L. Alle Rechte vorbehalten.",
         'exp_verificadas': "VERIFIZIERTE ERFAHRUNGEN",
-        'review_1': "Tadelloser und sehr professioneller Service. Fatima hat die Übersetzung in Rekordzeit erledigt.",
+        'review_1': "Tadelloser und muy professioneller Service. Fatima hat die Übersetzung in Rekordzeit erledigt.",
         'review_2': "Wir verlassen uns seit Jahren auf Tigafab für Visa und technische Arabisch-Übersetzungen.",
-        'review_3': "Direkter Kontakt und sehr gute Preise. Sehr hilfreich bei der Gründung meiner Niederlassung in Libyen.",
-        'review_4': "Großartiges Team von professionellen Übersetzern. Immigrationsthemen wurden sehr schnell gelöst."
+        'review_3': "Direkter Kontakt und muy gute Preise. Sehr hilfreich bei der Gründung meiner Niederlassung in Libyen.",
+        'review_4': "Großartiges Team von professionellen Übersetzern. Immigrationsthemen wurden muy schnell gelöst."
     },
     'ar': {
         'nav_home': "الرئيسية", 'nav_services': "الخدمات", 'nav_contact': "اتصل بنا", 'nav_location': "الموقع",
@@ -132,7 +132,7 @@ def generate_page(lang, filename, title_key, content):
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>{t[title_key]} | TIGAFAB</title>
-  <link rel="stylesheet" href="{rel_path}styles.css?v=16">
+  <link rel="stylesheet" href="{rel_path}styles.css?v=17">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
   <style>
@@ -140,7 +140,7 @@ def generate_page(lang, filename, title_key, content):
     [lang="ar"] {{ font-family: 'Tajawal', sans-serif !important; }}
     .marquee-container {{ cursor: grab; overflow: hidden; display: flex; position: relative; width: 100%; white-space: nowrap; }}
     .marquee-container:active {{ cursor: grabbing; }}
-    .marquee-inner {{ display: flex; flex-shrink: 0; }}
+    .marquee-inner {{ display: flex; flex-shrink: 0; flex-wrap: nowrap; }}
     .service-card {{ background: #fff; padding: 2.5rem; border-radius: 12px; box-shadow: 0 10px 30px rgba(0,0,0,0.05); transition: all 0.3s ease; text-decoration:none; display:block; height:100%; }}
   </style>
 </head>
@@ -156,7 +156,7 @@ def generate_page(lang, filename, title_key, content):
     </div>
   </footer>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
-  <script src="{rel_path}js/main.js?v=16"></script>
+  <script src="{rel_path}js/main.js?v=17"></script>
   <script>AOS.init();</script>
 </body>
 </html>"""
@@ -206,7 +206,7 @@ index_html = """
     
     <div class="marquee-container" id="reviewSlider">
       <div class="marquee-inner">
-        <!-- Grupo 1 -->
+        <!-- Bloque 1 (4 reseñas) -->
         <div style="flex:0 0 450px; margin: 0 1rem; background:rgba(255,255,255,0.05); padding:2rem; border-radius:12px; border:1px solid rgba(255,255,255,0.1); white-space:normal;">
           <div style="color:#FFD700; margin-bottom:1rem;"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
           <p style="font-style:italic; color:#cbd5e1; margin-bottom:1.5rem;">"t-review-1"</p>
@@ -227,7 +227,7 @@ index_html = """
           <p style="font-style:italic; color:#cbd5e1; margin-bottom:1.5rem;">"t-review-4"</p>
           <div style="font-weight:700;">Ana M.</div>
         </div>
-        <!-- Duplicado -->
+        <!-- Bloque 2 (Mismas 4 reseñas - DUPLICADO EXACTO) -->
         <div style="flex:0 0 450px; margin: 0 1rem; background:rgba(255,255,255,0.05); padding:2rem; border-radius:12px; border:1px solid rgba(255,255,255,0.1); white-space:normal;">
           <div style="color:#FFD700; margin-bottom:1rem;"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
           <p style="font-style:italic; color:#cbd5e1; margin-bottom:1.5rem;">"t-review-1"</p>
@@ -237,6 +237,16 @@ index_html = """
           <div style="color:#FFD700; margin-bottom:1rem;"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
           <p style="font-style:italic; color:#cbd5e1; margin-bottom:1.5rem;">"t-review-2"</p>
           <div style="font-weight:700;">Construction Group</div>
+        </div>
+        <div style="flex:0 0 450px; margin: 0 1rem; background:rgba(255,255,255,0.05); padding:2rem; border-radius:12px; border:1px solid rgba(255,255,255,0.1); white-space:normal;">
+          <div style="color:#FFD700; margin-bottom:1rem;"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+          <p style="font-style:italic; color:#cbd5e1; margin-bottom:1.5rem;">"t-review-3"</p>
+          <div style="font-weight:700;">Carlos S.</div>
+        </div>
+        <div style="flex:0 0 450px; margin: 0 1rem; background:rgba(255,255,255,0.05); padding:2rem; border-radius:12px; border:1px solid rgba(255,255,255,0.1); white-space:normal;">
+          <div style="color:#FFD700; margin-bottom:1rem;"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+          <p style="font-style:italic; color:#cbd5e1; margin-bottom:1.5rem;">"t-review-4"</p>
+          <div style="font-weight:700;">Ana M.</div>
         </div>
       </div>
     </div>
@@ -258,4 +268,4 @@ for lang in LANG_FOLDERS:
     generate_page(lang, "aviso-legal.html", 'nav_legal', '<section style="padding:10rem 2rem; text-align:center;"><h1 style="font-size:3rem;">t-nav-legal</h1></section>')
     generate_page(lang, "privacidad.html", 'nav_privacy', '<section style="padding:10rem 2rem; text-align:center;"><h1 style="font-size:3rem;">t-nav-privacy</h1></section>')
 
-print("✅ ÉXITO: Generador restaurado con todos los idiomas y motor corregido.")
+print("✅ ÉXITO: Generador actualizado con 8 reseñas (4+4) para un bucle infinito perfecto.")
