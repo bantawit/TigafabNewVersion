@@ -127,7 +127,6 @@ h1, h2, h3 { font-family: var(--font-heading); }
 }
 .logo:visited, .logo:active, .logo:hover { color: #fff !important; text-decoration: none !important; }
 .logo span { color: var(--primary); }
-[dir="rtl"] .logo { font-family: var(--font-arabic) !important; }
 
 .nav-links { 
   display: flex; list-style: none; gap: 3rem; 
