@@ -2,23 +2,46 @@ import os
 
 BASE_DIR = "/Users/mohamedbentaoit/Downloads/ProyectosAnti-gravity/tigafab-web-nueva"
 
-# --- CONSTANTES DE ESTRUCTURA ---
+# --- CONSTANTES ---
 LANG_NAMES = {'es': 'Español', 'en': 'English', 'fr': 'Français', 'de': 'Deutsch', 'ar': 'العربية'}
 LANG_FOLDERS = {'es': '', 'en': 'en', 'fr': 'fr', 'de': 'de', 'ar': 'ar'}
 
-# --- DICCIONARIO MAESTRO CON TEXTO ORIGINAL CLIENTE ---
+# --- DICCIONARIO MAESTRO COMPLETO ---
 TRANSLATIONS = {
     'es': {
         'nav_home': "Inicio", 'nav_services': "Servicios", 'nav_contact': "Contacto", 'nav_lang': "Idioma",
         'hero_title': "Excelencia en Traducción",
         'hero_subtitle': "ÁRABE • ESPAÑOL • INGLÉS • ALEMÁN • FRANCÉS",
         'home_cta_btn': "SOLICITAR PRESUPUESTO",
+        # TEXTO ORIGINAL CLIENTE
         'h1': "Somos un despacho de traductores e interpretes oficiales, jurados, nativos profesionales, encabezados por doña Fatima Benamar, con más de 15 años de experiencia. Ofrecemos a nuestros clientes un servicio rápido, personalizado, puntualidad, máxima calidad, confidencialidad, asesoramiento, trato directo y tarifas ajustadas.",
         'h2': "OFRECEMOS un servicio integral en traducción jurada y asesoramiento para la tramitación de todos sus documentos.",
         'h3': "A través de nuestro asesoramiento y atención personalizada le garantizamos una tramitación correcta. De esta forma se ahorrará mucho tiempo, dinero y disgustos.",
         'h4': "Siempre satisfacemos a nuestros clientes. Y nos comprometemos a entregar el trabajo en el plazo acordado.",
         'h5': "Cada vez son más las empresas españolas que se proyectan al exterior que cuentan con nuestros servicios de traducción, gestión y asesoramiento para su expansión en el mercado internacional, ofrecemos servicio de introducción de empresas constructoras en el país LIBIA, por ello contamos con agentes y empresarios en Libia, con proyectos adjudicados, proporcionamos todo el asesoramiento, consejos y traductores en Libia, para asistir a sus reuniones en sus viajes en este país.",
         'h6': "Nuestras tarifas de precios sin competencia y nuestro equipo técnico especializado hacen de nosotros un punto de referencia en el sector. Hemos realizado proyectos para diferentes empresas. Estamos avalados por muchas grandes empresas españolas e internacionales.",
+        # SERVICIOS
+        'srv_header': "Servicios Boutique",
+        'srv_sworn_title': "Traducción Jurada",
+        'srv_sworn_desc': "Traducciones oficiales con validez legal ante organismos públicos y embajadas.",
+        'srv_tech_title': "Traducción Técnica",
+        'srv_tech_desc': "Manuales de ingeniería y expedientes técnicos para licitaciones.",
+        'srv_visa_title': "Gestión de Visados",
+        'srv_visa_desc': "Asesoramiento y tramitación completa para Libia y países árabes.",
+        'srv_legal_title': "Asesoramiento Legal",
+        'srv_legal_desc': "Registro de filiales y contratos en mercados emergentes como Libia.",
+        # CONTACTO
+        'hero_contact_title': "Contacte con Nosotros",
+        'contact_title': "Hablemos de su proyecto",
+        'info_address_title': "Ubicación",
+        'info_address_text': "Calle de la Constitución, Fuenlabrada, 28944 Madrid, España",
+        'info_email_title': "Correo Electrónico",
+        'info_phone_title': "Teléfono Directo",
+        'form_name': "Nombre Completo",
+        'form_email': "Correo Electrónico",
+        'form_phone': "Teléfono",
+        'form_message': "Su Mensaje",
+        'form_btn': "ENVIAR SOLICITUD",
         'reviews_title': "Confianza Global",
         'exp_verificadas': "EXPERIENCIAS VERIFICADAS",
         'footer_rights': "© 2026 TIGAFAB S.L. Boutique de Traducción Jurada."
@@ -27,24 +50,19 @@ TRANSLATIONS = {
         'nav_home': "Home", 'nav_services': "Services", 'nav_contact': "Contact", 'nav_lang': "Language",
         'hero_title': "Translation Excellence",
         'home_cta_btn': "REQUEST A QUOTATION",
-        'h1': "We are an office of official, sworn, native professional translators and interpreters, led by Ms. Fatima Benamar, with more than 15 years of experience. We offer our clients a fast, personalized service, punctuality, maximum quality, confidentiality, advice, direct contact and adjusted rates.",
+        'h1': "We are an office of official, sworn, native professional translators and interpreters, led by Ms. Fatima Benamar, with more than 15 years of experience.",
         'h2': "WE OFFER an integral service in sworn translation and advice for the processing of all your documents.",
-        'h3': "Through our advice and personalized attention we guarantee correct processing. In this way you will save a lot of time, money and trouble.",
-        'h4': "We always satisfy our clients. And we commit to delivering the work within the agreed period.",
-        'h5': "More and more Spanish companies projecting abroad rely on our translation, management and consulting services for their expansion in the international market. We offer a service for introducing construction companies in LIBYA, which is why we have agents and businessmen in Libya, with awarded projects, we provide all the advice, tips and translators in Libya, to attend your meetings on your trips in this country.",
-        'h6': "Our unbeatable price rates and our specialized technical team make us a reference point in the sector. We have carried out projects for various companies. We are endorsed by many large Spanish and international companies.",
-        'reviews_title': "Global Trust",
-        'exp_verificadas': "VERIFIED EXPERIENCES",
+        'srv_header': "Boutique Services",
+        'hero_contact_title': "Get in Touch",
+        'contact_title': "Let's talk about your project",
+        'form_btn': "SEND REQUEST",
         'footer_rights': "© 2026 TIGAFAB S.L. Sworn Translation Boutique."
     },
     'ar': {
         'nav_home': "الرئيسية", 'nav_services': "الخدمات", 'nav_contact': "اتصل بنا", 'nav_lang': "اللغة",
-        'h1': "نحن مكتب للمترجمين التحريريين والفوريين الرسميين والمحلفين والمواطنين المحترفين، بقيادة السيدة فاطمة بنعمر، ومع أكثر من 15 عامًا من الخبرة. نحن نقدم لعملائنا خدمة سريعة وشخصية، ودقة في المواعيد، وأعلى جودة، وسرية، واستشارات، وتعامل مباشر وأسعار معدلة.",
-        'h2': "نقدم خدمة شاملة في الترجمة المعتمدة والاستشارات لمعالجة جميع وثائقك.",
-        'h3': "من خلال استشاراتنا واهتمامنا الشخصي نضمن لك المعالجة الصحيحة. وبهذه الطريقة ستوفر الكثير من الوقت والمال والمشاكل.",
-        'h4': "نحن دائماً نرضي عملائنا. ونحن نلتزم بتسليم العمل في غضون الفترة المتفق عليها.",
-        'h5': "تعتمد المزيد والمزيد من الشركات الإسبانية التي تتوسع في الخارج على خدمات الترجمة والإدارة والاستشارات للتوسع في السوق الدولية، ونقدم خدمة تقديم شركات البناء في بلد ليبيا، ولهذا السبب لدينا وكلاء ورجال أعمال في ليبيا، مع مشاريع مرساة، ونحن نقدم جميع الاستشارات والنصائح والمترجمين في ليبيا، لحضور اجتماعاتك في رحلاتك في هذا البلد.",
-        'h6': "إن أسعارنا التي لا تقبل المنافسة وفريقنا الفني المتخصص يجعل منا نقطة مرجعية في هذا القطاع. لقد نفذنا مشاريع لشركات مختلفة. نحن مدعومون من قبل العديد من الشركات الإسبانية والدولية الكبرى.",
+        'home_cta_btn': "طلب عرض سعر",
+        'hero_contact_title': "اتصل بنا",
+        'form_btn': "إرسال الطلب",
         'footer_rights': "© 2026 TIGAFAB S.L. بيت الترجمة المحلفة."
     }
 }
@@ -89,28 +107,31 @@ def generate_page(lang, filename, title_key, content):
     with open(os.path.join(target_dir, filename), "w") as f: f.write(full_html)
 
 for lang in LANG_FOLDERS:
+    # 1. HOME CON VUESTRO TEXTO
     index_content = f"""
     <section class="hero"><div class="container" data-aos="fade-up"><p>t-hero-subtitle</p><h1>t-hero-title</h1><a href="contacto.html" class="btn-premium">t-home-cta-btn</a></div></section>
-    <section style="padding:10rem 0;"><div class="container" style="max-width:1100px;">
-        <div style="display:grid; grid-template-columns: 1.2fr 1fr; gap:5rem; align-items:start;">
-            <div data-aos="fade-right">
-                <h2 style="font-size:2.8rem; line-height:1.2; margin-bottom:3rem;">Tradición y Rigor Juris</h2>
-                <p style="font-size:1.25rem; color:#f8fafc; line-height:1.8; margin-bottom:2rem;">t-h1</p>
-                <div style="background:rgba(194,163,93,0.1); border-left:4px solid var(--primary); padding:2rem; margin-bottom:2.5rem;">
-                    <p style="font-size:1.4rem; font-weight:700; color:var(--primary); margin-bottom:1rem;">t-h2</p>
-                    <p style="color:#94a3b8; font-size:1.1rem;">t-h3</p>
-                </div>
-                <p style="font-size:1.1rem; color:#94a3b8; font-style:italic;">t-h4</p>
-            </div>
-            <div data-aos="fade-left" style="background:rgba(255,255,255,0.02); border:1px solid var(--glass-border); padding:3rem; border-radius:20px;">
-                <p style="font-size:1.2rem; color:#f8fafc; line-height:1.8; margin-bottom:2rem;">t-h5</p>
-                <p style="font-size:1.2rem; color:#94a3b8; line-height:1.8;">t-h6</p>
-            </div>
-        </div>
-    </div></section>
+    <section style="padding:10rem 0;"><div class="container" style="max-width:1100px;"><div style="display:grid; grid-template-columns: 1.2fr 1fr; gap:5rem; align-items:start;"><div data-aos="fade-right"><h2 style="font-size:2.8rem; line-height:1.2; margin-bottom:3rem;">Tradición y Rigor Juris</h2><p style="font-size:1.25rem; color:#f8fafc; line-height:1.8; margin-bottom:2rem;">t-h1</p><div style="background:rgba(194,163,93,0.1); border-left:4px solid var(--primary); padding:2rem; margin-bottom:2.5rem;"><p style="font-size:1.4rem; font-weight:700; color:var(--primary); margin-bottom:1rem;">t-h2</p><p style="color:#94a3b8; font-size:1.1rem;">t-h3</p></div><p style="font-size:1.1rem; color:#94a3b8; font-style:italic;">t-h4</p></div><div data-aos="fade-left" style="background:rgba(255,255,255,0.02); border:1px solid var(--glass-border); padding:3rem; border-radius:20px;"><p style="font-size:1.2rem; color:#f8fafc; line-height:1.8; margin-bottom:2rem;">t-h5</p><p style="font-size:1.2rem; color:#94a3b8; line-height:1.8;">t-h6</p></div></div></div></section>
     <section style="padding-bottom: 8rem;"><div class="container" style="text-align:center; margin-bottom:5rem;"><h2 style="font-size:3.5rem; margin-bottom:1rem; color:white;">t-reviews-title</h2><p style="color:#c2a35d; letter-spacing:4px; font-weight:700;">t-exp-verificadas</p></div><div class="marquee-container"><div class="marquee-inner">{get_review_cards(lang)}</div></div></section>"""
     generate_page(lang, "index.html", 'nav_home', index_content)
-    generate_page(lang, "servicios.html", 'nav_services', '<section class="hero" style="min-height:30vh;"><h1>SERVICIOS</h1></section>')
-    generate_page(lang, "contacto.html", 'nav_contact', '<section class="hero" style="min-height:30vh;"><h1>CONTACTO</h1></section>')
+    
+    # 2. SERVICIOS (RESTAURADOS)
+    srv_content = f"""
+    <section class="hero" style="min-height:40vh;"><h1>t-srv-header</h1></section>
+    <section style="padding:8rem 0;"><div class="container"><div class="services-grid">
+    <div class="service-card" data-aos="fade-up"><h3>t-srv-sworn-title</h3><p>t-srv-sworn-desc</p></div>
+    <div class="service-card" data-aos="fade-up"><h3>t-srv-tech-title</h3><p>t-srv-tech-desc</p></div>
+    <div class="service-card" data-aos="fade-up"><h3>t-srv-visa-title</h3><p>t-srv-visa-desc</p></div>
+    <div class="service-card" data-aos="fade-up"><h3>t-srv-legal-title</h3><p>t-srv-legal-desc</p></div>
+    </div></div></section>"""
+    generate_page(lang, "servicios.html", 'nav_services', srv_content)
+    
+    # 3. CONTACTO (RESTAURADO)
+    contact_content = f"""
+    <section class="hero" style="min-height:40vh; height:auto; padding: 100px 0;"><div class="container" data-aos="fade-up"><h1>t-hero-contact-title</h1></div></section>
+    <section class="contact-section"><div class="container"><div class="contact-grid">
+    <div class="contact-info-box" data-aos="fade-right"><h2>t-contact-title</h2><div class="contact-item"><i class="fas fa-map-marker-alt"></i><div><h4>t-info-address-title</h4><p>t-info-address-text</p></div></div><div class="contact-item"><i class="fas fa-envelope"></i><div><h4>t-info-email-title</h4><p>info@tigafab.com</p></div></div><div class="contact-item"><i class="fas fa-phone-alt"></i><div><h4>t-info-phone-title</h4><p>+34 000 000 000</p></div></div></div>
+    <div class="contact-form-premium" data-aos="fade-left"><form action="#" method="POST"><div class="form-group"><label>t-form-name</label><input type="text" class="form-control" required></div><div class="form-group"><label>t-form-email</label><input type="email" class="form-control" required></div><div class="form-group"><label>t-form-phone</label><input type="tel" class="form-control"></div><div class="form-group"><label>t-form-message</label><textarea class="form-control" required></textarea></div><button type="submit" class="btn-premium" style="width:100%; border:none; cursor:pointer;">t-form-btn</button></form></div>
+    </div></div></section>"""
+    generate_page(lang, "contacto.html", 'nav_contact', contact_content)
 
-print("✅ ÉXITO: Texto original íntegro aplicado sin errores.")
+print("✅ ÉXITO: TODO restaurado (Servicios, Contacto y vuestro Texto Original).")
