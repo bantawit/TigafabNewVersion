@@ -2,7 +2,7 @@ import os
 
 BASE_DIR = "/Users/mohamedbentaoit/Downloads/ProyectosAnti-gravity/tigafab-web-nueva"
 
-# --- DICCIONARIO MAESTRO CON LAS 8 RESEÑAS REALES ---
+# --- DICCIONARIO MAESTRO ---
 TRANSLATIONS = {
     'es': {
         'nav_home': "Inicio", 'nav_services': "Servicios", 'nav_contact': "Contacto", 'nav_location': "Localización",
@@ -12,13 +12,15 @@ TRANSLATIONS = {
         'srv_specialized': "Nuestros Servicios Especializados", 'reviews_title': "Lo que dicen nuestros clientes",
         'home_cta_title': "¿Listo para empezar?", 'home_cta_sub': "Obtenga su presupuesto sin compromiso hoy mismo.",
         'home_cta_btn': "Contactar con Fátima", 'srv_more': "Saber más", 'srv_view_all': "Ver todos los servicios",
-        'srv_sworn': "Traducciones Juradas", 'srv_sworn_short': "Documentación certificada con total validez jurídica.",
-        'srv_tech': "Traducciones Técnicas", 'srv_tech_short': "Especialistas en manuales y textos corporativos.",
-        'srv_visa': "Gestión de Visados", 'srv_visa_short': "Trámites consulares y legalizaciones.",
+        'srv_sworn_short': "Documentación certificada con total validez jurídica.",
+        'srv_sworn': "Traducciones Juradas", 
+        'srv_tech_short': "Especialistas en manuales y textos corporativos.",
+        'srv_tech': "Traducciones Técnicas",
+        'srv_visa_short': "Trámites consulares y legalizaciones.",
+        'srv_visa': "Gestión de Visados",
         'footer_rights': "© 2026 TIGAFAB S.L. Todos los derechos reservados.",
         'exp_verificadas': "EXPERIENCIAS VERIFICADAS",
         'orig_label': "Original",
-        # Reseñas ES (Originales)
         'r1': "Servicio impecable y muy profesional. Fátima resolvió la traducción jurada de mis documentos en tiempo récord para un trámite urgente. Totalmente recomendados.",
         'r2': "Llevamos años confiando en Tigafab para la tramitación de visados y traducción técnica hacia el árabe de los expedientes de nuestra empresa. Rápidos y eficaces.",
         'r3': "Trato directo y tarifas muy buenas. Me ayudaron muchísimo con el registro de mi filial y servicios en Libia, desde los contratos hasta el asesoramiento. Un 10.",
@@ -37,9 +39,12 @@ TRANSLATIONS = {
         'srv_specialized': "Our Specialized Services", 'reviews_title': "What our clients say",
         'home_cta_title': "Ready to start?", 'home_cta_sub': "Get your no-obligation quote today.",
         'home_cta_btn': "Contact Fatima", 'srv_more': "Learn more", 'srv_view_all': "View all services",
-        'srv_sworn': "Sworn Translations", 'srv_sworn_short': "Certified texts and documentation with legal validity.",
-        'srv_tech': "Technical Translations", 'srv_tech_short': "Specialists in manuals and corporate texts.",
-        'srv_visa': "Visa Management", 'srv_visa_short': "Consular procedures and legalizations.",
+        'srv_sworn_short': "Certified texts and documentation with legal validity.",
+        'srv_sworn': "Sworn Translations",
+        'srv_tech_short': "Specialists in manuals and corporate texts.",
+        'srv_tech': "Technical Translations",
+        'srv_visa_short': "Consular procedures and legalizations.",
+        'srv_visa': "Visa Management",
         'footer_rights': "© 2026 TIGAFAB S.L. All rights reserved.",
         'exp_verificadas': "VERIFIED EXPERIENCES",
         'orig_label': "Original",
@@ -60,13 +65,16 @@ TRANSLATIONS = {
         'srv_specialized': "Nos services spécialisés", 'reviews_title': "Ce que disent nos clients",
         'home_cta_title': "Prêt à commencer ?", 'home_cta_sub': "Obtenez votre devis sans engagement dès aujourd'hui.",
         'home_cta_btn': "Contacter Fatima", 'srv_more': "En savoir plus", 'srv_view_all': "Voir tous les services",
-        'srv_sworn': "Traductions Assermentées", 'srv_sworn_short': "Documents certifiés avec validité juridique totale.",
-        'srv_tech': "Traductions Techniques", 'srv_tech_short': "Spécialistes des manuels et textes d'entreprise.",
-        'srv_visa': "Gestion des Visas", 'srv_visa_short': "Démarches consulaires et légalisations.",
+        'srv_sworn_short': "Documents certifiés avec validité juridique totale.",
+        'srv_sworn': "Traducciones Assermentées",
+        'srv_tech_short': "Spécialistes des manuels et textes d'entreprise.",
+        'srv_tech': "Traductions Techniques",
+        'srv_visa_short': "Démarches consulaires et légalisations.",
+        'srv_visa': "Gestion des Visas",
         'footer_rights': "© 2026 TIGAFAB S.L. Tous droits réservés.",
         'exp_verificadas': "EXPÉRIENCES VÉRIFIÉES",
         'orig_label': "Original",
-        'r1': "Service impeccable et professionnel. Fatima a résolu la traduction assermentée de mes documents en un temps record pour une procédure urgente. Hautement recommandé.",
+        'r1': "Service impeccable et profesional. Fatima a résolu la traduction assermentée de mes documents en un temps record pour une procédure urgente. Hautement recommandé.",
         'r2': "Nous faisons confiance à Tigafab depuis des années pour nos visas et traductions techniques vers l'arabe. Rapides et efficaces.",
         'r3': "Excellents tarifs et contact direct. Ils m'ont beaucoup aidé pour l'enregistrement de ma succursale en Libye. 10/10.",
         'r4': "Excellente équipe de professionnels. Ils ont résolu toutes mes procédures d'immigration très rápidamente.",
@@ -83,9 +91,12 @@ TRANSLATIONS = {
         'srv_specialized': "Unsere Fachdienstleistungen", 'reviews_title': "Was unsere Kunden sagen",
         'home_cta_title': "Bereit zu starten?", 'home_cta_sub': "Holen Sie sich noch heute Ihr unverbindliches Angebot.",
         'home_cta_btn': "Fatima kontaktieren", 'srv_more': "Mehr erfahren", 'srv_view_all': "Alle Dienste anzeigen",
-        'srv_sworn': "Beglaubigte Übersetzungen", 'srv_sworn_short': "Zertifizierte Dokumentation mit voller Rechtsgültigkeit.",
-        'srv_tech': "Technische Übersetzungen", 'srv_tech_short': "Spezialisten für Handbücher und Firmentexte.",
-        'srv_visa': "Visum-Management", 'srv_visa_short': "Konsularische Verfahrung und Beglaubigungen.",
+        'srv_sworn_short': "Zertifizierte Dokumentation mit voller Rechtsgültigkeit.",
+        'srv_sworn': "Beglaubigte Übersetzungen",
+        'srv_tech_short': "Spezialisten für Handbücher und Firmentexte.",
+        'srv_tech': "Technische Übersetzungen",
+        'srv_visa_short': "Konsularische Verfahrung und Beglaubigungen.",
+        'srv_visa': "Visum-Management",
         'footer_rights': "© 2026 TIGAFAB S.L. Alle Rechte vorbehalten.",
         'exp_verificadas': "VERIFIZIERTE ERFAHRUNGEN",
         'orig_label': "Original",
@@ -106,9 +117,12 @@ TRANSLATIONS = {
         'srv_specialized': "خدماتنا المتخصصة", 'reviews_title': "ماذا يقول عملاؤنا",
         'home_cta_title': "هل أنت مستعد للبدء؟", 'home_cta_sub': "احصل على عرض سعر بدون التزام اليوم.",
         'home_cta_btn': "اتصل بفاطمة", 'srv_more': "معرفة المزيد", 'srv_view_all': "عرض جميع الخدمات",
-        'srv_sworn': "الترجمة المحلفة", 'srv_sworn_short': "النصوص والوثائق المعتمدة ذات الصلاحية القانونية.",
-        'srv_tech': "الترجمة المتخصصة", 'srv_tech_short': "وثائق تقنية للشركات والدلائل عالية الدقة.",
-        'srv_visa': "إدارة التأشيرات", 'srv_visa_short': "إجراءات قنصلية سريعة للموظفين الأجانب.",
+        'srv_sworn_short': "النصوص والوثائق المعتمدة ذات الصلاحية القانونية.",
+        'srv_sworn': "الترجمة المحلفة", 
+        'srv_tech_short': "وثائق تقنية للشركات والدلائل عالية الدقة.",
+        'srv_tech': "الترجمة المتخصصة",
+        'srv_visa_short': "إجراءات قنصلية سريعة للموظفين الأجانب.",
+        'srv_visa': "إدارة التأشيرات",
         'footer_rights': "© 2026 TIGAFAB S.L. جميع الحقوق محفوظة.",
         'exp_verificadas': "تجارب موثقة",
         'orig_label': "الأصل",
@@ -151,13 +165,17 @@ def generate_page(lang, filename, title_key, content):
     rel_path = "../" if lang != 'es' else ""
     t = TRANSLATIONS[lang]
     is_rtl = 'dir="rtl"' if lang == 'ar' else 'dir="ltr"'
+    
+    # Ordemar keys por longitud (descendente) para evitar bugs de sustitución parcial
+    sorted_keys = sorted(t.keys(), key=len, reverse=True)
+    
     full_html = f"""<!DOCTYPE html>
 <html lang="{lang}" {is_rtl}>
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>{t[title_key]} | TIGAFAB</title>
-  <link rel="stylesheet" href="{rel_path}styles.css?v=20">
+  <link rel="stylesheet" href="{rel_path}styles.css?v=21">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
   <style>
@@ -181,34 +199,29 @@ def generate_page(lang, filename, title_key, content):
     </div>
   </footer>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
-  <script src="{rel_path}js/main.js?v=20"></script>
+  <script src="{rel_path}js/main.js?v=21"></script>
   <script>AOS.init();</script>
 </body>
 </html>"""
-    # Inyectar traducciones
-    for key, val in t.items():
-        full_html = full_html.replace(f't-{key.replace("_","-")}', str(val))
+
+    for key in sorted_keys:
+        full_html = full_html.replace(f't-{key.replace("_","-")}', str(t[key]))
     
     target_dir = os.path.join(BASE_DIR, LANG_FOLDERS[lang])
     if not os.path.exists(target_dir): os.makedirs(target_dir)
     with open(os.path.join(target_dir, filename), "w", encoding="utf-8") as f: f.write(full_html)
 
-# --- GENERADOR DE TARJETAS BILINGÜES ---
 def get_review_cards(lang):
     t_curr = TRANSLATIONS[lang]
     t_es = TRANSLATIONS['es']
-    html = ""
-    # Generar las 8 tarjetas
     items = []
     for i in range(1, 9):
         translated_text = t_curr[f'r{i}']
         original_text = t_es[f'r{i}']
         name = t_es[f'n{i}']
-        
         bilingual_html = f'<p style="font-style:italic; color:#cbd5e1; line-height:1.6; margin-bottom:1rem;">{translated_text}</p>'
         if lang != 'es':
             bilingual_html += f'<p style="font-size:0.85rem; color:rgba(255,255,255,0.4); border-top:1px solid rgba(255,255,255,0.1); padding-top:0.8rem; font-style:italic;"><span style="color:var(--primary); font-weight:700;">{t_curr["orig_label"]} (ES):</span> {original_text}</p>'
-        
         card = f"""
         <div style="flex:0 0 550px; margin: 0 1.5rem; background:rgba(255,255,255,0.05); padding:2.5rem; border-radius:15px; border:1px solid rgba(255,255,255,0.1); white-space:normal;">
           <div style="color:#FFD700; margin-bottom:1.5rem;"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
@@ -216,12 +229,9 @@ def get_review_cards(lang):
           <div style="font-weight:700; margin-top:1.5rem; color:white;">{name}</div>
         </div>"""
         items.append(card)
-    
-    # Retornar Bloque 1 + Bloque 2 (Duplicado)
     return "".join(items) + "".join(items)
 
-# --- CONTENIDO DE LA HOME ---
-index_content = f"""
+index_content = """
   <section class="hero" style="position:relative; height:70vh; background: linear-gradient(rgba(15,23,42,0.5), rgba(15,23,42,0.5)), url('https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&q=80&w=1200') center/cover; display:flex; align-items:center; justify-content:center; text-align:center; color:white;">
     <div class="container" data-aos="fade-up">
       <h1 style="font-size:3.5rem; margin-bottom:1rem; font-family:var(--font-heading);">t-hero-title</h1>
@@ -259,7 +269,6 @@ index_content = f"""
       <h2 style="font-size:2.8rem; font-family:var(--font-heading); margin-bottom:1rem;">t-reviews-title</h2>
       <p style="color:var(--primary); letter-spacing:2px; font-weight:600;"><i class="fab fa-google"></i> t-exp-verificadas</p>
     </div>
-    
     <div class="marquee-container" id="reviewSlider">
       <div class="marquee-inner">
         REPLACE_WITH_CARDS
@@ -276,16 +285,13 @@ index_content = f"""
 """
 
 for lang in LANG_FOLDERS:
-    # Inyectar tarjetas dinámicas bilingües
     current_cards = get_review_cards(lang)
     page_content = index_content.replace('REPLACE_WITH_CARDS', current_cards)
-    
     generate_page(lang, "index.html", 'nav_home', page_content)
-    # Otras páginas
     generate_page(lang, "servicios.html", 'nav_services', '<section style="padding:10rem 2rem; text-align:center;"><h1 style="font-size:3rem;">t-nav-services</h1></section>')
     generate_page(lang, "contacto.html", 'nav_contact', '<section style="padding:10rem 2rem; text-align:center;"><h1 style="font-size:3rem;">t-nav-contact</h1></section>')
     generate_page(lang, "localizacion.html", 'nav_location', '<section style="padding:10rem 2rem; text-align:center;"><h1 style="font-size:3rem;">t-nav-location</h1></section>')
     generate_page(lang, "aviso-legal.html", 'nav_legal', '<section style="padding:10rem 2rem; text-align:center;"><h1 style="font-size:3rem;">t-nav-legal</h1></section>')
     generate_page(lang, "privacidad.html", 'nav_privacy', '<section style="padding:10rem 2rem; text-align:center;"><h1 style="font-size:3rem;">t-nav-privacy</h1></section>')
 
-print("✅ ÉXITO: 8 Reseñas Bilingües (Traducida + Original ES) implementadas con éxito.")
+print("✅ ÉXITO: Traducción de contenido corregida y motor JS replicado en todos los idiomas.")

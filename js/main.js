@@ -7,10 +7,12 @@ class App {
   }
 }
 
-document.addEventListener('DOMContentLoaded', () => {
+// Usamos window.onload para asegurar que los anchos de las tarjetas 
+// se calculen con las fuentes y estilos ya aplicados.
+window.onload = () => {
   window.app = new App();
   initPremiumMarquee();
-});
+};
 
 function initPremiumMarquee() {
   const slider = document.getElementById('reviewSlider');
@@ -19,18 +21,20 @@ function initPremiumMarquee() {
   const inner = slider.querySelector('.marquee-inner');
   if (!inner) return;
 
+  const isRTL = document.documentElement.dir === 'rtl';
   let currentX = 0;
   let isDown = false;
   let startX;
-  let scrollLeft;
   let animationId;
   let isHovered = false;
 
   const step = () => {
     if (!isDown && !isHovered) {
-      currentX -= 1; // Velocidad del motor
-      // Si llegamos a la mitad (donde empieza el clon), reseteamos a 0 de forma invisible
-      if (Math.abs(currentX) >= inner.offsetWidth / 2) {
+      // En RTL movemos hacia el otro lado
+      currentX += isRTL ? 1 : -1; 
+      
+      const halfWidth = inner.offsetWidth / 2;
+      if (Math.abs(currentX) >= halfWidth) {
         currentX = 0;
       }
       inner.style.transform = `translateX(${currentX}px)`;
@@ -38,41 +42,33 @@ function initPremiumMarquee() {
     animationId = requestAnimationFrame(step);
   };
 
-  // Iniciar el motor
+  // Iniciar motor
   animationId = requestAnimationFrame(step);
 
-  // --- CONTROLES DE RATÓN ---
   slider.addEventListener('mouseenter', () => { isHovered = true; });
-  slider.addEventListener('mouseleave', () => { 
-    isHovered = false; 
-    isDown = false; 
-  });
+  slider.addEventListener('mouseleave', () => { isHovered = false; isDown = false; });
 
   slider.addEventListener('mousedown', (e) => {
     isDown = true;
     slider.style.cursor = 'grabbing';
-    startX = e.pageX - inner.offsetLeft;
-    // Capturamos el punto de inicio para el arrastre
     startX = e.pageX;
   });
 
   document.addEventListener('mouseup', () => {
     isDown = false;
-    slider.style.cursor = 'grab';
+    if (slider) slider.style.cursor = 'grab';
   });
 
   document.addEventListener('mousemove', (e) => {
     if (!isDown) return;
-    
     const x = e.pageX;
-    const walk = (x - startX); // Calculamos cuánto hemos movido el ratón
-    startX = x; // Actualizamos para el siguiente frame
-    
+    const walk = (x - startX);
+    startX = x;
     currentX += walk;
 
-    // Límites para el efecto infinito manual
     const halfWidth = inner.offsetWidth / 2;
-    if (currentX > 0) currentX = -halfWidth;
+    if (currentX > 0 && !isRTL) currentX = -halfWidth;
+    if (currentX < 0 && isRTL) currentX = halfWidth;
     if (Math.abs(currentX) > halfWidth) currentX = 0;
 
     inner.style.transform = `translateX(${currentX}px)`;
