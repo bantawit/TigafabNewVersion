@@ -202,6 +202,7 @@ h1, h2, h3 { font-family: var(--font-heading); }
 .marquee-container { 
     width: 100%; overflow: hidden; padding: 4rem 0; 
     mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
+    direction: ltr !important; /* Force LTR for animation stability */
 }
 .marquee-inner { display: flex; gap: 2rem; width: max-content; animation: scroll_infinite 40s linear infinite; }
 .marquee-inner:hover { animation-play-state: paused; }
@@ -215,5 +216,11 @@ h1, h2, h3 { font-family: var(--font-heading); }
   width: 450px; flex-shrink: 0; background: rgba(255,255,255,0.03); 
   border: 1px solid var(--glass-border); padding: 2.5rem; border-radius: 20px; 
   white-space: normal; backdrop-filter: blur(10px); text-align: start;
+}
+
+/* Ensure Arabic cards keep RTL text inside the LTR marquee */
+[dir="rtl"] .review-card-premium {
+    direction: rtl;
+    text-align: right;
 }
 .review-card-premium p { font-size: 1.1rem; line-height: 1.8; color: #e2e8f0; margin-bottom: 2rem; }
