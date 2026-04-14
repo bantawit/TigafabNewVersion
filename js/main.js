@@ -40,8 +40,29 @@ class App {
     if (activeEl) activeEl.classList.add('active');
   }
 
+    }
+  }
+
+  showToast(message) {
+    let toast = document.getElementById('lang-toast');
+    if (!toast) {
+      toast = document.createElement('div');
+      toast.id = 'lang-toast';
+      toast.style.cssText = 'position:fixed; bottom:20px; right:20px; background:var(--bg-dark); color:white; padding:10px 20px; border-radius:5px; z-index:9999; font-size:0.9rem; border-left:4px solid var(--primary); box-shadow:0 4px 12px rgba(0,0,0,0.3); transition:all 0.3s ease; opacity:0; transform:translateY(20px);';
+      document.body.appendChild(toast);
+    }
+    toast.innerText = message;
+    toast.style.opacity = '1';
+    toast.style.transform = 'translateY(0)';
+    setTimeout(() => {
+      toast.style.opacity = '0';
+      toast.style.transform = 'translateY(20px)';
+    }, 2000);
+  }
+
   changeLang(lang) {
     console.log("🌐 Switching language to:", lang);
+    this.showToast("Cambiando idioma: " + lang.toUpperCase());
     this.currentLang = lang;
     localStorage.setItem('tigafab_lang', lang);
     this.updateLangUI(lang);
@@ -162,7 +183,17 @@ class App {
   }
 }
 
-// Initialize App
+// Initialize App with Global Proxy
+window.changeLang = (lang) => {
+  if (window.app) {
+    window.app.changeLang(lang);
+  } else {
+    console.warn("⚠️ App not ready, saving to localStorage and reloading...");
+    localStorage.setItem('tigafab_lang', lang);
+    location.reload();
+  }
+};
+
 document.addEventListener('DOMContentLoaded', () => {
   window.app = new App();
 });
