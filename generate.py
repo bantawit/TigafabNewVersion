@@ -5,73 +5,52 @@ BASE_DIR = "/Users/mohamedbentaoit/Downloads/ProyectosAnti-gravity/tigafab-web-n
 # --- DICCIONARIO MAESTRO ---
 TRANSLATIONS = {
     'es': {
-        'nav_home': "Inicio", 'nav_services': "Servicios", 'nav_contact': "Contacto", 'nav_location': "Localización",
-        'nav_legal': "Aviso Legal", 'nav_privacy': "Privacidad", 'nav_lang': "Idioma",
-        'hero_title': "Excelencia en Traducción",
-        'hero_subtitle': "ÁRABE • ESPAÑOL • INGLÉS • ALEMÁN • FRANCÉS",
-        'home_welcome': "Más de 15 años de prestigio internacional",
-        'home_text_1': "Somos un despacho boutique de traductores e interpretes oficiales jurados, encabezados por Fatima Benamar Bahamad. Nuestra firma es sinónimo de rigor jurídico, confidencialidad absoluta y calidad de élite.",
-        'home_text_2': "Líderes en asesoramiento mercante para el mercado LIBIO. Proporcionamos una estructura completa de apoyo para empresas constructoras, desde el registro legal hasta el apoyo técnico en reuniones estratégicas.",
-        'srv_header': "Servicios Boutique",
-        'srv_sworn_title': "Traducción Jurada",
-        'srv_sworn_desc': "Traducciones oficiales con validez legal ante organismos públicos, ministerios y embajadas. Especialistas en árabe, español y francés.",
-        'srv_tech_title': "Traducción Técnica",
-        'srv_tech_desc': "Manuales de ingeniería, contratos de obra y expedientes técnicos para licitaciones internacionales en el norte de África.",
-        'srv_visa_title': "Gestión de Visados",
-        'srv_visa_desc': "Asesoramiento y tramitación completa de visados para Libia y otros países árabes para empresas y personal técnico.",
-        'srv_legal_title': "Asesoramiento Legal",
-        'srv_legal_desc': "Apoyo en el registro de filiales, contratos societarios y cumplimiento normativo en mercados emergentes.",
-        'contact_title': "Contacto Directo",
-        'contact_address': "Calle de la Constitución, Fuenlabrada, Madrid",
-        'reviews_title': "Confianza Global",
-        'home_cta_btn': "SOLICITAR PRESUPUESTO",
-        'footer_rights': "© 2026 TIGAFAB S.L. Boutique de Traducción Jurada.",
-        'exp_verificadas': "EXPERIENCIAS VERIFICADAS", 'orig_label': "Original"
+        'nav_home': "Inicio", 'nav_services': "Servicios", 'nav_contact': "Contacto", 'nav_lang': "Idioma",
+        'hero_contact_title': "Contacte con Nosotros",
+        'contact_title': "Hablemos de su proyecto",
+        'contact_subtitle': "Estamos a su disposición para cualquier consulta jurídica o técnica.",
+        'info_address_title': "Ubicación",
+        'info_address_text': "Calle de la Constitución, Fuenlabrada, 28944 Madrid, España",
+        'info_email_title': "Correo Electrónico",
+        'info_phone_title': "Teléfono Directo",
+        'form_name': "Nombre Completo",
+        'form_email': "Correo Electrónico",
+        'form_phone': "Teléfono",
+        'form_message': "Su Mensaje",
+        'form_btn': "ENVIAR SOLICITUD",
+        'footer_rights': "© 2026 TIGAFAB S.L. Boutique de Traducción Jurada."
     },
     'en': {
-        'nav_home': "Home", 'nav_services': "Services", 'nav_contact': "Contact", 'nav_location': "Location",
-        'nav_legal': "Legal", 'nav_privacy': "Privacy", 'nav_lang': "Language",
-        'hero_title': "Translation Excellence",
-        'hero_subtitle': "ARABIC • SPANISH • ENGLISH • GERMAN • FRENCH",
-        'home_welcome': "15+ Years of International Prestige",
-        'home_text_1': "We are a boutique office of official sworn native translators and interpreters, led by Fatima Benamar Bahamad. Our firm is synonymous with legal rigor, absolute confidentiality, and premium quality.",
-        'home_text_2': "Leaders in merchant advisory for the LIBYAN market. We provide comprehensive support for construction companies, from legal registration to technical assistance in strategic meetings.",
-        'srv_header': "Boutique Services",
-        'srv_sworn_title': "Sworn Translation",
-        'srv_sworn_desc': "Official translations with full legal validity before public bodies, ministries, and embassies.",
-        'srv_tech_title': "Technical Translation",
-        'srv_tech_desc': "Engineering manuals, work contracts, and technical dossiers for international tenders.",
-        'srv_visa_title': "Visa Management",
-        'srv_visa_desc': "Full advisory and processing of visas for Libya and other Arab countries.",
-        'srv_legal_title': "Legal Advisory",
-        'srv_legal_desc': "Support in company registration and corporate contracts in emerging markets.",
-        'contact_title': "Direct Contact",
-        'contact_address': "Constitución St, Fuenlabrada, Madrid",
-        'reviews_title': "Global Trust",
-        'home_cta_btn': "REQUEST A QUOTATION", 
-        'footer_rights': "© 2026 TIGAFAB S.L. Sworn Translation Boutique.",
-        'exp_verificadas': "VERIFIED EXPERIENCES", 'orig_label': "Original"
+        'nav_home': "Home", 'nav_services': "Services", 'nav_contact': "Contact", 'nav_lang': "Language",
+        'hero_contact_title': "Get in Touch",
+        'contact_title': "Let's talk about your project",
+        'contact_subtitle': "We are at your disposal for any legal or technical inquiry.",
+        'info_address_title': "Location",
+        'info_address_text': "Constitución St, Fuenlabrada, 28944 Madrid, Spain",
+        'info_email_title': "Email Us",
+        'info_phone_title': "Direct Line",
+        'form_name': "Full Name",
+        'form_email': "Email Address",
+        'form_phone': "Phone Number",
+        'form_message': "Your Message",
+        'form_btn': "SEND REQUEST",
+        'footer_rights': "© 2026 TIGAFAB S.L. Sworn Translation Boutique."
     },
     'ar': {
-        'nav_home': "الرئيسية", 'nav_services': "الخدمات", 'nav_contact': "اتصل بنا", 'nav_location': "الموقع",
-        'nav_lang': "اللغة", 'hero_title': "التميز في الترجمة",
-        'hero_subtitle': "العربية • الإسبانية • الإنجليزية • الألمانية • الفرنسية",
-        'home_welcome': "أكثر من 15 عاماً من الخبرة الدولية",
-        'home_text_1': "نحن مكتب بوتيك للمترجمين والمترجمين الفوريين الرسميين المحلفين، برئاسة السيدة فاطمة بنعمر بن حامد. شركتنا مرادفة للدقة القانونية والسرية المطلقة والجودة المتميزة.",
-        'home_text_2': "رواد في تقديم الاستشارات التجارية للسوق الليبي. نحن نوفر هيكلاً كاملاً من الدعم لشركات المقاولات، بدءاً من التسجيل القانوني وحتى الدعم الفني في الاجتماعات الاستراتيجية.",
-        'srv_header': "خدمات حصرية",
-        'srv_sworn_title': "الترجمة المحلفة",
-        'srv_sworn_desc': "ترجمات رسمية ذات صلاحية قانونية أمام الهيئات العامة والوزارات والسفارات.",
-        'srv_tech_title': "الترجمة التقنية",
-        'srv_tech_desc': "كتيبات الهندسة، عقود العمل، والملفات الفنية للمناقصات الدولية في شمال أفريقيا.",
-        'srv_visa_title': "إدارة التأشيرات",
-        'srv_visa_desc': "الاستشارة والمعالجة الكاملة للتأشيرات لليبيا والدول العربية الأخرى.",
-        'srv_legal_title': "الاستشارات القانونية",
-        'srv_legal_desc': "دعم في تسجيل الفروع والعقود التجارية في الأسواق الناشئة.",
-        'reviews_title': "ثقة عالمية",
-        'home_cta_btn': "طلب عرض سعر",
-        'footer_rights': "© 2026 TIGAFAB S.L. بيت الترجمة المحلفة.",
-        'exp_verificadas': "تجارب موثقة", 'orig_label': "الأصل"
+        'nav_home': "الرئيسية", 'nav_services': "الخدمات", 'nav_contact': "اتصل بنا", 'nav_lang': "اللغة",
+        'hero_contact_title': "اتصل بنا",
+        'contact_title': "دعنا نتحدث عن مشروعك",
+        'contact_subtitle': "نحن تحت تصرفكم لأي استفسار قانوني أو فني.",
+        'info_address_title': "الموقع",
+        'info_address_text': "شارع الدستور، فوينلابرادا، 28944 مدريد، إسبانيا",
+        'info_email_title': "بريدنا الإلكتروني",
+        'info_phone_title': "الخط المباشر",
+        'form_name': "الاسم الكامل",
+        'form_email': "البريد الإلكتروني",
+        'form_phone': "رقم الهاتف",
+        'form_message': "رسالتك",
+        'form_btn': "إرسال الطلب",
+        'footer_rights': "© 2026 TIGAFAB S.L. بيت الترجمة المحلفة."
     }
 }
 
@@ -84,8 +63,6 @@ def get_nav(lang, rel_path):
     for l_code in ['es', 'en', 'fr', 'de', 'ar']:
         l_folder = LANG_FOLDERS[l_code]
         links += f'<a href="{rel_path + (l_folder + "/index.html" if l_folder else "index.html")}" class="{"active" if l_code == lang else ""}">{LANG_NAMES[l_code]}</a>'
-    
-    # ESTRUCTURA CORREGIDA: Logo - NavLinks - LangSelector (Independientes)
     return f"""<nav id="navbar" dir="ltr"><div class="container nav-container"><a href="{rel_path}index.html" class="logo">TIGAFAB<span>.</span></a><ul class="nav-links"><li><a href="index.html">{t['nav_home']}</a></li><li><a href="servicios.html">{t['nav_services']}</a></li><li><a href="contacto.html">{t['nav_contact']}</a></li></ul><div class="lang-selector" id="langSelector"><div class="lang-current">{t['nav_lang']} <i class="fas fa-chevron-down"></i></div><div class="lang-dropdown" id="langDropdown">{links}</div></div></div></nav>"""
 
 def generate_page(lang, filename, title_key, content):
@@ -101,9 +78,75 @@ def generate_page(lang, filename, title_key, content):
     with open(os.path.join(target_dir, filename), "w") as f: f.write(full_html)
 
 for lang in LANG_FOLDERS:
-    index_html = f"""<section class="hero"><div class="container" data-aos="fade-up"><h1>t-hero-title</h1><a href="contacto.html" class="btn-premium">t-home-cta-btn</a></div></section><section style="padding:10rem 0;"><div class="container" style="max-width:1000px; text-align:center;" data-aos="fade-up"><h2>t-home-welcome</h2><p style="font-size:1.4rem; color:#94a3b8; line-height:2;">t-home-text-1</p><div style="width:50px; height:2px; background:#c2a35d; margin: 3rem auto;"></div><p style="font-size:1.4rem; color:#94a3b8; line-height:2;">t-home-text-2</p></div></section>"""
-    generate_page(lang, "index.html", 'nav_home', index_html)
-    generate_page(lang, "servicios.html", 'nav_services', '<section class="hero" style="min-height:40vh;"><h1>t-srv-header</h1></section>')
-    generate_page(lang, "contacto.html", 'nav_contact', '<section class="hero" style="min-height:40vh;"><h1>t-contact-title</h1></section>')
+    # Home y Servicios (mantenemos estructura básica)
+    generate_page(lang, "index.html", 'nav_home', '<section class="hero"><h1>TIGAFAB</h1></section>')
+    generate_page(lang, "servicios.html", 'nav_services', '<section class="hero"><h1>SERVICIOS</h1></section>')
+    
+    # NUEVA PÁGINA DE CONTACTO
+    contact_html = f"""
+    <section class="hero" style="height:40vh; min-height:300px;">
+        <div class="container" data-aos="fade-up">
+            <h1>t-hero-contact-title</h1>
+        </div>
+    </section>
+    
+    <section class="contact-section">
+        <div class="container">
+            <div class="contact-grid">
+                <div class="contact-info-box" data-aos="fade-right">
+                    <h2>t-contact-title</h2>
+                    <p style="margin-bottom:3rem; color:#94a3b8;">t-contact-subtitle</p>
+                    
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h4>t-info-address-title</h4>
+                            <p>t-info-address-text</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h4>t-info-email-title</h4>
+                            <p>info@tigafab.com</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <i class="fas fa-phone-alt"></i>
+                        <div>
+                            <h4>t-info-phone-title</h4>
+                            <p>+34 000 000 000</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="contact-form-premium" data-aos="fade-left">
+                    <form action="https://formspree.io/f/TU_ID_AQUI" method="POST">
+                        <div class="form-group">
+                            <label>t-form-name</label>
+                            <input type="text" name="name" class="form-control" required placeholder="John Doe">
+                        </div>
+                        <div class="form-group">
+                            <label>t-form-email</label>
+                            <input type="email" name="_replyto" class="form-control" required placeholder="john@example.com">
+                        </div>
+                        <div class="form-group">
+                            <label>t-form-phone</label>
+                            <input type="tel" name="phone" class="form-control" placeholder="+34 600 000 000">
+                        </div>
+                        <div class="form-group">
+                            <label>t-form-message</label>
+                            <textarea name="message" class="form-control" required placeholder="..."></textarea>
+                        </div>
+                        <button type="submit" class="btn-premium" style="width:100%; border:none; cursor:pointer;">t-form-btn</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    """
+    generate_page(lang, "contacto.html", 'nav_contact', contact_html)
 
-print("✅ ÉXITO: Alineación de 3 columnas fijada y JS reparado.")
+print("✅ ÉXITO: Página de contacto con formulario y datos generada.")
