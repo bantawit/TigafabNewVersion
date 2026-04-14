@@ -1,99 +1,41 @@
-class App {
-  constructor() {
-    this.init();
-  }
-  init() {
-    console.log("Tigafab App Initialized");
-  }
-}
-
-// Usamos window.onload para asegurar que los anchos de las tarjetas 
-// se calculen con las fuentes y estilos ya aplicados.
-window.onload = () => {
-  window.app = new App();
-  initPremiumMarquee();
-};
-
-function initPremiumMarquee() {
-  const slider = document.getElementById('reviewSlider');
-  if (!slider) return;
-
-  const inner = slider.querySelector('.marquee-inner');
-  if (!inner) return;
-
-  const isRTL = document.documentElement.dir === 'rtl';
-  let currentX = 0;
-  let isDown = false;
-  let startX;
-  let animationId;
-  let isHovered = false;
-
-  const step = () => {
-    if (!isDown && !isHovered) {
-      // En RTL movemos hacia el otro lado
-      currentX += isRTL ? 1 : -1; 
-      
-      const halfWidth = inner.offsetWidth / 2;
-      if (Math.abs(currentX) >= halfWidth) {
-        currentX = 0;
-      }
-      inner.style.transform = `translateX(${currentX}px)`;
-    }
-    animationId = requestAnimationFrame(step);
-  };
-
-  // Inicwindow.onload = function() {
-    // Dropdown Toggle
+/**
+ * TIGAFAB Main Engine
+ * Maneja el selector de idiomas y el carrusel de reseñas
+ */
+window.onload = function() {
+    
+    // 1. Lógica del Selector de Idiomas
     const langSelector = document.getElementById('langSelector');
     const langDropdown = document.getElementById('langDropdown');
 
-    if (langSelector) {
+    if (langSelector && langDropdown) {
         langSelector.addEventListener('click', function(e) {
             e.stopPropagation();
             langDropdown.classList.toggle('show');
+            console.log("Dropdown toggled");
         });
     }
 
-    // Cerrar al hacer clic fuera
-    document.addEventListener('click', function() {
+    // Cerrar el menú si se hace clic en cualquier otro sitio de la pantalla
+    document.addEventListener('click', function(e) {
         if (langDropdown && langDropdown.classList.contains('show')) {
-            langDropdown.classList.remove('show');
+            if (!langSelector.contains(e.target)) {
+                langDropdown.classList.remove('show');
+            }
         }
     });
 
-    // Slider reviews (Marquee)
+    // 2. Motor de las Reseñas (Infinite Marquee)
     const marquee = document.querySelector('.marquee-inner');
     if (marquee) {
-        let isPaused = false;
-        marquee.addEventListener('mouseenter', () => isPaused = true);
-        marquee.addEventListener('mouseleave', () => isPaused = false);
+        // Pausar al pasar el ratón
+        marquee.addEventListener('mouseenter', () => {
+            marquee.style.animationPlayState = 'paused';
+        });
+        marquee.addEventListener('mouseleave', () => {
+            marquee.style.animationPlayState = 'running';
+        });
     }
-}
- isDown = false; });
 
-  slider.addEventListener('mousedown', (e) => {
-    isDown = true;
-    slider.style.cursor = 'grabbing';
-    startX = e.pageX;
-  });
-
-  document.addEventListener('mouseup', () => {
-    isDown = false;
-    if (slider) slider.style.cursor = 'grab';
-  });
-
-  document.addEventListener('mousemove', (e) => {
-    if (!isDown) return;
-    const x = e.pageX;
-    const walk = (x - startX);
-    startX = x;
-    currentX += walk;
-
-    const halfWidth = inner.offsetWidth / 2;
-    if (currentX > 0 && !isRTL) currentX = -halfWidth;
-    if (currentX < 0 && isRTL) currentX = halfWidth;
-    if (Math.abs(currentX) > halfWidth) currentX = 0;
-
-    inner.style.transform = `translateX(${currentX}px)`;
-  });
-}
+    console.log("Tigafab Engine Ready");
+};

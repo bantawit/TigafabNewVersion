@@ -2,7 +2,7 @@ import os
 
 BASE_DIR = "/Users/mohamedbentaoit/Downloads/ProyectosAnti-gravity/tigafab-web-nueva"
 
-# --- DICCIONARIO MAESTRO (CONTENIDO 100% ÍNTEGRO) ---
+# --- DICCIONARIO MAESTRO ---
 TRANSLATIONS = {
     'es': {
         'nav_home': "Inicio", 'nav_services': "Servicios", 'nav_contact': "Contacto", 'nav_location': "Localización",
@@ -26,10 +26,7 @@ TRANSLATIONS = {
         'reviews_title': "Confianza Global",
         'home_cta_btn': "SOLICITAR PRESUPUESTO",
         'footer_rights': "© 2026 TIGAFAB S.L. Boutique de Traducción Jurada.",
-        'exp_verificadas': "EXPERIENCIAS VERIFICADAS", 'orig_label': "Original",
-        'r1': "Servicio impecable y muy profesional. Fátima resolvió la traducción jurada de mis documentos en tiempo récord para un trámite urgente.",
-        'r2': "Llevamos años confiando en Tigafab para la tramitación de visados y traducción técnica hacia el árabe de los expedientes de nuestra empresa.",
-        'n1': "María G.", 'n2': "Constructor S.A."
+        'exp_verificadas': "EXPERIENCIAS VERIFICADAS", 'orig_label': "Original"
     },
     'en': {
         'nav_home': "Home", 'nav_services': "Services", 'nav_contact': "Contact", 'nav_location': "Location",
@@ -37,7 +34,7 @@ TRANSLATIONS = {
         'hero_title': "Translation Excellence",
         'hero_subtitle': "ARABIC • SPANISH • ENGLISH • GERMAN • FRENCH",
         'home_welcome': "15+ Years of International Prestige",
-        'home_text_1': "We are a boutique office of official sworn native translators and interpreters, led by Ms. Fatima Benamar Bahamad. Our firm is synonymous with legal rigor, absolute confidentiality, and premium quality.",
+        'home_text_1': "We are a boutique office of official sworn native translators and interpreters, led by Fatima Benamar Bahamad. Our firm is synonymous with legal rigor, absolute confidentiality, and premium quality.",
         'home_text_2': "Leaders in merchant advisory for the LIBYAN market. We provide comprehensive support for construction companies, from legal registration to technical assistance in strategic meetings.",
         'srv_header': "Boutique Services",
         'srv_sworn_title': "Sworn Translation",
@@ -45,7 +42,7 @@ TRANSLATIONS = {
         'srv_tech_title': "Technical Translation",
         'srv_tech_desc': "Engineering manuals, work contracts, and technical dossiers for international tenders.",
         'srv_visa_title': "Visa Management",
-        'srv_visa_desc': "Full advisory and processing of visas for Libya and other Arab countries for corporate teams.",
+        'srv_visa_desc': "Full advisory and processing of visas for Libya and other Arab countries.",
         'srv_legal_title': "Legal Advisory",
         'srv_legal_desc': "Support in company registration and corporate contracts in emerging markets.",
         'contact_title': "Direct Contact",
@@ -87,7 +84,9 @@ def get_nav(lang, rel_path):
     for l_code in ['es', 'en', 'fr', 'de', 'ar']:
         l_folder = LANG_FOLDERS[l_code]
         links += f'<a href="{rel_path + (l_folder + "/index.html" if l_folder else "index.html")}" class="{"active" if l_code == lang else ""}">{LANG_NAMES[l_code]}</a>'
-    return f"""<nav id="navbar" dir="ltr"><div class="container nav-container"><a href="{rel_path}index.html" class="logo">TIGAFAB<span>.</span></a><ul class="nav-links"><li><a href="index.html">{t['nav_home']}</a></li><li><a href="servicios.html">{t['nav_services']}</a></li><li><a href="contacto.html">{t['nav_contact']}</a></li><li><div class="lang-selector" id="langSelector"><div class="lang-current">{t['nav_lang']} <i class="fas fa-chevron-down"></i></div><div class="lang-dropdown" id="langDropdown">{links}</div></div></li></ul></div></nav>"""
+    
+    # ESTRUCTURA CORREGIDA: Logo - NavLinks - LangSelector (Independientes)
+    return f"""<nav id="navbar" dir="ltr"><div class="container nav-container"><a href="{rel_path}index.html" class="logo">TIGAFAB<span>.</span></a><ul class="nav-links"><li><a href="index.html">{t['nav_home']}</a></li><li><a href="servicios.html">{t['nav_services']}</a></li><li><a href="contacto.html">{t['nav_contact']}</a></li></ul><div class="lang-selector" id="langSelector"><div class="lang-current">{t['nav_lang']} <i class="fas fa-chevron-down"></i></div><div class="lang-dropdown" id="langDropdown">{links}</div></div></div></nav>"""
 
 def generate_page(lang, filename, title_key, content):
     rel_path = "../" if lang != 'es' else ""
@@ -101,22 +100,10 @@ def generate_page(lang, filename, title_key, content):
     os.makedirs(target_dir, exist_ok=True)
     with open(os.path.join(target_dir, filename), "w") as f: f.write(full_html)
 
-def get_review_cards(lang):
-    t_curr = TRANSLATIONS.get(lang, TRANSLATIONS['es']); t_es = TRANSLATIONS['es']
-    items = []
-    for i in range(1, 3):
-        bilingual = f'<p style="font-style:italic; color:#e2e8f0; line-height:1.6; margin-bottom:1rem;">{t_curr.get(f"r{i}", t_es.get(f"r{i}", "" ))}</p>'
-        if lang != 'es': bilingual += f'<p style="font-size:0.8rem; color:rgba(255,255,255,0.4); border-top:1px solid rgba(255,255,255,0.1); padding-top:0.8rem; font-style:italic;"><span style="color:#c2a35d;">{t_curr.get("orig_label", "Original")} (ES):</span> {t_es.get(f"r{i}", "")}</p>'
-        items.append(f'<div class="review-card-premium"><div style="color:#c2a35d; margin-bottom:1rem;"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>{bilingual}<div style="font-weight:700; color:white;">{t_es.get(f"n{i}", "Cliente")}</div></div>')
-    return "".join(items) * 4
-
 for lang in LANG_FOLDERS:
-    # Index
-    index_html = f"""<section class="hero"><div class="container" data-aos="fade-up"><p>t-hero-subtitle</p><h1>t-hero-title</h1><a href="contacto.html" class="btn-premium">t-home-cta-btn</a></div></section><section style="padding:10rem 0;"><div class="container" style="max-width:1000px; text-align:center;" data-aos="fade-up"><h2>t-home-welcome</h2><p style="font-size:1.4rem; color:#94a3b8; line-height:2;">t-home-text-1</p><div style="width:50px; height:2px; background:#c2a35d; margin: 3rem auto;"></div><p style="font-size:1.4rem; color:#94a3b8; line-height:2;">t-home-text-2</p></div></section><section style="padding-bottom: 8rem;"><div class="container" style="text-align:center; margin-bottom:5rem;"><h2 style="font-size:3.5rem; margin-bottom:1rem; color:white;">t-reviews-title</h2><p style="color:#c2a35d; letter-spacing:4px; font-weight:700;">t-exp-verificadas</p></div><div class="marquee-container" id="reviewSlider"><div class="marquee-inner">{get_review_cards(lang)}</div></div></section>"""
+    index_html = f"""<section class="hero"><div class="container" data-aos="fade-up"><h1>t-hero-title</h1><a href="contacto.html" class="btn-premium">t-home-cta-btn</a></div></section><section style="padding:10rem 0;"><div class="container" style="max-width:1000px; text-align:center;" data-aos="fade-up"><h2>t-home-welcome</h2><p style="font-size:1.4rem; color:#94a3b8; line-height:2;">t-home-text-1</p><div style="width:50px; height:2px; background:#c2a35d; margin: 3rem auto;"></div><p style="font-size:1.4rem; color:#94a3b8; line-height:2;">t-home-text-2</p></div></section>"""
     generate_page(lang, "index.html", 'nav_home', index_html)
-    
-    # Servicios Page
-    srv_html = f"""<section class="hero" style="min-height:40vh;"><h1>t-srv-header</h1></section><section style="padding:8rem 0;"><div class="container"><div class="services-grid"><div class="service-card" data-aos="fade-up"><h3>t-srv-sworn-title</h3><p>t-srv-sworn-desc</p></div><div class="service-card" data-aos="fade-up"><h3>t-srv-tech-title</h3><p>t-srv-tech-desc</p></div><div class="service-card" data-aos="fade-up"><h3>t-srv-visa-title</h3><p>t-srv-visa-desc</p></div><div class="service-card" data-aos="fade-up"><h3>t-srv-legal-title</h3><p>t-srv-legal-desc</p></div></div></div></section>"""
-    generate_page(lang, "servicios.html", 'nav_services', srv_html)
+    generate_page(lang, "servicios.html", 'nav_services', '<section class="hero" style="min-height:40vh;"><h1>t-srv-header</h1></section>')
+    generate_page(lang, "contacto.html", 'nav_contact', '<section class="hero" style="min-height:40vh;"><h1>t-contact-title</h1></section>')
 
-print("✅ ÉXITO: Web completa con selector desplegable e inglés premium generada.")
+print("✅ ÉXITO: Alineación de 3 columnas fijada y JS reparado.")
