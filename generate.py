@@ -53,8 +53,8 @@ for lang in LANG_FOLDERS:
     
     # 3. CONTACTO
     cont = f"""<section class="hero" style="min-height:45vh; padding:100px 0;"><div class="container"><h1>t-hero-contact-title</h1></div></section>
-    <section style="padding:8rem 0;"><div class="container"><div class="contact-grid">
-    <div class="contact-info-box" data-aos="fade-right"><h2>t-contact-title</h2><div class="contact-item"><i class="fas fa-map-marker-alt"></i><div><h4>t-info-address-title</h4><p>t-info-address-text</p></div></div><div class="contact-item"><i class="fas fa-envelope"></i><div><h4>t-info-email-title</h4><p>info@tigafab.com</p></div></div><div class="contact-item"><i class="fas fa-phone-alt"></i><div><h4>t-info-phone-title</h4><p>+34 91 606 20 20</p></div></div></div>
+    <section style="padding:8rem 0;"><div class="container"><div class="contact-grid" dir="ltr">
+    <div class="contact-info-box" data-aos="fade-right"><h2>t-contact-title</h2><div class="contact-item"><i class="fas fa-map-marker-alt"></i><div><h4>t-info-address-title</h4><p>t-info-address-text</p></div></div><div class="contact-item"><i class="fas fa-envelope"></i><div><h4>t-info-email-title</h4><p>info@tigafab.com</p></div></div><div class="contact-item"><i class="fas fa-phone-alt"></i><div><h4>t-info-phone-title</h4><p class="contact-phone">+34 91 606 20 20</p></div></div></div>
     <div class="contact-form-premium" data-aos="fade-left"><form action="#" method="POST"><button type="submit" class="btn-premium" style="width:100%">t-form-btn</button></form></div>
     </div></div></section>"""
     generate_page(lang, "contacto.html", 'nav_contact', cont)

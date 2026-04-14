@@ -82,6 +82,7 @@
 }
 .contact-item div h4 { font-size: 1.1rem; margin-bottom: 0.5rem; color: var(--primary); }
 .contact-item div p { color: #94a3b8; line-height: 1.6; }
+.contact-phone { direction: ltr !important; unicode-bidi: plaintext; display: inline-block; }
 
 .contact-form-premium { 
     background: rgba(255,255,255,0.02); border: 1px solid var(--glass-border);
