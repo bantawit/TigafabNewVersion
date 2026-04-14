@@ -2,7 +2,7 @@ import os
 
 BASE_DIR = "/Users/mohamedbentaoit/Downloads/ProyectosAnti-gravity/tigafab-web-nueva"
 
-# --- DICCIONARIO MAESTRO AMPLIADO CON RESEÑAS ---
+# --- DICCIONARIO MAESTRO COMPLETO ---
 TRANSLATIONS = {
     'es': {
         'nav_home': "Inicio", 'nav_services': "Servicios", 'nav_contact': "Contacto", 'nav_location': "Localización",
@@ -56,7 +56,7 @@ TRANSLATIONS = {
         'review_1': "Service impeccable et très professionnel. Fatima a résolu la traduction assermentée en un temps record.",
         'review_2': "Nous faisons confiance à Tigafab depuis des années pour les visas et la traduction technique vers l'arabe.",
         'review_3': "Excellent accueil et très bons tarifs. Ils m'ont beaucoup aidé pour l'enregistrement de ma filiale en Libye.",
-        'review_4': "Grande équipe de traductores professionnels. Ils ont résolu mes dossiers d'immigration très rapidement."
+        'review_4': "Grande équipe de traducteurs professionnels. Ils ont résolu mes dossiers d'immigration très rapidement."
     },
     'de': {
         'nav_home': "Startseite", 'nav_services': "Dienstleistungen", 'nav_contact': "Kontakt", 'nav_location': "Standort",
@@ -132,7 +132,7 @@ def generate_page(lang, filename, title_key, content):
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>{t[title_key]} | TIGAFAB</title>
-  <link rel="stylesheet" href="{rel_path}styles.css?v=12">
+  <link rel="stylesheet" href="{rel_path}styles.css?v=16">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
   <style>
@@ -141,6 +141,7 @@ def generate_page(lang, filename, title_key, content):
     .marquee-container {{ cursor: grab; overflow: hidden; display: flex; position: relative; width: 100%; white-space: nowrap; }}
     .marquee-container:active {{ cursor: grabbing; }}
     .marquee-inner {{ display: flex; flex-shrink: 0; }}
+    .service-card {{ background: #fff; padding: 2.5rem; border-radius: 12px; box-shadow: 0 10px 30px rgba(0,0,0,0.05); transition: all 0.3s ease; text-decoration:none; display:block; height:100%; }}
   </style>
 </head>
 <body class="page-{filename.replace('.html','')}">
@@ -155,7 +156,7 @@ def generate_page(lang, filename, title_key, content):
     </div>
   </footer>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
-  <script src="{rel_path}js/main.js?v=12"></script>
+  <script src="{rel_path}js/main.js?v=16"></script>
   <script>AOS.init();</script>
 </body>
 </html>"""
@@ -172,98 +173,70 @@ index_html = """
     </div>
   </section>
 
-  <section style="padding:6rem 2rem; background:#fff;">
-    <div class="container" style="text-align:center; max-width:900px; margin:0 auto;">
-      <h2 style="font-size:2.8rem; margin-bottom:1.5rem; font-family:var(--font-heading); color:var(--bg-dark);">t-home-welcome</h2>
-      <div style="width:60px; height:3px; background:var(--primary); margin:0 auto 2rem;"></div>
-      <p style="font-size:1.2rem; color:#475569; line-height:1.8;">t-home-welcome-sub</p>
-    </div>
-  </section>
-
-  <section style="padding:6rem 2rem; background:var(--bg-light);">
+  <section style="padding:4rem 2rem; background:var(--bg-light);">
     <div class="container">
       <div style="text-align:center; margin-bottom:4rem;">
         <h2 style="font-size:2.5rem; font-family:var(--font-heading); color:var(--bg-dark);">t-srv-specialized</h2>
-        <p style="color:var(--primary); margin-top:0.5rem;">t-srv-view-all</p>
       </div>
       <div style="display:grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap:2.5rem;">
         <div class="service-card" data-aos="fade-up">
           <div style="font-size:2rem; color:var(--primary); margin-bottom:1.5rem;"><i class="fas fa-file-signature"></i></div>
           <h3 style="margin-bottom:1rem; font-family:var(--font-heading);">t-srv-sworn</h3>
-          <p style="color:#64748B; margin-bottom:1.5rem;">t-srv-sworn-short</p>
-          <a href="servicios.html" style="color:var(--primary); font-weight:700; text-decoration:none;">t-srv-more <i class="fas fa-arrow-right"></i></a>
+          <p style="color:#64748B;">t-srv-sworn-short</p>
         </div>
         <div class="service-card" data-aos="fade-up" data-aos-delay="100">
           <div style="font-size:2rem; color:var(--primary); margin-bottom:1.5rem;"><i class="fas fa-microchip"></i></div>
           <h3 style="margin-bottom:1rem; font-family:var(--font-heading);">t-srv-tech</h3>
-          <p style="color:#64748B; margin-bottom:1.5rem;">t-srv-tech-short</p>
-          <a href="servicios.html" style="color:var(--primary); font-weight:700; text-decoration:none;">t-srv-more <i class="fas fa-arrow-right"></i></a>
+          <p style="color:#64748B;">t-srv-tech-short</p>
         </div>
         <div class="service-card" data-aos="fade-up" data-aos-delay="200">
           <div style="font-size:2rem; color:var(--primary); margin-bottom:1.5rem;"><i class="fas fa-passport"></i></div>
           <h3 style="margin-bottom:1rem; font-family:var(--font-heading);">t-srv-visa</h3>
-          <p style="color:#64748B; margin-bottom:1.5rem;">t-srv-visa-short</p>
-          <a href="servicios.html" style="color:var(--primary); font-weight:700; text-decoration:none;">t-srv-more <i class="fas fa-arrow-right"></i></a>
+          <p style="color:#64748B;">t-srv-visa-short</p>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- SECCIÓN RESEÑAS DINÁMICAS -->
   <section style="position:relative; padding:8rem 0; background: linear-gradient(rgba(15,23,42,0.85), rgba(15,23,42,0.85)), url('https://images.unsplash.com/photo-1497215728101-856f4ea42174?auto=format&fit=crop&q=80&w=1200') center/cover fixed; color:white; overflow:hidden;">
-    <div class="container" style="text-align:center; margin-bottom:4rem;" data-aos="fade-up">
+    <div class="container" style="text-align:center; margin-bottom:4rem;">
       <h2 style="font-size:2.8rem; font-family:var(--font-heading); margin-bottom:1rem;">t-reviews-title</h2>
       <p style="color:var(--primary); letter-spacing:2px; font-weight:600;"><i class="fab fa-google"></i> t-exp-verificadas</p>
     </div>
     
-    <div class="marquee-container" id="reviewSlider" style="display: flex; overflow-x: hidden; white-space:nowrap; overflow:hidden; position:relative;">
-      <div class="marquee-inner" style="display:inline-block; animation: marquee 35s linear infinite;">
-        <!-- Card 1 -->
-        <div style="display:inline-block; width:400px; margin: 0 1rem; background:rgba(255,255,255,0.05); padding:2rem; border-radius:12px; border:1px solid rgba(255,255,255,0.1); white-space:normal; vertical-align:top;">
+    <div class="marquee-container" id="reviewSlider">
+      <div class="marquee-inner">
+        <!-- Grupo 1 -->
+        <div style="flex:0 0 450px; margin: 0 1rem; background:rgba(255,255,255,0.05); padding:2rem; border-radius:12px; border:1px solid rgba(255,255,255,0.1); white-space:normal;">
           <div style="color:#FFD700; margin-bottom:1rem;"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
-          <p style="font-style:italic; color:#cbd5e1; margin-bottom:1rem;">"t-review-1"</p>
+          <p style="font-style:italic; color:#cbd5e1; margin-bottom:1.5rem;">"t-review-1"</p>
           <div style="font-weight:700;">María G.</div>
         </div>
-        <!-- Card 2 -->
-        <div style="display:inline-block; width:400px; margin: 0 1rem; background:rgba(255,255,255,0.05); padding:2rem; border-radius:12px; border:1px solid rgba(255,255,255,0.1); white-space:normal; vertical-align:top;">
+        <div style="flex:0 0 450px; margin: 0 1rem; background:rgba(255,255,255,0.05); padding:2rem; border-radius:12px; border:1px solid rgba(255,255,255,0.1); white-space:normal;">
           <div style="color:#FFD700; margin-bottom:1rem;"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
-          <p style="font-style:italic; color:#cbd5e1; margin-bottom:1rem;">"t-review-2"</p>
+          <p style="font-style:italic; color:#cbd5e1; margin-bottom:1.5rem;">"t-review-2"</p>
           <div style="font-weight:700;">Construction Group</div>
         </div>
-        <!-- Card 3 -->
-        <div style="display:inline-block; width:400px; margin: 0 1rem; background:rgba(255,255,255,0.05); padding:2rem; border-radius:12px; border:1px solid rgba(255,255,255,0.1); white-space:normal; vertical-align:top;">
+        <div style="flex:0 0 450px; margin: 0 1rem; background:rgba(255,255,255,0.05); padding:2rem; border-radius:12px; border:1px solid rgba(255,255,255,0.1); white-space:normal;">
           <div style="color:#FFD700; margin-bottom:1rem;"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
-          <p style="font-style:italic; color:#cbd5e1; margin-bottom:1rem;">"t-review-3"</p>
+          <p style="font-style:italic; color:#cbd5e1; margin-bottom:1.5rem;">"t-review-3"</p>
           <div style="font-weight:700;">Carlos S.</div>
         </div>
-        <!-- Card 4 -->
-        <div style="display:inline-block; width:400px; margin: 0 1rem; background:rgba(255,255,255,0.05); padding:2rem; border-radius:12px; border:1px solid rgba(255,255,255,0.1); white-space:normal; vertical-align:top;">
+        <div style="flex:0 0 450px; margin: 0 1rem; background:rgba(255,255,255,0.05); padding:2rem; border-radius:12px; border:1px solid rgba(255,255,255,0.1); white-space:normal;">
           <div style="color:#FFD700; margin-bottom:1rem;"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
-          <p style="font-style:italic; color:#cbd5e1; margin-bottom:1rem;">"t-review-4"</p>
+          <p style="font-style:italic; color:#cbd5e1; margin-bottom:1.5rem;">"t-review-4"</p>
           <div style="font-weight:700;">Ana M.</div>
         </div>
-      </div>
-      <!-- Clon para efecto infinito -->
-      <div class="marquee-inner" style="display:inline-block; animation: marquee 35s linear infinite;">
-        <div style="display:inline-block; width:400px; margin: 0 1rem; background:rgba(255,255,255,0.05); padding:2rem; border-radius:12px; border:1px solid rgba(255,255,255,0.1); white-space:normal; vertical-align:top;">
+        <!-- Duplicado -->
+        <div style="flex:0 0 450px; margin: 0 1rem; background:rgba(255,255,255,0.05); padding:2rem; border-radius:12px; border:1px solid rgba(255,255,255,0.1); white-space:normal;">
           <div style="color:#FFD700; margin-bottom:1rem;"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
-          <p style="font-style:italic; color:#cbd5e1; margin-bottom:1rem;">"t-review-1"</p>
+          <p style="font-style:italic; color:#cbd5e1; margin-bottom:1.5rem;">"t-review-1"</p>
           <div style="font-weight:700;">María G.</div>
         </div>
-        <div style="display:inline-block; width:400px; margin: 0 1rem; background:rgba(255,255,255,0.05); padding:2rem; border-radius:12px; border:1px solid rgba(255,255,255,0.1); white-space:normal; vertical-align:top;">
+        <div style="flex:0 0 450px; margin: 0 1rem; background:rgba(255,255,255,0.05); padding:2rem; border-radius:12px; border:1px solid rgba(255,255,255,0.1); white-space:normal;">
           <div style="color:#FFD700; margin-bottom:1rem;"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
-          <p style="font-style:italic; color:#cbd5e1; margin-bottom:1rem;">"t-review-2"</p>
+          <p style="font-style:italic; color:#cbd5e1; margin-bottom:1.5rem;">"t-review-2"</p>
           <div style="font-weight:700;">Construction Group</div>
-        </div>
-        <div style="display:inline-block; width:400px; margin: 0 1rem; background:rgba(255,255,255,0.05); padding:2rem; border-radius:12px; border:1px solid rgba(255,255,255,0.1); white-space:normal; vertical-align:top;">
-          <div style="color:#FFD700; margin-bottom:1rem;"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
-          <p style="font-style:italic; color:#cbd5e1; margin-bottom:1rem;">"t-review-3"</p>
-          <div style="font-weight:700;">Carlos S.</div>
-        </div>
-        <div style="display:inline-block; width:400px; margin: 0 1rem; background:rgba(255,255,255,0.05); padding:2rem; border-radius:12px; border:1px solid rgba(255,255,255,0.1); white-space:normal; vertical-align:top;">
-          <div style="color:#FFD700; margin-bottom:1rem;"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
-          <p style="font-style:italic; color:#cbd5e1; margin-bottom:1rem;">"t-review-4"</p>
-          <div style="font-weight:700;">Ana M.</div>
         </div>
       </div>
     </div>
@@ -272,14 +245,12 @@ index_html = """
   <section style="padding:6rem 2rem; text-align:center; background:#fff;">
     <div style="max-width:700px; margin:0 auto;">
       <h2 style="font-size:2.8rem; font-family:var(--font-heading); margin-bottom:1.5rem;">t-home-cta-title</h2>
-      <p style="color:#64748B; margin-bottom:3rem; font-size:1.1rem;">t-home-cta-sub</p>
-      <a href="contacto.html" class="btn" style="background:var(--bg-dark); color:white; text-decoration:none; padding:1.2rem 3.5rem; font-size:1.1rem; box-shadow:0 10px 20px rgba(0,0,0,0.15);">t-home-cta-btn <i class="fas fa-paper-plane" style="margin-left:10px;"></i></a>
+      <a href="contacto.html" class="btn" style="background:var(--bg-dark); color:white; text-decoration:none; padding:1.2rem 3.5rem; font-size:1.1rem; border-radius:50px;">t-home-cta-btn</a>
     </div>
   </section>
 """
 
 for lang in LANG_FOLDERS:
-    # Generamos todas las páginas para cada idioma
     generate_page(lang, "index.html", 'nav_home', index_html)
     generate_page(lang, "servicios.html", 'nav_services', '<section style="padding:10rem 2rem; text-align:center;"><h1 style="font-size:3rem;">t-nav-services</h1></section>')
     generate_page(lang, "contacto.html", 'nav_contact', '<section style="padding:10rem 2rem; text-align:center;"><h1 style="font-size:3rem;">t-nav-contact</h1></section>')
@@ -287,4 +258,4 @@ for lang in LANG_FOLDERS:
     generate_page(lang, "aviso-legal.html", 'nav_legal', '<section style="padding:10rem 2rem; text-align:center;"><h1 style="font-size:3rem;">t-nav-legal</h1></section>')
     generate_page(lang, "privacidad.html", 'nav_privacy', '<section style="padding:10rem 2rem; text-align:center;"><h1 style="font-size:3rem;">t-nav-privacy</h1></section>')
 
-print("✅ ÉXITO: Sitio multi-idioma (incluyendo reseñas traducidas) generado.")
+print("✅ ÉXITO: Generador restaurado con todos los idiomas y motor corregido.")
