@@ -2,8 +2,7 @@ import os
 
 BASE_DIR = "/Users/mohamedbentaoit/Downloads/ProyectosAnti-gravity/tigafab-web-nueva"
 
-# --- DICCIONARIO MAESTRO DE TRADUCCIONES ---
-# He volcado aquí todo el contenido de i18n.js para asegurar que no falte nada
+# --- DICCIONARIO MAESTRO AMPLIADO CON RESEÑAS ---
 TRANSLATIONS = {
     'es': {
         'nav_home': "Inicio", 'nav_services': "Servicios", 'nav_contact': "Contacto", 'nav_location': "Localización",
@@ -17,7 +16,11 @@ TRANSLATIONS = {
         'srv_tech': "Traducciones Técnicas", 'srv_tech_short': "Especialistas en manuales y textos corporativos.",
         'srv_visa': "Gestión de Visados", 'srv_visa_short': "Trámites consulares y legalizaciones.",
         'footer_rights': "© 2026 TIGAFAB S.L. Todos los derechos reservados.",
-        'contact_fatima': "Contactar con Fátima", 'exp_verificadas': "EXPERIENCIAS VERIFICADAS"
+        'exp_verificadas': "EXPERIENCIAS VERIFICADAS",
+        'review_1': "Servicio impecable y muy profesional. Fátima resolvió la traducción jurada de mis documentos en tiempo récord.",
+        'review_2': "Llevamos años confiando en Tigafab para la tramitación de visados y traducción técnica hacia el árabe.",
+        'review_3': "Trato directo y tarifas muy buenas. Me ayudaron muchísimo con el registro de mi filial en Libia.",
+        'review_4': "Gran equipo de traductores profesionales. Resolvieron toda la papeleta de extranjería rapidísimo."
     },
     'en': {
         'nav_home': "Home", 'nav_services': "Services", 'nav_contact': "Contact", 'nav_location': "Location",
@@ -31,7 +34,11 @@ TRANSLATIONS = {
         'srv_tech': "Technical Translations", 'srv_tech_short': "Specialists in manuals and corporate texts.",
         'srv_visa': "Visa Management", 'srv_visa_short': "Consular procedures and legalizations.",
         'footer_rights': "© 2026 TIGAFAB S.L. All rights reserved.",
-        'contact_fatima': "Contact Fatima", 'exp_verificadas': "VERIFIED EXPERIENCES"
+        'exp_verificadas': "VERIFIED EXPERIENCES",
+        'review_1': "Impeccable and very professional service. Fatima resolved the sworn translation of my documents in record time.",
+        'review_2': "We have relied on Tigafab for years for visa processing and technical Arabic translation.",
+        'review_3': "Direct treatment and very good rates. They helped me a lot with the registration of my branch in Libya.",
+        'review_4': "Great team of professional translators. They resolved all the immigration paperwork very quickly."
     },
     'fr': {
         'nav_home': "Accueil", 'nav_services': "Services", 'nav_contact': "Contact", 'nav_location': "Localisation",
@@ -45,7 +52,11 @@ TRANSLATIONS = {
         'srv_tech': "Traductions Techniques", 'srv_tech_short': "Spécialistes des manuels et textes d'entreprise.",
         'srv_visa': "Gestion des Visas", 'srv_visa_short': "Démarches consulaires et légalisations.",
         'footer_rights': "© 2026 TIGAFAB S.L. Tous droits réservés.",
-        'contact_fatima': "Contacter Fatima", 'exp_verificadas': "EXPÉRIENCES VÉRIFIÉES"
+        'exp_verificadas': "EXPÉRIENCES VÉRIFIÉES",
+        'review_1': "Service impeccable et très professionnel. Fatima a résolu la traduction assermentée en un temps record.",
+        'review_2': "Nous faisons confiance à Tigafab depuis des années pour les visas et la traduction technique vers l'arabe.",
+        'review_3': "Excellent accueil et très bons tarifs. Ils m'ont beaucoup aidé pour l'enregistrement de ma filiale en Libye.",
+        'review_4': "Grande équipe de traductores professionnels. Ils ont résolu mes dossiers d'immigration très rapidement."
     },
     'de': {
         'nav_home': "Startseite", 'nav_services': "Dienstleistungen", 'nav_contact': "Kontakt", 'nav_location': "Standort",
@@ -59,7 +70,11 @@ TRANSLATIONS = {
         'srv_tech': "Technische Übersetzungen", 'srv_tech_short': "Spezialisten für Handbücher und Firmentexte.",
         'srv_visa': "Visum-Management", 'srv_visa_short': "Konsularische Verfahrung und Beglaubigungen.",
         'footer_rights': "© 2026 TIGAFAB S.L. Alle Rechte vorbehalten.",
-        'contact_fatima': "Fatima kontaktieren", 'exp_verificadas': "VERIFIZIERTE ERFAHRUNGEN"
+        'exp_verificadas': "VERIFIZIERTE ERFAHRUNGEN",
+        'review_1': "Tadelloser und sehr professioneller Service. Fatima hat die Übersetzung in Rekordzeit erledigt.",
+        'review_2': "Wir verlassen uns seit Jahren auf Tigafab für Visa und technische Arabisch-Übersetzungen.",
+        'review_3': "Direkter Kontakt und sehr gute Preise. Sehr hilfreich bei der Gründung meiner Niederlassung in Libyen.",
+        'review_4': "Großartiges Team von professionellen Übersetzern. Immigrationsthemen wurden sehr schnell gelöst."
     },
     'ar': {
         'nav_home': "الرئيسية", 'nav_services': "الخدمات", 'nav_contact': "اتصل بنا", 'nav_location': "الموقع",
@@ -73,7 +88,11 @@ TRANSLATIONS = {
         'srv_tech': "الترجمة المتخصصة", 'srv_tech_short': "وثائق تقنية للشركات والدلائل عالية الدقة.",
         'srv_visa': "إدارة التأشيرات", 'srv_visa_short': "إجراءات قنصلية سريعة للموظفين الأجانب.",
         'footer_rights': "© 2026 TIGAFAB S.L. جميع الحقوق محفوظة.",
-        'contact_fatima': "اتصل بفاطمة", 'exp_verificadas': "تجارب موثقة"
+        'exp_verificadas': "تجارب موثقة",
+        'review_1': "خدمة مثالية واحترافية للغاية. أنجزت فاطمة الترجمة المحلفة لوثائقي في وقت قياسي.",
+        'review_2': "نعتمد على تيگافاب منذ سنوات في استخراج التأشيرات والترجمة التقنية للغة العربية.",
+        'review_3': "تعامل مباشر وأسعار ممتازة. ساعدوني كثيراً في تسجيل فرع شركتي في ليبيا.",
+        'review_4': "فريق رائع من المترجمين المحترفين. أنجزوا جميع أوراق الهجرة بسرعة كبيرة."
     }
 }
 
@@ -86,7 +105,6 @@ def get_nav(lang, rel_path):
         active = "active" if l_code == lang else ""
         href = rel_path + (f"{l_folder}/index.html" if l_folder else "index.html")
         lang_links += f'<a href="{href}" class="lang-btn {active}">{l_code.upper()}</a>'
-
     return f"""
   <nav id="navbar">
     <div class="nav-container">
@@ -106,26 +124,24 @@ def generate_page(lang, filename, title_key, content):
     rel_path = "../" if lang != 'es' else ""
     t = TRANSLATIONS[lang]
     is_rtl = 'dir="rtl"' if lang == 'ar' else 'dir="ltr"'
-    
-    # Reemplazar marcadores t- con los valoes reales
     for key, val in t.items():
         content = content.replace(f't-{key.replace("_","-")}', str(val))
-
     full_html = f"""<!DOCTYPE html>
 <html lang="{lang}" {is_rtl}>
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>{t[title_key]} | TIGAFAB</title>
-  <link rel="stylesheet" href="{rel_path}styles.css?v=11">
+  <link rel="stylesheet" href="{rel_path}styles.css?v=12">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
   <style>
     @import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700&display=swap');
     [lang="ar"] {{ font-family: 'Tajawal', sans-serif !important; }}
-    .service-card {{ background: #fff; padding: 2.5rem; border-radius: 12px; box-shadow: 0 10px 30px rgba(0,0,0,0.05); transition: all 0.3s ease; text-decoration:none; display:block; }}
-    .service-card:hover {{ transform: translateY(-10px); box-shadow: 0 20px 40px rgba(0,0,0,0.1); }}
+    .service-card {{ background: #fff; padding: 2.5rem; border-radius: 12px; box-shadow: 0 10px 30px rgba(0,0,0,0.05); transition: all 0.3s ease; text-decoration:none; display:block; height:100%; }}
     .btn {{ display:inline-block; padding: 1rem 2.5rem; border-radius: 50px; font-weight: 700; transition: all 0.3s ease; cursor:pointer; }}
+    @keyframes marquee {{ 0% {{ transform: translateX(0); }} 100% {{ transform: translateX(-50%); }} }}
+    [dir="rtl"] @keyframes marquee {{ 0% {{ transform: translateX(0); }} 100% {{ transform: translateX(50%); }} }}
   </style>
 </head>
 <body class="page-{filename.replace('.html','')}">
@@ -140,11 +156,10 @@ def generate_page(lang, filename, title_key, content):
     </div>
   </footer>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
-  <script src="{rel_path}js/main.js?v=11"></script>
+  <script src="{rel_path}js/main.js?v=12"></script>
   <script>AOS.init();</script>
 </body>
 </html>"""
-
     target_dir = os.path.join(BASE_DIR, LANG_FOLDERS[lang])
     if not os.path.exists(target_dir): os.makedirs(target_dir)
     with open(os.path.join(target_dir, filename), "w", encoding="utf-8") as f: f.write(full_html)
@@ -195,10 +210,63 @@ index_html = """
     </div>
   </section>
 
-  <section style="position:relative; padding:10rem 2rem; background: linear-gradient(rgba(15,23,42,0.8), rgba(15,23,42,0.8)), url('https://images.unsplash.com/photo-1497215728101-856f4ea42174?auto=format&fit=crop&q=80&w=1200') center/cover fixed; color:white; text-align:center;">
-    <div class="container" data-aos="fade-up">
-      <h2 style="font-size:3rem; font-family:var(--font-heading); margin-bottom:1rem;">t-reviews-title</h2>
+  <!-- SECCIÓN RESEÑAS DINÁMICAS -->
+  <section style="position:relative; padding:8rem 0; background: linear-gradient(rgba(15,23,42,0.85), rgba(15,23,42,0.85)), url('https://images.unsplash.com/photo-1497215728101-856f4ea42174?auto=format&fit=crop&q=80&w=1200') center/cover fixed; color:white; overflow:hidden;">
+    <div class="container" style="text-align:center; margin-bottom:4rem;" data-aos="fade-up">
+      <h2 style="font-size:2.8rem; font-family:var(--font-heading); margin-bottom:1rem;">t-reviews-title</h2>
       <p style="color:var(--primary); letter-spacing:2px; font-weight:600;"><i class="fab fa-google"></i> t-exp-verificadas</p>
+    </div>
+    
+    <div style="white-space:nowrap; overflow:hidden; position:relative;">
+      <div style="display:inline-block; animation: marquee 30s linear infinite;">
+        <!-- Card 1 -->
+        <div style="display:inline-block; width:400px; margin: 0 1rem; background:rgba(255,255,255,0.05); padding:2rem; border-radius:12px; border:1px solid rgba(255,255,255,0.1); white-space:normal; vertical-align:top;">
+          <div style="color:#FFD700; margin-bottom:1rem;"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+          <p style="font-style:italic; color:#cbd5e1; margin-bottom:1rem;">"t-review-1"</p>
+          <div style="font-weight:700;">María G.</div>
+        </div>
+        <!-- Card 2 -->
+        <div style="display:inline-block; width:400px; margin: 0 1rem; background:rgba(255,255,255,0.05); padding:2rem; border-radius:12px; border:1px solid rgba(255,255,255,0.1); white-space:normal; vertical-align:top;">
+          <div style="color:#FFD700; margin-bottom:1rem;"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+          <p style="font-style:italic; color:#cbd5e1; margin-bottom:1rem;">"t-review-2"</p>
+          <div style="font-weight:700;">Construction Group</div>
+        </div>
+        <!-- Card 3 -->
+        <div style="display:inline-block; width:400px; margin: 0 1rem; background:rgba(255,255,255,0.05); padding:2rem; border-radius:12px; border:1px solid rgba(255,255,255,0.1); white-space:normal; vertical-align:top;">
+          <div style="color:#FFD700; margin-bottom:1rem;"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+          <p style="font-style:italic; color:#cbd5e1; margin-bottom:1rem;">"t-review-3"</p>
+          <div style="font-weight:700;">Carlos S.</div>
+        </div>
+        <!-- Card 4 -->
+        <div style="display:inline-block; width:400px; margin: 0 1rem; background:rgba(255,255,255,0.05); padding:2rem; border-radius:12px; border:1px solid rgba(255,255,255,0.1); white-space:normal; vertical-align:top;">
+          <div style="color:#FFD700; margin-bottom:1rem;"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+          <p style="font-style:italic; color:#cbd5e1; margin-bottom:1rem;">"t-review-4"</p>
+          <div style="font-weight:700;">Ana M.</div>
+        </div>
+      </div>
+      <!-- Clon para efecto infinito -->
+      <div style="display:inline-block; animation: marquee 30s linear infinite;">
+        <div style="display:inline-block; width:400px; margin: 0 1rem; background:rgba(255,255,255,0.05); padding:2rem; border-radius:12px; border:1px solid rgba(255,255,255,0.1); white-space:normal; vertical-align:top;">
+          <div style="color:#FFD700; margin-bottom:1rem;"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+          <p style="font-style:italic; color:#cbd5e1; margin-bottom:1rem;">"t-review-1"</p>
+          <div style="font-weight:700;">María G.</div>
+        </div>
+        <div style="display:inline-block; width:400px; margin: 0 1rem; background:rgba(255,255,255,0.05); padding:2rem; border-radius:12px; border:1px solid rgba(255,255,255,0.1); white-space:normal; vertical-align:top;">
+          <div style="color:#FFD700; margin-bottom:1rem;"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+          <p style="font-style:italic; color:#cbd5e1; margin-bottom:1rem;">"t-review-2"</p>
+          <div style="font-weight:700;">Construction Group</div>
+        </div>
+        <div style="display:inline-block; width:400px; margin: 0 1rem; background:rgba(255,255,255,0.05); padding:2rem; border-radius:12px; border:1px solid rgba(255,255,255,0.1); white-space:normal; vertical-align:top;">
+          <div style="color:#FFD700; margin-bottom:1rem;"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+          <p style="font-style:italic; color:#cbd5e1; margin-bottom:1rem;">"t-review-3"</p>
+          <div style="font-weight:700;">Carlos S.</div>
+        </div>
+        <div style="display:inline-block; width:400px; margin: 0 1rem; background:rgba(255,255,255,0.05); padding:2rem; border-radius:12px; border:1px solid rgba(255,255,255,0.1); white-space:normal; vertical-align:top;">
+          <div style="color:#FFD700; margin-bottom:1rem;"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+          <p style="font-style:italic; color:#cbd5e1; margin-bottom:1rem;">"t-review-4"</p>
+          <div style="font-weight:700;">Ana M.</div>
+        </div>
+      </div>
     </div>
   </section>
 
@@ -211,14 +279,13 @@ index_html = """
   </section>
 """
 
-# --- EJECUCIÓN ---
 for lang in LANG_FOLDERS:
-    print(f"Generando estructura completa para: {lang.upper()}...")
+    # Generamos todas las páginas para cada idioma
     generate_page(lang, "index.html", 'nav_home', index_html)
-    generate_page(lang, "servicios.html", 'nav_services', '<section style="padding:10rem 2rem; text-align:center;"><h1 style="font-size:4rem; font-family:var(--font-heading);">t-nav-services</h1></section>')
-    generate_page(lang, "contacto.html", 'nav_contact', '<section style="padding:10rem 2rem; text-align:center;"><h1 style="font-size:4rem; font-family:var(--font-heading);">t-nav-contact</h1></section>')
-    generate_page(lang, "localizacion.html", 'nav_location', '<section style="padding:10rem 2rem; text-align:center;"><h1 style="font-size:4rem; font-family:var(--font-heading);">t-nav-location</h1></section>')
-    generate_page(lang, "aviso-legal.html", 'nav_legal', '<section style="padding:10rem 2rem; text-align:center;"><h1 style="font-size:4rem; font-family:var(--font-heading);">t-nav-legal</h1></section>')
-    generate_page(lang, "privacidad.html", 'nav_privacy', '<section style="padding:10rem 2rem; text-align:center;"><h1 style="font-size:4rem; font-family:var(--font-heading);">t-nav-privacy</h1></section>')
+    generate_page(lang, "servicios.html", 'nav_services', '<section style="padding:10rem 2rem; text-align:center;"><h1 style="font-size:3rem;">t-nav-services</h1></section>')
+    generate_page(lang, "contacto.html", 'nav_contact', '<section style="padding:10rem 2rem; text-align:center;"><h1 style="font-size:3rem;">t-nav-contact</h1></section>')
+    generate_page(lang, "localizacion.html", 'nav_location', '<section style="padding:10rem 2rem; text-align:center;"><h1 style="font-size:3rem;">t-nav-location</h1></section>')
+    generate_page(lang, "aviso-legal.html", 'nav_legal', '<section style="padding:10rem 2rem; text-align:center;"><h1 style="font-size:3rem;">t-nav-legal</h1></section>')
+    generate_page(lang, "privacidad.html", 'nav_privacy', '<section style="padding:10rem 2rem; text-align:center;"><h1 style="font-size:3rem;">t-nav-privacy</h1></section>')
 
-print("✅ ÉXITO: Sitio multi-idioma reconstruido con toda la información.")
+print("✅ ÉXITO: Sitio multi-idioma (incluyendo reseñas traducidas) generado.")
