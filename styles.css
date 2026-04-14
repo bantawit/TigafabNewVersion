@@ -29,12 +29,11 @@ h1, h2, h3 { font-family: var(--font-heading); }
 }
 
 .logo { 
-  font-family: var(--font-heading); font-size: 2.2rem; font-weight: 700; 
-  color: #349df8 !important; text-decoration: none !important;
+  font-family: var(--font-heading); font-size: 1.8rem; font-weight: 900; 
+  color: #fff !important; text-decoration: none !important;
   display: flex; align-items: center; line-height: 1; margin: 0;
-  letter-spacing: -1px;
 }
-.logo span.logo-f { color: #ed1c24 !important; }
+.logo span { color: var(--primary); }
 
 .nav-links { 
   display: flex; 
