@@ -2,7 +2,7 @@ import os
 
 BASE_DIR = "/Users/mohamedbentaoit/Downloads/ProyectosAnti-gravity/tigafab-web-nueva"
 
-# --- DICCIONARIO MAESTRO CON RESEÑAS 100% COMPLETAS ---
+# --- DICCIONARIO MAESTRO ---
 TRANSLATIONS = {
     'es': {
         'nav_home': "Inicio", 'nav_services': "Servicios", 'nav_contact': "Contacto", 'nav_location': "Localización",
@@ -10,8 +10,8 @@ TRANSLATIONS = {
         'hero_title': "Excelencia en Traducción",
         'hero_subtitle': "ÁRABE • ESPAÑOL • INGLÉS • ALEMÁN • FRANCÉS",
         'home_welcome': "Más de 15 años de prestigio internacional",
-        'home_text_1': "Somos un despacho boutique de traductores e interpretes oficiales jurados, encabezados por Fatima Benamar Bahamad. Nuestra firma es sinónimo de rigor jurídico, confidencialidad absoluta y calidad de élite.",
-        'home_text_2': "Líderes en asesoramiento mercante para el mercado LIBIO. Proporcionamos una estructura completa de apoyo para empresas constructoras, desde el registro legal hasta el apoyo técnico en reuniones estratégicas.",
+        'home_text_1': "Somos un despacho boutique de traductores e interpretes oficiales jurados, encabezados por Fatima Benamar Bahamad.",
+        'home_text_2': "Líderes en asesoramiento mercante para el mercado LIBIO.",
         'srv_header': "Servicios Boutique",
         'srv_sworn': "Traducciones Juradas", 
         'srv_tech': "Traducción Técnica",
@@ -20,7 +20,6 @@ TRANSLATIONS = {
         'home_cta_btn': "SOLICITAR PRESUPUESTO",
         'footer_rights': "© 2026 TIGAFAB S.L. Boutique de Traducción Jurada.",
         'exp_verificadas': "EXPERIENCIAS VERIFICADAS", 'orig_label': "Original",
-        # RESEÑAS COMPLETAS
         'r1': "Servicio impecable y muy profesional. Fátima resolvió la traducción jurada de mis documentos en tiempo récord para un trámite urgente. Totalmente recomendados.",
         'r2': "Llevamos años confiando en Tigafab para la tramitación de visados y traducción técnica hacia el árabe de los expedientes de nuestra empresa. Rápidos y eficaces.",
         'r3': "Trato directo y tarifas muy buenas. Me ayudaron muchísimo con el registro de mi filial y servicios en Libia, desde los contratos hasta el asesoramiento. Un 10.",
@@ -37,8 +36,8 @@ TRANSLATIONS = {
         'hero_title': "Translation Excellence",
         'hero_subtitle': "ARABIC • SPANISH • ENGLISH • GERMAN • FRENCH",
         'home_welcome': "15+ Years of International Prestige",
-        'home_text_1': "Official sworn native translators led by Ms. Fatima Benamar Bahamad. Legal rigor and elite quality.",
-        'home_text_2': "Leaders in merchant advisory for the LIBYAN market. Strategic and legal support.",
+        'home_text_1': "Official sworn native translators led by Ms. Fatima Benamar Bahamad.",
+        'home_text_2': "Leaders in merchant advisory for the LIBYAN market.",
         'srv_header': "Boutique Services",
         'srv_sworn': "Sworn Translations",
         'srv_tech': "Technical Translation",
@@ -46,15 +45,7 @@ TRANSLATIONS = {
         'reviews_title': "Global Trust",
         'home_cta_btn': "GET A QUOTE",
         'footer_rights': "© 2026 TIGAFAB S.L. Sworn Translation Boutique.",
-        'exp_verificadas': "VERIFIED EXPERIENCES", 'orig_label': "Original",
-        'r1': "Impeccable and very professional service. Fatima resolved the sworn translation of my documents in record time for an urgent procedure. Highly recommended.",
-        'r2': "We have relied on Tigafab for years to process visas and technical Arabic translations for our business files. Fast and effective.",
-        'r3': "Direct treatment and very good rates. They helped me a lot with the registration of my branch and services in Libya, from contracts to consulting. 10/10.",
-        'r4': "Great team of professional translators. They resolved all the immigration paperwork and Chamber of Commerce certificates very quickly.",
-        'r5': "Excellent service in Madrid. They translated my passport and a corporate contract with absolute precision.",
-        'r6': "Tigafab advised us from Fuenlabrada on opening a branch in North Africa. The human quality of their team is incredible.",
-        'r7': "British punctuality and a brutal level of confidentiality. Working with Ms. Fatima reassures all our international procedures.",
-        'r8': "There is no real competition in the deadlines they handle. The entire package of sworn Arabic translations was impeccably ready."
+        'exp_verificadas': "VERIFIED EXPERIENCES", 'orig_label': "Original"
     },
     'ar': {
         'nav_home': "الرئيسية", 'nav_services': "الخدمات", 'nav_contact': "اتصل بنا", 'nav_location': "الموقع",
@@ -71,15 +62,7 @@ TRANSLATIONS = {
         'reviews_title': "ثقة عالمية",
         'home_cta_btn': "طلب عرض سعر",
         'footer_rights': "© 2026 TIGAFAB S.L. بيت الترجمة المحلفة.",
-        'exp_verificadas': "تجارب موثقة", 'orig_label': "الأصل",
-        'r1': "خدمة لا تشوبها شائبة واحترافية للغاية. أنجزت فاطمة الترجمة المحلفة لوثائقي في وقت قياسي لإجراء عاجل. موصى به بشدة.",
-        'r2': "نحن نعتمد على تيگافاب منذ سنوات في استخراج التأشيرات والترجمة التقنية لملفاتنا. سريعون وفعالون.",
-        'r3': "تعامل مباشر وأسعار جيدة جدًا. لقد ساعدوني كثيرًا في تسجيل فرعي في ليبيا. 10/10.",
-        'r4': "فريق رائع من المترجمين المحترفين. أنجزوا جميع أوراق الهجرة وشهادات الغرفة التجارية بسرعة.",
-        'r5': "خدمة ممتازة في مدريد. لقد ترجموا جواز سفري وعقد الشركة بدقة متناهية.",
-        'r6': "نصحتنا تيگافاب لافتتاح فرع في شمال أفريقيا. الجودة الإنسانية لفريقهم لا تصدق.",
-        'r7': "دقة والتزام وسرية تامة. العمل مع السيدة فاطمة يطمئن جميع إجراءاتنا الدولية.",
-        'r8': "لا توجد منافسة حقيقية في المواعيد. الترجمة المحلفة العربية كانت جاهزة بشكل لا تشوبه شائبة."
+        'exp_verificadas': "تجارب موثقة", 'orig_label': "الأصل"
     }
 }
 
@@ -90,7 +73,7 @@ def get_nav(lang, rel_path):
     links = ""
     for l_code, l_folder in LANG_FOLDERS.items():
         links += f'<a href="{rel_path + (l_folder + "/index.html" if l_folder else "index.html")}" class="lang-btn {"active" if l_code == lang else ""}">{l_code.upper()}</a>'
-    return f"""<nav id="navbar"><div class="nav-container"><a href="{rel_path}index.html" class="logo">TIGAFAB<span>.</span></a><ul class="nav-links"><li><a href="index.html">{t['nav_home']}</a></li><li><a href="servicios.html">{t['nav_services']}</a></li><li><a href="contacto.html">{t['nav_contact']}</a></li><li><a href="localizacion.html">{t['nav_location']}</a></li></ul><div class="lang-selector">{links}</div></div></nav>"""
+    return f"""<nav id="navbar"><div class="container nav-container"><a href="{rel_path}index.html" class="logo">TIGAFAB<span>.</span></a><ul class="nav-links"><li><a href="index.html">{t['nav_home']}</a></li><li><a href="servicios.html">{t['nav_services']}</a></li><li><a href="contacto.html">{t['nav_contact']}</a></li><li><a href="localizacion.html">{t['nav_location']}</a></li><li><div class="lang-selector">{links}</div></li></ul></div></nav>"""
 
 def generate_page(lang, filename, title_key, content):
     rel_path = "../" if lang != 'es' else ""
@@ -119,4 +102,4 @@ for lang in LANG_FOLDERS:
     generate_page(lang, "servicios.html", 'nav_services', '<section class="hero"><h1>t-srv-header</h1></section>')
     for p in ["contacto.html", "localizacion.html", "aviso-legal.html", "privacidad.html"]: generate_page(lang, p, 'nav_home', f'<section class="hero"><h1>{p}</h1></section>')
 
-print("✅ ÉXITO: Reseñas restauradas con el contenido original completo.")
+print("✅ ÉXITO: Menú y logo restaurados al 100% con estilo premium.")
