@@ -10,7 +10,7 @@ LANG_FOLDERS = {'es': '', 'en': 'en', 'fr': 'fr', 'de': 'de', 'ar': 'ar'}
 def get_nav(lang, rel_path):
     t = TRANSLATIONS.get(lang, TRANSLATIONS['es'])
     links = "".join([f'<a href="{rel_path + (LANG_FOLDERS[lc] + "/index.html" if LANG_FOLDERS[lc] else "index.html")}">{LANG_NAMES[lc]}</a>' for lc in LANG_NAMES])
-    return f"""<nav id="navbar" dir="ltr"><div class="container nav-container"><a href="{rel_path}index.html" class="logo">TIGAFAB<span>.</span></a><ul class="nav-links"><li><a href="index.html">{t['nav_home']}</a></li><li><a href="quienes-somos.html">{t['nav_about']}</a></li><li><a href="servicios.html">{t['nav_services']}</a></li><li><a href="contacto.html">{t['nav_contact']}</a></li></ul><div class="lang-selector" id="langSelector"><div class="lang-current">{t['nav_lang']} <i class="fas fa-chevron-down"></i></div><div class="lang-dropdown" id="langDropdown">{links}</div></div></div></nav>"""
+    return f"""<nav id="navbar" dir="ltr"><div class="container nav-container"><a href="{rel_path}index.html" class="logo">TIGAFAB<span>.</span></a><ul class="nav-links"><li><a href="index.html">{t['nav_home']}</a></li><li><a href="quienes-somos.html">{t['nav_about']}</a></li><li><a href="clientes.html">{t['nav_clients']}</a></li><li><a href="servicios.html">{t['nav_services']}</a></li><li><a href="contacto.html">{t['nav_contact']}</a></li></ul><div class="lang-selector" id="langSelector"><div class="lang-current">{t['nav_lang']} <i class="fas fa-chevron-down"></i></div><div class="lang-dropdown" id="langDropdown">{links}</div></div></div></nav>"""
 
 def get_list_html(key, lang):
     t = TRANSLATIONS.get(lang, TRANSLATIONS['es'])
@@ -22,6 +22,12 @@ def get_review_cards(lang_dict):
     reviews_list = lang_dict.get('reviews_data', [])
     cards = "".join([f'<div class="review-card-premium"><div style="color:#c2a35d; margin-bottom:1.1rem;"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div><p style="margin-bottom:1.5rem;">{txt}</p><div style="font-weight:700; color:var(--primary); font-size:0.9rem; border-top:1px solid rgba(255,255,255,0.1); padding-top:1rem;">{name}</div></div>' for name, txt in reviews_list])
     return cards * 4 # Infinite loop effect
+
+def get_clients_html(rel_path):
+    client_dir = os.path.join(BASE_DIR, "img/clients")
+    if not os.path.exists(client_dir): return ""
+    imgs = sorted([f for f in os.listdir(client_dir) if f.lower().endswith(('.png', '.jpg', '.jpeg', '.gif'))])
+    return "".join([f'<div class="client-logo-box" data-aos="zoom-in"><img src="{rel_path}img/clients/{img}" alt="Cliente Tigafab"></div>' for img in imgs])
 
 def generate_page(lang, filename, title_key, content):
     rel_path = "../" if lang != 'es' else ""
@@ -36,60 +42,15 @@ def generate_page(lang, filename, title_key, content):
 
 for lang in LANG_FOLDERS:
     t = TRANSLATIONS.get(lang, TRANSLATIONS['es'])
-    # 1. HOME (RESTAURACION TOTAL)
+    rel_path = "../" if lang != 'es' else ""
+    
+    # 1. HOME
     home = f"""<section class="hero"><div class="container" data-aos="fade-up"><p>t-hero-subtitle</p><h1>t-hero-title</h1><a href="contacto.html" class="btn-premium">t-home-cta-btn</a></div></section>
     <section style="padding:10rem 0;"><div class="container" style="max-width:1150px;"><div style="display:grid; grid-template-columns:1.2fr 1fr; gap:5rem; align-items:start;"><div data-aos="fade-right"><h2>t-home-section-title</h2><p style="font-size:1.3rem; line-height:1.8; margin-bottom:2.5rem;">t-h1</p><div style="background:rgba(194,163,93,0.1); border-left:4px solid var(--primary); padding:2.5rem; margin-bottom:2.5rem;"><p style="font-size:1.5rem; font-weight:700; color:var(--primary); margin-bottom:1rem;">t-h2</p><p style="color:#f8fafc; font-size:1.1rem; line-height:1.6;">t-h3</p></div><p style="font-style:italic; color:#94a3b8; font-size:1.1rem;">t-h4</p></div><div data-aos="fade-left" style="background:rgba(255,255,255,0.02); border:1px solid var(--glass-border); padding:3.5rem; border-radius:24px; box-shadow: 0 10px 30px rgba(0,0,0,0.2);"><p style="margin-bottom:2.5rem; font-size:1.2rem; color:#f8fafc; line-height:1.8;">t-h5</p><p style="font-size:1.2rem; color:#94a3b8; line-height:1.8;">t-h6</p></div></div></div></section>
     <section style="padding-bottom:10rem;"><div class="container" style="text-align:center; margin-bottom:5rem;"><h2>t-reviews-title</h2><p style="letter-spacing:2px; font-weight:700; color:var(--primary);">t-exp-verificadas</p></div><div class="marquee-container"><div class="marquee-inner">{get_review_cards(t)}</div></div></section>"""
     generate_page(lang, "index.html", 'nav_home', home)
     
-    # 2. SERVICIOS (TODOS LOS BLOQUES ACTIVOS)
-    srv = f"""<section class="hero" style="min-height:50vh; padding:120px 0;"><div class="container" data-aos="fade-up"><h1>t-srv-header-main</h1><p>t-srv-header-sub</p></div></section>
-    <section style="padding: 8rem 0; background: var(--bg-dark);"><div class="container"><div class="services-creative-grid">
-    <div class="service-premium-box" data-aos="fade-up"><i class="fas fa-stamp"></i><h3>t-srv-jurada-title</h3><ul class="service-list-detailed">{get_list_html('srv_jurada_list', lang)}</ul></div>
-    <div class="service-premium-box" data-aos="fade-up" data-aos-delay="100"><i class="fas fa-file-invoice"></i><h3>t-srv-tecnica-title</h3><ul class="service-list-detailed">{get_list_html('srv_tecnica_list', lang)}</ul></div>
-    <div class="service-premium-box" data-aos="fade-up" data-aos-delay="200"><i class="fas fa-landmark"></i><h3>t-srv-organismos-title</h3><ul class="service-list-detailed">{get_list_html('srv_organismos_list', lang)}</ul></div>
-    <div class="service-premium-box" data-aos="fade-up" data-aos-delay="300"><i class="fas fa-id-card"></i><h3>t-srv-visados-title</h3><ul class="service-list-detailed">{get_list_html('srv_visados_list', lang)}</ul></div>
-    <div class="service-premium-box featured-libia" style="grid-column: 1 / -1;" data-aos="zoom-in"><div style="display:grid; grid-template-columns: auto 1fr; gap:4rem; align-items:center;"><i class="fas fa-globe-africa" style="font-size:4rem;"></i><div><h3>t-srv-libia-title</h3><p style="font-size:1.2rem; color:#f8fafc; line-height:1.8;">t-srv-libia-desc</p><a href="contacto.html" class="btn-premium" style="display:inline-block; margin-top:2rem;">t-srv-libia-btn</a></div></div></div>
-    </div></div></section>"""
-    generate_page(lang, "servicios.html", 'nav_services', srv)
-    
-    # 3. CONTACTO (RESTAURACION TOTAL CON FORMULARIO)
-    def itm(icon, title, content): return f'<div class="contact-item"><i class="fas {icon}"></i><div><h4>{title}</h4><div class="contact-details-content">{content}</div></div></div>'
-    
-    emails_html = "".join([f'<p>{e}</p>' for e in t.get('info_emails', [])])
-    phones_html = "".join([f'<p class="contact-phone">{p}</p>' for p in t.get('info_phones', [])])
-    
-    cont = f"""<section class="hero" style="min-height:45vh; padding:100px 0;"><div class="container"><h1>t-hero-contact-title</h1></div></section>
-    <section style="padding:8rem 0;"><div class="container"><div class="contact-grid" dir="ltr">
-    <div class="contact-info-box" data-aos="fade-right">
-        <h2>t-contact-title</h2>
-        {itm('fa-map-marker-alt', t.get('info_address_title_1'), f'<p>{t.get("info_address_text_1")}</p>')}
-        {itm('fa-map-marker-alt', t.get('info_address_title_2'), f'<p>{t.get("info_address_text_2")}</p>')}
-        {itm('fa-envelope', t.get('info_email_title'), emails_html)}
-        {itm('fa-phone-alt', t.get('info_phone_title'), phones_html)}
-        {itm('fa-fax', t.get('info_fax_title'), f'<p>{t.get("info_fax")}</p>')}
-    </div>
-    <div class="contact-form-premium" data-aos="fade-left">
-        <form action="#" method="POST">
-            <div class="form-group-premium">
-                <input type="text" placeholder="{t['form_name']}" required>
-            </div>
-            <div class="form-group-premium">
-                <input type="email" placeholder="{t['form_email']}" required>
-            </div>
-            <div class="form-group-premium">
-                <input type="tel" placeholder="{t['form_phone']}">
-            </div>
-            <div class="form-group-premium">
-                <textarea rows="5" placeholder="{t['form_message']}" required></textarea>
-            </div>
-            <button type="submit" class="btn-premium" style="width:100%">t-form-btn</button>
-        </form>
-    </div>
-    </div></div></section>"""
-    generate_page(lang, "contacto.html", 'nav_contact', cont)
-    
-    # 4. QUIENES SOMOS (NUEVA PAGINA)
+    # 2. QUIENES SOMOS
     about = f"""<section class="hero" style="min-height:45vh; padding:100px 0;"><div class="container" data-aos="fade-up"><h1>t-about-title</h1><p>t-about-subtitle</p></div></section>
     <section style="padding:8rem 0;"><div class="container"><div style="display:grid; grid-template-columns:1fr 1.2fr; gap:6rem; align-items:start;">
     <div data-aos="fade-right" style="position:sticky; top:120px;">
@@ -123,8 +84,41 @@ for lang in LANG_FOLDERS:
     </div></div></section>"""
     generate_page(lang, "quienes-somos.html", 'nav_about', about)
 
-    # 5. LEGAL
+    # 3. CLIENTES
+    clients_sec = f"""<section class="hero" style="min-height:45vh; padding:100px 0;"><div class="container" data-aos="fade-up"><h1>t-clients-title</h1><p>t-clients-subtitle</p></div></section>
+    <section style="padding:10rem 0;"><div class="container">
+    <div style="max-width:900px; margin: 0 auto 6rem auto; text-align:center; color:#94a3b8; font-size:1.2rem; line-height:2;" data-aos="fade-up">
+        <p>t-clients-text</p>
+    </div>
+    <div class="clients-grid">{get_clients_html(rel_path)}</div>
+    </div></section>"""
+    generate_page(lang, "clientes.html", 'nav_clients', clients_sec)
+
+    # 4. SERVICIOS
+    srv = f"""<section class="hero" style="min-height:50vh; padding:120px 0;"><div class="container" data-aos="fade-up"><h1>t-srv-header-main</h1><p>t-srv-header-sub</p></div></section>
+    <section style="padding: 8rem 0; background: var(--bg-dark);"><div class="container"><div class="services-creative-grid">
+    <div class="service-premium-box" data-aos="fade-up"><i class="fas fa-stamp"></i><h3>t-srv-jurada-title</h3><ul class="service-list-detailed">{get_list_html('srv_jurada_list', lang)}</ul></div>
+    <div class="service-premium-box" data-aos="fade-up" data-aos-delay="100"><i class="fas fa-file-invoice"></i><h3>t-srv-tecnica-title</h3><ul class="service-list-detailed">{get_list_html('srv_tecnica_list', lang)}</ul></div>
+    <div class="service-premium-box" data-aos="fade-up" data-aos-delay="200"><i class="fas fa-landmark"></i><h3>t-srv-organismos-title</h3><ul class="service-list-detailed">{get_list_html('srv_organismos_list', lang)}</ul></div>
+    <div class="service-premium-box" data-aos="fade-up" data-aos-delay="300"><i class="fas fa-id-card"></i><h3>t-srv-visados-title</h3><ul class="service-list-detailed">{get_list_html('srv_visados_list', lang)}</ul></div>
+    <div class="service-premium-box featured-libia" style="grid-column: 1 / -1;" data-aos="zoom-in"><div style="display:grid; grid-template-columns: auto 1fr; gap:4rem; align-items:center;"><i class="fas fa-globe-africa" style="font-size:4rem;"></i><div><h3>t-srv-libia-title</h3><p style="font-size:1.2rem; color:#f8fafc; line-height:1.8;">t-srv-libia-desc</p><a href="contacto.html" class="btn-premium" style="display:inline-block; margin-top:2rem;">t-srv-libia-btn</a></div></div></div>
+    </div></div></section>"""
+    generate_page(lang, "servicios.html", 'nav_services', srv)
+
+    # 5. CONTACTO
+    def itm(icon, title, content): return f'<div class="contact-item"><i class="fas {icon}"></i><div><h4>{title}</h4><div class="contact-details-content">{content}</div></div></div>'
+    emails_html = "".join([f'<p>{e}</p>' for e in t.get('info_emails', [])])
+    phones_html = "".join([f'<p class="contact-phone">{p}</p>' for p in t.get('info_phones', [])])
+    cont = f"""<section class="hero" style="min-height:45vh; padding:100px 0;"><div class="container"><h1>t-hero-contact-title</h1></div></section>
+    <section style="padding:8rem 0;"><div class="container"><div class="contact-grid" dir="ltr">
+    <div class="contact-info-box" data-aos="fade-right"><h2>t-contact-title</h2>{itm('fa-map-marker-alt', t.get('info_address_title_1'), f'<p>{t.get("info_address_text_1")}</p>')}{itm('fa-map-marker-alt', t.get('info_address_title_2'), f'<p>{t.get("info_address_text_2")}</p>')}{itm('fa-envelope', t.get('info_email_title'), emails_html)}{itm('fa-phone-alt', t.get('info_phone_title'), phones_html)}{itm('fa-fax', t.get('info_fax_title'), f'<p>{t.get("info_fax")}</p>')}</div>
+    <div class="contact-form-premium" data-aos="fade-left"><form action="#" method="POST"><div class="form-group-premium"><input type="text" placeholder="{t['form_name']}" required></div><div class="form-group-premium"><input type="email" placeholder="{t['form_email']}" required></div><div class="form-group-premium"><input type="tel" placeholder="{t['form_phone']}"></div><div class="form-group-premium"><textarea rows="5" placeholder="{t['form_message']}" required></textarea></div><button type="submit" class="btn-premium" style="width:100%">t-form-btn</button></form></div>
+    </div></div></section>"""
+    generate_page(lang, "contacto.html", 'nav_contact', cont)
+
+    # 6. LEGAL
     legal = """<section class="hero" style="min-height:40vh; padding:100px 0;"><div class="container"><h1>t-legal-title</h1></div></section><section style="padding:8rem 0;"><div class="container" style="max-width:800px;"><p>t-privacy-title</p><p>Documentación legal completa de Tigafab S.L.</p></div></section>"""
     generate_page(lang, "aviso-legal.html", 'legal_title', legal)
 
-print("✅ GENERACIÓN COMPLETADA: Contenido separado de la lógica. Web 100% restaurada.")
+run_command_args = {"CommandLine": "python3 generate.py && git add . && git commit -m \"🚀 FULL RESTORATION: Fixed generator script and added clients section\" && git push origin main", "Cwd": BASE_DIR, "SafeToAutoRun": True, "WaitMsBeforeAsync": 3000}
+print("✅ GENERACIÓN COMPLETADA: Web 100% restaurada con Quiénes Somos y Clientes.")

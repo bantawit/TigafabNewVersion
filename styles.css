@@ -224,3 +224,32 @@ h1, h2, h3 { font-family: var(--font-heading); }
     text-align: right;
 }
 .review-card-premium p { font-size: 1.1rem; line-height: 1.8; color: #e2e8f0; margin-bottom: 2rem; }
+
+/* CLIENT LOGO GRID */
+.clients-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 3rem;
+    align-items: center;
+    justify-items: center;
+    margin-top: 4rem;
+}
+.client-logo-box {
+    width: 100%;
+    max-width: 160px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    filter: grayscale(1) opacity(0.6);
+    transition: all 0.4s ease;
+}
+.client-logo-box:hover {
+    filter: grayscale(0) opacity(1);
+    transform: scale(1.1);
+}
+.client-logo-box img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+}

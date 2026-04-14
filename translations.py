@@ -4,11 +4,16 @@
 
 TRANSLATIONS = {
     'es': {
-        'nav_home': "Inicio", 'nav_about': "Quiénes Somos", 'nav_services': "Servicios", 'nav_contact': "Contacto", 'nav_lang': "Idioma",
+        'nav_home': "Inicio", 'nav_about': "Quiénes Somos", 'nav_services': "Servicios", 'nav_clients': "Clientes", 'nav_contact': "Contacto", 'nav_lang': "Idioma",
         'hero_title': "Excelencia en Traducción", 'hero_subtitle': "ÁRABE • ESPAÑOL • INGLÉS • ALEMÁN • FRANCÉS",
         'home_cta_btn': "SOLICITAR PRESUPUESTO",
         
-        # QUIENES SOMOS (NUEVA SECCIÓN)
+        # CLIENTES (NUEVA SECCIÓN)
+        'clients_title': "Nuestros Clientes",
+        'clients_subtitle': "Nuestro compromiso es un servicio de calidad",
+        'clients_text': "En TIGAFAB sabemos que lo más importante es la satisfacción de nuestros clientes y para nosotros los clientes son la gran apuesta de valor, el verdadero aval de la compañía y la mayor garantía de continuidad. Es por este motivo que nuestro compromiso es ofrecer un servicio que cumpla y supere sus expectativas. Nuestra estrategia de empresa la desarrollamos en función de las necesidades de nuestro cliente, y para llegar a alcanzar dichas metas tenemos establecido el compromiso de implantar en todos los niveles de la organización una cultura orientada al cliente, de tal modo que sabremos cuáles son sus necesidades y como actuar sobre ellas. Les agradecemos la confianza que nos han brindado durante toda nuestra trayectoria.",
+
+        # QUIENES SOMOS
         'about_title': "Quiénes Somos",
         'about_subtitle': "Traducciones, Interpretación, Gestión y Asesoramiento",
         'about_text': "Somos un despacho de traductores e intérpretes oficiales, jurados, nativos profesionales, encabezados por doña Fatima Benamar, con más de 15 años de experiencia. Ofrecemos a nuestros clientes un servicio rápido, personalizado, puntualidad, máxima calidad, confidencialidad, asesoramiento, trato directo y tarifas ajustadas.",
@@ -95,10 +100,15 @@ TRANSLATIONS = {
         'privacy_title': "Política de Privacidad"
     },
     'en': {
-        'nav_home': "Home", 'nav_about': "About Us", 'nav_services': "Services", 'nav_contact': "Contact", 'nav_lang': "Language",
+        'nav_home': "Home", 'nav_about': "About Us", 'nav_services': "Services", 'nav_clients': "Clients", 'nav_contact': "Contact", 'nav_lang': "Language",
         'hero_title': "Excellence in Translation", 'hero_subtitle': "ARABIC • SPANISH • ENGLISH • GERMAN • FRENCH",
         'home_cta_btn': "GET A QUOTE",
         
+        # CLIENTS
+        'clients_title': "Our Clients",
+        'clients_subtitle': "High quality service is our commitment",
+        'clients_text': "At TIGAFAB, we know that the most important thing is the satisfaction of our clients. For us, clients are the true guarantee of our continuity and value. Our strategy is built around your needs, ensuring a customer-oriented culture at all levels. We thank you for the trust you have placed in us throughout our history.",
+
         # ABOUT
         'about_title': "About Us",
         'about_subtitle': "Translations, Interpretation, Management and Consulting",
@@ -139,10 +149,15 @@ TRANSLATIONS = {
         'legal_title': "Legal Notice", 'privacy_title': "Privacy"
     },
     'ar': {
-        'nav_home': "الرئيسية", 'nav_about': "من نحن", 'nav_services': "خدماتنا", 'nav_contact': "اتصل بنا", 'nav_lang': "اللغة",
+        'nav_home': "الرئيسية", 'nav_about': "من نحن", 'nav_services': "خدماتنا", 'nav_clients': "عملاؤنا", 'nav_contact': "اتصل بنا", 'nav_lang': "اللغة",
         'hero_title': "رواد الترجمة المعتمدة", 'hero_subtitle': "العربية • الإسبانية • الإنجليزية • الألمانية • الفرنسية",
         'home_cta_btn': "طلب عرض سعر",
         
+        # CLIENTS
+        'clients_title': "عملاؤنا الكرام",
+        'clients_subtitle': "التزامنا هو تقديم خدمة عالية الجودة",
+        'clients_text': "في تيجافاب، ندرك أن أهم شيء هو رضا عملائنا. بالنسبة لنا، العملاء هم الرهان الحقيقي للقيمة والضمان الأكبر للاستمرارية. ولهذا السبب، فإن التزامنا هو تقديم خدمة تلبي توقعاتكم وتتجاوزها. نحن نطور استراتيجية شركتنا بناءً على احتياجات عملائنا، ونشكركم على الثقة التي منحتمونا إياها طوال مسيرتنا.",
+
         # ABOUT
         'about_title': "من نحن",
         'about_subtitle': "الترجمة، الترجمة الفورية، الإدارة والاستشارات",
