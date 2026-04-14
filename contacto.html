@@ -1,19 +1,19 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es" dir="ltr">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="Content-Security-Policy" content="default-src 'self' https: 'unsafe-inline' 'unsafe-eval'; img-src 'self' data: https:;">
-  <meta http-equiv="X-Content-Type-Options" content="nosniff">
-  <meta http-equiv="X-Frame-Options" content="SAMEORIGIN">
-  <meta name="referrer" content="strict-origin-when-cross-origin">
-  <title>CONTACTO | TIGAFAB Traductores</title>
+  <title>Contacto | TIGAFAB</title>
   <link rel="stylesheet" href="styles.css?v=10">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700&display=swap');
+    [lang="ar"] { font-family: 'Tajawal', sans-serif !important; }
+  </style>
 </head>
 <body class="page-contacto">
-
+  
   <nav id="navbar">
     <div class="nav-container">
       <a href="index.html" class="logo">TIGAFAB<span>.</span></a>
@@ -24,93 +24,22 @@
         <li><a href="localizacion.html" class="nav-location">Localización</a></li>
       </ul>
       <div class="lang-selector">
-        <button class="lang-btn active" onclick="window.changeLang('es')">ES</button>
-        <button class="lang-btn" onclick="window.changeLang('en')">EN</button>
-        <button class="lang-btn" onclick="window.changeLang('fr')">FR</button>
-        <button class="lang-btn" onclick="window.changeLang('de')">DE</button>
-        <button class="lang-btn" onclick="window.changeLang('ar')">AR</button>
+        <a href="index.html" class="lang-btn active">ES</a><a href="en/index.html" class="lang-btn ">EN</a><a href="fr/index.html" class="lang-btn ">FR</a><a href="de/index.html" class="lang-btn ">DE</a><a href="ar/index.html" class="lang-btn ">AR</a>
       </div>
     </div>
   </nav>
 
-
-  <section style="padding:10rem 0 5rem;">
-    <div class="page-header" data-aos="fade-in" style="margin-top:-10rem; padding-top:10rem; padding-bottom: 4rem;">
-      <h1 class="page-title t-contact-title">Contacte con Nosotros</h1>
-      <p class="page-subtitle t-contact-sub">Estamos a su disposición para cualquier consulta</p>
+  <h1>Contacto</h1>
+  <footer style="background:var(--bg-dark); color:white; padding:4rem 2rem; text-align:center;">
+    <div class="footer-logo" style="font-family:var(--font-heading); font-size:2rem; margin-bottom:1rem;">TIGAFAB<span>.</span></div>
+    <p>© 2026 TIGAFAB S.L. Todos los derechos reservados.</p>
+    <div style="margin-top:2rem; display:flex; justify-content:center; gap:1.5rem;">
+      <a href="aviso-legal.html" style="color:white; text-decoration:none;">Aviso Legal</a>
+      <a href="privacidad.html" style="color:white; text-decoration:none;">Privacidad</a>
     </div>
-    <div class="container">
-      <div class="contact-grid">
-        <div data-aos="fade-right">
-          <div class="contact-info-box">
-            <div class="contact-icon"><i class="fas fa-phone-alt"></i></div>
-            <div class="contact-details">
-              <h4 class="t-contact-phone">Teléfono</h4>
-              <p>+34 663 11 45 46</p>
-            </div>
-          </div>
-          <div class="contact-info-box">
-            <div class="contact-icon"><i class="fas fa-fax"></i></div>
-            <div class="contact-details">
-              <h4 class="t-contact-fax">Fax</h4>
-              <p>+34 914 86 47 50</p>
-            </div>
-          </div>
-        </div>
-        <div data-aos="fade-left">
-          <div class="contact-info-box">
-            <div class="contact-icon"><i class="fas fa-envelope"></i></div>
-            <div class="contact-details">
-              <h4 class="t-contact-email">Correo Electrónico</h4>
-              <p>fatima@tigafab-traductores.com</p>
-              <p>fatima.benamar@yahoo.es</p>
-            </div>
-          </div>
-          <div class="contact-info-box">
-            <div class="contact-icon" style="color: #0a66c2; background: rgba(10, 102, 194, 0.1);"><i class="fab fa-linkedin-in"></i></div>
-            <div class="contact-details">
-              <h4>LinkedIn</h4>
-              <p><a href="https://www.linkedin.com/company/tigafab-sl/" target="_blank" rel="noopener noreferrer" style="color: var(--primary); text-decoration: none;" class="t-contact-linkedin">Seguir Empresa en LinkedIn</a></p>
-            </div>
-          </div>
-          <div class="contact-info-box">
-            <div class="contact-icon"><i class="fas fa-map-marker-alt"></i></div>
-            <div class="contact-details">
-              <h4 class="t-contact-hq">Oficina Principal</h4>
-              <p class="t-contact-hq-address">C/ De las Ciencias, 51. 28942 - Fuenlabrada (Madrid)</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Footer -->
-  <footer>    <div class="footer-content">
-      <div class="footer-logo">TIGAFAB<span>.</span></div>
-      <p class="t-home-welcome-sub" style="font-family: var(--font-heading);">Traducciones, Interpretación, Gestión y Asesoramiento</p>
-      <div class="footer-links">
-        <a href="aviso-legal.html" class="nav-legal">Aviso Legal</a>
-        <a href="privacidad.html" class="nav-privacy">Privacidad</a>
-      </div>
-    </div>
-    <div style="margin-top: 2rem; display: flex; justify-content: center; gap: 1.5rem;">
-      <a href="https://www.google.com/maps/place/TIGAFAB+Traductores+Fuenlabrada" target="_blank" rel="noopener noreferrer" style="color: white; font-size: 1.5rem; transition: color 0.3s;"><i class="fas fa-map-marker-alt"></i></a>
-      <a href="https://www.linkedin.com/company/tigafab-sl/" target="_blank" rel="noopener noreferrer" style="color: white; font-size: 1.5rem; transition: color 0.3s;"><i class="fab fa-linkedin"></i></a>
-    </div>
-    <p class="t-footer-rights" style="margin-top:2rem;">© 2026 TIGAFAB S.L. Todos los derechos reservados.</p>
   </footer>
-
   <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
-  <script src="js/i18n.js?v=10"></script>
   <script src="js/main.js?v=10"></script>
-  <script>
-    document.addEventListener('DOMContentLoaded', function() {
-      if (typeof AOS !== 'undefined') {
-        AOS.init({ once: true, offset: 50, duration: 800, easing: 'ease-in-out' });
-      }
-    });
-  </script>
+  <script>AOS.init();</script>
 </body>
 </html>
-

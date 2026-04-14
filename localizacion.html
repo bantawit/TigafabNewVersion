@@ -1,19 +1,19 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es" dir="ltr">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="Content-Security-Policy" content="default-src 'self' https: 'unsafe-inline' 'unsafe-eval'; img-src 'self' data: https:;">
-  <meta http-equiv="X-Content-Type-Options" content="nosniff">
-  <meta http-equiv="X-Frame-Options" content="SAMEORIGIN">
-  <meta name="referrer" content="strict-origin-when-cross-origin">
-  <title>LOCALIZACION | TIGAFAB Traductores</title>
+  <title>Localización | TIGAFAB</title>
   <link rel="stylesheet" href="styles.css?v=10">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700&display=swap');
+    [lang="ar"] { font-family: 'Tajawal', sans-serif !important; }
+  </style>
 </head>
 <body class="page-localizacion">
-
+  
   <nav id="navbar">
     <div class="nav-container">
       <a href="index.html" class="logo">TIGAFAB<span>.</span></a>
@@ -24,65 +24,22 @@
         <li><a href="localizacion.html" class="nav-location">Localización</a></li>
       </ul>
       <div class="lang-selector">
-        <button class="lang-btn active" onclick="window.changeLang('es')">ES</button>
-        <button class="lang-btn" onclick="window.changeLang('en')">EN</button>
-        <button class="lang-btn" onclick="window.changeLang('fr')">FR</button>
-        <button class="lang-btn" onclick="window.changeLang('de')">DE</button>
-        <button class="lang-btn" onclick="window.changeLang('ar')">AR</button>
+        <a href="index.html" class="lang-btn active">ES</a><a href="en/index.html" class="lang-btn ">EN</a><a href="fr/index.html" class="lang-btn ">FR</a><a href="de/index.html" class="lang-btn ">DE</a><a href="ar/index.html" class="lang-btn ">AR</a>
       </div>
     </div>
   </nav>
 
-
-  <section style="padding:10rem 0 5rem;">
-    <div class="page-header" data-aos="fade-in" style="margin-top:-10rem; padding-top:10rem; padding-bottom: 4rem;">
-      <h1 class="page-title t-loc-title">Dónde Localizarnos</h1>
-      <p class="page-subtitle t-loc-sub">Visite nuestras delegaciones</p>
+  <h1>Localización</h1>
+  <footer style="background:var(--bg-dark); color:white; padding:4rem 2rem; text-align:center;">
+    <div class="footer-logo" style="font-family:var(--font-heading); font-size:2rem; margin-bottom:1rem;">TIGAFAB<span>.</span></div>
+    <p>© 2026 TIGAFAB S.L. Todos los derechos reservados.</p>
+    <div style="margin-top:2rem; display:flex; justify-content:center; gap:1.5rem;">
+      <a href="aviso-legal.html" style="color:white; text-decoration:none;">Aviso Legal</a>
+      <a href="privacidad.html" style="color:white; text-decoration:none;">Privacidad</a>
     </div>
-    <div class="container">
-      <div style="margin-bottom: 4rem;" data-aos="fade-up">
-        <h3 class="t-loc-fuenlabrada" style="font-size: 1.5rem; margin-bottom: 1rem; color: var(--bg-dark);">Delegación Fuenlabrada</h3>
-        <p class="t-contact-hq-address" style="color: #64748B; margin-bottom: 1rem;">C/ De las Ciencias, 51. 28942 Madrid (Metro Hospital Fuenlabrada)</p>
-        <div class="map-container">
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3042.427771746206!2d-3.8184581!3d40.2831861!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd418c3b7a8a1ab9%3A0xe9ef8abf98af074!2sC.%20de%20las%20Ciencias%2C%2051%2C%2028942%20Fuenlabrada%2C%20Madrid!5e0!3m2!1ses!2ses" allowfullscreen="" loading="lazy"></iframe>
-        </div>
-      </div>
-      <div data-aos="fade-up" data-aos-delay="200">
-        <h3 class="t-loc-madrid" style="font-size: 1.5rem; margin-bottom: 1rem; color: var(--bg-dark);">Delegación Madrid Capital</h3>
-        <p class="t-loc-madrid-address" style="color: #64748B; margin-bottom: 1rem;">C/ Mauricio Legendre, 5 - Local 11. 28046 (Madrid)</p>
-        <div class="map-container">
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3034.7865241416715!2d-3.6874457!3d40.4812!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd422967119e8633%3A0xa64b38d3886561f0!2sC.%20de%20Mauricio%20Legendre%2C%205%2C%2028046%20Madrid!5e0!3m2!1ses!2ses" allowfullscreen="" loading="lazy"></iframe>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Footer -->
-  <footer>    <div class="footer-content">
-      <div class="footer-logo">TIGAFAB<span>.</span></div>
-      <p class="t-home-welcome-sub" style="font-family: var(--font-heading);">Traducciones, Interpretación, Gestión y Asesoramiento</p>
-      <div class="footer-links">
-        <a href="aviso-legal.html" class="nav-legal">Aviso Legal</a>
-        <a href="privacidad.html" class="nav-privacy">Privacidad</a>
-      </div>
-    </div>
-    <div style="margin-top: 2rem; display: flex; justify-content: center; gap: 1.5rem;">
-      <a href="https://www.google.com/maps/place/TIGAFAB+Traductores+Fuenlabrada" target="_blank" rel="noopener noreferrer" style="color: white; font-size: 1.5rem; transition: color 0.3s;"><i class="fas fa-map-marker-alt"></i></a>
-      <a href="https://www.linkedin.com/company/tigafab-sl/" target="_blank" rel="noopener noreferrer" style="color: white; font-size: 1.5rem; transition: color 0.3s;"><i class="fab fa-linkedin"></i></a>
-    </div>
-    <p class="t-footer-rights" style="margin-top:2rem;">© 2026 TIGAFAB S.L. Todos los derechos reservados.</p>
   </footer>
-
   <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
-  <script src="js/i18n.js?v=10"></script>
   <script src="js/main.js?v=10"></script>
-  <script>
-    document.addEventListener('DOMContentLoaded', function() {
-      if (typeof AOS !== 'undefined') {
-        AOS.init({ once: true, offset: 50, duration: 800, easing: 'ease-in-out' });
-      }
-    });
-  </script>
+  <script>AOS.init();</script>
 </body>
 </html>
-

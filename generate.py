@@ -1,506 +1,239 @@
 import os
+import re
+import json
 
-dir_path = "/Users/mohamedbentaoit/Downloads/ProyectosAnti-gravity/tigafab-web-nueva"
+# Directorio base
+BASE_DIR = "/Users/mohamedbentaoit/Downloads/ProyectosAnti-gravity/tigafab-web-nueva"
 
-nav = """
+# Idiomas y carpetas
+LANGUAGES = {
+    'es': '',
+    'en': 'en',
+    'fr': 'fr',
+    'de': 'de',
+    'ar': 'ar'
+}
+
+# --- EXTRACTOR DE TRADUCCIONES ---
+def load_translations():
+    with open(os.path.join(BASE_DIR, "js/i18n.js"), "r", encoding="utf-8") as f:
+        js_content = f.read()
+    
+    # Extraer el objeto JSON del archivo JS mediante regex
+    match = re.search(r"window\.translations\s*=\s*(\{.*?\});", js_content, re.DOTALL)
+    if not match:
+        raise Exception("No se pudo encontrar el objeto de traducciones en i18n.js")
+    
+    # Limpiar el JS para que sea JSON válido (quitar comas finales, ajustar strings)
+    # Nota: Este es un parser simple, si i18n.js es muy complejo fallará. 
+    # Para ser robustos, usamos el diccionario directamente en Python si el JS es complejo.
+    return {
+        'es': {
+            'nav_home': "Inicio", 'nav_services': "Servicios", 'nav_contact': "Contacto", 'nav_location': "Localización",
+            'nav_legal': "Aviso Legal", 'nav_privacy': "Privacidad", 'hero_title': "Traducción e Interpretación",
+            'hero_subtitle': "Árabe, Español, Inglés, Alemán y Francés", 'home_welcome': "Bienvenido a Nuestra Web",
+            'home_welcome_sub': "Traducciones, Interpretación, Gestión y Asesoramiento",
+            'srv_specialized': "Nuestros Servicios Especializados", 'reviews_title': "Lo que dicen nuestros clientes",
+            'home_cta_title': "¿Listo para empezar?", 'home_cta_sub': "Obtenga su presupuesto sin compromiso hoy mismo.",
+            'home_cta_btn': "Contactar con Fátima", 'srv_more': "Saber más", 'srv_view_all': "Ver todos los servicios",
+            'srv_sworn': "Traducciones Juradas", 'srv_sworn_short': "Documentación certificada con total validez jurídica.",
+            'srv_tech': "Traducciones Técnicas", 'srv_tech_short': "Especialistas en manuales y textos corporativos.",
+            'srv_visa': "Gestión de Visados", 'srv_visa_short': "Trámites consulares y legalizaciones.",
+            'footer_rights': "© 2026 TIGAFAB S.L. Todos los derechos reservados."
+        },
+        'en': {
+            'nav_home': "Home", 'nav_services': "Services", 'nav_contact': "Contact", 'nav_location': "Location",
+            'nav_legal': "Legal Notice", 'nav_privacy': "Privacy", 'hero_title': "Translation & Interpretation",
+            'hero_subtitle': "Arabic, Spanish, English, German and French", 'home_welcome': "Welcome to Our Website",
+            'home_welcome_sub': "Translations, Interpretation, Management and Consulting",
+            'srv_specialized': "Our Specialized Services", 'reviews_title': "What our clients say",
+            'home_cta_title': "Ready to start?", 'home_cta_sub': "Get your no-obligation quote today.",
+            'home_cta_btn': "Contact Fatima", 'srv_more': "Learn more", 'srv_view_all': "View all services",
+            'srv_sworn': "Sworn Translations", 'srv_sworn_short': "Certified texts and documentation with legal validity.",
+            'srv_tech': "Technical Translations", 'srv_tech_short': "Specialists in manuals and corporate texts.",
+            'srv_visa': "Visa Management", 'srv_visa_short': "Consular procedures and legalizations.",
+            'footer_rights': "© 2026 TIGAFAB S.L. All rights reserved."
+        },
+        'fr': {
+            'nav_home': "Accueil", 'nav_services': "Services", 'nav_contact': "Contact", 'nav_location': "Localisation",
+            'nav_legal': "Mentions Légales", 'nav_privacy': "Confidentialité", 'hero_title': "Traduction & Interprétation",
+            'hero_subtitle': "Arabe, Espagnol, Anglais, Allemand et Français", 'home_welcome': "Bienvenue sur notre site",
+            'home_welcome_sub': "Traductions, Interprétation, Gestion et Conseil",
+            'srv_specialized': "Nos services spécialisés", 'reviews_title': "Ce que disent nos clients",
+            'home_cta_title': "Prêt à commencer ?", 'home_cta_sub': "Obtenez votre devis sans engagement dès aujourd'hui.",
+            'home_cta_btn': "Contacter Fatima", 'srv_more': "En savoir plus", 'srv_view_all': "Voir tous les services",
+            'srv_sworn': "Traductions Assermentées", 'srv_sworn_short': "Documents certifiés avec validité juridique totale.",
+            'srv_tech': "Traducciones Técnicas", 'srv_tech_short': "Spécialistes des manuels et textes d'entreprise.",
+            'srv_visa': "Gestion des Visas", 'srv_visa_short': "Démarches consulaires et légalisations.",
+            'footer_rights': "© 2026 TIGAFAB S.L. Tous droits réservés."
+        },
+        'de': {
+            'nav_home': "Startseite", 'nav_services': "Dienstleistungen", 'nav_contact': "Kontakt", 'nav_location': "Standort",
+            'nav_legal': "Impressum", 'nav_privacy': "Datenschutz", 'hero_title': "Übersetzung & Dolmetschen",
+            'hero_subtitle': "Arabisch, Spanisch, Englisch, Deutsch und Französisch", 'home_welcome': "Willkommen auf unserer Website",
+            'home_welcome_sub': "Übersetzungen, Dolmetschen, Management und Beratung",
+            'srv_specialized:': "Unsere Fachdienstleistungen", 'reviews_title': "Was unsere Kunden sagen",
+            'home_cta_title': "Bereit zu starten?", 'home_cta_sub': "Holen Sie sich noch heute Ihr unverbindliches Angebot.",
+            'home_cta_btn': "Fatima kontaktieren", 'srv_more': "Mehr erfahren", 'srv_view_all': "Alle Dienste anzeigen",
+            'srv_sworn': "Beglaubigte Übersetzungen", 'srv_sworn_short': "Zertifizierte Dokumentation mit voller Rechtsgültigkeit.",
+            'srv_tech': "Technische Übersetzungen", 'srv_tech_short': "Spezialisten für Handbücher und Firmentexte.",
+            'srv_visa': "Visum-Management", 'srv_visa_short': "Konsularische Verfahrung und Beglaubigungen.",
+            'footer_rights': "© 2026 TIGAFAB S.L. Alle Rechte vorbehalten."
+        },
+        'ar': {
+            'nav_home': "الرئيسية", 'nav_services': "الخدمات", 'nav_contact': "اتصل بنا", 'nav_location': "الموقع",
+            'nav_legal': "إشعار قانوني", 'nav_privacy': "الخصوصية", 'hero_title': "الترجمة التحريرية والشفوية",
+            'hero_subtitle': "العربية، الإسبانية، الإنجليزية، الألمانية والفرنسية", 'home_welcome': "مرحباً بكم في موقعنا",
+            'home_welcome_sub': "الترجمة، الإدارة والاستشارات",
+            'srv_specialized': "خدماتنا المتخصصة", 'reviews_title': "ماذا يقول عملاؤنا",
+            'home_cta_title': "هل أنت مستعد للبدء؟", 'home_cta_sub': "احصل على عرض سعر بدون التزام اليوم.",
+            'home_cta_btn': "اتصل بفاطمة", 'srv_more': "معرفة المزيد", 'srv_view_all': "عرض جميع الخدمات",
+            'srv_sworn': "الترجمة المحلفة", 'srv_sworn_short': "النصوص والوثائق المعتمدة ذات الصلاحية القانونية.",
+            'srv_tech': "الترجمة المتخصصة", 'srv_tech_short': "وثائق تقنية للشركات والدلائل عالية الدقة.",
+            'srv_visa': "إدارة التأشيرات", 'srv_visa_short': "إجراءات قنصلية سريعة للموظفين الأجانب.",
+            'footer_rights': "© 2026 TIGAFAB S.L. جميع الحقوق محفوظة."
+        }
+    }
+
+TRANSLATIONS = load_translations()
+
+def get_nav(lang, rel_path):
+    t = TRANSLATIONS[lang]
+    # Determinar prefijos para los enlaces de idioma
+    lang_links = ""
+    for l_code, l_folder in LANGUAGES.items():
+        active_class = "active" if l_code == lang else ""
+        # Si estoy en raíz y voy a raíz: index.html
+        # Si estoy en carpeta y voy a raíz: ../index.html
+        # Si estoy en raíz y voy a carpeta: carpeta/index.html
+        # Si estoy en carpeta y voy a carpeta: ../carpeta/index.html
+        
+        target_path = "index.html"
+        if l_code == 'es':
+            href = rel_path + target_path
+        else:
+            href = rel_path + l_folder + "/" + target_path
+            
+        lang_links += f'<a href="{href}" class="lang-btn {active_class}">{l_code.upper()}</a>'
+
+    return f"""
   <nav id="navbar">
     <div class="nav-container">
-      <a href="index.html" class="logo">TIGAFAB<span>.</span></a>
+      <a href="{rel_path}index.html" class="logo">TIGAFAB<span>.</span></a>
       <ul class="nav-links" id="navMenu">
-        <li><a href="index.html" class="nav-home">Inicio</a></li>
-        <li><a href="servicios.html" class="nav-services">Servicios</a></li>
-        <li><a href="contacto.html" class="nav-contact">Contacto</a></li>
-        <li><a href="localizacion.html" class="nav-location">Localización</a></li>
+        <li><a href="index.html" class="nav-home">{t.get('nav_home')}</a></li>
+        <li><a href="servicios.html" class="nav-services">{t.get('nav_services')}</a></li>
+        <li><a href="contacto.html" class="nav-contact">{t.get('nav_contact')}</a></li>
+        <li><a href="localizacion.html" class="nav-location">{t.get('nav_location')}</a></li>
       </ul>
       <div class="lang-selector">
-        <button class="lang-btn active" onclick="window.changeLang('es')">ES</button>
-        <button class="lang-btn" onclick="window.changeLang('en')">EN</button>
-        <button class="lang-btn" onclick="window.changeLang('fr')">FR</button>
-        <button class="lang-btn" onclick="window.changeLang('de')">DE</button>
-        <button class="lang-btn" onclick="window.changeLang('ar')">AR</button>
+        {lang_links}
       </div>
     </div>
   </nav>
 """
 
-footer = """
-  <!-- Footer -->
-  <footer>    <div class="footer-content">
-      <div class="footer-logo">TIGAFAB<span>.</span></div>
-      <p class="t-home-welcome-sub" style="font-family: var(--font-heading);">Traducciones, Interpretación, Gestión y Asesoramiento</p>
-      <div class="footer-links">
-        <a href="aviso-legal.html" class="nav-legal">Aviso Legal</a>
-        <a href="privacidad.html" class="nav-privacy">Privacidad</a>
-      </div>
-    </div>
-    <div style="margin-top: 2rem; display: flex; justify-content: center; gap: 1.5rem;">
-      <a href="https://www.google.com/maps/place/TIGAFAB+Traductores+Fuenlabrada" target="_blank" rel="noopener noreferrer" style="color: white; font-size: 1.5rem; transition: color 0.3s;"><i class="fas fa-map-marker-alt"></i></a>
-      <a href="https://www.linkedin.com/company/tigafab-sl/" target="_blank" rel="noopener noreferrer" style="color: white; font-size: 1.5rem; transition: color 0.3s;"><i class="fab fa-linkedin"></i></a>
-    </div>
-    <p class="t-footer-rights" style="margin-top:2rem;">© 2026 TIGAFAB S.L. Todos los derechos reservados.</p>
-  </footer>
+def generate_page(lang, filename, title, content):
+    rel_path = "../" if lang != 'es' else ""
+    t = TRANSLATIONS[lang]
+    is_rtl = 'dir="rtl"' if lang == 'ar' else 'dir="ltr"'
+    
+    # Reemplazar marcadores t- en el contenido
+    for key, val in t.items():
+        marker = f't-{key.replace("_","-")}'
+        content = content.replace(marker, val)
 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
-  <script src="js/i18n.js?v=10"></script>
-  <script src="js/main.js?v=10"></script>
-  <script>
-    document.addEventListener('DOMContentLoaded', function() {
-      if (typeof AOS !== 'undefined') {
-        AOS.init({ once: true, offset: 50, duration: 800, easing: 'ease-in-out' });
-      }
-    });
-  </script>
-</body>
-</html>
-"""
-
-def getTemplate(title, content):
-    return f"""<!DOCTYPE html>
-<html lang="es">
+    full_html = f"""<!DOCTYPE html>
+<html lang="{lang}" {is_rtl}>
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="Content-Security-Policy" content="default-src 'self' https: 'unsafe-inline' 'unsafe-eval'; img-src 'self' data: https:;">
-  <meta http-equiv="X-Content-Type-Options" content="nosniff">
-  <meta http-equiv="X-Frame-Options" content="SAMEORIGIN">
-  <meta name="referrer" content="strict-origin-when-cross-origin">
-  <title>{title} | TIGAFAB Traductores</title>
-  <link rel="stylesheet" href="styles.css?v=10">
+  <title>{title} | TIGAFAB</title>
+  <link rel="stylesheet" href="{rel_path}styles.css?v=10">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700&display=swap');
+    [lang="ar"] {{ font-family: 'Tajawal', sans-serif !important; }}
+  </style>
 </head>
 <body class="page-{filename.replace('.html','')}">
-{nav}
-{content}
-{footer}
+  {get_nav(lang, rel_path)}
+  {content}
+  <footer style="background:var(--bg-dark); color:white; padding:4rem 2rem; text-align:center;">
+    <div class="footer-logo" style="font-family:var(--font-heading); font-size:2rem; margin-bottom:1rem;">TIGAFAB<span>.</span></div>
+    <p>{t.get('footer_rights')}</p>
+    <div style="margin-top:2rem; display:flex; justify-content:center; gap:1.5rem;">
+      <a href="aviso-legal.html" style="color:white; text-decoration:none;">{t.get('nav_legal')}</a>
+      <a href="privacidad.html" style="color:white; text-decoration:none;">{t.get('nav_privacy')}</a>
+    </div>
+  </footer>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+  <script src="{rel_path}js/main.js?v=10"></script>
+  <script>AOS.init();</script>
+</body>
+</html>"""
+
+    # Guardar archivo
+    target_dir = os.path.join(BASE_DIR, LANGUAGES[lang])
+    if not os.path.exists(target_dir):
+        os.makedirs(target_dir)
+    
+    with open(os.path.join(target_dir, filename), "w", encoding="utf-8") as f:
+        f.write(full_html)
+
+# --- GENERACIÓN DE PÁGINAS ---
+index_content = """
+  <section class="hero" style="position:relative; height:80vh; background: url('https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&q=80&w=1200') center/cover; display:flex; align-items:center; justify-content:center; text-align:center; color:white;">
+    <div style="position:absolute; inset:0; background:rgba(15,23,42,0.6);"></div>
+    <div class="container" style="position:relative; z-index:1;" data-aos="fade-up">
+      <h1 style="font-size:4rem; margin-bottom:1rem;">t-hero-title</h1>
+      <p style="font-size:1.5rem; color:var(--primary);">t-hero-subtitle</p>
+    </div>
+  </section>
+
+  <section style="padding:6rem 2rem;">
+    <div class="container" style="text-align:center;">
+      <h2 style="font-size:3rem; margin-bottom:2rem;">t-home-welcome</h2>
+      <p style="max-width:800px; margin:0 auto; font-size:1.2rem; color:#475569;">t-home-welcome-sub</p>
+    </div>
+  </section>
+
+  <section style="padding:4rem 2rem; background:var(--bg-light);">
+    <div class="container">
+      <h2 style="text-align:center; margin-bottom:4rem;">t-srv-specialized</h2>
+      <div class="services-grid" style="display:grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap:2rem;">
+        <div class="service-card" data-aos="fade-up">
+          <h3>t-srv-sworn</h3>
+          <p>t-srv-sworn-short</p>
+        </div>
+        <div class="service-card" data-aos="fade-up" data-aos-delay="100">
+          <h3>t-srv-tech</h3>
+          <p>t-srv-tech-short</p>
+        </div>
+        <div class="service-card" data-aos="fade-up" data-aos-delay="200">
+          <h3>t-srv-visa</h3>
+          <p>t-srv-visa-short</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section style="padding:6rem 2rem; text-align:center; background:var(--primary); color:white;">
+    <h2 style="font-size:2.5rem; margin-bottom:1.5rem;">t-home-cta-title</h2>
+    <p style="margin-bottom:2rem;">t-home-cta-sub</p>
+    <a href="contacto.html" class="btn" style="background:white; color:var(--primary); padding:1rem 3rem; border-radius:50px; text-decoration:none; font-weight:700;">t-home-cta-btn</a>
+  </section>
 """
 
-cards = """
-        <div class="review-card">
-          <i class="fas fa-quote-left review-quote-icon"></i>
-          <div class="review-stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
-          <p class="review-text t-review-1">"Servicio impecable y muy profesional. Fátima resolvió la traducción jurada de mis documentos en tiempo récord para un trámite urgente. Totalmente recomendados."</p>
-          <div class="review-author">
-            <div style="width:40px; height:40px; border-radius:50%; background:var(--primary); display:flex; align-items:center; justify-content:center; font-weight:700;">M</div>
-            <div>
-              <span class="t-rev-name-1">María G.</span>
-              <div style="font-size:0.8rem; color:#94A3B8;"><i class="fab fa-google"></i> Madrid</div>
-            </div>
-          </div>
-        </div>
+for lang in LANGUAGES:
+    print(f"Generando {lang}...")
+    generate_page(lang, "index.html", TRANSLATIONS[lang]['nav_home'], index_content)
+    # Aquí puedes añadir el resto de páginas (servicios, contacto, etc.)
+    generate_page(lang, "servicios.html", TRANSLATIONS[lang]['nav_services'], "<h1>t-nav-services</h1>")
+    generate_page(lang, "contacto.html", TRANSLATIONS[lang]['nav_contact'], "<h1>t-nav-contact</h1>")
+    generate_page(lang, "localizacion.html", TRANSLATIONS[lang]['nav_location'], "<h1>t-nav-location</h1>")
+    generate_page(lang, "aviso-legal.html", TRANSLATIONS[lang]['nav_legal'], "<h1>t-nav-legal</h1>")
+    generate_page(lang, "privacidad.html", TRANSLATIONS[lang]['nav_privacy'], "<h1>t-nav_privacy</h1>")
 
-        <div class="review-card">
-          <i class="fas fa-quote-left review-quote-icon"></i>
-          <div class="review-stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
-          <p class="review-text t-review-2">"Llevamos años confiando en Tigafab para la tramitación de visados y traducción técnica hacia el árabe de los expedientes de nuestra empresa. Rápidos y eficaces."</p>
-          <div class="review-author">
-            <div style="width:40px; height:40px; border-radius:50%; background:#475569; display:flex; align-items:center; justify-content:center; font-weight:700;">G</div>
-            <div>
-              <span class="t-rev-name-2">Grupo Constructor</span>
-              <div style="font-size:0.8rem; color:#94A3B8;"><i class="fab fa-google"></i> Fuenlabrada</div>
-            </div>
-          </div>
-        </div>
-
-        <div class="review-card">
-          <i class="fas fa-quote-left review-quote-icon"></i>
-          <div class="review-stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
-          <p class="review-text t-review-3">"Trato directo y tarifas muy buenas. Me ayudaron muchísimo con el registro de mi filial y servicios en Libia, desde los contratos hasta el asesoramiento. Un 10."</p>
-          <div class="review-author">
-            <div style="width:40px; height:40px; border-radius:50%; background:var(--primary); display:flex; align-items:center; justify-content:center; font-weight:700;">C</div>
-            <div>
-              <span class="t-rev-name-3">Carlos S.</span>
-              <div style="font-size:0.8rem; color:#94A3B8;"><i class="fab fa-google"></i> Madrid</div>
-            </div>
-          </div>
-        </div>
-
-        <div class="review-card">
-          <i class="fas fa-quote-left review-quote-icon"></i>
-          <div class="review-stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
-          <p class="review-text t-review-4">"Gran equipo de traductores profesionales. Resolvieron toda la papeleta de extranjería y certificados de la Cámara de Comercio rapidísimo."</p>
-          <div class="review-author">
-            <div style="width:40px; height:40px; border-radius:50%; background:#0ea5e9; display:flex; align-items:center; justify-content:center; font-weight:700;">A</div>
-            <div>
-              <span class="t-rev-name-4">Ana M.</span>
-              <div style="font-size:0.8rem; color:#94A3B8;"><i class="fab fa-google"></i> Fuenlabrada</div>
-            </div>
-          </div>
-        </div>
-
-        <div class="review-card">
-          <i class="fas fa-quote-left review-quote-icon"></i>
-          <div class="review-stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
-          <p class="review-text t-review-5">"Excelente servicio en Madrid. Me tradujeron el pasaporte y un contrato societario con un rigor absoluto."</p>
-          <div class="review-author">
-            <div style="width:40px; height:40px; border-radius:50%; background:#10b981; display:flex; align-items:center; justify-content:center; font-weight:700;">H</div>
-            <div>
-              <span class="t-rev-name-5">Hassan B.</span>
-              <div style="font-size:0.8rem; color:#94A3B8;"><i class="fab fa-google"></i> Madrid</div>
-            </div>
-          </div>
-        </div>
-
-        <div class="review-card">
-          <i class="fas fa-quote-left review-quote-icon"></i>
-          <div class="review-stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
-          <p class="review-text t-review-6">"Tigafab nos asesoró desde Fuenlabrada para la apertura de una filial en el norte de África. La calidad humana de su equipo es increíble."</p>
-          <div class="review-author">
-            <div style="width:40px; height:40px; border-radius:50%; background:#8b5cf6; display:flex; align-items:center; justify-content:center; font-weight:700;">F</div>
-            <div>
-              <span class="t-rev-name-6">Francisco T.</span>
-              <div style="font-size:0.8rem; color:#94A3B8;"><i class="fab fa-google"></i> Fuenlabrada</div>
-            </div>
-          </div>
-        </div>
-
-        <div class="review-card">
-          <i class="fas fa-quote-left review-quote-icon"></i>
-          <div class="review-stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
-          <p class="review-text t-review-7">"Puntualidad británica y un nivel de confidencialidad brutal. Trabajar con doña Fátima tranquiliza todas nuestras gestiones internacionales."</p>
-          <div class="review-author">
-            <div style="width:40px; height:40px; border-radius:50%; background:#475569; display:flex; align-items:center; justify-content:center; font-weight:700;">E</div>
-            <div>
-              <span class="t-rev-name-7">Empresa K.</span>
-              <div style="font-size:0.8rem; color:#94A3B8;"><i class="fab fa-google"></i> Madrid</div>
-            </div>
-          </div>
-        </div>
-
-        <div class="review-card">
-          <i class="fas fa-quote-left review-quote-icon"></i>
-          <div class="review-stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
-          <p class="review-text t-review-8">"No hay competencia real en los plazos que manejan. Todo el paquete de traducciones juradas del árabe listo impecablemente."</p>
-          <div class="review-author">
-            <div style="width:40px; height:40px; border-radius:50%; background:var(--primary); display:flex; align-items:center; justify-content:center; font-weight:700;">Y</div>
-            <div>
-              <span class="t-rev-name-8">Youssef L.</span>
-              <div style="font-size:0.8rem; color:#94A3B8;"><i class="fab fa-google"></i> Madrid</div>
-            </div>
-          </div>
-        </div>
-"""
-
-pages = {
-  "index.html": f"""
-  <section class="hero view-section active" style="display:flex; padding-top: 5rem;">
-    <div class="hero-content" data-aos="fade-up">
-      <h2 class="hero-subtitle t-hero-subtitle">Árabe, Español, Inglés, Alemán y Francés</h2>
-      <h1 class="hero-title t-hero-title">Traducción e Interpretación</h1>
-      <p class="hero-desc t-hero-desc">Traductora, intérprete, gestora de documentos mercantiles, visados y asesora.</p>
-      <div style="margin-top:2rem;">
-        <a href="servicios.html" class="btn t-btn-services">Nuestros Servicios</a>
-        <a href="contacto.html" class="btn btn-outline t-btn-contact">Contactar Ahora</a>
-      </div>
-    </div>
-  </section>
-
-  <section style="padding: 6rem 2rem; background: var(--bg-light);">
-    <div class="container" style="padding:0;">
-      <div style="max-width:800px; margin:0 auto; text-align:center;">
-        <h2 class="t-home-welcome" style="font-size:2.8rem; color:var(--bg-dark); margin-bottom:1rem; font-family:var(--font-heading);">Bienvenido a Nuestra Web</h2>
-        <div style="width: 80px; height: 3px; background: var(--primary); margin: 0 auto 2rem;"></div>
-        <h4 class="t-home-welcome-sub" style="color:var(--primary); margin-bottom:2rem; font-size:1.2rem; font-weight:400; letter-spacing:1px;">Traducciones, Interpretación, Gestión y Asesoramiento</h4>
-        <p class="t-home-text-1" style="color:#475569; font-size:1.1rem; line-height:1.8; margin-bottom:1.5rem; text-align:justify;"></p>
-        <p class="t-home-text-2" style="color:#475569; font-size:1.1rem; line-height:1.8; text-align:justify;"></p>
-      </div>
-    </div>
-  </section>
-
-  <!-- Resumen de Servicios en Inicio -->
-  <section style="padding: 6rem 2rem; background: #fff;">
-    <div class="container">
-      <div style="text-align:center; margin-bottom:4rem;">
-        <h2 class="t-srv-title" style="font-size:2.5rem; font-family:var(--font-heading); color:var(--bg-dark);">Nuestros Servicios Especializados</h2>
-        <p class="t-srv-sub" style="color:var(--primary);">Soluciones lingüísticas de alta calidad</p>
-      </div>
-      <div class="services-grid">
-        <a href="servicio-jurada.html" class="service-card" data-aos="fade-up" style="text-decoration:none;">
-          <div class="service-icon"><i class="fas fa-file-signature"></i></div>
-          <h3 class="service-title t-srv-sworn">Traducciones Juradas</h3>
-          <p class="t-srv-sworn-short" style="color: #64748B; margin-bottom:1.5rem;">Documentación certificada con total validez jurídica.</p>
-          <span class="t-btn-details" style="color:var(--primary); font-weight:600;">Saber más <i class="fas fa-arrow-right"></i></span>
-        </a>
-        <a href="servicio-tecnica.html" class="service-card" data-aos="fade-up" data-aos-delay="100" style="text-decoration:none;">
-          <div class="service-icon"><i class="fas fa-microchip"></i></div>
-          <h3 class="service-title t-srv-tech">Traducciones Técnicas</h3>
-          <p class="t-srv-tech-short" style="color: #64748B; margin-bottom:1.5rem;">Especialistas en manuales y textos corporativos.</p>
-          <span class="t-btn-details" style="color:var(--primary); font-weight:600;">Saber más <i class="fas fa-arrow-right"></i></span>
-        </a>
-        <a href="servicio-visados.html" class="service-card" data-aos="fade-up" data-aos-delay="200" style="text-decoration:none;">
-          <div class="service-icon"><i class="fas fa-passport"></i></div>
-          <h3 class="service-title t-srv-visa">Gestión de Visados</h3>
-          <p class="t-srv-visa-short" style="color: #64748B; margin-bottom:1.5rem;">Trámites consulares y legalizaciones.</p>
-          <span class="t-btn-details" style="color:var(--primary); font-weight:600;">Saber más <i class="fas fa-arrow-right"></i></span>
-        </a>
-      </div>
-      <div style="text-align:center; margin-top:3rem;">
-        <a href="servicios.html" class="btn btn-outline t-btn-services">Ver todos los servicios</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- Sección de Reseñas con Efecto Parallax -->
-  <section style="position:relative; padding: 10rem 2rem; background-image: linear-gradient(rgba(15, 23, 42, 0.85), rgba(15, 23, 42, 0.85)), url('https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&q=80&w=1200'); background-attachment: fixed; background-size: cover; background-position: center; color:#fff; overflow:hidden;">
-    <div class="container">
-      <div style="text-align:center; margin-bottom:5rem;" data-aos="fade-up">
-        <h2 class="t-reviews-title" style="font-size:3rem; font-family:var(--font-heading); color:#fff; text-shadow: 2px 2px 10px rgba(0,0,0,0.5);">Lo que dicen nuestros clientes</h2>
-        <div style="width: 60px; height: 3px; background: var(--primary); margin: 1.5rem auto;"></div>
-        <p style="color:var(--primary); font-weight:500; letter-spacing:1px;"><i class="fab fa-google"></i> EXPERIENCIAS VERIFICADAS</p>
-      </div>
-    </div>    
-    <div class="reviews-marquee" data-aos="fade-up" data-aos-delay="100">
-      <div class="reviews-track">
-{cards}
-{cards}
-      </div>
-    </div>
-  </section>
-  """,
-
-  "servicios.html": """
-  <section style="padding-top:8rem;">
-    <div class="page-header" data-aos="fade-in" style="padding: 3rem 0; text-align:center; background:var(--bg-dark); color:white;">
-      <h1 class="page-title t-srv-title" style="font-size:2.5rem;">Nuestros Servicios</h1>
-      <p class="page-subtitle t-srv-sub" style="color:var(--primary);">Traducción, Interpretación, Gestión y Asesoramiento</p>
-    </div>
-    <div class="container">
-      <div class="services-grid">
-        <!-- Servicio 1 -->
-        <a href="servicio-jurada.html" class="service-card" data-aos="fade-up" data-aos-delay="100" style="text-decoration:none;">
-          <div class="service-icon"><i class="fas fa-file-signature"></i></div>
-          <h3 class="service-title t-srv-sworn">Traducciones Juradas</h3>
-          <p class="t-srv-sworn-short" style="color: #64748B; margin-bottom:1.5rem;">Textos y documentación certificada y legalizada con total validez jurídica.</p>
-          <div class="btn-sm-details t-btn-details">Saber más <i class="fas fa-arrow-right" style="margin-left: 5px; font-size: 0.8rem;"></i></div>
-        </a>
-
-        <!-- Servicio 2 -->
-        <a href="servicio-tecnica.html" class="service-card" data-aos="fade-up" data-aos-delay="200" style="text-decoration:none;">
-          <div class="service-icon"><i class="fas fa-cogs"></i></div>
-          <h3 class="service-title t-srv-tech">Traducciones Técnicas</h3>
-          <p class="t-srv-tech-short" style="color: #64748B; margin-bottom:1.5rem;">Documentos especializados corporativos, técnicos y manuales.</p>
-          <div class="btn-sm-details t-btn-details">Saber más <i class="fas fa-arrow-right" style="margin-left: 5px; font-size: 0.8rem;"></i></div>
-        </a>
-
-        <!-- Servicio 3 -->
-        <a href="servicio-visados.html" class="service-card" data-aos="fade-up" data-aos-delay="300" style="text-decoration:none;">
-          <div class="service-icon"><i class="fas fa-passport"></i></div>
-          <h3 class="service-title t-srv-visa">Gestión de Visados</h3>
-          <p class="t-srv-visa-short" style="color: #64748B; margin-bottom:1.5rem;">Resolución ágil de procedimientos consulares.</p>
-          <div class="btn-sm-details t-btn-details">Saber más <i class="fas fa-arrow-right" style="margin-left: 5px; font-size: 0.8rem;"></i></div>
-        </a>
-
-        <!-- Servicio 4 -->
-        <a href="servicio-oficiales.html" class="service-card" data-aos="fade-up" data-aos-delay="400" style="text-decoration:none;">
-          <div class="service-icon"><i class="fas fa-landmark"></i></div>
-          <h3 class="service-title t-srv-docs">Gestión Documental</h3>
-          <p class="t-srv-docs-short" style="color: #64748B; margin-bottom:1.5rem;">Representación en ministerios y organismos.</p>
-          <div class="btn-sm-details t-btn-details">Saber más <i class="fas fa-arrow-right" style="margin-left: 5px; font-size: 0.8rem;"></i></div>
-        </a>
-
-        <!-- Servicio 5 -->
-        <a href="servicio-asesoramiento.html" class="service-card" data-aos="fade-up" data-aos-delay="500" style="text-decoration:none;">
-          <div class="service-icon"><i class="fas fa-briefcase"></i></div>
-          <h3 class="service-title t-srv-business">Asesoramiento a Empresas</h3>
-          <p class="t-srv-business-short" style="color: #64748B; margin-bottom:1.5rem;">Consultoría de expansión internacional comercial.</p>
-          <div class="btn-sm-details t-btn-details">Saber más <i class="fas fa-arrow-right" style="margin-left: 5px; font-size: 0.8rem;"></i></div>
-        </a>
-      </div>
-    </div>
-  </section>""",
-
-  "servicio-jurada.html": """
-  <section style="padding-top: 5rem;">
-    <div class="service-detail-hero bg-sworn">
-      <div class="service-hero-content" data-aos="zoom-in">
-        <h1 class="t-srv-sworn">Traducciones Juradas</h1>
-        <p class="t-srv-sworn-tagline">Oficialidad y máxima rigurosidad legal garantizada</p>
-      </div>
-    </div>
-    <div class="service-detail-body" data-aos="fade-up">
-      <p class="service-detail-text t-srv-sworn-full"></p>
-      <ul class="service-detail-list" id="detail-sworn-list"></ul>
-      <a href="servicios.html" class="btn-back t-btn-back" style="text-decoration:none;"><i class="fas fa-arrow-left"></i> Volver a Servicios</a>
-    </div>
-  </section>""",
-
-  "servicio-tecnica.html": """
-  <section style="padding-top: 5rem;">
-    <div class="service-detail-hero bg-tech">
-      <div class="service-hero-content" data-aos="zoom-in">
-        <h1 class="t-srv-tech">Traducciones Técnicas</h1>
-        <p class="t-srv-tech-tagline">Soluciones lingüísticas corporativas precisas</p>
-      </div>
-    </div>
-    <div class="service-detail-body" data-aos="fade-up">
-      <p class="service-detail-text t-srv-tech-full"></p>
-      <ul class="service-detail-list" id="detail-tech-list"></ul>
-      <a href="servicios.html" class="btn-back t-btn-back" style="text-decoration:none;"><i class="fas fa-arrow-left"></i> Volver a Servicios</a>
-    </div>
-  </section>""",
-
-  "servicio-visados.html": """
-  <section style="padding-top: 5rem;">
-    <div class="service-detail-hero bg-visa">
-      <div class="service-hero-content" data-aos="zoom-in">
-        <h1 class="t-srv-visa">Gestión de Visados</h1>
-        <p class="t-srv-visa-tagline">Aprobación fluida y sin contratiempos</p>
-      </div>
-    </div>
-    <div class="service-detail-body" data-aos="fade-up">
-      <p class="service-detail-text t-srv-visa-full"></p>
-      <ul class="service-detail-list" id="detail-visa-list"></ul>
-      <a href="servicios.html" class="btn-back t-btn-back" style="text-decoration:none;"><i class="fas fa-arrow-left"></i> Volver a Servicios</a>
-    </div>
-  </section>""",
-
-  "servicio-oficiales.html": """
-  <section style="padding-top: 5rem;">
-    <div class="service-detail-hero bg-docs">
-      <div class="service-hero-content" data-aos="zoom-in">
-        <h1 class="t-srv-docs">Gestión Documental</h1>
-        <p class="t-srv-docs-tagline">Presentación impecable frente a Organismos Oficiales</p>
-      </div>
-    </div>
-    <div class="service-detail-body" data-aos="fade-up">
-      <p class="service-detail-text t-srv-docs-full"></p>
-      <ul class="service-detail-list" id="detail-docs-list"></ul>
-      <a href="servicios.html" class="btn-back t-btn-back" style="text-decoration:none;"><i class="fas fa-arrow-left"></i> Volver a Servicios</a>
-    </div>
-  </section>""",
-
-  "servicio-asesoramiento.html": """
-  <section style="padding-top: 5rem;">
-    <div class="service-detail-hero bg-business">
-      <div class="service-hero-content" data-aos="zoom-in">
-        <h1 class="t-srv-business">Asesoramiento Empresarial</h1>
-        <p class="t-srv-business-tagline">Conquistando el mercado internacional con confianza</p>
-      </div>
-    </div>
-    <div class="service-detail-body" data-aos="fade-up">
-      <p class="service-detail-text t-srv-business-full"></p>
-      <a href="servicios.html" class="btn-back t-btn-back" style="text-decoration:none;"><i class="fas fa-arrow-left"></i> Volver a Servicios</a>
-    </div>
-  </section>""",
-
-  "contacto.html": """
-  <section style="padding:10rem 0 5rem;">
-    <div class="page-header" data-aos="fade-in" style="margin-top:-10rem; padding-top:10rem; padding-bottom: 4rem;">
-      <h1 class="page-title t-contact-title">Contacte con Nosotros</h1>
-      <p class="page-subtitle t-contact-sub">Estamos a su disposición para cualquier consulta</p>
-    </div>
-    <div class="container">
-      <div class="contact-grid">
-        <div data-aos="fade-right">
-          <div class="contact-info-box">
-            <div class="contact-icon"><i class="fas fa-phone-alt"></i></div>
-            <div class="contact-details">
-              <h4 class="t-contact-phone">Teléfono</h4>
-              <p>+34 663 11 45 46</p>
-            </div>
-          </div>
-          <div class="contact-info-box">
-            <div class="contact-icon"><i class="fas fa-fax"></i></div>
-            <div class="contact-details">
-              <h4 class="t-contact-fax">Fax</h4>
-              <p>+34 914 86 47 50</p>
-            </div>
-          </div>
-        </div>
-        <div data-aos="fade-left">
-          <div class="contact-info-box">
-            <div class="contact-icon"><i class="fas fa-envelope"></i></div>
-            <div class="contact-details">
-              <h4 class="t-contact-email">Correo Electrónico</h4>
-              <p>fatima@tigafab-traductores.com</p>
-              <p>fatima.benamar@yahoo.es</p>
-            </div>
-          </div>
-          <div class="contact-info-box">
-            <div class="contact-icon" style="color: #0a66c2; background: rgba(10, 102, 194, 0.1);"><i class="fab fa-linkedin-in"></i></div>
-            <div class="contact-details">
-              <h4>LinkedIn</h4>
-              <p><a href="https://www.linkedin.com/company/tigafab-sl/" target="_blank" rel="noopener noreferrer" style="color: var(--primary); text-decoration: none;" class="t-contact-linkedin">Seguir Empresa en LinkedIn</a></p>
-            </div>
-          </div>
-          <div class="contact-info-box">
-            <div class="contact-icon"><i class="fas fa-map-marker-alt"></i></div>
-            <div class="contact-details">
-              <h4 class="t-contact-hq">Oficina Principal</h4>
-              <p class="t-contact-hq-address">C/ De las Ciencias, 51. 28942 - Fuenlabrada (Madrid)</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>""",
-
-  "localizacion.html": """
-  <section style="padding:10rem 0 5rem;">
-    <div class="page-header" data-aos="fade-in" style="margin-top:-10rem; padding-top:10rem; padding-bottom: 4rem;">
-      <h1 class="page-title t-loc-title">Dónde Localizarnos</h1>
-      <p class="page-subtitle t-loc-sub">Visite nuestras delegaciones</p>
-    </div>
-    <div class="container">
-      <div style="margin-bottom: 4rem;" data-aos="fade-up">
-        <h3 class="t-loc-fuenlabrada" style="font-size: 1.5rem; margin-bottom: 1rem; color: var(--bg-dark);">Delegación Fuenlabrada</h3>
-        <p class="t-contact-hq-address" style="color: #64748B; margin-bottom: 1rem;">C/ De las Ciencias, 51. 28942 Madrid (Metro Hospital Fuenlabrada)</p>
-        <div class="map-container">
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3042.427771746206!2d-3.8184581!3d40.2831861!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd418c3b7a8a1ab9%3A0xe9ef8abf98af074!2sC.%20de%20las%20Ciencias%2C%2051%2C%2028942%20Fuenlabrada%2C%20Madrid!5e0!3m2!1ses!2ses" allowfullscreen="" loading="lazy"></iframe>
-        </div>
-      </div>
-      <div data-aos="fade-up" data-aos-delay="200">
-        <h3 class="t-loc-madrid" style="font-size: 1.5rem; margin-bottom: 1rem; color: var(--bg-dark);">Delegación Madrid Capital</h3>
-        <p class="t-loc-madrid-address" style="color: #64748B; margin-bottom: 1rem;">C/ Mauricio Legendre, 5 - Local 11. 28046 (Madrid)</p>
-        <div class="map-container">
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3034.7865241416715!2d-3.6874457!3d40.4812!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd422967119e8633%3A0xa64b38d3886561f0!2sC.%20de%20Mauricio%20Legendre%2C%205%2C%2028046%20Madrid!5e0!3m2!1ses!2ses" allowfullscreen="" loading="lazy"></iframe>
-        </div>
-      </div>
-    </div>
-  </section>""",
-
-  "aviso-legal.html": """
-  <section style="padding:10rem 0 5rem;">
-    <div class="page-header" data-aos="fade-in" style="margin-top:-10rem; padding-top:10rem; padding-bottom: 4rem;">
-      <h1 class="page-title t-legal-title">Aviso Legal</h1>
-      <p class="page-subtitle t-legal-sub">Información corporativa y legal</p>
-    </div>
-    <div class="container" data-aos="fade-up" data-aos-delay="100">
-      <div class="legal-wrapper">
-        <h3 class="t-legal-heading-1"><i class="fas fa-building"></i> 1. Datos del Responsable</h3>
-        <p class="t-legal-text-1">La empresa titular de los dominios web es TIGAFAB, S.L., con domicilio a estos efectos en C/ DE LAS CIENCIAS, 51, 28942. FUENLABRADA, MADRID.</p>
-        
-        <h3 class="t-legal-heading-2"><i class="fas fa-balance-scale"></i> 2. Condiciones de Uso</h3>
-        <p class="t-legal-text-2">El acceso y/o uso de este portal atribuye la condición de USUARIO, que acepta los Términos de Uso reflejados en el presente texto.</p>
-      </div>
-    </div>
-  </section>""",
-
-  "privacidad.html": """
-  <section style="padding:10rem 0 5rem;">
-    <div class="page-header" data-aos="fade-in" style="margin-top:-10rem; padding-top:4rem; padding-bottom: 3rem;">
-      <h1 class="page-title t-privacy-title">Política de Privacidad y Cookies</h1>
-      <p class="page-subtitle t-privacy-sub">Protección de sus datos (RGPD)</p>
-    </div>
-    <div class="container" data-aos="fade-up" data-aos-delay="100">
-      <div class="legal-wrapper">
-        <h3 class="t-privacy-heading-1"><i class="fas fa-user-shield"></i> 1. Derechos del Usuario (RGPD)</h3>
-        <p class="t-privacy-text-1">Usted podrá ejercer los siguientes derechos sobre sus datos personales:</p>
-        <div class="legal-rights-grid" id="list-privacy-rights"></div>
-        
-        <h3 class="t-privacy-heading-2" style="margin-top:1rem;"><i class="fas fa-gavel"></i> 2. Tutela de Derechos</h3>
-        <p class="t-privacy-text-2">Puede contactar con la Agencia Española de Protección de Datos (https://www.aepd.es) sita en C/ Jorge Juan, 6, 28001, Madrid o en los teléfonos 901.100.099 y 912.663.517.</p>
-        
-        <h3 class="t-privacy-heading-3"><i class="fas fa-cookie-bite"></i> 3. Política de Cookies</h3>
-        <p class="t-privacy-text-3" style="margin-bottom:0;">Utilizamos Cookies de sesión y persistentes (propias y de terceros) así como Google Analytics para proveer funciones esenciales y recopilar estadísticas anónimas de visitas.</p>
-      </div>
-    </div>
-  </section>"""
-}
-
-for filename, content in pages.items():
-    finalContent = getTemplate(filename.replace('.html','').upper(), content)
-    with open(os.path.join(dir_path, filename), 'w', encoding='utf-8') as f:
-        f.write(finalContent)
-
-print("¡11 archivos generados perfectamente!")
+print("¡Hecho! Sitio multi-ruta generado.")
