@@ -41,7 +41,11 @@ def generate_page(lang, filename, title_key, content):
     with open(os.path.join(target_dir, filename), "w") as f: f.write(full_html)
 
 for lang in LANG_FOLDERS:
-    t = TRANSLATIONS.get(lang, TRANSLATIONS['es'])
+    t_es = TRANSLATIONS['es']
+    t_lang = TRANSLATIONS.get(lang, t_es)
+    t = t_es.copy()
+    t.update(t_lang) # Merge to avoid KeyErrors
+    
     rel_path = "../" if lang != 'es' else ""
     
     # 1. HOME
