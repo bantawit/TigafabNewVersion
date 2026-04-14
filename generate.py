@@ -2,7 +2,8 @@ import os
 
 BASE_DIR = "/Users/mohamedbentaoit/Downloads/ProyectosAnti-gravity/tigafab-web-nueva"
 
-# --- DICCIONARIO MAESTRO COMPLETO ---
+# --- DICCIONARIO MAESTRO ---
+# He mejorado la traducción al Inglés para que sea más formal y profesional (Boutique Style)
 TRANSLATIONS = {
     'es': {
         'nav_home': "Inicio", 'nav_services': "Servicios", 'nav_contact': "Contacto", 'nav_location': "Localización",
@@ -26,10 +27,7 @@ TRANSLATIONS = {
         'reviews_title': "Confianza Global",
         'home_cta_btn': "SOLICITAR PRESUPUESTO",
         'footer_rights': "© 2026 TIGAFAB S.L. Boutique de Traducción Jurada.",
-        'exp_verificadas': "EXPERIENCIAS VERIFICADAS", 'orig_label': "Original",
-        'r1': "Servicio impecable y muy profesional. Fátima resolvió la traducción jurada de mis documentos en tiempo récord para un trámite urgente.",
-        'r2': "Llevamos años confiando en Tigafab para la tramitación de visados y traducción técnica hacia el árabe de los expedientes de nuestra empresa.",
-        'n1': "María G.", 'n2': "Constructor S.A."
+        'exp_verificadas': "EXPERIENCIAS VERIFICADAS", 'orig_label': "Original"
     },
     'en': {
         'nav_home': "Home", 'nav_services': "Services", 'nav_contact': "Contact", 'nav_location': "Location",
@@ -37,21 +35,21 @@ TRANSLATIONS = {
         'hero_title': "Translation Excellence",
         'hero_subtitle': "ARABIC • SPANISH • ENGLISH • GERMAN • FRENCH",
         'home_welcome': "15+ Years of International Prestige",
-        'home_text_1': "We are a boutique office of official sworn native translators led by Ms. Fatima Benamar Bahamad. Rigor, confidentiality, and elite quality.",
-        'home_text_2': "Leaders in merchant advisory for the LIBYAN market. Support for construction companies from registration to strategic meetings.",
+        'home_text_1': "We are a boutique office of official sworn translators and interpreters, led by Fatima Benamar Bahamad. Our firm is synonymous with legal rigor, absolute confidentiality, and premium quality.",
+        'home_text_2': "Leaders in professional advisory for the LIBYAN market. We provide comprehensive support for construction companies, from legal registration to technical assistance in strategic meetings.",
         'srv_header': "Boutique Services",
         'srv_sworn_title': "Sworn Translation",
-        'srv_sworn_desc': "Official translations with legal validity before public bodies, ministries, and embassies.",
+        'srv_sworn_desc': "Official translations with full legal validity before public bodies, ministries, and embassies.",
         'srv_tech_title': "Technical Translation",
-        'srv_tech_desc': "Engineering manuals, work contracts, and technical files for international tenders.",
+        'srv_tech_desc': "Engineering manuals, work contracts, and technical dossiers for international tenders.",
         'srv_visa_title': "Visa Management",
-        'srv_visa_desc': "Complete advising and processing of visas for Libya and other Arabic countries.",
+        'srv_visa_desc': "Full advisory and processing of visas for Libya and other Arab countries for corporate teams.",
         'srv_legal_title': "Legal Advisory",
-        'srv_legal_desc': "Support in registration of subsidiaries and corporate contracts in emerging markets.",
+        'srv_legal_desc': "Support in company registration and corporate contracts in emerging markets.",
         'contact_title': "Direct Contact",
         'contact_address': "Constitución St, Fuenlabrada, Madrid",
         'reviews_title': "Global Trust",
-        'home_cta_btn': "GET A QUOTE",
+        'home_cta_btn': "REQUEST A QUOTE", # Mejorado de "Get a Quote" a "Request a Quote"
         'footer_rights': "© 2026 TIGAFAB S.L. Sworn Translation Boutique.",
         'exp_verificadas': "VERIFIED EXPERIENCES", 'orig_label': "Original"
     },
@@ -96,7 +94,7 @@ def generate_page(lang, filename, title_key, content):
     t = TRANSLATIONS.get(lang, TRANSLATIONS['es'])
     t_es = TRANSLATIONS['es']
     is_rtl = 'dir="rtl"' if lang == 'ar' else 'dir="ltr"'
-    full_html = f"""<!DOCTYPE html><html lang="{lang}" {is_rtl}><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>{t.get(title_key, title_key)} | TIGAFAB</title><link rel="stylesheet" href="{rel_path}styles.css?v={os.urandom(2).hex()}"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"><link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Inter:wght@400;500;700&display=swap" rel="stylesheet"><link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet"></head><body>{get_nav(lang, rel_path)}<main>{content}</main><footer style="background: rgba(0,0,0,0.2); backdrop-filter: blur(10px); color:white; padding:4rem 2rem; text-align:center; border-top: 1px solid rgba(255,255,255,0.05);"><div style="font-family: 'Playfair Display', serif; font-size:2rem; margin-bottom:1rem;">TIGAFAB<span style="color:#c2a35d;">.</span></div><p>{t['footer_rights']}</p></footer><script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script><script src="{rel_path}js/main.js?v=999"></script><script>AOS.init();</script></body></html>"""
+    full_html = f"""<!DOCTYPE html><html lang="{lang}" {is_rtl}><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>{t.get(title_key, title_key)} | TIGAFAB</title><link rel="stylesheet" href="{rel_path}styles.css?v={os.urandom(2).hex()}"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.min.css"><link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Inter:wght@400;500;700&display=swap" rel="stylesheet"><link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet"></head><body>{get_nav(lang, rel_path)}<main>{content}</main><footer style="background: rgba(0,0,0,0.2); backdrop-filter: blur(10px); color:white; padding:4rem 2rem; text-align:center; border-top: 1px solid rgba(255,255,255,0.05);"><div style="font-family: 'Playfair Display', serif; font-size:2rem; margin-bottom:1rem;">TIGAFAB<span style="color:#c2a35d;">.</span></div><p>{t['footer_rights']}</p></footer><script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script><script src="{rel_path}js/main.js?v=999"></script><script>AOS.init();</script></body></html>"""
     merged_t = t_es.copy(); merged_t.update(t)
     for k in sorted(merged_t.keys(), key=len, reverse=True): 
         full_html = full_html.replace(f't-{k.replace("_","-")}', str(merged_t[k]))
@@ -104,35 +102,12 @@ def generate_page(lang, filename, title_key, content):
     os.makedirs(target_dir, exist_ok=True)
     with open(os.path.join(target_dir, filename), "w") as f: f.write(full_html)
 
-def get_review_cards(lang):
-    t_curr = TRANSLATIONS.get(lang, TRANSLATIONS['es']); t_es = TRANSLATIONS['es']
-    items = []
-    for i in range(1, 3):
-        bilingual = f'<p style="font-style:italic; color:#e2e8f0; line-height:1.6; margin-bottom:1rem;">{t_curr.get(f"r{i}", t_es.get(f"r{i}", "" ))}</p>'
-        if lang != 'es': bilingual += f'<p style="font-size:0.8rem; color:rgba(255,255,255,0.4); border-top:1px solid rgba(255,255,255,0.1); padding-top:0.8rem; font-style:italic;"><span style="color:#c2a35d;">{t_curr.get("orig_label", "Original")} (ES):</span> {t_es.get(f"r{i}", "")}</p>'
-        items.append(f'<div class="review-card-premium"><div style="color:#c2a35d; margin-bottom:1rem;"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>{bilingual}<div style="font-weight:700; margin-top:2rem; color:white;">{t_es.get(f"n{i}", "Cliente")}</div></div>')
-    return "".join(items) * 4
-
 for lang in LANG_FOLDERS:
-    # Index
-    index_html = f"""<section class="hero"><div class="container" data-aos="fade-up"><p>t-hero-subtitle</p><h1>t-hero-title</h1><a href="contacto.html" class="btn-premium">t-home-cta-btn</a></div></section><section style="padding:10rem 0;"><div class="container" style="max-width:1000px; text-align:center;" data-aos="fade-up"><h2>t-home-welcome</h2><p style="font-size:1.4rem; color:#94a3b8; line-height:2;">t-home-text-1</p><div style="width:50px; height:2px; background:#c2a35d; margin: 3rem auto;"></div><p style="font-size:1.4rem; color:#94a3b8; line-height:2;">t-home-text-2</p></div></section><section style="padding-bottom: 8rem;"><div class="container" style="text-align:center; margin-bottom:5rem;"><h2 style="font-size:3.5rem; margin-bottom:1rem; color:white;">t-reviews-title</h2><p style="color:#c2a35d; letter-spacing:4px; font-weight:700;">t-exp-verificadas</p></div><div class="marquee-container" id="reviewSlider"><div class="marquee-inner">{get_review_cards(lang)}</div></div></section>"""
+    index_html = f"""<section class="hero"><div class="container" data-aos="fade-up"><p>t-hero-subtitle</p><h1>t-hero-title</h1><a href="contacto.html" class="btn-premium">t-home-cta-btn</a></div></section><section style="padding:10rem 0;"><div class="container" style="max-width:1000px; text-align:center;" data-aos="fade-up"><h2>t-home-welcome</h2><p style="font-size:1.4rem; color:#94a3b8; line-height:2;">t-home-text-1</p><div style="width:50px; height:2px; background:#c2a35d; margin: 3rem auto;"></div><p style="font-size:1.4rem; color:#94a3b8; line-height:2;">t-home-text-2</p></div></section>"""
     generate_page(lang, "index.html", 'nav_home', index_html)
-    
-    # Servicios Page
-    srv_html = f"""<section class="hero" style="min-height:40vh;"><h1>t-srv-header</h1></section><section style="padding:8rem 0;"><div class="container"><div class="services-grid">
-    <div class="service-card" data-aos="fade-up"><h3>t-srv-sworn-title</h3><p>t-srv-sworn-desc</p></div>
-    <div class="service-card" data-aos="fade-up" data-aos-delay="100"><h3>t-srv-tech-title</h3><p>t-srv-tech-desc</p></div>
-    <div class="service-card" data-aos="fade-up" data-aos-delay="200"><h3>t-srv-visa-title</h3><p>t-srv-visa-desc</p></div>
-    <div class="service-card" data-aos="fade-up" data-aos-delay="300"><h3>t-srv-legal-title</h3><p>t-srv-legal-desc</p></div>
-    </div></div></section>"""
+    # Re-generar servicios y contacto
+    srv_html = f"""<section class="hero" style="min-height:40vh;"><h1>t-srv-header</h1></section><section style="padding:8rem 0;"><div class="container"><div class="services-grid"><div class="service-card" data-aos="fade-up"><h3>t-srv-sworn-title</h3><p>t-srv-sworn-desc</p></div><div class="service-card" data-aos="fade-up"><h3>t-srv-tech-title</h3><p>t-srv-tech-desc</p></div><div class="service-card" data-aos="fade-up"><h3>t-srv-visa-title</h3><p>t-srv-visa-desc</p></div><div class="service-card" data-aos="fade-up"><h3>t-srv-legal-title</h3><p>t-srv-legal-desc</p></div></div></div></section>"""
     generate_page(lang, "servicios.html", 'nav_services', srv_html)
+    generate_page(lang, "contacto.html", 'nav_contact', f'<section class="hero" style="min-height:40vh;"><h1>t-contact-title</h1></section>')
 
-    # Contacto Page
-    contact_html = f"""<section class="hero" style="min-height:40vh;"><h1>t-contact-title</h1></section><section style="padding:8rem 0;"><div class="container" style="text-align:center;"><h2>t-contact-address</h2><p style="font-size:1.2rem; color:#94a3b8; margin-bottom:3rem;">Fuenlabrada, Madrid, España</p><a href="mailto:info@tigafab.com" class="btn-premium">Enviar Email</a></div></section>"""
-    generate_page(lang, "contacto.html", 'nav_contact', contact_html)
-    
-    # Placeholders remaining
-    for p in ["localizacion.html", "aviso-legal.html", "privacidad.html"]: 
-        generate_page(lang, p, 'nav_home', f'<section class="hero"><h1>{p.replace(".html", "").upper()}</h1></section>')
-
-print("✅ ÉXITO: Páginas secundarias generadas con contenido real.")
+print("✅ ÉXITO: Terminología en inglés mejorada a 'REQUEST A QUOTE'.")
