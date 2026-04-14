@@ -10,7 +10,7 @@ LANG_FOLDERS = {'es': '', 'en': 'en', 'fr': 'fr', 'de': 'de', 'ar': 'ar'}
 def get_nav(lang, rel_path):
     t = TRANSLATIONS.get(lang, TRANSLATIONS['es'])
     links = "".join([f'<a href="{rel_path + (LANG_FOLDERS[lc] + "/index.html" if LANG_FOLDERS[lc] else "index.html")}">{LANG_NAMES[lc]}</a>' for lc in LANG_NAMES])
-    return f"""<nav id="navbar" dir="ltr"><div class="container nav-container"><a href="{rel_path}index.html" class="logo">TIGAFAB<span>.</span></a><ul class="nav-links"><li><a href="index.html">{t['nav_home']}</a></li><li><a href="quienes-somos.html">{t['nav_about']}</a></li><li><a href="clientes.html">{t['nav_clients']}</a></li><li><a href="servicios.html">{t['nav_services']}</a></li><li><a href="contacto.html">{t['nav_contact']}</a></li></ul><div class="lang-selector" id="langSelector"><div class="lang-current">{t['nav_lang']} <i class="fas fa-chevron-down"></i></div><div class="lang-dropdown" id="langDropdown">{links}</div></div></div></nav>"""
+    return f"""<nav id="navbar" dir="ltr"><div class="container nav-container"><a href="{rel_path}index.html" class="logo">TIGAFAB<span>.</span></a><ul class="nav-links"><li><a href="{rel_path}index.html">{t['nav_home']}</a></li><li><a href="{rel_path}quienes-somos.html">{t['nav_about']}</a></li><li><a href="{rel_path}clientes.html">{t['nav_clients']}</a></li><li><a href="{rel_path}servicios.html">{t['nav_services']}</a></li><li><a href="{rel_path}contacto.html">{t['nav_contact']}</a></li></ul><div class="lang-selector" id="langSelector"><div class="lang-current">{t['nav_lang']} <i class="fas fa-chevron-down"></i></div><div class="lang-dropdown" id="langDropdown">{links}</div></div></div></nav>"""
 
 def get_list_html(key, lang):
     t = TRANSLATIONS.get(lang, TRANSLATIONS['es'])
