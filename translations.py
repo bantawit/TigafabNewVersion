@@ -56,7 +56,11 @@ TRANSLATIONS = {
             "Pincha sobre el país correspondiente para poder descargar el formulario"
         ],
         'srv_libia_title': "Asesoramiento a Empresas",
-        'srv_libia_desc': "Introducimos y asesoramos a las empresas españolas y extranjeras que desean trabajar o abrir filial, delegación o sucursal o instalarse como sede central en Libia. Proporcionamos contactos en Libia y damos el apoyo técnico sobre todos los asuntos para el registro y la apertura de su empresa.",
+        'srv_libia_desc': "Introducimos y asesoramos a las empresas españolas y extranjeras que desean trabajar o abrir filial, delegación o sucursal o instalarse como sede central en Libia.",
+        'srv_libia_list': [
+            "Proporcionamos contactos en Libia",
+            "Damos el apoyo técnico sobre todos los asuntos para el registro y la apertura de su empresa en Libia"
+        ],
         'srv_libia_btn': "Información Mercado Libia",
         'hero_contact_title': "Contacte con Nosotros",
         'contact_title': "Oficinas y Delegaciones",
@@ -113,7 +117,11 @@ TRANSLATIONS = {
             "اضغط على الدولة المقابلة لتحميل النموذج"
         ],
         'srv_libia_title': "الاستشارات للشركات",
-        'srv_libia_desc': "نحن نقدم الدعم الفني والتمثيل الاستراتيجي للشركات الراغبة في دخول السوق الليبي بكفاءة عالية مع وكلاء محليين. نساعدكم في جميع إجراءات التسجيل والافتتاح.",
+        'srv_libia_desc': "نحن نقدم الدعم الفني والتمثيل الاستراتيجي للشركات الراغبة في دخول السوق الليبي بكفاءة عالية مع وكلاء محليين.",
+        'srv_libia_list': [
+            "توفير جهات اتصال في ليبيا",
+            "تقديم الدعم الفني في جميع المسائل المتعلقة بتسجيل وفتح شركتكم في ليبيا"
+        ],
         'srv_libia_btn': "معلومات حول السوق الليبي",
         'hero_contact_title': "اتصل بنا",
         'contact_title': "مكاتبنا ووفودنا",
@@ -170,7 +178,11 @@ TRANSLATIONS = {
             "Click on the corresponding country to download the form"
         ],
         'srv_libia_title': "Business Advisory",
-        'srv_libia_desc': "We introduce and advise Spanish and foreign companies wishing to work or establish a branch in Libya. We provide contacts and technical support for registration.",
+        'srv_libia_desc': "We introduce and advise Spanish and foreign companies wishing to work or establish a branch in Libya.",
+        'srv_libia_list': [
+            "We provide contacts in Libya",
+            "We provide technical support on all matters for the registration and opening of your company in Libya"
+        ],
         'srv_libia_btn': "Libya Market Info",
         'hero_contact_title': "Contact Us",
         'contact_title': "Our Offices",
@@ -227,7 +239,11 @@ TRANSLATIONS = {
             "Cliquez sur le pays correspondant pour télécharger le formulaire"
         ],
         'srv_libia_title': "Conseil aux Entreprises",
-        'srv_libia_desc': "Nous accompagnons votre entreprise sur le marché libyen complexe avec un soutien technique local. Nous fournissons des contacts en Libye et un soutien technique pour le registre.",
+        'srv_libia_desc': "Nous accompagnons votre entreprise sur le marché libyen complexe avec un soutien technique local.",
+        'srv_libia_list': [
+            "Nous fournissons des contacts en Libye",
+            "Nous offrons un soutien technique sur toutes les questions relatives à l'enregistrement et à l'ouverture de votre entreprise en Libye"
+        ],
         'srv_libia_btn': "Infos Marché Libye",
         'hero_contact_title': "Contactez-Nous",
         'contact_title': "Bureaux et Délégations",
@@ -284,7 +300,11 @@ TRANSLATIONS = {
             "Klicken Sie auf das entsprechende Land, um das Formular herunterzuladen"
         ],
         'srv_libia_title': "Unternehmensberatung",
-        'srv_libia_desc': "Wir führen Ihr Unternehmen in den komplexen libyschen Markt ein und bieten technische Unterstützung vor Ort. Wir bieten Kontakte in Libyen und Unterstützung bei der Registrierung.",
+        'srv_libia_desc': "Wir führen Ihr Unternehmen in den komplexen libyschen Markt ein und bieten technische Unterstützung vor Ort.",
+        'srv_libia_list': [
+            "Wir vermitteln Kontakte in Libyen",
+            "Wir bieten technische Unterstützung in allen Angelegenheiten rund um die Registrierung und Eröffnung Ihres Unternehmens in Libyen"
+        ],
         'srv_libia_btn': "Libyen Marktinfos",
         'hero_contact_title': "Kontakt",
         'contact_title': "Niederlassungen",
