@@ -61,7 +61,8 @@ class App {
   }
 
   renderTranslations() {
-    const t = window.translations[this.currentLang];
+    const t = (typeof translations !== 'undefined') ? translations[this.currentLang] : null;
+    if (!t) return;
     
     // Update Page Title
     const pageClass = Array.from(document.body.classList).find(c => c.startsWith('page-'));
@@ -154,6 +155,7 @@ class App {
   }
 }
 
-window.onload = () => {
+// Initialize App
+document.addEventListener('DOMContentLoaded', () => {
   window.app = new App();
-};
+});

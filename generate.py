@@ -41,8 +41,8 @@ footer = """
   </footer>
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
-  <script src="js/i18n.js?v=4"></script>
-  <script src="js/main.js?v=4"></script>
+  <script src="js/i18n.js?v=10"></script>
+  <script src="js/main.js?v=10"></script>
   <script>
     document.addEventListener('DOMContentLoaded', function() {
       if (typeof AOS !== 'undefined') {
@@ -65,7 +65,7 @@ def getTemplate(title, content):
   <meta http-equiv="X-Frame-Options" content="SAMEORIGIN">
   <meta name="referrer" content="strict-origin-when-cross-origin">
   <title>{title} | TIGAFAB Traductores</title>
-  <link rel="stylesheet" href="styles.css?v=2">
+  <link rel="stylesheet" href="styles.css?v=10">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
 </head>
