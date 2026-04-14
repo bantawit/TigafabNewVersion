@@ -52,11 +52,11 @@ for lang in LANG_FOLDERS:
     </div></div></section>"""
     generate_page(lang, "servicios.html", 'nav_services', srv)
     
-    # 3. CONTACTO (RESTAURACION TOTAL)
-    def itm(icon, title, content): return f'<div class="contact-item"><i class="fas {icon}"></i><div><h4>{title}</h4>{content}</div></div>'
+    # 3. CONTACTO (RESTAURACION TOTAL CON FORMULARIO)
+    def itm(icon, title, content): return f'<div class="contact-item"><i class="fas {icon}"></i><div><h4>{title}</h4><div class="contact-details-content">{content}</div></div></div>'
     
-    emails_html = "".join([f'<p style="margin-bottom:0.3rem;">{e}</p>' for e in t.get('info_emails', [])])
-    phones_html = "".join([f'<p style="margin-bottom:0.3rem;" class="contact-phone">{p}</p>' for p in t.get('info_phones', [])])
+    emails_html = "".join([f'<p>{e}</p>' for e in t.get('info_emails', [])])
+    phones_html = "".join([f'<p class="contact-phone">{p}</p>' for p in t.get('info_phones', [])])
     
     cont = f"""<section class="hero" style="min-height:45vh; padding:100px 0;"><div class="container"><h1>t-hero-contact-title</h1></div></section>
     <section style="padding:8rem 0;"><div class="container"><div class="contact-grid" dir="ltr">
@@ -68,7 +68,23 @@ for lang in LANG_FOLDERS:
         {itm('fa-phone-alt', t.get('info_phone_title'), phones_html)}
         {itm('fa-fax', t.get('info_fax_title'), f'<p>{t.get("info_fax")}</p>')}
     </div>
-    <div class="contact-form-premium" data-aos="fade-left"><form action="#" method="POST"><button type="submit" class="btn-premium" style="width:100%">t-form-btn</button></form></div>
+    <div class="contact-form-premium" data-aos="fade-left">
+        <form action="#" method="POST">
+            <div class="form-group-premium">
+                <input type="text" placeholder="{t['form_name']}" required>
+            </div>
+            <div class="form-group-premium">
+                <input type="email" placeholder="{t['form_email']}" required>
+            </div>
+            <div class="form-group-premium">
+                <input type="tel" placeholder="{t['form_phone']}">
+            </div>
+            <div class="form-group-premium">
+                <textarea rows="5" placeholder="{t['form_message']}" required></textarea>
+            </div>
+            <button type="submit" class="btn-premium" style="width:100%">t-form-btn</button>
+        </form>
+    </div>
     </div></div></section>"""
     generate_page(lang, "contacto.html", 'nav_contact', cont)
     
