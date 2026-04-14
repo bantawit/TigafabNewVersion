@@ -197,26 +197,41 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 function initDraggableMarquee() {
-  const slider = document.querySelector('.marquee-container');
+  const slider = document.getElementById('reviewSlider');
   if (!slider) return;
 
   let isDown = false;
   let startX;
   let scrollLeft;
+  let autoScrollSpeed = 1;
+  let autoScrollActive = true;
+
+  // Motor de Auto-Scroll en JS
+  function step() {
+    if (autoScrollActive && !isDown) {
+      slider.scrollLeft += autoScrollSpeed;
+      // Loop infinito: si llega a la mitad (que es el clon), vuelve al inicio
+      if (slider.scrollLeft >= slider.scrollWidth / 2) {
+        slider.scrollLeft = 0;
+      }
+    }
+    requestAnimationFrame(step);
+  }
+  requestAnimationFrame(step);
 
   slider.addEventListener('mousedown', (e) => {
     isDown = true;
-    slider.classList.add('is-dragging');
+    autoScrollActive = false;
     startX = e.pageX - slider.offsetLeft;
     scrollLeft = slider.scrollLeft;
   });
   slider.addEventListener('mouseleave', () => {
     isDown = false;
-    slider.classList.remove('is-dragging');
+    autoScrollActive = true;
   });
   slider.addEventListener('mouseup', () => {
     isDown = false;
-    slider.classList.remove('is-dragging');
+    autoScrollActive = true;
   });
   slider.addEventListener('mousemove', (e) => {
     if (!isDown) return;
