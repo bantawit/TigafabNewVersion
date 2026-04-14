@@ -25,40 +25,45 @@ h1, h2, h3 { font-family: var(--font-heading); font-weight: 700; }
 
 .container { max-width: 1200px; margin: 0 auto; padding: 0 2rem; }
 
-/* NAVBAR PREMIUM */
+/* NAVBAR PREMIUM - Mejora de alineación */
 #navbar {
   position: fixed; top: 0; width: 100%; z-index: 1000;
-  background: rgba(15, 23, 42, 0.8);
-  backdrop-filter: blur(15px);
+  background: rgba(15, 23, 42, 0.7);
+  backdrop-filter: blur(20px);
   border-bottom: 1px solid var(--glass-border);
-  padding: 1rem 0;
+  padding: 1.2rem 0;
 }
 
-.nav-container { display: flex; justify-content: space-between; align-items: center; max-width: 1300px; margin: 0 auto; padding: 0 2rem; }
-
-.logo { 
-  font-family: var(--font-heading); font-size: 1.8rem; font-weight: 900; 
-  color: white; text-decoration: none; letter-spacing: -1px;
+.nav-container { 
+  display: flex; 
+  justify-content: space-between; 
+  align-items: center; 
+  width: 100%;
+  max-width: 1200px; /* Alineado con el contenedor principal */
+  margin: 0 auto; 
+  padding: 0 2rem; 
 }
-.logo span { color: var(--primary); }
 
-.nav-links { display: flex; list-style: none; gap: 2.5rem; }
-.nav-links a { color: var(--text-main); text-decoration: none; font-size: 0.95rem; font-weight: 500; transition: color 0.3s; opacity: 0.8; }
-.nav-links a:hover { color: var(--primary); opacity: 1; }
-
-.lang-selector { display: flex; gap: 10px; }
-.lang-btn { 
-  padding: 4px 10px; border: 1px solid var(--glass-border); color: white; 
-  text-decoration: none; font-size: 0.75rem; border-radius: 4px; transition: all 0.3s;
+.nav-links { 
+  display: flex; 
+  list-style: none; 
+  gap: 3rem;
 }
-.lang-btn.active { background: var(--primary); border-color: var(--primary); color: var(--bg-dark); font-weight: bold; }
 
-/* HERO SECTION */
+/* HERO SECTION - Con fondo real y profundidad */
 .hero {
-  padding-top: 15rem; padding-bottom: 10rem;
-  background: radial-gradient(circle at top right, rgba(194, 163, 93, 0.15), transparent 40%),
-              radial-gradient(circle at bottom left, rgba(37, 99, 235, 0.1), transparent 40%);
+  position: relative;
+  min-height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   text-align: center;
+  background: linear-gradient(to bottom, rgba(15, 23, 42, 0.8), rgba(15, 23, 42, 0.95)),
+              url('https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&q=80&w=1500');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed; /* Parallax suave */
+  padding: 8rem 0;
 }
 .hero h1 { font-size: 4.5rem; line-height: 1.1; margin-bottom: 1.5rem; }
 .hero p { font-size: 1.3rem; color: var(--primary); font-weight: 600; letter-spacing: 3px; text-transform: uppercase; }
