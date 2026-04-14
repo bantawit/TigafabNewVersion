@@ -3,18 +3,19 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Contact | TIGAFAB</title>
-  <link rel="stylesheet" href="../styles.css?v=22">
+  <title>Contacto | TIGAFAB</title>
+  <link rel="stylesheet" href="../styles.css?v=23">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
   <style>
     @import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700&display=swap');
     [lang="ar"] { font-family: 'Tajawal', sans-serif !important; }
     .marquee-container { cursor: grab; overflow: hidden; display: flex; position: relative; width: 100%; white-space: nowrap; }
-    .marquee-container:active { cursor: grabbing; }
     .marquee-inner { display: flex; flex-shrink: 0; flex-wrap: nowrap; }
     .service-card { background: #fff; padding: 2.5rem; border-radius: 12px; box-shadow: 0 10px 30px rgba(0,0,0,0.05); transition: all 0.3s ease; text-decoration:none; display:block; height:100%; color:inherit; }
-    .service-card:hover { transform: translateY(-10px); color: var(--primary); }
+    .service-card ul { margin-top: 1rem; columns: 2; -webkit-columns: 2; -moz-columns: 2; font-size: 0.9rem; color: #64748b; list-style: none; padding: 0; }
+    .service-card ul li { margin-bottom: 0.5rem; }
+    .service-card ul li i { color: var(--primary); margin-right: 5px; }
   </style>
 </head>
 <body class="page-contacto">
@@ -23,26 +24,42 @@
     <div class="nav-container">
       <a href="../index.html" class="logo">TIGAFAB<span>.</span></a>
       <ul class="nav-links">
-        <li><a href="index.html" class="nav-home">Accueil</a></li>
-        <li><a href="servicios.html" class="nav-services">Services</a></li>
-        <li><a href="contacto.html" class="nav-contact">Contact</a></li>
-        <li><a href="localizacion.html" class="nav-location">Localisation</a></li>
+        <li><a href="index.html" class="nav-home">Inicio</a></li>
+        <li><a href="servicios.html" class="nav-services">Servicios</a></li>
+        <li><a href="contacto.html" class="nav-contact">Contacto</a></li>
+        <li><a href="localizacion.html" class="nav-location">Localización</a></li>
       </ul>
       <div class="lang-selector"><a href="../index.html" class="lang-btn ">ES</a><a href="../en/index.html" class="lang-btn ">EN</a><a href="../fr/index.html" class="lang-btn active">FR</a><a href="../de/index.html" class="lang-btn ">DE</a><a href="../ar/index.html" class="lang-btn ">AR</a></div>
     </div>
   </nav>
 
-  <section style="padding:10rem 2rem; text-align:center;"><h1 style="font-size:3rem;">Contact</h1></section>
+  
+<section style="padding:10rem 2rem; background:var(--bg-light); text-align:center;">
+  <div class="container" data-aos="fade-up">
+    <h1 style="font-size:3.5rem; margin-bottom:2rem; font-family:var(--font-heading);">Contacto</h1>
+    <div style="display:grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap:2rem;">
+      <div class="service-card">
+        <i class="fas fa-phone" style="font-size:2rem; color:var(--primary); margin-bottom:1rem;"></i>
+        <h3>663 11 45 46</h3>
+        <p style="font-size:1.5rem; font-weight:700;">663 11 45 46</p>
+        <p style="font-size:1.1rem; color:#64748b;">Fax: 914 86 47 50</p>
+      </div>
+      <div class="service-card">
+        <i class="fas fa-envelope" style="font-size:2rem; color:var(--primary); margin-bottom:1rem;"></i>
+        <h3>Email</h3>
+        <p>fatima@tigafab-traductores.com</p>
+        <p>info@tigafab.com</p>
+      </div>
+    </div>
+  </div>
+</section>
+
   <footer style="background:var(--bg-dark); color:white; padding:4rem 2rem; text-align:center;">
     <div style="font-family:var(--font-heading); font-size:2rem; margin-bottom:1rem;">TIGAFAB<span>.</span></div>
-    <p>© 2026 TIGAFAB S.L. Tous droits réservés.</p>
-    <div style="margin-top:2rem; display:flex; justify-content:center; gap:1.5rem;">
-      <a href="aviso-legal.html" style="color:white; text-decoration:none; font-size:0.9rem;">Mentions Légales</a>
-      <a href="privacidad.html" style="color:white; text-decoration:none; font-size:0.9rem;">Confidentialité</a>
-    </div>
+    <p>© 2026 TIGAFAB S.L. Todos los derechos reservados.</p>
   </footer>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
-  <script src="../js/main.js?v=22"></script>
+  <script src="../js/main.js?v=23"></script>
   <script>AOS.init();</script>
 </body>
 </html>
