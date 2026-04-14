@@ -1,0 +1,638 @@
+const translations = {
+  es: {
+    nav_home: "Inicio",
+    nav_services: "Servicios",
+    nav_contact: "Contacto",
+    nav_location: "Localización",
+    nav_legal: "Aviso Legal",
+    nav_privacy: "Privacidad",
+    btn_services: "Nuestros Servicios",
+    btn_contact: "Contactar Ahora",
+    btn_details: "Saber más",
+    btn_back: "Volver a Servicios",
+    
+    hero_title: "Traducción e Interpretación",
+    hero_subtitle: "Árabe, Español, Inglés, Alemán y Francés",
+    hero_desc: "Traductora, intérprete, gestora de documentos mercantiles, visados y asesora.",
+    
+    home_welcome: "Bienvenido a Nuestra Web",
+    home_welcome_sub: "Traducciones, Interpretación, Gestión y Asesoramiento",
+    home_text_1: "Somos un despacho de traductores e interpretes oficiales, jurados, nativos profesionales, encabezados por doña Fatima Benamar, con más de 15 años de experiencia. Ofrecemos a nuestros clientes un servicio rápido, personalizado, puntualidad, máxima calidad, confidencialidad, asesoramiento, trato directo y tarifas ajustadas. OFRECEMOS un servicio integral en traducción jurada y asesoramiento para la tramitación de todos sus documentos. A través de nuestro asesoramiento y atención personalizada le garantizamos una tramitación correcta. De esta forma se ahorrará mucho tiempo, dinero y disgustos. Siempre satisfacemos a nuestros clientes. Y nos comprometemos a entregar el trabajo en el plazo acordado.",
+    home_text_2: "Cada vez son más las empresas españolas que se proyectan al exterior que cuentan con nuestros servicios de traducción, gestión y asesoramiento para su expansión en el mercado internacional, ofrecemos servicio de introducción de empresas constructoras en el país LIBIA, por ello contamos con agentes y empresarios en Libia, con proyectos adjudicados, proporcionamos todo el asesoramiento, consejos y traductores en Libia, para asistir a sus reuniones en sus viajes en este país. Nuestras tarifas de precios sin competencia y nuestro equipo técnico especializado hacen de nosotros un punto de referencia en el sector. Hemos realizado proyectos para diferentes empresas. Estamos avalados por muchas grandes empresas españolas e internacionales.",
+    
+    srv_title: "Nuestros Servicios",
+    srv_sub: "Soluciones integrales para sus necesidades lingüísticas y documentales",
+    
+    srv_sworn: "Traducciones Juradas",
+    srv_sworn_short: "Textos y documentación certificada y legalizada con total validez jurídica.",
+    srv_sworn_tagline: "Oficialidad y máxima rigurosidad jurídica",
+    srv_sworn_full: "Ofrecemos traducción certificada y validada legalmente para todo tipo de procesos mercantiles y civiles. Garantizamos absoluta confidencialidad y exactitud en la equivalencia jurídica internacional.",
+    srv_sworn_items: [
+      "Pasaportes al Árabe", "Escrituras", "Contratos", "Poderes", "Estatutos de sociedades", 
+      "Auditorias y cuentas anuales", "Autorizaciones", "Escrituras de actas de manifestaciones", 
+      "Certificados de cámara de comercio", "Certificados de registro mercantil", "Certificados de origen", 
+      "Facturas comerciales", "Certificados y fitos sanitarios", "Acuerdos sociales", "Certificados de nacimiento", 
+      "Certificados de divorcio", "Certificados de defunción", "Libros de familia", "Certificados penales", 
+      "Títulos y expedientes académicos", "Certificados médicos", "Y otros documentos"
+    ],
+    
+    srv_tech: "Traducciones Técnicas",
+    srv_tech_short: "Documentos especializados, corporativos, manuales y técnicos de alta precisión.",
+    srv_tech_tagline: "Soluciones lingüísticas corporativas precisas",
+    srv_tech_full: "Adaptamos el lenguaje de acuerdo al sector tecnológico de su empresa. Nuestros traductores son expertos en el argot específico corporativo, industrial, y analítico para un marketing efectivo en el extranjero.",
+    srv_tech_items: [
+      "Presentaciones", "Catálogos", "Planes de negocio", "Manuales", "Páginas web", "Listados de precios", 
+      "Correspondencias", "Cartas", "Notas", "Informes", "Y cualquier otro documento"
+    ],
+    
+    srv_visa: "Gestión de Visados",
+    srv_visa_short: "Tramitaciones consulares rápidas y efectivas para personal extranjero e internacional.",
+    srv_visa_tagline: "Aprobación fluida y sin contratiempos",
+    srv_visa_full: "Tramitamos su visado en cualquier consulado extranjero en España. Con especial atención a los países emergentes en oriente medio y el norte de África, asegurando el cumplimiento de todas las exigencias legales migratorias.",
+    srv_visa_items: [
+      "Tramitamos su visado en cualquier consulado extranjero en España (Libia, Argelia, Irán, Egipto, China, ...)",
+      "Impresos de visados disponibles para descarga (Libia, Argelia, Egipto, Arabia Saudita, Yemen, Mauritania, China)"
+    ],
+    
+    srv_docs: "Gestión Documental",
+    srv_docs_short: "Gestión burocrática directa y resolución de trámites con organismos oficiales.",
+    srv_docs_tagline: "Presentación impecable frente a Organismos Oficiales",
+    srv_docs_full: "Ahorre tiempo depositando la gestión burocrática y legal de su corporación en nuestras manos expertas. Tenemos canal de comunicación directa con los mayores ministerios e instituciones nacionales.",
+    srv_docs_items: [
+      "Ministerio de asuntos exteriores", "Ministerio de justicia", "Ministerio de sanidad", "Ministerio de agricultura", 
+      "Cámara de comercio de Madrid", "Consejo superior de cámaras de comercio", "Colegio de notarios de Madrid", 
+      "Todas las embajadas y consulados (Libia, Argelia, Irán, Egipto, China, …)", "Y cualquier ministerio u organismo público o privado"
+    ],
+    
+    srv_business: "Asesoramiento Empresarial",
+    srv_business_short: "Estrategia y expansión de negocio internacional, especializado en el mercado de Libia.",
+    srv_business_tagline: "Conquistando el mercado internacional con confianza",
+    srv_business_full: "Introducimos y asesoramos a las empresas españolas y extranjeras que desean trabajar, abrir filial o delegación o instalarse como sede central en Libia, proporcionamos contactos en Libia, y damos el apoyo técnico sobre todos los asuntos para el registro y la apertura de su empresa en Libia. Precios y presupuestos: Nuestras tarifas de precios sin competencia, consúltanos sin ningún compromiso.",
+    
+    contact_title: "Contacte con Nosotros",
+    contact_sub: "Estamos a su disposición para cualquier consulta comercial",
+    contact_phone: "Teléfono",
+    contact_fax: "Fax",
+    contact_email: "Correo Electrónico",
+    contact_hq: "Oficina Principal",
+    contact_hq_address: "C/ De las Ciencias, 51. 28942 - Fuenlabrada (Madrid)",
+    loc_title: "Dónde Localizarnos",
+    loc_sub: "Visite nuestras delegaciones en Madrid",
+    loc_fuenlabrada: "Delegación Fuenlabrada",
+    loc_madrid: "Delegación Madrid Capital",
+    loc_madrid_address: "C/ Mauricio Legendre, 5 - Local 11. 28046 (Madrid)",
+    contact_linkedin: "Seguir Empresa en LinkedIn",
+    footer_rights: "© 2026 TIGAFAB S.L. Todos los derechos reservados.",
+
+    legal_title: "Aviso Legal",
+    legal_sub: "Información corporativa y legal",
+    legal_heading_1: "1. Datos del Responsable",
+    legal_text_1: "La empresa titular de los dominios web es TIGAFAB, S.L., con domicilio a estos efectos en C/ DE LAS CIENCIAS, 51, 28942. FUENLABRADA, MADRID.",
+    legal_heading_2: "2. Condiciones de Uso",
+    legal_text_2: "El acceso y/o uso de este portal atribuye la condición de USUARIO, que acepta los Términos de Uso reflejados en el presente texto.",
+    
+    privacy_title: "Política de Privacidad y Cookies",
+    privacy_sub: "Protección de sus datos (RGPD)",
+    privacy_heading_1: "1. Derechos del Usuario (RGPD)",
+    privacy_text_1: "Usted podrá ejercer los siguientes derechos sobre sus datos personales:",
+    privacy_rights_items: [
+      "Derecho de acceso a sus datos personales",
+      "Derecho de rectificación de cualquier dato personal inexacto",
+      "Derecho de supresión de sus datos personales",
+      "Derecho de limitación del tratamiento",
+      "Derecho de oposición al tratamiento",
+      "Derecho a la portabilidad de sus datos",
+      "Derecho a revocar el consentimiento"
+    ],
+    privacy_heading_2: "2. Tutela de Derechos",
+    privacy_text_2: "Puede contactar con la Agencia Española de Protección de Datos (https://www.aepd.es) sita en C/ Jorge Juan, 6, 28001, Madrid o en los teléfonos 901.100.099 y 912.663.517.",
+    privacy_heading_3: "3. Política de Cookies",
+    privacy_text_3: "Utilizamos Cookies de sesión y persistentes (propias y de terceros) así como Google Analytics para proveer funciones esenciales y recopilar estadísticas anónimas de visitas.",
+    
+    reviews_title: "Lo que dicen nuestros clientes",
+    reviews_subtitle: "Reseñas verificadas de Google Maps en nuestras localizaciones.",
+    review_1: "\"Servicio impecable y muy profesional. Fátima resolvió la traducción jurada de mis documentos en tiempo récord para un trámite urgente. Totalmente recomendados.\"",
+    review_2: "\"Llevamos años confiando en Tigafab para la tramitación de visados y traducción técnica hacia el árabe de los expedientes de nuestra empresa. Rápidos y eficaces.\"",
+    review_3: "\"Trato directo y tarifas muy buenas. Me ayudaron muchísimo con el registro de mi filial y servicios en Libia, desde los contratos hasta el asesoramiento. Un 10.\"",
+    review_4: "\"Gran equipo de traductores profesionales. Resolvieron toda la papeleta de extranjería y certificados de la Cámara de Comercio rapidísimo.\"",
+    review_5: "\"Excelente servicio en Madrid. Me tradujeron el pasaporte y un contrato societario con un rigor absoluto.\"",
+    review_6: "\"Tigafab nos asesoró desde Fuenlabrada para la apertura de una filial en el norte de África. La calidad humana de su equipo es increíble.\"",
+    review_7: "\"Puntualidad británica y un nivel de confidencialidad brutal. Trabajar con doña Fátima tranquiliza todas nuestras gestiones internacionales.\"",
+    review_8: "\"No hay competencia real en los plazos que manejan. Todo el paquete de traducciones juradas del árabe listo impecablemente.\"",
+    rev_name_1: "María G.",
+    rev_name_2: "Grupo Constructor",
+    rev_name_3: "Carlos S.",
+    rev_name_4: "Ana M.",
+    rev_name_5: "Hassan B.",
+    rev_name_6: "Francisco T.",
+    rev_name_7: "Empresa K.",
+    rev_name_8: "Youssef L."
+  },
+  
+  en: {
+    nav_home: "Home",
+    nav_services: "Services",
+    nav_contact: "Contact",
+    nav_location: "Location",
+    nav_legal: "Legal Notice",
+    nav_privacy: "Privacy",
+    btn_services: "Our Services",
+    btn_contact: "Contact Us",
+    btn_details: "Learn more",
+    btn_back: "Back to Services",
+    
+    hero_title: "Translation & Interpretation",
+    hero_subtitle: "Arabic, Spanish, English, German and French",
+    hero_desc: "Translator, interpreter, manager of commercial documents, visas and consultant.",
+    
+    home_welcome: "Welcome to Our Website",
+    home_welcome_sub: "Translations, Interpretation, Management and Consulting",
+    home_text_1: "We are an office of official, sworn, professional native translators and interpreters, headed by Ms. Fatima Benamar, with over 15 years of experience. We offer a fast, personalized service, punctuality, maximum quality, confidentiality, direct contact and adjusted rates. WE OFFER an integral service in sworn translation and advice for the processing of all your documents. Through our advice and personalized attention we guarantee correct processing. This way you will save a lot of time, money and worries. We always satisfy our clients. And we commit to delivering work within the agreed deadline.",
+    home_text_2: "More and more Spanish companies projecting abroad rely on our translation, management and consulting services for their international expansion. We offer introduction services for construction companies in LIBYA, therefore we have agents and businessmen in Libya, with awarded projects. We provide all the advice, tips and translators in Libya, to attend your meetings during your trips to this country. Our highly competitive pricing rates and specialized technical team make us a point of reference in the sector. We have carried out projects for different companies. We are backed by many large Spanish and international companies.",
+    
+    srv_title: "Our Services",
+    srv_sub: "Comprehensive solutions for your linguistic and documentary needs",
+    
+    srv_sworn: "Sworn Translations",
+    srv_sworn_short: "Certified and legalized texts and documentation with full legal validity.",
+    srv_sworn_tagline: "Officiality and maximum legal rigor",
+    srv_sworn_full: "We offer legally certified and validated translation for all types of commercial and civil processes. We guarantee absolute confidentiality and accuracy in international legal equivalence.",
+    srv_sworn_items: [
+      "Passports to Arabic", "Deeds", "Contracts", "Powers of Attorney", "Company Statutes", 
+      "Audits and annual accounts", "Authorizations", "Deeds of declarations", 
+      "Chamber of commerce certificates", "Mercantile registry certificates", "Certificates of origin", 
+      "Commercial invoices", "Health and phytosanitary certificates", "Corporate agreements", "Birth certificates", 
+      "Divorce certificates", "Death certificates", "Family books", "Criminal record certificates", 
+      "Academic degrees and transcripts", "Medical certificates", "And other documents"
+    ],
+    
+    srv_tech: "Technical Translations",
+    srv_tech_short: "High-precision specialized, corporate, manual and technical documents.",
+    srv_tech_tagline: "Precise corporate linguistic solutions",
+    srv_tech_full: "We adapt the language according to the technological sector of your company. Our translators are experts in the specific corporate, industrial, and analytical jargon for effective marketing abroad.",
+    srv_tech_items: [
+      "Presentations", "Catalogs", "Business plans", "Manuals", "Websites", "Price lists", 
+      "Correspondence", "Letters", "Notes", "Reports", "And any other document"
+    ],
+    
+    srv_visa: "Visa Management",
+    srv_visa_short: "Fast and effective consular procedures for foreign and international personnel.",
+    srv_visa_tagline: "Smooth and hassle-free approval",
+    srv_visa_full: "We process your visa at any foreign consulate in Spain. With special attention to emerging countries in the Middle East and North Africa, ensuring compliance with all legal immigration requirements.",
+    srv_visa_items: [
+      "We process your visa at any foreign consulate in Spain (Libya, Algeria, Iran, Egypt, China, ...)",
+      "Visa forms available for download (Libya, Algeria, Egypt, Saudi Arabia, Yemen, Mauritania, China)"
+    ],
+    
+    srv_docs: "Document Management in Official Organizations",
+    srv_docs_short: "Direct bureaucratic management and resolution of procedures with official organizations.",
+    srv_docs_tagline: "Impeccable presentation before Official Bodies",
+    srv_docs_full: "Save time by delegating the bureaucratic and legal management of your corporation to our expert hands. We have a direct communication channel with the main national ministries and institutions.",
+    srv_docs_items: [
+      "Ministry of Foreign Affairs", "Ministry of Justice", "Ministry of Health", "Ministry of Agriculture", 
+      "Madrid Chamber of Commerce", "Higher Council of Chambers of Commerce", "Madrid Association of Notaries", 
+      "All embassies and consulates (Libya, Algeria, Iran, Egypt, China, …)", "And any public or private ministry or organization"
+    ],
+    
+    srv_business: "Business Consulting",
+    srv_business_short: "International business strategy and expansion, specialized in the Libyan market.",
+    srv_business_tagline: "Conquering the international market with confidence",
+    srv_business_full: "We introduce and advise Spanish and foreign companies wishing to work, open a branch, delegation or settle as headquarters in Libya. We provide contacts in Libya, and give technical support on all matters for the registration and opening of your company in Libya. Prices and budgets: Our unbeatable pricing rates, contact us without any obligation.",
+    
+    contact_title: "Contact Us",
+    contact_sub: "We are available for any commercial inquiry",
+    contact_phone: "Phone",
+    contact_fax: "Fax",
+    contact_email: "Email",
+    contact_hq: "Head Office",
+    contact_hq_address: "C/ De las Ciencias, 51. 28942 - Fuenlabrada (Madrid)",
+    loc_title: "Where to Find Us",
+    loc_sub: "Visit our branches in Madrid",
+    loc_fuenlabrada: "Fuenlabrada Branch",
+    loc_madrid: "Madrid Capital Branch",
+    loc_madrid_address: "C/ Mauricio Legendre, 5 - Local 11. 28046 (Madrid)",
+    contact_linkedin: "Follow Company on LinkedIn",
+    footer_rights: "© 2026 TIGAFAB S.L. All rights reserved.",
+
+    legal_title: "Legal Notice",
+    legal_sub: "Corporate and legal information",
+    legal_heading_1: "1. Data Controller",
+    legal_text_1: "The company that owns the web domains is TIGAFAB, S.L., with address for these purposes at C/ DE LAS CIENCIAS, 51, 28942. FUENLABRADA, MADRID.",
+    legal_heading_2: "2. Terms of Use",
+    legal_text_2: "Access and/or use of this portal attributes the condition of USER, who accepts the Terms of Use reflected in this text.",
+    
+    privacy_title: "Privacy Policy and Cookies",
+    privacy_sub: "Data protection (GDPR)",
+    privacy_heading_1: "1. User Rights (GDPR)",
+    privacy_text_1: "You may exercise the following rights regarding your personal data:",
+    privacy_rights_items: [
+      "Right of access to your personal data",
+      "Right to rectification of any inaccurate personal data",
+      "Right to erasure of your personal data",
+      "Right to restriction of processing",
+      "Right to object to processing",
+      "Right to data portability",
+      "Right to withdraw consent"
+    ],
+    privacy_heading_2: "2. Protection of Rights",
+    privacy_text_2: "You can contact the Spanish Data Protection Agency (https://www.aepd.es) located at C/ Jorge Juan, 6, 28001, Madrid or by calling 901.100.099 and 912.663.517.",
+    privacy_heading_3: "3. Cookie Policy",
+    privacy_text_3: "We use session and persistent cookies (first and third-party), as well as Google Analytics, to provide essential functions and collect anonymous visitor statistics.",
+
+    reviews_title: "What our clients say",
+    reviews_subtitle: "Verified reviews from Google Maps at our locations.",
+    review_1: "\"Impeccable and very professional service. Fatima resolved the sworn translation of my documents in record time for an urgent procedure. Highly recommended.\"",
+    review_2: "\"We have relied on Tigafab for years to process visas and technical Arabic translations for our business files. Fast and effective.\"",
+    review_3: "\"Direct treatment and very good rates. They helped me a lot with the registration of my branch and services in Libya, from contracts to consulting. 10/10.\"",
+    review_4: "\"Great team of professional translators. They resolved all the immigration paperwork and Chamber of Commerce certificates very quickly.\"",
+    review_5: "\"Excellent service in Madrid. They translated my passport and a corporate contract with absolute precision.\"",
+    review_6: "\"Tigafab advised us from Fuenlabrada on opening a branch in North Africa. The human quality of their team is incredible.\"",
+    review_7: "\"British punctuality and a brutal level of confidentiality. Working with Ms. Fatima reassures all our international procedures.\"",
+    review_8: "\"There is no real competition in the deadlines they handle. The entire package of sworn Arabic translations was impeccably ready.\"",
+    rev_name_1: "María G.",
+    rev_name_2: "Construction Group",
+    rev_name_3: "Carlos S.",
+    rev_name_4: "Ana M.",
+    rev_name_5: "Hassan B.",
+    rev_name_6: "Francisco T.",
+    rev_name_7: "Company K.",
+    rev_name_8: "Youssef L."
+  },
+
+  fr: {
+    nav_home: "Accueil",
+    nav_services: "Services",
+    nav_contact: "Contact",
+    nav_location: "Localisation",
+    nav_legal: "Mentions Légales",
+    nav_privacy: "Confidentialité",
+    btn_services: "Nos Services",
+    btn_contact: "Contactez-nous",
+    btn_details: "En savoir plus",
+    btn_back: "Retour aux Services",
+    
+    hero_title: "Traduction & Interprétation",
+    hero_subtitle: "Arabe, Espagnol, Anglais, Allemand et Français",
+    hero_desc: "Traductrice, interprète, gestionnaire de documents commerciaux, visas et consultante.",
+    
+    home_welcome: "Bienvenue sur notre site",
+    home_welcome_sub: "Traductions, Interprétation, Gestion et Conseil",
+    home_text_1: "Nous sommes un bureau de traducteurs et d'interprètes officiels assermentés, professionnels natifs, dirigé par Mme Fatima Benamar, avec plus de 15 ans d'expérience. Nous offrons un service rapide, personnalisé, ponctuel et de qualité maximale. NOUS OFFRONS un service complet de traduction assermentée et de conseil pour le traitement de tous vos documents. Nous garantissons un traitement correct pour vous faire gagner du temps et de l'argent. Nous respectons toujours nos délais.",
+    home_text_2: "De plus en plus d'entreprises espagnoles comptent sur nos services pour leur expansion internationale. Nous offrons un service d'introduction pour les entreprises de construction en LIBYE, en fournissant des contacts, des conseils et des traducteurs en Libye pour vos réunions. Nos tarifs imbattables et notre équipe spécialisée font de nous une référence. Nous sommes soutenus par de grandes entreprises espagnoles et internationales.",
+    
+    srv_title: "Nos Services",
+    srv_sub: "Solutions complètes pour vos besoins linguistiques et documentaires",
+    
+    srv_sworn: "Traductions Assermentées",
+    srv_sworn_short: "Textes et documents certifiés et légalisés avec totale validité juridique.",
+    srv_sworn_tagline: "Officialité et rigueur juridique maximale",
+    srv_sworn_full: "Nous offrons des traductions certifiées pour tous types de processus commerciaux et civils. Nous garantissons une confidentialité absolue.",
+    srv_sworn_items: [
+      "Passeports vers l'Arabe", "Actes", "Contrats", "Procurations", "Statuts de sociétés",
+      "Audits et comptes annuels", "Autorisations", "Actes de déclarations",
+      "Certificats de chambre de commerce", "Certificats du registre du commerce", "Certificats d'origine",
+      "Factures commerciales", "Certificats sanitaires et phytosanitaires", "Accords sociaux", "Certificats de naissance",
+      "Certificats de divorce", "Certificats de décès", "Livrets de famille", "Casiers judiciaires",
+      "Titres et dossiers académiques", "Certificats médicaux", "Et autres documents"
+    ],
+    
+    srv_tech: "Traductions Techniques",
+    srv_tech_short: "Documents spécialisés de haute précision, corporatifs, manuels et techniques.",
+    srv_tech_tagline: "Solutions linguistiques corporatives précises",
+    srv_tech_full: "Nous adaptons le langage selon votre secteur technologique pour un marketing efficace à l'étranger.",
+    srv_tech_items: [
+      "Présentations", "Catalogues", "Plans d'affaires", "Manuels", "Sites Web", "Listes de prix", 
+      "Correspondances", "Lettres", "Notes", "Rapports", "Et tout autre document"
+    ],
+    
+    srv_visa: "Gestion des Visas",
+    srv_visa_short: "Démarches consulaires rapides et efficaces pour le personnel international.",
+    srv_visa_tagline: "Approbation fluide et sans tracas",
+    srv_visa_full: "Nous traitons votre visa dans tout consulat étranger en Espagne, en particulier pour les pays du Moyen-Orient et d'Afrique du Nord.",
+    srv_visa_items: [
+      "Traitement de visas aux consulats en Espagne (Libye, Algérie, Iran, Égypte, Chine, ...)", 
+      "Formulaires de visa disponibles au téléchargement (Libye, Algérie, Égypte, Arabie Saoudite, Yémen, Mauritanie, Chine)"
+    ],
+    
+    srv_docs: "Gestion Documentaire",
+    srv_docs_short: "Gestion bureaucratique directe auprès des organismes officiels.",
+    srv_docs_tagline: "Présentation impeccable devant les Organismes Officiels",
+    srv_docs_full: "Gagnez du temps en confiant vos démarches officielles à nos experts. Nous avons un canal direct avec les ministères nationaux.",
+    srv_docs_items: [
+      "Ministère des affaires étrangères", "Ministère de la justice", "Ministère de la santé", "Ministère de l'agriculture", 
+      "Chambre de commerce de Madrid", "Conseil supérieur des chambres de commerce", "Collège des notaires de Madrid",
+      "Ambassades et consulats (Libye, Algérie, Iran, Égypte, Chine, ...)", "Et tout autre ministère ou organisme"
+    ],
+    
+    srv_business: "Conseil aux Entreprises",
+    srv_business_short: "Stratégie et expansion des affaires internationales, spécialisé dans le marché Libyen.",
+    srv_business_tagline: "Conquérir le marché international avec confiance",
+    srv_business_full: "Nous conseillons les entreprises souhaitant travailler, ouvrir une succursale ou s'installer en Libye. Nous fournissons des contacts et un soutien technique complet pour l'enregistrement de votre entreprise en Libye. Devis sans engagement.",
+    
+    contact_title: "Contactez-nous",
+    contact_sub: "À votre disposition pour toute demande",
+    contact_phone: "Téléphone",
+    contact_fax: "Fax",
+    contact_email: "E-mail",
+    contact_hq: "Bureau Principal",
+    contact_hq_address: "C/ De las Ciencias, 51. 28942 - Fuenlabrada (Madrid)",
+    loc_title: "Où nous trouver",
+    loc_sub: "Visitez nos agences à Madrid",
+    loc_fuenlabrada: "Agence Fuenlabrada",
+    loc_madrid: "Agence Madrid Capital",
+    loc_madrid_address: "C/ Mauricio Legendre, 5 - Local 11. 28046 (Madrid)",
+    contact_linkedin: "Suivre l'entreprise sur LinkedIn",
+    footer_rights: "© 2026 TIGAFAB S.L. Tous droits réservés.",
+
+    legal_title: "Mentions Légales",
+    legal_sub: "Informations légales et corporatives",
+    legal_heading_1: "1. Responsable",
+    legal_text_1: "L'entreprise propriétaire des domaines est TIGAFAB, S.L., sise à C/ DE LAS CIENCIAS, 51, 28942. FUENLABRADA, MADRID.",
+    legal_heading_2: "2. Conditions d'Utilisation",
+    legal_text_2: "L'accès à ce portail attribue la condition d'UTILISATEUR, qui accepte les Conditions d'Utilisation.",
+    
+    privacy_title: "Confidentialité et Cookies",
+    privacy_sub: "Protection des données (RGPD)",
+    privacy_heading_1: "1. Droits de l'Utilisateur",
+    privacy_text_1: "Vous pouvez exercer vos droits sur vos données personnelles :",
+    privacy_rights_items: [
+      "Droit d'accès", "Droit de rectification", "Droit de suppression", "Droit à la limitation du traitement", 
+      "Droit d'opposition", "Droit à la portabilité", "Droit de retirer le consentement"
+    ],
+    privacy_heading_2: "2. Protection des Droits",
+    privacy_text_2: "Vous pouvez contacter l'Agence espagnole de protection des données (https://www.aepd.es).",
+    privacy_heading_3: "3. Politique de Cookies",
+    privacy_text_3: "Nous utilisons des cookies de session, persistants et Google Analytics pour fournir des fonctionnalités essentielles et recueillir des statistiques de visite.",
+
+    reviews_title: "Ce que disent nos clients",
+    reviews_subtitle: "Avis vérifiés de Google Maps dans nos agences.",
+    review_1: "\"Service impeccable et professionnel. Fatima a résolu la traduction assermentée de mes documents en un temps record. Hautement recommandé.\"",
+    review_2: "\"Nous faisons confiance à Tigafab depuis des années pour nos visas et traductions techniques vers l'arabe. Rapides et efficaces.\"",
+    review_3: "\"Excellents tarifs et contact direct. Ils m'ont beaucoup aidé pour l'enregistrement de ma succursale en Libye. 10/10.\"",
+    review_4: "\"Excellente équipe de professionnels. Ils ont résolu toutes mes procédures d'immigration très rapidement.\"",
+    review_5: "\"Excellent service à Madrid. Ils ont traduit mon passeport et un contrat d'entreprise de manière impeccable.\"",
+    review_6: "\"Tigafab nous a conseillés depuis Fuenlabrada pour l'ouverture d'une succursale en Afrique du Nord. C'est incroyable.\"",
+    review_7: "\"Ponctualité britannique et une grande confidentialité. Travailler avec Madame Fatima est rassurant.\"",
+    review_8: "\"Il n'y a pas de concurrence concernant leur rapidité. Le paquet entier de traductions vers l'arabe était parfait.\"",
+    rev_name_1: "María G.",
+    rev_name_2: "Groupe de Construction",
+    rev_name_3: "Carlos S.",
+    rev_name_4: "Ana M.",
+    rev_name_5: "Hassan B.",
+    rev_name_6: "Francisco T.",
+    rev_name_7: "Entreprise K.",
+    rev_name_8: "Youssef L."
+  },
+
+  de: {
+    nav_home: "Startseite",
+    nav_services: "Dienstleistungen",
+    nav_contact: "Kontakt",
+    nav_location: "Standort",
+    nav_legal: "Impressum",
+    nav_privacy: "Datenschutz",
+    btn_services: "Unsere Dienstleistungen",
+    btn_contact: "Kontakt",
+    btn_details: "Mehr erfahren",
+    btn_back: "Zurück zu Leistungen",
+    
+    hero_title: "Übersetzung & Dolmetschen",
+    hero_subtitle: "Arabisch, Spanisch, Englisch, Deutsch und Französisch",
+    hero_desc: "Übersetzerin, Dolmetscherin, Managerin und Beraterin.",
+    
+    home_welcome: "Willkommen auf unserer Website",
+    home_welcome_sub: "Übersetzungen, Dolmetschen, Management und Beratung",
+    home_text_1: "Wir sind ein Büro von offiziellen, beeidigten Übersetzern unter der Leitung von Frau Fatima Benamar mit über 15 Jahren Erfahrung. Wir bieten schnellen, persönlichen Service in höchster Qualität. WIR BIETEN umfassenden Service bei beglaubigten Übersetzungen an.",
+    home_text_2: "Viele Unternehmen vertrauen bei ihrer internationalen Expansion auf unsere Dienstleistungen. Wir bieten speziellen Support für das Libyen-Geschäft an. Unsere unschlagbaren Preise und unser technisches Team machen uns zu einem Bezugspunkt in der Branche.",
+    
+    srv_title: "Unsere Dienstleistungen",
+    srv_sub: "Umfassende Sprach- und Dokumentenlösungen",
+    
+    srv_sworn: "Beglaubigte Übersetzungen",
+    srv_sworn_short: "Zertifizierte und beglaubigte Texte und Dokumentation.",
+    srv_sworn_tagline: "Offiziell und mit maximaler rechtlicher Strenge",
+    srv_sworn_full: "Wir bieten rechtlich zertifizierte Übersetzungen für alle Arten von zivilen und geschäftlichen Prozessen. Absolute Vertraulichkeit garantiert.",
+    srv_sworn_items: [
+      "Reisepässe ins Arabische", "Urkunden", "Verträge", "Vollmachten", "Gesellschaftssatzungen", 
+      "Wirtschaftsprüfungen", "Genehmigungen", "Protokollurkunden",
+      "Zertifikate der Handelskammer", "Handelsregisterauszüge", "Ursprungszeugnisse", 
+      "Handelsrechnungen", "Gesundheits- und Pflanzengesundheitszeugnisse", "Gesellschaftsverträge", "Geburtsurkunden", 
+      "Scheidungsurkunden", "Sterbeurkunden", "Familienbücher", "Führungszeugnisse", 
+      "Akademische Titel", "Medizinische Gutachten", "Und andere Dokumente"
+    ],
+    
+    srv_tech: "Technische Übersetzungen",
+    srv_tech_short: "Spezialisierte, technische Unternehmensdokumente.",
+    srv_tech_tagline: "Präzise sprachliche Unternehmenslösungen",
+    srv_tech_full: "Wir passen die Sprache dem Technologiesektor Ihres Unternehmens an.",
+    srv_tech_items: [
+      "Präsentationen", "Kataloge", "Geschäftspläne", "Handbücher", "Websites", "Preislisten", 
+      "Korrespondenz", "Briefe", "Notizen", "Berichte", "Und alle anderen Dokumente"
+    ],
+    
+    srv_visa: "Visum-Management",
+    srv_visa_short: "Schnelle konsularische Verfahren für internationales Personal.",
+    srv_visa_tagline: "Reibungslose Zulassung",
+    srv_visa_full: "Wir bearbeiten Ihr Visum bei jedem ausländischen Konsulat in Spanien.",
+    srv_visa_items: [
+      "Visa-Abwicklung in Konsulaten in Spanien (Libyen, Algerien, Iran, Ägypten, China, ...)", 
+      "Visa-Formulare zum Download verfügbar (Libyen, Algerien, Ägypten, Saudi-Arabien, Jemen, Mauretanien, China)"
+    ],
+    
+    srv_docs: "Dokumentenmanagement",
+    srv_docs_short: "Bürokratisches Management und Verfahren mit Behörden.",
+    srv_docs_tagline: "Einwandfreie Präsentation vor offiziellen Stellen",
+    srv_docs_full: "Sparen Sie Zeit und überlassen Sie uns das bürokratische Management. Direkter Draht zu den wichtigsten Ministerien.",
+    srv_docs_items: [
+      "Außenministerium", "Justizministerium", "Gesundheitsministerium", "Landwirtschaftsministerium", 
+      "Handelskammer Madrid", "Oberster Rat der Handelskammern", "Notarkammer Madrid",
+      "Botschaften und Konsulate (Libyen, Algerien, Iran, Ägypten, China, ...)", "Und alle anderen Ministerien oder Behörden"
+    ],
+    
+    srv_business: "Unternehmensberatung",
+    srv_business_short: "Strategie und Expansion in Libyen.",
+    srv_business_tagline: "Internationalen Markt selbstbewusst erobern",
+    srv_business_full: "Wir beraten Unternehmen, die in Libyen tätig werden möchten. Wir vermitteln Kontakte und bieten technische Unterstützung bei der Firmenregistrierung. Wir bieten faire Preise an.",
+    
+    contact_title: "Kontakt",
+    contact_sub: "Wir stehen Ihnen gerne zur Verfügung",
+    contact_phone: "Telefon",
+    contact_fax: "Fax",
+    contact_email: "E-Mail",
+    contact_hq: "Hauptbüro",
+    contact_hq_address: "C/ De las Ciencias, 51. 28942 - Fuenlabrada (Madrid)",
+    loc_title: "Unsere Standorte",
+    loc_sub: "Besuchen Sie uns in Madrid",
+    loc_fuenlabrada: "Filiale Fuenlabrada",
+    loc_madrid: "Filiale Madrid Zentrum",
+    loc_madrid_address: "C/ Mauricio Legendre, 5 - Local 11. 28046 (Madrid)",
+    contact_linkedin: "Unternehmen auf LinkedIn folgen",
+    footer_rights: "© 2026 TIGAFAB S.L. Alle Rechte vorbehalten.",
+
+    legal_title: "Impressum",
+    legal_sub: "Unternehmensinformationen",
+    legal_heading_1: "1. Verantwortlicher",
+    legal_text_1: "Inhaber der Webdomains ist TIGAFAB, S.L., C/ DE LAS CIENCIAS, 51, 28942. FUENLABRADA, MADRID.",
+    legal_heading_2: "2. Nutzungsbedingungen",
+    legal_text_2: "Der Zugriff auf oder die Nutzung dieses Portals setzt die Annahme dieser Bedingungen voraus.",
+    
+    privacy_title: "Datenschutz und Cookies",
+    privacy_sub: "Datenschutz (DSGVO)",
+    privacy_heading_1: "1. Nutzerrechte",
+    privacy_text_1: "Sie können folgende Rechte geltend machen:",
+    privacy_rights_items: [
+      "Auskunftsrecht", "Recht auf Berichtigung", "Recht auf Löschung", "Recht auf Einschränkung der Verarbeitung",
+      "Widerspruchsrecht", "Recht auf Datenübertragbarkeit", "Recht auf Widerruf der Einwilligung"
+    ],
+    privacy_heading_2: "2. Rechtschutz",
+    privacy_text_2: "Sie können sich an die spanische Datenschutzbehörde (https://www.aepd.es) wenden.",
+    privacy_heading_3: "3. Cookie-Richtlinie",
+    privacy_text_3: "Wir verwenden Session-, funktionale und Google Analytics-Cookies zur Bereitstellung grundlegender Funktionen und Sammlung anonymer Besucherstatistiken.",
+
+    reviews_title: "Was unsere Kunden sagen",
+    reviews_subtitle: "Verifizierte Google Maps-Bewertungen an unseren Standorten.",
+    review_1: "\"Tadelloser und sehr professioneller Service. Fatima hat die beglaubigte Übersetzung meiner Dokumente in Rekordzeit erledigt. Sehr zu empfehlen.\"",
+    review_2: "\"Wir verlassen uns seit Jahren auf Tigafab für unsere Visa und technischen Arabisch-Übersetzungen. Schnell und effektiv.\"",
+    review_3: "\"Sehr gute Preise und direkter Kontakt. Sie haben mir sehr bei der Gründung meiner Niederlassung in Libyen geholfen. 10/10.\"",
+    review_4: "\"Tolles Team von professionellen Übersetzern. Sie haben alle Einwanderungspapiere sehr schnell erledigt.\"",
+    review_5: "\"Ausgezeichneter Service in Madrid. Sie haben meinen Pass und einen Vertrag sehr genau übersetzt.\"",
+    review_6: "\"Tigafab beriet uns bei der Eröffnung einer Niederlassung in Nordafrika. Die menschliche Qualität ist unglaublich.\"",
+    review_7: "\"Britische Pünktlichkeit und Vertraulichkeit. Die Zusammenarbeit mit Frau Fatima beruhigt unsere Abläufe.\"",
+    review_8: "\"Es gibt keine wirkliche Konkurrenz bei ihren Fristen. Das gesamte Übersetzungspaket war einwandfrei.\"",
+    rev_name_1: "María G.",
+    rev_name_2: "Baugruppe",
+    rev_name_3: "Carlos S.",
+    rev_name_4: "Ana M.",
+    rev_name_5: "Hassan B.",
+    rev_name_6: "Francisco T.",
+    rev_name_7: "Firma K.",
+    rev_name_8: "Youssef L."
+  },
+
+  ar: {
+    nav_home: "الرئيسية",
+    nav_services: "الخدمات",
+    nav_contact: "اتصل بنا",
+    nav_location: "الموقع",
+    nav_legal: "إشعار قانوني",
+    nav_privacy: "الخصوصية",
+    btn_services: "عرض خدماتنا",
+    btn_contact: "اتصل بنا",
+    btn_details: "أعرف أكثر",
+    btn_back: "العودة إلى الخدمات",
+    
+    hero_title: "الترجمة التحريرية والشفوية",
+    hero_subtitle: "العربية، الإسبانية، الإنجليزية، الألمانية والفرنسية",
+    hero_desc: "مترجمة تحريرية وشفوية، مديرة مستندات تجارية وتأشيرات ومستشارة.",
+    
+    home_welcome: "مرحباً بكم في موقعنا",
+    home_welcome_sub: "الترجمة، الإدارة والاستشارات",
+    home_text_1: "نحن مكتب للمترجمين المحلفين والمحترفين بإدارة السيدة فاطمة بنعمر بخبرة تزيد عن 15 عاماً. نقدم خدمات سريعة و مخصصة بأقصى جودة وسرية تامة. نحن نقدم خدمة شاملة في الترجمة المحلفة لضمان تنفيذ أعمالك بشكل صحيح. سيوفر لك ذلك الوقت والمال والمتاعب.",
+    home_text_2: "تعتمد الشركات الإسبانية في توسعها الدولي على خدماتنا للإستقرار والعمل في ليبيا. نحن نوفر الوكلاء والمترجمين في ليبيا لدعمك في اجتماعاتك. أسعارنا المتميزة تجعلنا مرجعاً في هذا القطاع وتدعمنا كبرى الشركات الإسبانية والدولية.",
+    
+    srv_title: "خدماتنا",
+    srv_sub: "حلول شاملة لاحتياجاتكم اللغوية والوثائقية",
+    
+    srv_sworn: "الترجمة المحلفة",
+    srv_sworn_short: "النصوص والوثائق المعتمدة والمصدقة ذات الصلاحية القانونية التامة.",
+    srv_sworn_tagline: "دقة قانونية قصوى",
+    srv_sworn_full: "نقدم ترجمة معتمدة قانونياً لجميع أنواع العمليات التجارية والمدنية. نضمن السرية التامة والدقة في التكافؤ القانوني الدولي.",
+    srv_sworn_items: [
+      "جوازات السفر إلى العربية", "العقود التوثيقية", "العقود", "التوكيلات", "النظام الأساسي للشركة", 
+      "مراجعات الحسابات", "التراخيص", "إعلانات الشهادات", 
+      "شهادات الغرفة التجارية", "شهادات السجل التجاري", "شهادات المنشأ", 
+      "الفواتير التجارية", "الشهادات الصحية والزراعية", "الاتفاقيات الاجتماعية", "شهادات الميلاد", 
+      "شهادات الطلاق", "شهادات الوفاة", "الدفاتر العائلية", "السجلات الجنائية", 
+      "الدرجات الأكاديمية", "الشهادات الطبية", "ووثائق أخرى"
+    ],
+    
+    srv_tech: "الترجمة المتخصصة",
+    srv_tech_short: "وثائق تقنية للشركات والدلائل عالية الدقة.",
+    srv_tech_tagline: "حلول لغوية دقيقة للشركات",
+    srv_tech_full: "نطوع اللغة بناء على القطاع التكنولوجي لشركتكم. مترجمونا خبراء في المصطلحات الصناعية.",
+    srv_tech_items: [
+      "العروض التقديمية", "الكتالوجات", "خطط العمل", "أدلة المستخدم", "مواقع الويب", "قوائم الأسعار", 
+      "المراسلات", "الخطابات", "المذكرات", "التقارير", "وأي وثيقة أخرى"
+    ],
+    
+    srv_visa: "إدارة التأشيرات",
+    srv_visa_items: [
+      "نقوم بمعالجة التأشيرات في القنصليات في إسبانيا (ليبيا، الجزائر، إيران، الصين، إسبانيا...)", 
+      "نماذج التأشيرات متاحة للتحميل (ليبيا، الجزائر، مصر، المملكة العربية السعودية، اليمن، موريتانيا، الصين)"
+    ],
+    srv_visa_short: "إجراءات قنصلية سريعة للموظفين الأجانب.",
+    srv_visa_tagline: "موافقة سلسة وخالية من المتاعب",
+    srv_visa_full: "نعالج تأشيرتك في أي قنصلية أجنبية في إسبانيا، مع الانتباه الخاص للشرق الأوسط.",
+    
+    srv_docs: "إدارة الوثائق في المنظمات الرسمية",
+    srv_docs_short: "التعامل المباشر مع المنظمات الرسمية لحل الإجراءات.",
+    srv_docs_tagline: "تقديم لا تشوبه شائبة أمام الجهات الرسمية",
+    srv_docs_full: "وفر الوقت من خلال إسناد الإدارة القانونية إلى خبرائنا المباشرين.",
+    srv_docs_items: [
+      "وزارة الخارجية", "وزارة العدل", "وزارة الصحة", "وزارة الزراعة", 
+      "غرفة تجارة مدريد", "المجلس الأعلى للغرف التجارية", "نقابة كتاب العدل بمدريد",
+      "السفارات والقنصليات (ليبيا، الجزائر، إيران، مصر، الصين،...)", "وأي منظمة عامة أو خاصة"
+    ],
+    
+    srv_business: "استشارات الشركات",
+    srv_business_short: "الاستراتيجية وتوسيع الأعمال التجارية في السوق الليبي.",
+    srv_business_tagline: "قهر السوق الدولي بثقة",
+    srv_business_full: "نقدم الدعم الفني للشركات الراغبة في تأسيس فروع وتسجيل شركاتها في ليبيا. أسعارنا تنافسية للغاية ولا مثيل لها.",
+    
+    contact_title: "اتصل بنا",
+    contact_sub: "نحن تحت تصرفك",
+    contact_phone: "الهاتف",
+    contact_fax: "فاكس",
+    contact_email: "البريد الإلكتروني",
+    contact_hq: "المكتب الرئيسي",
+    contact_hq_address: "C/ De las Ciencias, 51. 28942 - Fuenlabrada (Madrid)",
+    loc_title: "مواقعنا",
+    loc_sub: "قم بزيارة فروعنا",
+    loc_fuenlabrada: "فرع فوينلابرادا",
+    loc_madrid: "فرع وسط مدريد",
+    loc_madrid_address: "C/ Mauricio Legendre, 5 - Local 11. 28046 (Madrid)",
+    contact_linkedin: "متابعة الشركة على لينكد إن",
+    footer_rights: "© 2026 TIGAFAB S.L. جميع الحقوق محفوظة.",
+
+    legal_title: "إشعار قانوني",
+    legal_sub: "معلومات قانونية عن الشركة",
+    legal_heading_1: "1. المسؤول عن البيانات",
+    legal_text_1: "الشركة المالكة لهذه النطاقات هي TIGAFAB, S.L ومقرها C/ DE LAS CIENCIAS, 51, 28942. FUENLABRADA, MADRID.",
+    legal_heading_2: "2. شروط الاستخدام",
+    legal_text_2: "الوصول إلى هذا الموقع يعطي المستخدم صفة القبول التام للاستخدام المنصوص عليه.",
+    
+    privacy_title: "سياسة الخصوصية وملفات تعريف الارتباط",
+    privacy_sub: "حماية بياناتك (RGPD)",
+    privacy_heading_1: "1. حقوق المستخدم",
+    privacy_text_1: "يمكنك ممارسة الحقوق التالية بشأن بياناتك:",
+    privacy_rights_items: [
+      "حق الوصول إلى البيانات", "حق تعديل البيانات غير الصحيحة", "حق الحذف", "حق تقييد المعالجة", 
+      "حق الاعتراض", "حق نقل البيانات", "حق سحب الموافقة"
+    ],
+    privacy_heading_2: "2. حماية الحقوق",
+    privacy_text_2: "يمكنك الاتصال بوكالة حماية البيانات الإسبانية عبر موقعهم الرسمي (https://www.aepd.es)",
+    privacy_heading_3: "3. سياسة ملفات تعريف الارتباط",
+    privacy_text_3: "نستخدم ملفات تعريف ارتباط خاصة بأطراف أخرى بالإضافة لـ Google Analytics لتوفير وظائف أساسية.",
+
+    reviews_title: "ماذا يقول عملاؤنا",
+    reviews_subtitle: "تقييمات موثقة من خرائط جوجل في فروعنا.",
+    review_1: "\"خدمة لا تشوبها شائبة واحترافية للغاية. أنجزت فاطمة الترجمة المحلفة لوثائقي في وقت قياسي لإجراء عاجل. موصى به بشدة.\"",
+    review_2: "\"نحن نعتمد على تيگافاب منذ سنوات في استخراج التأشيرات والترجمة التقنية لملفاتنا. سريعون وفعالون.\"",
+    review_3: "\"تعامل مباشر وأسعار جيدة جدًا. لقد ساعدوني كثيرًا في تسجيل فرعي في ليبيا. 10/10.\"",
+    review_4: "\"فريق رائع من المترجمين المحترفين. أنجزوا جميع أوراق الهجرة وشهادات الغرفة التجارية بسرعة.\"",
+    review_5: "\"خدمة ممتازة في مدريد. لقد ترجموا جواز سفري وعقد الشركة بدقة متناهية.\"",
+    review_6: "\"نصحتنا تيگافاب لافتتاح فرع في شمال أفريقيا. الجودة الإنسانية لفريقهم لا تصدق.\"",
+    review_7: "\"دقة والتزام وسرية تامة. العمل مع السيدة فاطمة يطمئن جميع إجراءاتنا الدولية.\"",
+    review_8: "\"لا توجد منافسة حقيقية في المواعيد. الترجمة المحلفة العربية كانت جاهزة بشكل لا تشوبه شائبة.\"",
+    rev_name_1: "María G.",
+    rev_name_2: "مجموعة البناء",
+    rev_name_3: "Carlos S.",
+    rev_name_4: "Ana M.",
+    rev_name_5: "Hassan B.",
+    rev_name_6: "Francisco T.",
+    rev_name_7: "شركة K.",
+    rev_name_8: "Youssef L."
+  }
+};
+
+window.translations = translations;
