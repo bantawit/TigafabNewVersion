@@ -1,5 +1,6 @@
 class App {
   constructor() {
+    console.log("🚀 Tigafab App Initializing...");
     this.currentLang = localStorage.getItem('tigafab_lang') || 'es';
     this.init();
   }
@@ -23,6 +24,7 @@ class App {
     this.setActiveNav();
 
     // Initialize translations & lists
+    console.log("📦 Translations loaded:", window.translations);
     this.renderTranslations();
   }
 
@@ -39,6 +41,7 @@ class App {
   }
 
   changeLang(lang) {
+    console.log("🌐 Switching language to:", lang);
     this.currentLang = lang;
     localStorage.setItem('tigafab_lang', lang);
     this.updateLangUI(lang);
@@ -61,8 +64,12 @@ class App {
   }
 
   renderTranslations() {
-    const t = (typeof translations !== 'undefined') ? translations[this.currentLang] : null;
-    if (!t) return;
+    console.log("🔄 Rendering translations for:", this.currentLang);
+    const t = window.translations ? window.translations[this.currentLang] : null;
+    if (!t) {
+      console.error("❌ Translations NOT FOUND for lang:", this.currentLang);
+      return;
+    }
     
     // Update Page Title
     const pageClass = Array.from(document.body.classList).find(c => c.startsWith('page-'));

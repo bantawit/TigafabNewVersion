@@ -1,4 +1,4 @@
-const translations = {
+window.translations = {
   es: {
     nav_home: "Inicio",
     nav_services: "Servicios",
