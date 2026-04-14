@@ -200,7 +200,7 @@ function initDraggableMarquee() {
   const slider = document.querySelector('.marquee-container');
   if (!slider) return;
 
-  let isDown = False;
+  let isDown = false;
   let startX;
   let scrollLeft;
 
