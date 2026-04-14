@@ -34,7 +34,8 @@ def generate_page(lang, filename, title_key, content):
     with open(os.path.join(target_dir, filename), "w") as f: f.write(full_html)
 
 for lang in LANG_FOLDERS:
-    # 1. HOME
+    t = TRANSLATIONS.get(lang, TRANSLATIONS['es'])
+    # 1. HOME (RESTAURACION TOTAL)
     home = f"""<section class="hero"><div class="container" data-aos="fade-up"><p>t-hero-subtitle</p><h1>t-hero-title</h1><a href="contacto.html" class="btn-premium">t-home-cta-btn</a></div></section>
     <section style="padding:10rem 0;"><div class="container" style="max-width:1150px;"><div style="display:grid; grid-template-columns:1.2fr 1fr; gap:5rem; align-items:start;"><div data-aos="fade-right"><h2>Tradición y Rigor</h2><p style="font-size:1.3rem; line-height:1.8; margin-bottom:2.5rem;">t-h1</p><div style="background:rgba(194,163,93,0.1); border-left:4px solid var(--primary); padding:2.5rem; margin-bottom:2.5rem;"><p style="font-size:1.5rem; font-weight:700; color:var(--primary); margin-bottom:1rem;">t-h2</p><p style="color:#f8fafc; font-size:1.1rem; line-height:1.6;">t-h3</p></div><p style="font-style:italic; color:#94a3b8; font-size:1.1rem;">t-h4</p></div><div data-aos="fade-left" style="background:rgba(255,255,255,0.02); border:1px solid var(--glass-border); padding:3.5rem; border-radius:24px; box-shadow: 0 10px 30px rgba(0,0,0,0.2);"><p style="margin-bottom:2.5rem; font-size:1.2rem; color:#f8fafc; line-height:1.8;">t-h5</p><p style="font-size:1.2rem; color:#94a3b8; line-height:1.8;">t-h6</p></div></div></div></section>
     <section style="padding-bottom:10rem;"><div class="container" style="text-align:center; margin-bottom:5rem;"><h2>t-reviews-title</h2><p style="letter-spacing:2px; font-weight:700; color:var(--primary);">t-exp-verificadas</p></div><div class="marquee-container"><div class="marquee-inner">{get_review_cards()}</div></div></section>"""
@@ -51,10 +52,22 @@ for lang in LANG_FOLDERS:
     </div></div></section>"""
     generate_page(lang, "servicios.html", 'nav_services', srv)
     
-    # 3. CONTACTO
+    # 3. CONTACTO (RESTAURACION TOTAL)
+    def itm(icon, title, content): return f'<div class="contact-item"><i class="fas {icon}"></i><div><h4>{title}</h4>{content}</div></div>'
+    
+    emails_html = "".join([f'<p style="margin-bottom:0.3rem;">{e}</p>' for e in t.get('info_emails', [])])
+    phones_html = "".join([f'<p style="margin-bottom:0.3rem;" class="contact-phone">{p}</p>' for p in t.get('info_phones', [])])
+    
     cont = f"""<section class="hero" style="min-height:45vh; padding:100px 0;"><div class="container"><h1>t-hero-contact-title</h1></div></section>
     <section style="padding:8rem 0;"><div class="container"><div class="contact-grid" dir="ltr">
-    <div class="contact-info-box" data-aos="fade-right"><h2>t-contact-title</h2><div class="contact-item"><i class="fas fa-map-marker-alt"></i><div><h4>t-info-address-title</h4><p>t-info-address-text</p></div></div><div class="contact-item"><i class="fas fa-envelope"></i><div><h4>t-info-email-title</h4><p>info@tigafab.com</p></div></div><div class="contact-item"><i class="fas fa-phone-alt"></i><div><h4>t-info-phone-title</h4><p class="contact-phone">+34 91 606 20 20</p></div></div></div>
+    <div class="contact-info-box" data-aos="fade-right">
+        <h2>t-contact-title</h2>
+        {itm('fa-map-marker-alt', t.get('info_address_title_1'), f'<p>{t.get("info_address_text_1")}</p>')}
+        {itm('fa-map-marker-alt', t.get('info_address_title_2'), f'<p>{t.get("info_address_text_2")}</p>')}
+        {itm('fa-envelope', t.get('info_email_title'), emails_html)}
+        {itm('fa-phone-alt', t.get('info_phone_title'), phones_html)}
+        {itm('fa-fax', t.get('info_fax_title'), f'<p>{t.get("info_fax")}</p>')}
+    </div>
     <div class="contact-form-premium" data-aos="fade-left"><form action="#" method="POST"><button type="submit" class="btn-premium" style="width:100%">t-form-btn</button></form></div>
     </div></div></section>"""
     generate_page(lang, "contacto.html", 'nav_contact', cont)
