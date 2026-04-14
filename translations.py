@@ -9,6 +9,7 @@ TRANSLATIONS = {
         'home_cta_btn': "SOLICITAR PRESUPUESTO",
         
         # TEXTOS HOME
+        'home_section_title': "Tradición y Rigor",
         'h1': "Somos un despacho de traductores e interpretes oficiales, jurados, nativos profesionales, encabezados por doña Fatima Benamar, con más de 15 años de experiencia. Ofrecemos a nuestros clientes un servicio rápido, personalizado, puntualidad, máxima calidad, confidencialidad, asesoramiento, trato directo y tarifas ajustadas.",
         'h2': "OFRECEMOS un servicio integral en traducción jurada y asesoramiento para la tramitación de todos sus documentos.",
         'h3': "A través de nuestro asesoramiento y atención personalizada le garantizamos una tramitación correcta. De esta forma se ahorrará mucho tiempo, dinero y disgustos.",
@@ -87,7 +88,13 @@ TRANSLATIONS = {
         'nav_home': "Home", 'nav_services': "Services", 'nav_contact': "Contact", 'nav_lang': "Language",
         'hero_title': "Excellence in Translation", 'hero_subtitle': "ARABIC • SPANISH • ENGLISH • GERMAN • FRENCH",
         'home_cta_btn': "GET A QUOTE",
+        'home_section_title': "Tradition and Rigor",
         'h1': "Professional translation firm led by Ms. Fatima Benamar, with over 15 years of experience.",
+        'h2': "Integral service in sworn translation and advice for document processing.",
+        'h3': "Through our counseling, we guarantee correct processing, saving you time and money.",
+        'h4': "We always satisfy our clients and commit to agreed deadlines.",
+        'h5': "Expert guidance for Spanish companies expanding to the LIBYAN market, with local agents and bilingual support.",
+        'h6': "Unbeatable prices and a technical team that is a benchmark in the sector.",
         'srv_header_main': "Our Specialties",
         'info_address_title_1': "Fuenlabrada Branch",
         'info_address_title_2': "Madrid Capital Branch",
@@ -114,8 +121,13 @@ TRANSLATIONS = {
         'nav_home': "الرئيسية", 'nav_services': "خدماتنا", 'nav_contact': "اتصل بنا", 'nav_lang': "اللغة",
         'hero_title': "رواد الترجمة المعتمدة", 'hero_subtitle': "العربية • الإسبانية • الإنجليزية • الألمانية • الفرنسية",
         'home_cta_btn': "طلب عرض سعر",
+        'home_section_title': "التقاليد والدقة",
         'h1': "مكتب ترجمة ومترجمين شفويين محلفين ومعتمدين رسمياً، بخبرة تمتد لأكثر من ١٥ عاماً لمساعدة الشركات والأفراد. نحن نقدم دقة وسرعة وسرية تامة.",
         'h2': "خدمات متكاملة في الترجمة المعتمدة وإدارة المعاملات لجميع مستنداتكم.",
+        'h3': "من خلال استشاراتنا واهتمامنا الشخصي، نضمن لكم إنجاز معاملاتكم بشكل صحيح، مما يوفر لكم الكثير من الوقت والمال والمتاعب.",
+        'h4': "نحن نرضي عملائنا دائماً، ونلتزم بتسليم العمل في الموعد المتفق عليه.",
+        'h5': "تزداد أعداد الشركات الإسبانية التي تتوسع عالمياً وتعتمد على خدماتنا في الترجمة والإدارة والاستشارة، خاصة في ليبيا، حيث نمتلك وكلاء ومشاريع قائمة هناك وترافقكم في اجتماعاتكم.",
+        'h6': "إن أسعارنا التنافسية وفريقنا الفني المتخصص يجعل منا علامة فارقة في هذا القطاع. لقد نفذنا مشاريع لشركات متنوعة إسبانية ودولية.",
         'srv_header_main': "تخصصاتنا المهنية",
         'srv_header_sub': "خدمات النخبة في الترجمة المعتمدة والاستشارات الدولية",
         'srv_jurada_title': "الترجمة المحلفة والمخطوطات",
@@ -172,3 +184,12 @@ TRANSLATIONS = {
         'legal_title': "إشعار قانوني", 'privacy_title': "سياسة الخصوصية"
     }
 }
+
+REVIEWS_DATA = [
+    ("Marta (Google)", "Servicio impecable y muy profesional. Fátima resolvió la traducción jurada de mis documentos en tiempo récord para un trámite urgente. Su trato y rapidez son excelentes."),
+    ("Mohamed (Google)", "Gente muy profesional y muy amable. Lo recomiendo 100% para cualquier gestión de traducción o visados. Me ayudaron con el registro en un tiempo récord."),
+    ("Juan Carlos (Google)", "Atención excepcional y rapidez. Necesitaba una traducción jurada de árabe a español para el ministerio y lo tuvieron listo antes del plazo. Rigurosos."),
+    ("Laila (Google)", "La mejor agencia de Madrid para árabe. Son extremadamente serios con los plazos de entrega, algo vital para licitaciones. Trato exquisito."),
+    ("Raúl (Google)", "Traducciones técnicas de alta calidad. Entienden perfectamente el lenguaje de ingeniería y construcción pesada."),
+    ("Constructor S.A. (Google)", "Indispensables para nuestras licitaciones en Libia. Su conocimiento del mercado nos ha permitido cerrar contratos con éxito.")
+]
