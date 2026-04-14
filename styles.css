@@ -83,6 +83,13 @@
 .contact-item div h4 { font-size: 1.1rem; margin-bottom: 0.5rem; color: var(--primary); }
 .contact-item div p { color: #94a3b8; line-height: 1.6; }
 .contact-phone { direction: ltr !important; unicode-bidi: plaintext; display: inline-block; }
+
+/* Fix: browser forces tel inputs to LTR — override for RTL pages */
+[dir="rtl"] .form-group-premium input[type="tel"] {
+    direction: rtl;
+    text-align: right;
+}
+
 .contact-details-content p { margin-bottom: 0.8rem; font-size: 1.05rem; color: #f8fafc; }
 
 .contact-form-premium { 
@@ -133,8 +140,26 @@ h1, h2, h3 { font-family: var(--font-heading); }
   display: flex; align-items: center; line-height: 1; margin: 0;
   pointer-events: auto;
 }
-.logo:visited, .logo:active, .logo:hover { color: #fff !important;    text-decoration: underline !important;
+.logo:visited, .logo:active, .logo:hover { color: #fff !important; text-decoration: none !important; opacity: 0.9; }
+
+.nav-toggle {
+    display: none;
+    flex-direction: column;
+    gap: 6px;
+    cursor: pointer;
+    z-index: 1002;
+    padding: 10px;
 }
+.nav-toggle span {
+    display: block;
+    width: 25px;
+    height: 2px;
+    background: #fff;
+    transition: 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+.nav-toggle.open span:nth-child(1) { transform: translateY(8px) rotate(45deg); }
+.nav-toggle.open span:nth-child(2) { opacity: 0; }
+.nav-toggle.open span:nth-child(3) { transform: translateY(-8px) rotate(-45deg); }
 
 /* Legal Pages */
 .legal-container {
@@ -181,6 +206,107 @@ h1, h2, h3 { font-family: var(--font-heading); }
 }
 .nav-links a:hover { opacity: 1; color: var(--primary) !important; }
 
+@media (max-width: 1024px) {
+    #navbar { height: 75px; }
+
+    .nav-container {
+        position: relative;
+    }
+
+    /* Hamburger FIRST, then logo, then lang selector */
+    .nav-toggle {
+        display: flex;
+        order: -1;   /* Move hamburger before logo */
+    }
+    .logo {
+        order: 0;       /* Logo in the middle */
+        font-size: 1.4rem;
+    }
+    .lang-selector {
+        order: 1;       /* Language selector last (right) */
+        margin-inline-start: auto;
+    }
+
+    /* Mobile menu panel - uses transform so RTL override is clean */
+    .nav-links {
+        position: fixed; top: 0; left: 0; right: auto; width: 300px; height: 100vh;
+        background: rgba(15, 23, 42, 0.98); backdrop-filter: blur(30px);
+        flex-direction: column; justify-content: center; align-items: center;
+        gap: 2.5rem;
+        transform: translateX(-100%);  /* Hidden: off-screen LEFT */
+        transition: transform 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+        border-right: 1px solid var(--glass-border); border-left: none;
+        padding: 2rem; z-index: 1000;
+    }
+    .nav-links.show {
+        transform: translateX(0);  /* Visible: slide IN from left */
+    }
+    .nav-links li { width: 100%; text-align: center; }
+    .nav-links a { font-size: 1.2rem; display: block; width: 100%; }
+
+    /* Compact language selector: hide text, show only globe icon */
+    .lang-current {
+        padding: 8px 12px;
+        font-size: 0;          /* Hide text */
+        gap: 0;
+    }
+    .lang-current::before {
+        content: '\f0ac';      /* Font Awesome globe icon */
+        font-family: 'Font Awesome 6 Free';
+        font-weight: 900;
+        font-size: 1rem;
+        color: #fff;
+    }
+    .lang-current .fa-chevron-down {
+        display: none;         /* Hide arrow */
+    }
+    .lang-dropdown {
+        right: 0;
+        left: auto;
+        inset-inline-end: 0;
+        inset-inline-start: auto;
+    }
+}
+
+/* ====================================
+   RTL (Arabic) MOBILE NAV OVERRIDES
+   ==================================== */
+@media (max-width: 1024px) {
+
+    /* Flip order: 🌐 LEFT | TIGAFAB. CENTER | ≡ RIGHT */
+    html[dir="rtl"] .nav-toggle {
+        order: 1 !important;
+    }
+    html[dir="rtl"] .logo {
+        order: 0 !important;
+    }
+    html[dir="rtl"] .lang-selector {
+        order: -1 !important;
+        margin-inline-start: 0 !important;
+        margin-inline-end: auto !important;
+    }
+
+    /* Menu panel anchored to RIGHT, slides in from right */
+    html[dir="rtl"] .nav-links {
+        left: auto !important;
+        right: 0 !important;
+        transform: translateX(100%) !important;  /* Hidden: off-screen RIGHT */
+        border-left: 1px solid var(--glass-border) !important;
+        border-right: none !important;
+    }
+    html[dir="rtl"] .nav-links.show {
+        transform: translateX(0) !important;     /* Visible: slide IN from right */
+    }
+
+    /* Lang dropdown aligns to the LEFT for RTL */
+    html[dir="rtl"] .lang-dropdown {
+        right: auto !important;
+        left: 0 !important;
+        inset-inline-end: auto !important;
+        inset-inline-start: 0 !important;
+    }
+}
+
 .lang-selector { position: relative; margin-inline-start: auto; z-index: 1001; }
 .lang-current { 
   display: flex; align-items: center; gap: 8px; cursor: pointer;
@@ -225,8 +351,17 @@ h1, h2, h3 { font-family: var(--font-heading); }
     justify-content: center;
 }
 
-.hero h1 { font-size: 4.5rem; margin-bottom: 1.5rem; color: #fff; }
+.hero h1 { font-size: 4.5rem; margin-bottom: 1.5rem; color: #fff; line-height: 1.1; }
 .hero p { font-size: 1.25rem; color: var(--primary); text-transform: uppercase; letter-spacing: 4px; font-weight: 700; }
+
+@media (max-width: 768px) {
+    .hero { min-height: 50vh; padding: 100px 1.5rem 60px 1.5rem; }
+    .hero h1 { font-size: 2.5rem; }
+    .hero p { font-size: 1rem; letter-spacing: 2px; }
+    
+    section { padding: 5rem 0 !important; }
+    .container { padding: 0 1.5rem; }
+}
 
 .btn-premium {
   display: inline-block; padding: 1rem 2.5rem; background: var(--primary); color: var(--bg-dark);
@@ -340,4 +475,115 @@ h1, h2, h3 { font-family: var(--font-heading); }
     max-width: 100%;
     max-height: 100%;
     object-fit: contain;
+}
+
+/* ============================================================
+   COMPREHENSIVE RESPONSIVE DESIGN - MOBILE FIRST REFINEMENTS
+   ============================================================ */
+
+/* Overlay backdrop when mobile menu is open */
+body.menu-open::before {
+    content: '';
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.6);
+    z-index: 999;
+}
+
+/* Map grid: stack on mobile */
+@media (max-width: 900px) {
+    .featured-libia > div {
+        grid-template-columns: 1fr !important;
+        gap: 2rem !important;
+        text-align: center;
+    }
+    .featured-libia i { margin: 0 auto; }
+
+    div[style*="grid-template-columns: repeat(auto-fit, minmax(450px, 1fr))"] {
+        grid-template-columns: 1fr !important;
+    }
+}
+
+/* Tablets and below: stack all main 2-col grids */
+@media (max-width: 960px) {
+    .contact-grid {
+        grid-template-columns: 1fr !important;
+        gap: 3rem !important;
+    }
+    .contact-form-premium {
+        padding: 2.5rem !important;
+    }
+}
+
+/* Small screens */
+@media (max-width: 768px) {
+    /* Quienes Somos: de-sticky profile card */
+    div[style*="position:sticky"] {
+        position: relative !important;
+        top: 0 !important;
+    }
+
+    /* All 2-column grids become 1-column */
+    div[style*="grid-template-columns:1fr 1.2fr"],
+    div[style*="grid-template-columns: 1fr 1.2fr"],
+    div[style*="grid-template-columns:1.2fr 1fr"],
+    div[style*="grid-template-columns: 1.2fr 1fr"] {
+        grid-template-columns: 1fr !important;
+        gap: 3rem !important;
+    }
+
+    /* Home: Tradition & Rigor 2-col */
+    div[style*="grid-template-columns:1.2fr 1fr"] {
+        grid-template-columns: 1fr !important;
+        gap: 2rem !important;
+    }
+
+    /* Reduce service box padding */
+    .service-premium-box { padding: 2rem !important; }
+    .service-premium-box h3 { font-size: 1.4rem !important; }
+
+    /* Featured Libya box */
+    .featured-libia { padding: 2.5rem !important; }
+    .featured-libia h3 { font-size: 1.8rem !important; }
+
+    /* Contact */
+    .contact-info-box h2 { font-size: 1.8rem !important; }
+    .contact-form-premium { padding: 2rem !important; border-radius: 20px !important; }
+
+    /* Clients grid: fewer columns */
+    .clients-grid {
+        grid-template-columns: repeat(auto-fill, minmax(100px, 1fr)) !important;
+        gap: 1.5rem !important;
+    }
+
+    /* Lang dropdown: left-side on small screens */
+    .lang-dropdown {
+        inset-inline-end: auto !important;
+        inset-inline-start: 0 !important;
+    }
+
+    /* General spacing */
+    section[style*="padding:8rem 0"] { padding: 4rem 0 !important; }
+    section[style*="padding:10rem 0"] { padding: 5rem 0 !important; }
+
+    /* Footer flex wrap */
+    footer div[style*="display:flex"] {
+        flex-wrap: wrap !important;
+        gap: 1rem !important;
+        justify-content: center !important;
+    }
+    footer div[style*="font-size:2.5rem"] { font-size: 1.8rem !important; }
+}
+
+/* Extra small phones */
+@media (max-width: 420px) {
+    .hero h1 { font-size: 2rem !important; }
+    .hero p { font-size: 0.85rem !important; letter-spacing: 1px !important; }
+    .btn-premium { padding: 0.8rem 1.8rem !important; font-size: 0.85rem !important; }
+    .services-creative-grid { gap: 1.5rem !important; }
+    .review-card-premium { width: 260px !important; padding: 1.2rem !important; }
+    .review-card-premium p { font-size: 0.9rem !important; }
+    .contact-item { gap: 1rem !important; }
+    .contact-item i { padding: 10px !important; font-size: 1rem !important; }
+    .map-box-premium div[style*="height:400px"] { height: 280px !important; }
 }
