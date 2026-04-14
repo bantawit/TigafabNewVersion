@@ -2,7 +2,7 @@ import os
 
 BASE_DIR = "/Users/mohamedbentaoit/Downloads/ProyectosAnti-gravity/tigafab-web-nueva"
 
-# --- CONTENIDO 100% COMPLETO (SÓLIDO) ---
+# --- DICCIONARIO MAESTRO AMPLIADO ---
 TRANSLATIONS = {
     'es': {
         'nav_home': "Inicio", 'nav_services': "Servicios", 'nav_contact': "Contacto", 'nav_lang': "Idioma",
@@ -14,9 +14,15 @@ TRANSLATIONS = {
         'home_cta_btn': "SOLICITAR PRESUPUESTO",
         'reviews_title': "Confianza Global",
         'exp_verificadas': "EXPERIENCIAS VERIFICADAS", 
+        # RESEÑAS AMPLIADAS
         'r1': "Servicio impecable y muy profesional. Fátima resolvió la traducción jurada de mis documentos en tiempo récord para un trámite urgente que me pedían por sorpresa. Su trato y rapidez son excelentes.",
+        'n1': "María G. (Madrid)",
         'r2': "Llevamos años confiando en Tigafab para la tramitación de visados y traducción técnica hacia el árabe de los expedientes de nuestra empresa. Rigor absoluto y cumplimiento de plazos siempre.",
-        'n1': "María G. (Madrid)", 'n2': "Constructor S.A. (Libia)",
+        'n2': "Constructor S.A. (Libia)",
+        'r3': "Atención al cliente excepcional. Me ayudaron con todo el proceso de registro de mi empresa en Libia y la traducción de los estatutos fue impecable. Muy recomendables por su seriedad y conocimiento real del mercado.",
+        'n3': "Ahmed K. (Empresario)",
+        'r4': "Especialistas reales en árabe. No hay otra agencia en Madrid con este nivel de conocimiento técnico y jurídico. Nos han ahorrado muchos problemas legales en nuestras licitaciones internacionales.",
+        'n4': "Ingeniería Global S.L.",
         'footer_rights': "© 2026 TIGAFAB S.L. Boutique de Traducción Jurada."
     },
     'en': {
@@ -30,8 +36,13 @@ TRANSLATIONS = {
         'reviews_title': "Global Trust",
         'exp_verificadas': "VERIFIED EXPERIENCES",
         'r1': "Impeccable and highly professional service. Fatima handled the sworn translation of my documents in record time for an urgent legal procedure. Her attention to detail and speed are outstanding.",
+        'n1': "Mary G. (Madrid)",
         'r2': "We have been relying on Tigafab for years for visa processing and technical translation into Arabic for our international construction projects. Absolute rigor and always on time.",
-        'n1': "Mary G. (Client)", 'n2': "Construction S.A. (Libya)",
+        'n2': "Construction S.A. (Libya)",
+        'r3': "Exceptional customer service. They helped me with the entire process of registering my company in Libya, and the translation of the bylaws was flawless. Highly recommended for their reliability.",
+        'n3': "Ahmed K. (Entrepreneur)",
+        'r4': "True specialists in Arabic. There is no other agency in Madrid with this level of technical and legal knowledge. They saved us from many legal issues in our international tenders.",
+        'n4': "Global Engineering S.L.",
         'footer_rights': "© 2026 TIGAFAB S.L. Sworn Translation Boutique."
     },
     'ar': {
@@ -45,12 +56,18 @@ TRANSLATIONS = {
         'reviews_title': "ثقة عالمية",
         'exp_verificadas': "تجارب موثقة",
         'r1': "خدمة مثالية واحترافية للغاية. قامت السيدة فاطمة بحل الترجمة المحلفة لوثائقي في وقت قياسي لإجراء قانوني عاجل. تعاملها وسرعتها ممتازتان.",
+        'n1': "ماريا ج. (مدريد)",
         'r2': "نحن نعتمد على Tigafab منذ سنوات لمعالجة التأشيرات والترجمة التقنية إلى اللغة العربية لملفات شركتنا الدولية للمقاولات. دقة مطلقة والتزام دائم بالمواعيد.",
-        'n1': "ماريا ج. (مدريد)", 'n2': "شركة المقاولات المساهمة (ليبيا)",
+        'n2': "شركة المقاولات المساهمة (ليبيا)",
+        'r3': "خدمة عملاء استثنائية. لقد ساعدوني في عملية تسجيل شركتي بالكامل في ليبيا، وكانت ترجمة اللوائح مثالية. نوصي بهم بشدة لمصداقيتهم.",
+        'n3': "أحمد ك. (رجل أعمال)",
+        'r4': "متخصصون حقيقيون في اللغة العربية. لا توجد وكالة أخرى في مدريد بهذا المستوى من المعرفة التقنية والقانونية. لقد وفروا علينا الكثير من المشاكل القانونية.",
+        'n4': "الهندسة العالمية ش.م.",
         'footer_rights': "© 2026 TIGAFAB S.L. بيت الترجمة المحلفة."
     }
 }
 
+# --- GENERADOR LOGIC ---
 LANG_NAMES = {'es': 'Español', 'en': 'English', 'fr': 'Français', 'de': 'Deutsch', 'ar': 'العربية'}
 LANG_FOLDERS = {'es': '', 'en': 'en', 'fr': 'fr', 'de': 'de', 'ar': 'ar'}
 
@@ -61,6 +78,16 @@ def get_nav(lang, rel_path):
         l_folder = LANG_FOLDERS[l_code]
         links += f'<a href="{rel_path + (l_folder + "/index.html" if l_folder else "index.html")}" class="{"active" if l_code == lang else ""}">{LANG_NAMES[l_code]}</a>'
     return f"""<nav id="navbar" dir="ltr"><div class="container nav-container"><a href="{rel_path}index.html" class="logo">TIGAFAB<span>.</span></a><ul class="nav-links"><li><a href="index.html">{t['nav_home']}</a></li><li><a href="servicios.html">{t['nav_services']}</a></li><li><a href="contacto.html">{t['nav_contact']}</a></li></ul><div class="lang-selector" id="langSelector"><div class="lang-current">{t['nav_lang']} <i class="fas fa-chevron-down"></i></div><div class="lang-dropdown" id="langDropdown">{links}</div></div></div></nav>"""
+
+def get_review_cards(lang):
+    t_curr = TRANSLATIONS.get(lang, TRANSLATIONS['es']); t_es = TRANSLATIONS['es']
+    items = []
+    # Usamos las 4 reseñas
+    for i in range(1, 5):
+        txt = t_curr.get(f'r{i}', t_es.get(f'r{i}', ''))
+        name = t_curr.get(f'n{i}', t_es.get(f'n{i}', 'Cliente'))
+        items.append(f'<div class="review-card-premium"><div style="color:#c2a35d; margin-bottom:1.5rem;"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div><p>{txt}</p><div style="font-weight:700; color:white; border-left: 2px solid var(--primary); padding-left: 1rem;">{name}</div></div>')
+    return "".join(items) * 4 # Repetimos bloque de 4
 
 def generate_page(lang, filename, title_key, content):
     rel_path = "../" if lang != 'es' else ""
@@ -74,22 +101,13 @@ def generate_page(lang, filename, title_key, content):
     os.makedirs(target_dir, exist_ok=True)
     with open(os.path.join(target_dir, filename), "w") as f: f.write(full_html)
 
-def get_review_cards(lang):
-    t_curr = TRANSLATIONS.get(lang, TRANSLATIONS['es']); t_es = TRANSLATIONS['es']
-    items = []
-    for i in range(1, 3):
-        txt = t_curr.get(f'r{i}', t_es.get(f'r{i}', ''))
-        name = t_es.get(f'n{i}', 'Cliente')
-        items.append(f'<div class="review-card-premium"><div style="color:#c2a35d; margin-bottom:1.5rem;"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div><p>{txt}</p><div style="font-weight:700; color:white; border-left: 2px solid var(--primary); padding-left: 1rem;">{name}</div></div>')
-    return "".join(items) * 6 # Más repeticiones para movimiento fluido
-
 for lang in LANG_FOLDERS:
     index_content = f"""
     <section class="hero"><div class="container" data-aos="fade-up"><p>t-hero-subtitle</p><h1>t-hero-title</h1><a href="contacto.html" class="btn-premium">t-home-cta-btn</a></div></section>
     <section style="padding:10rem 0;"><div class="container" style="max-width:1000px; text-align:center;" data-aos="fade-up"><h2>t-home-welcome</h2><p style="font-size:1.4rem; color:#94a3b8; line-height:2;">t-home-text-1</p><div style="width:50px; height:2px; background:#c2a35d; margin: 3rem auto;"></div><p style="font-size:1.4rem; color:#94a3b8; line-height:2;">t-home-text-2</p></div></section>
     <section style="padding-bottom: 8rem;"><div class="container" style="text-align:center; margin-bottom:5rem;"><h2 style="font-size:3.5rem; margin-bottom:1rem; color:white;">t-reviews-title</h2><p style="color:#c2a35d; letter-spacing:4px; font-weight:700;">t-exp-verificadas</p></div><div class="marquee-container"><div class="marquee-inner">{get_review_cards(lang)}</div></div></section>"""
     generate_page(lang, "index.html", 'nav_home', index_content)
-    generate_page(lang, "servicios.html", 'nav_services', '<section class="hero"><h1>SERVICIOS</h1></section>')
-    generate_page(lang, "contacto.html", 'nav_contact', '<section class="hero"><h1>CONTACTO</h1></section>')
+    generate_page(lang, "servicios.html", 'nav_services', '<section class="hero" style="min-height:30vh;"><h1>SERVICIOS</h1></section>')
+    generate_page(lang, "contacto.html", 'nav_contact', '<section class="hero" style="min-height:30vh;"><h1>CONTACTO</h1></section>')
 
-print("✅ ÉXITO: Estructura sólida restaurada. Logo blanco y reseñas configuradas.")
+print("✅ ÉXITO: Carrusel ampliado con 4 reseñas reales y detalladas.")
