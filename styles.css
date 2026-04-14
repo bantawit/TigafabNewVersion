@@ -125,6 +125,8 @@ h1, h2, h3 { font-family: var(--font-heading); }
   display: flex; align-items: center; line-height: 1; margin: 0;
   pointer-events: auto;
 }
+.logo:visited, .logo:active, .logo:hover { color: #fff !important; text-decoration: none !important; }
+.logo span { color: var(--primary); }
 [dir="rtl"] .logo { font-family: var(--font-arabic) !important; }
 
 .nav-links { 
