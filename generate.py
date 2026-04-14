@@ -69,7 +69,7 @@ def getTemplate(title, content):
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
 </head>
-<body class="page-{title.lower()}">
+<body class="page-{filename.replace('.html','')}">
 {nav}
 {content}
 {footer}
