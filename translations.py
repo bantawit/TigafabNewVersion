@@ -8,7 +8,7 @@ TRANSLATIONS = {
         'hero_title': "Excelencia en Traducción", 'hero_subtitle': "ÁRABE • ESPAÑOL • INGLÉS • ALEMÁN • FRANCÉS",
         'home_cta_btn': "SOLICITAR PRESUPUESTO",
         
-        # TEXTOS HOME (MASIVOS COMPLETOS)
+        # TEXTOS HOME
         'h1': "Somos un despacho de traductores e interpretes oficiales, jurados, nativos profesionales, encabezados por doña Fatima Benamar, con más de 15 años de experiencia. Ofrecemos a nuestros clientes un servicio rápido, personalizado, puntualidad, máxima calidad, confidencialidad, asesoramiento, trato directo y tarifas ajustadas.",
         'h2': "OFRECEMOS un servicio integral en traducción jurada y asesoramiento para la tramitación de todos sus documentos.",
         'h3': "A través de nuestro asesoramiento y atención personalizada le garantizamos una tramitación correcta. De esta forma se ahorrará mucho tiempo, dinero y disgustos.",
@@ -16,7 +16,7 @@ TRANSLATIONS = {
         'h5': "Cada vez son más las empresas españolas que se proyectan al exterior que cuentan con nuestros servicios de traducción, gestión y asesoramiento para su expansión en el mercado internacional, ofrecemos servicio de introducción de empresas constructoras en el país LIBIA, por ello contamos con agentes y empresarios en Libia, con proyectos adjudicados, proporcionamos todo el asesoramiento, consejos y traductores en Libia, para asistir a sus reuniones en sus viajes en este país.",
         'h6': "Nuestras tarifas de precios sin competencia y nuestro equipo técnico especializado hacen de nosotros un punto de referencia en el sector. Hemos realizado proyectos para diferentes empresas. Estamos avalados por muchas grandes empresas españolas e internacionales.",
         
-        # SERVICIOS (LISTA MAESTRA COMPLETA - 40+ SERVICIOS)
+        # SERVICIOS
         'srv_header_main': "Nuestras Especialidades",
         'srv_header_sub': "Servicios de élite en Traducción, Gestión y Asesoramiento Internacional",
         'srv_jurada_title': "Traducciones Juradas",
@@ -47,7 +47,7 @@ TRANSLATIONS = {
         'srv_libia_desc': "Introducimos y asesoramos a su empresa en el complejo mercado LIBIO. Contamos con apoyo técnico en destino, contactos reales con agentes locales y acompañamiento bilingüe en reuniones estratégicas para asegurar el éxito de sus proyectos.",
         'srv_libia_btn': "Solicitar Información Mercado Libio",
         
-        # CONTACTO (COMPLETO)
+        # CONTACTO
         'hero_contact_title': "Contacte con Nosotros",
         'contact_title': "Oficinas y Delegaciones",
         'info_address_title_1': "Delegación Fuenlabrada",
@@ -69,6 +69,14 @@ TRANSLATIONS = {
         # REVIEWS
         'reviews_title': "Confianza Global",
         'exp_verificadas': "EXPERIENCIAS VERIFICADAS",
+        'reviews_data': [
+            ("Marta (Google)", "Servicio impecable y muy profesional. Fátima resolvió la traducción jurada de mis documentos en tiempo récord para un trámite urgente. Su trato y rapidez son excelentes."),
+            ("Mohamed (Google)", "Gente muy profesional y muy amable. Lo recomiendo 100% para cualquier gestión de traducción o visados. Me ayudaron con el registro en un tiempo récord."),
+            ("Juan Carlos (Google)", "Atención excepcional y rapidez. Necesitaba una traducción jurada de árabe a español para el ministerio y lo tuvieron listo antes del plazo. Rigurosos."),
+            ("Laila (Google)", "La mejor agencia de Madrid para árabe. Son extremadamente serios con los plazos de entrega, algo vital para licitaciones. Trato exquisito."),
+            ("Raúl (Google)", "Traducciones técnicas de alta calidad. Entienden perfectamente el lenguaje de ingeniería y construcción pesada."),
+            ("Constructor S.A. (Google)", "Indispensables para nuestras licitaciones en Libia. Su conocimiento del mercado nos ha permitido cerrar contratos con éxito.")
+        ],
         
         # FOOTER
         'footer_rights': "© 2026 TIGAFAB S.L. Boutique de Traducción Jurada.",
@@ -89,6 +97,16 @@ TRANSLATIONS = {
         'info_phones': ["+34 91 606 20 20", "+34 663 11 45 46"],
         'form_name': "Full Name", 'form_email': "Email", 'form_phone': "Phone", 'form_message': "Message...",
         'form_btn': "SUBMIT REQUEST",
+        'reviews_title': "Global Trust",
+        'exp_verificadas': "VERIFIED EXPERIENCES",
+        'reviews_data': [
+            ("Marta (Google)", "Impeccable and professional service. Fatima resolved my sworn translation in record time."),
+            ("Mohamed (Google)", "Highly professional and friendly. 100% recommended for any translation or visa process."),
+            ("Juan Carlos (Google)", "Exceptional attention and speed. Rigid and precise with official ministry deadlines."),
+            ("Laila (Google)", "The best agency in Madrid for Arabic. Extremely serious about delivery dates."),
+            ("Raul (Google)", "High quality technical translations. They perfectly understand engineering language."),
+            ("Constructor S.A. (Google)", "Essential for our tenders in Libya. Their market knowledge is key to our success.")
+        ],
         'footer_rights': "© 2026 TIGAFAB S.L. Sworn Translation Boutique.",
         'legal_title': "Legal Notice", 'privacy_title': "Privacy"
     },
@@ -140,16 +158,17 @@ TRANSLATIONS = {
         'info_fax': "+34 914 86 47 50",
         'form_name': "الاسم الكامل", 'form_email': "البريد الإلكتروني", 'form_phone': "الهاتف", 'form_message': "رسالتك...",
         'form_btn': "إرسال الطلب",
+        'reviews_title': "ثقة عالمية",
+        'exp_verificadas': "تجارب موثوقة",
+        'reviews_data': [
+            ("مارتا (جوجل)", "خدمة لا تشوبها شائبة واحترافية للغاية. أنجزت فاطمة الترجمة المحلفة لوثائقي في وقت قياسي لإجراء عاجل. تعاملها وسرعتها ممتازان."),
+            ("محمد (جوجل)", "أشخاص محترفون للغاية ولطيفون جداً. أنصح بهم ١٠٠٪ لأي إجراء ترجمة أو تأشيرة. ساعدوني في التسجيل في وقت قياسي."),
+            ("خوان كارلوس (جوجل)", "اهتمام استثنائي وسرعة. كنت بحاجة إلى ترجمة محلفة من العربية إلى الإسبانية للوزارة وأنجزوها قبل الموعد النهائي. دقيقون جداً."),
+            ("ليلى (جوجل)", "أفضل وكالة في مدريد للغة العربية. جادون للغاية في مواعيد التسليم، وهو أمر حيوي للمناقصات. تعامل راقٍ."),
+            ("راؤول (جوجل)", "ترجمات تقنية عالية الجودة. يفهمون تماماً لغة الهندسة والبناء الثقيل."),
+            ("شركة بناء (جوجل)", "لا غنى عنهم لمناقصاتنا في ليبيا. معرفتهم بالسوق سمحت لنا بإبرام العقود بنجاح.")
+        ],
         'footer_rights': "© ٢٠٢٦ تيجافاب. مكتب ترجمة دولي معتمد.",
         'legal_title': "إشعار قانوني", 'privacy_title': "سياسة الخصوصية"
     }
 }
-
-REVIEWS_DATA = [
-    ("Marta (Google)", "Servicio impecable y muy profesional. Fátima resolvió la traducción jurada de mis documentos en tiempo récord para un trámite urgente. Su trato y rapidez son excelentes."),
-    ("Mohamed (Google)", "Gente muy profesional y muy amable. Lo recomiendo 100% para cualquier gestión de traducción o visados. Me ayudaron con el registro en un tiempo récord."),
-    ("Juan Carlos (Google)", "Atención excepcional y rapidez. Necesitaba una traducción jurada de árabe a español para el ministerio y lo tuvieron listo antes del plazo. Rigurosos."),
-    ("Laila (Google)", "La mejor agencia de Madrid para árabe. Son extremadamente serios con los plazos de entrega, algo vital para licitaciones. Trato exquisito."),
-    ("Raúl (Google)", "Traducciones técnicas de alta calidad. Entienden perfectamente el lenguaje de ingeniería y construcción pesada."),
-    ("Constructor S.A. (Google)", "Indispensables para nuestras licitaciones en Libia. Su conocimiento del mercado nos ha permitido cerrar contratos con éxito.")
-]
