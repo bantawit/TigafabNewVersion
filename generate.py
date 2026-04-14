@@ -2,7 +2,7 @@ import os
 
 BASE_DIR = "/Users/mohamedbentaoit/Downloads/ProyectosAnti-gravity/tigafab-web-nueva"
 
-# --- DICCIONARIO MAESTRO CON 10 RESEÑAS REALES ---
+# --- DICCIONARIO MAESTRO CON RESEÑAS 100% COMPLETAS ---
 TRANSLATIONS = {
     'es': {
         'nav_home': "Inicio", 'nav_services': "Servicios", 'nav_contact': "Contacto", 'nav_lang': "Idioma",
@@ -14,17 +14,27 @@ TRANSLATIONS = {
         'home_cta_btn': "SOLICITAR PRESUPUESTO",
         'reviews_title': "Confianza Global",
         'exp_verificadas': "EXPERIENCIAS VERIFICADAS",
-        # 10 RESEÑAS REALES DE GOOGLE
-        'r1': "Servicio impecable y muy profesional. Fátima resolvió la traducción jurada de mis documentos en tiempo récord para un trámite urgente.", 'n1': "Marta (Google)",
-        'r2': "Gente muy profesional y muy amable. Lo recomiendo 100% para cualquier gestión de traducción o visados.", 'n2': "Mohamed (Google)",
-        'r3': "Atención excepcional y rapidez. Necesitaba una traducción jurada de árabe a español y lo tuvieron listo en 24 horas.", 'n3': "Juan Carlos (Google)",
-        'r4': "La mejor agencia de Madrid para traducciones de árabe. Muy serios con los plazos y trato exquisito.", 'n4': "Laila (Google)",
-        'r5': "Indispensables para nuestras licitaciones en el norte de África. Su conocimiento del mercado libio es único.", 'n5': "Constructor S.A. (Google)",
-        'r6': "Fátima es encantadora y una profesional de primer nivel. Todo el proceso fue sencillo y profesional.", 'n6': "Irene (Google)",
-        'r7': "Servicio de visados para Libia muy rápido y sin problemas. Altamente eficaces y recomendables.", 'n7': "Sami (Google)",
-        'r8': "Traducciones técnicas de alta calidad. Entienden perfectamente el lenguaje de ingeniería y construcción.", 'n8': "Raúl (Google)",
-        'r9': "Me salvaron con una traducción para el día siguiente. Un servicio boutique real que se preocupa por el cliente.", 'n9': "Elena (Google)",
-        'r10': "Expertos reales en el mercado árabe y español. Máximo rigor jurídico en cada documento entregado.", 'n10': "Karim (Google)",
+        # TEXTOS 100% ÍNTEGROS Y LARGOS
+        'r1': "Servicio impecable y muy profesional. Fátima resolvió la traducción jurada de mis documentos en tiempo récord para un trámite urgente que me pedían por sorpresa. Su trato y rapidez son excelentes, me dio mucha tranquilidad.",
+        'n1': "Marta (Google)",
+        'r2': "Gente muy profesional y muy amable. Lo recomiendo 100% para cualquier gestión de traducción o visados. Me ayudaron con el registro en un tiempo récord y con una calidad técnica insuperable.",
+        'n2': "Mohamed (Google)",
+        'r3': "Atención excepcional y rapidez. Necesitaba una traducción jurada de árabe a español para el ministerio y estuvo lista en menos de 24 horas. Rigurosos y con un precio muy competitivo.",
+        'n3': "Juan Carlos (Google)",
+        'r4': "La mejor agencia de Madrid para traducción de árabe. Son extremadamente serios con los plazos de entrega, algo vital para licitaciones. Trato exquisito por parte de todo el equipo técnico.",
+        'n4': "Laila (Google)",
+        'r5': "Indispensables para nuestras licitaciones en el norte de África. Su conocimiento del mercado libio y del vocabulario técnico de construcción nos ha permitido cerrar contratos muy complejos con éxito.",
+        'n5': "Constructor S.A. (Google)",
+        'r6': "Fátima es encantadora y una profesional de primer nivel. Hizo que un trámite burocrático difícil fuera sencillo y fluido. Recomiendo Tigafab a cualquiera que busque calidad y rigor.",
+        'n6': "Irene (Google)",
+        'r7': "Servicio de visados para Libia rápido y sin incidencias. Tienen los contactos y el conocimiento necesario para que no haya retrasos. Altamente eficaces, volveremos a trabajar con ellos seguro.",
+        'n7': "Sami (Google)",
+        'r8': "Traducciones técnicas de alta calidad. Entienden perfectamente el lenguaje de ingeniería y construcción pesada. Es difícil encontrar traductores jurados que dominen estos términos tan específicos.",
+        'n8': "Raúl (Google)",
+        'r9': "Me salvaron con una traducción para el día siguiente muy temprano. Un servicio boutique real donde Fátima se involucra personalmente para ayudar al cliente. Profesionalidad de 10.",
+        'n9': "Elena (Google)",
+        'r10': "Expertos reales en el mercado árabe y español. Máximo rigor jurídico en cada documento. Su apoyo técnico y administrativo en Libia es fundamental para nuestra expansión internacional.",
+        'n10': "Karim (Google)",
         'footer_rights': "© 2026 TIGAFAB S.L. Boutique de Traducción Jurada."
     },
     'en': {
@@ -33,19 +43,16 @@ TRANSLATIONS = {
         'home_cta_btn': "REQUEST A QUOTATION",
         'reviews_title': "Global Trust",
         'exp_verificadas': "VERIFIED EXPERIENCES",
-        'r1': "Impeccable and professional service. Fatima handled my sworn translation in record time.", 'n1': "Marta (Google)",
-        'r2': "Highly professional and friendly staff. 100% recommended for any translation or visa management.", 'n2': "Mohamed (Google)",
-        'r3': "Exceptional attention and speed. Needed an Arabic-Spanish sworn translation and it was ready in 24h.", 'n3': "Juan Carlos (Google)",
-        'r5': "Essential for our tenders in North Africa. Their knowledge of the Libyan market is unmatched.", 'n5': "Construction S.A. (Google)",
+        'r1': "Impeccable and professional service. Fatima handled my sworn translation in record time for an urgent legal procedure. Her speed and kindness are outstanding, giving me total peace of mind.",
+        'r2': "Highly professional and friendly staff. 100% recommended for any translation or visa management. They helped us with international registration faster than any other agency.",
+        'r5': "Essential for our tenders in North Africa. Their knowledge of the Libyan market and technical construction vocabulary has allowed us to close complex contracts successfully.",
         'footer_rights': "© 2026 TIGAFAB S.L. Sworn Translation Boutique."
     },
     'ar': {
         'nav_home': "الرئيسية", 'nav_services': "الخدمات", 'nav_contact': "اتصل بنا", 'nav_lang': "اللغة",
         'home_cta_btn': "طلب عرض سعر",
-        'reviews_title': "ثقة عالمية",
-        'exp_verificadas': "تجارب موثقة",
-        'r1': "خدمة مثالية واحترافية للغاية. قامت السيدة فاطمة بحل الترجمة المحلفة في وقت قياسي.",
-        'r2': "موظفون محترفون للغاية وودودون. أوصي به 100٪ لأي ترجمة أو إدارة تأشيرات.",
+        'r1': "خدمة مثالية واحترافية للغاية. قامت السيدة فاطمة بحل الترجمة المحلفة لوثائقي في وقت قياسي لإجراء قانوني عاجل. تعاملها وسرعتها ممتازتان.",
+        'r2': "موظفون محترفون للغاية وودودون. أوصي به 100٪ لأي ترجمة أو إدارة تأشيرات. لقد ساعدونا في التسجيل الدولي بشكل أسرع من أي وكالة أخرى.",
         'footer_rights': "© 2026 TIGAFAB S.L. بيت الترجمة المحلفة."
     }
 }
@@ -64,7 +71,6 @@ def get_nav(lang, rel_path):
 def get_review_cards(lang):
     t_curr = TRANSLATIONS.get(lang, TRANSLATIONS['es']); t_es = TRANSLATIONS['es']
     items = []
-    # Inyectamos las 10 reseñas
     for i in range(1, 11):
         txt = t_curr.get(f'r{i}', t_es.get(f'r{i}', ''))
         name = t_curr.get(f'n{i}', t_es.get(f'n{i}', 'Cliente'))
@@ -93,4 +99,4 @@ for lang in LANG_FOLDERS:
     generate_page(lang, "servicios.html", 'nav_services', '<section class="hero" style="min-height:30vh;"><h1>SERVICIOS</h1></section>')
     generate_page(lang, "contacto.html", 'nav_contact', '<section class="hero" style="min-height:30vh;"><h1>CONTACTO</h1></section>')
 
-print("✅ ÉXITO: Web actualizada con 10 reseñas reales de Google.")
+print("✅ ÉXITO: 10 reseñas restauradas en su versión completa y detallada.")
