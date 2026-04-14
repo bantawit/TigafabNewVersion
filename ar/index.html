@@ -4,12 +4,15 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>الرئيسية | TIGAFAB</title>
-  <link rel="stylesheet" href="../styles.css?v=10">
+  <link rel="stylesheet" href="../styles.css?v=11">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
   <style>
     @import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700&display=swap');
     [lang="ar"] { font-family: 'Tajawal', sans-serif !important; }
+    .service-card { background: #fff; padding: 2.5rem; border-radius: 12px; box-shadow: 0 10px 30px rgba(0,0,0,0.05); transition: all 0.3s ease; text-decoration:none; display:block; }
+    .service-card:hover { transform: translateY(-10px); box-shadow: 0 20px 40px rgba(0,0,0,0.1); }
+    .btn { display:inline-block; padding: 1rem 2.5rem; border-radius: 50px; font-weight: 700; transition: all 0.3s ease; cursor:pointer; }
   </style>
 </head>
 <body class="page-index">
@@ -17,70 +20,86 @@
   <nav id="navbar">
     <div class="nav-container">
       <a href="../index.html" class="logo">TIGAFAB<span>.</span></a>
-      <ul class="nav-links" id="navMenu">
+      <ul class="nav-links">
         <li><a href="index.html" class="nav-home">الرئيسية</a></li>
         <li><a href="servicios.html" class="nav-services">الخدمات</a></li>
         <li><a href="contacto.html" class="nav-contact">اتصل بنا</a></li>
         <li><a href="localizacion.html" class="nav-location">الموقع</a></li>
       </ul>
-      <div class="lang-selector">
-        <a href="../index.html" class="lang-btn ">ES</a><a href="../en/index.html" class="lang-btn ">EN</a><a href="../fr/index.html" class="lang-btn ">FR</a><a href="../de/index.html" class="lang-btn ">DE</a><a href="../ar/index.html" class="lang-btn active">AR</a>
-      </div>
+      <div class="lang-selector"><a href="../index.html" class="lang-btn ">ES</a><a href="../en/index.html" class="lang-btn ">EN</a><a href="../fr/index.html" class="lang-btn ">FR</a><a href="../de/index.html" class="lang-btn ">DE</a><a href="../ar/index.html" class="lang-btn active">AR</a></div>
     </div>
   </nav>
 
   
-  <section class="hero" style="position:relative; height:80vh; background: url('https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&q=80&w=1200') center/cover; display:flex; align-items:center; justify-content:center; text-align:center; color:white;">
-    <div style="position:absolute; inset:0; background:rgba(15,23,42,0.6);"></div>
-    <div class="container" style="position:relative; z-index:1;" data-aos="fade-up">
-      <h1 style="font-size:4rem; margin-bottom:1rem;">الترجمة التحريرية والشفوية</h1>
-      <p style="font-size:1.5rem; color:var(--primary);">العربية، الإسبانية، الإنجليزية، الألمانية والفرنسية</p>
+  <section class="hero" style="position:relative; height:70vh; background: linear-gradient(rgba(15,23,42,0.5), rgba(15,23,42,0.5)), url('https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&q=80&w=1200') center/cover; display:flex; align-items:center; justify-content:center; text-align:center; color:white;">
+    <div class="container" data-aos="fade-up">
+      <h1 style="font-size:3.5rem; margin-bottom:1rem; font-family:var(--font-heading);">الترجمة التحريرية والشفوية</h1>
+      <p style="font-size:1.4rem; color:var(--primary); font-weight:500;">العربية، الإسبانية، الإنجليزية، الألمانية والفرنسية</p>
     </div>
   </section>
 
-  <section style="padding:6rem 2rem;">
-    <div class="container" style="text-align:center;">
-      <h2 style="font-size:3rem; margin-bottom:2rem;">مرحباً بكم في موقعنا</h2>
-      <p style="max-width:800px; margin:0 auto; font-size:1.2rem; color:#475569;">مرحباً بكم في موقعنا-sub</p>
+  <section style="padding:6rem 2rem; background:#fff;">
+    <div class="container" style="text-align:center; max-width:900px; margin:0 auto;">
+      <h2 style="font-size:2.8rem; margin-bottom:1.5rem; font-family:var(--font-heading); color:var(--bg-dark);">مرحباً بكم في موقعنا</h2>
+      <div style="width:60px; height:3px; background:var(--primary); margin:0 auto 2rem;"></div>
+      <p style="font-size:1.2rem; color:#475569; line-height:1.8;">مرحباً بكم في موقعنا-sub</p>
     </div>
   </section>
 
-  <section style="padding:4rem 2rem; background:var(--bg-light);">
+  <section style="padding:6rem 2rem; background:var(--bg-light);">
     <div class="container">
-      <h2 style="text-align:center; margin-bottom:4rem;">خدماتنا المتخصصة</h2>
-      <div class="services-grid" style="display:grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap:2rem;">
+      <div style="text-align:center; margin-bottom:4rem;">
+        <h2 style="font-size:2.5rem; font-family:var(--font-heading); color:var(--bg-dark);">خدماتنا المتخصصة</h2>
+        <p style="color:var(--primary); margin-top:0.5rem;">عرض جميع الخدمات</p>
+      </div>
+      <div style="display:grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap:2.5rem;">
         <div class="service-card" data-aos="fade-up">
-          <h3>الترجمة المحلفة</h3>
-          <p>الترجمة المحلفة-short</p>
+          <div style="font-size:2rem; color:var(--primary); margin-bottom:1.5rem;"><i class="fas fa-file-signature"></i></div>
+          <h3 style="margin-bottom:1rem; font-family:var(--font-heading);">الترجمة المحلفة</h3>
+          <p style="color:#64748B; margin-bottom:1.5rem;">الترجمة المحلفة-short</p>
+          <a href="servicios.html" style="color:var(--primary); font-weight:700; text-decoration:none;">معرفة المزيد <i class="fas fa-arrow-right"></i></a>
         </div>
         <div class="service-card" data-aos="fade-up" data-aos-delay="100">
-          <h3>الترجمة المتخصصة</h3>
-          <p>الترجمة المتخصصة-short</p>
+          <div style="font-size:2rem; color:var(--primary); margin-bottom:1.5rem;"><i class="fas fa-microchip"></i></div>
+          <h3 style="margin-bottom:1rem; font-family:var(--font-heading);">الترجمة المتخصصة</h3>
+          <p style="color:#64748B; margin-bottom:1.5rem;">الترجمة المتخصصة-short</p>
+          <a href="servicios.html" style="color:var(--primary); font-weight:700; text-decoration:none;">معرفة المزيد <i class="fas fa-arrow-right"></i></a>
         </div>
         <div class="service-card" data-aos="fade-up" data-aos-delay="200">
-          <h3>إدارة التأشيرات</h3>
-          <p>إدارة التأشيرات-short</p>
+          <div style="font-size:2rem; color:var(--primary); margin-bottom:1.5rem;"><i class="fas fa-passport"></i></div>
+          <h3 style="margin-bottom:1rem; font-family:var(--font-heading);">إدارة التأشيرات</h3>
+          <p style="color:#64748B; margin-bottom:1.5rem;">إدارة التأشيرات-short</p>
+          <a href="servicios.html" style="color:var(--primary); font-weight:700; text-decoration:none;">معرفة المزيد <i class="fas fa-arrow-right"></i></a>
         </div>
       </div>
     </div>
   </section>
 
-  <section style="padding:6rem 2rem; text-align:center; background:var(--primary); color:white;">
-    <h2 style="font-size:2.5rem; margin-bottom:1.5rem;">هل أنت مستعد للبدء؟</h2>
-    <p style="margin-bottom:2rem;">احصل على عرض سعر بدون التزام اليوم.</p>
-    <a href="contacto.html" class="btn" style="background:white; color:var(--primary); padding:1rem 3rem; border-radius:50px; text-decoration:none; font-weight:700;">اتصل بفاطمة</a>
+  <section style="position:relative; padding:10rem 2rem; background: linear-gradient(rgba(15,23,42,0.8), rgba(15,23,42,0.8)), url('https://images.unsplash.com/photo-1497215728101-856f4ea42174?auto=format&fit=crop&q=80&w=1200') center/cover fixed; color:white; text-align:center;">
+    <div class="container" data-aos="fade-up">
+      <h2 style="font-size:3rem; font-family:var(--font-heading); margin-bottom:1rem;">ماذا يقول عملاؤنا</h2>
+      <p style="color:var(--primary); letter-spacing:2px; font-weight:600;"><i class="fab fa-google"></i> تجارب موثقة</p>
+    </div>
+  </section>
+
+  <section style="padding:6rem 2rem; text-align:center; background:#fff;">
+    <div style="max-width:700px; margin:0 auto;">
+      <h2 style="font-size:2.8rem; font-family:var(--font-heading); margin-bottom:1.5rem;">هل أنت مستعد للبدء؟</h2>
+      <p style="color:#64748B; margin-bottom:3rem; font-size:1.1rem;">احصل على عرض سعر بدون التزام اليوم.</p>
+      <a href="contacto.html" class="btn" style="background:var(--bg-dark); color:white; text-decoration:none; padding:1.2rem 3.5rem; font-size:1.1rem; box-shadow:0 10px 20px rgba(0,0,0,0.15);">اتصل بفاطمة <i class="fas fa-paper-plane" style="margin-left:10px;"></i></a>
+    </div>
   </section>
 
   <footer style="background:var(--bg-dark); color:white; padding:4rem 2rem; text-align:center;">
-    <div class="footer-logo" style="font-family:var(--font-heading); font-size:2rem; margin-bottom:1rem;">TIGAFAB<span>.</span></div>
+    <div style="font-family:var(--font-heading); font-size:2rem; margin-bottom:1rem;">TIGAFAB<span>.</span></div>
     <p>© 2026 TIGAFAB S.L. جميع الحقوق محفوظة.</p>
     <div style="margin-top:2rem; display:flex; justify-content:center; gap:1.5rem;">
-      <a href="aviso-legal.html" style="color:white; text-decoration:none;">إشعار قانوني</a>
-      <a href="privacidad.html" style="color:white; text-decoration:none;">الخصوصية</a>
+      <a href="aviso-legal.html" style="color:white; text-decoration:none; font-size:0.9rem;">إشعار قانوني</a>
+      <a href="privacidad.html" style="color:white; text-decoration:none; font-size:0.9rem;">الخصوصية</a>
     </div>
   </footer>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
-  <script src="../js/main.js?v=10"></script>
+  <script src="../js/main.js?v=11"></script>
   <script>AOS.init();</script>
 </body>
 </html>
