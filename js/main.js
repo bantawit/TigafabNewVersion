@@ -40,9 +40,6 @@ class App {
     if (activeEl) activeEl.classList.add('active');
   }
 
-    }
-  }
-
   showToast(message) {
     let toast = document.getElementById('lang-toast');
     if (!toast) {
