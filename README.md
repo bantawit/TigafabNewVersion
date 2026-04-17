@@ -5,7 +5,7 @@ Sitio web moderno, seguro y multilingüe para la agencia de traducción **Tigafa
 ## 🌐 Características
 - **Multilingüe**: Soporte completo para Español, Inglés, Francés, Alemán y Árabe (RTL).
 - **Seguridad**: Implementación de cabeceras CSP, X-Frame-Options y protección contra Tabnabbing.
-- **Diseño Premium**: Interfaz moderna con animaciones AOS, tipografía elegante (Playfair Display & Tajawal) y modo responsive.
+- **Diseño Premium**: Interfaz moderna con animaciones AOS, tipografía elegante (Playfair Display & Tajawal) y modo responsive.T
 - **Optimizado**: Sistema de generación estática para máxima velocidad de carga.T
 
 ## 🛠 Instalación Local
