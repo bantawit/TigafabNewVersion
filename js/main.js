@@ -4,6 +4,30 @@
  */
 window.onload = function() {
 
+    const applyTheme = function(theme) {
+        const resolvedTheme = theme === 'light' ? 'light' : 'dark';
+        document.documentElement.setAttribute('data-theme', resolvedTheme);
+        const themeToggle = document.getElementById('themeToggle');
+        if (themeToggle) {
+            const icon = themeToggle.querySelector('i');
+            themeToggle.setAttribute('aria-label', resolvedTheme === 'light' ? 'Cambiar a modo oscuro' : 'Cambiar a modo claro');
+            themeToggle.setAttribute('title', resolvedTheme === 'light' ? 'Modo oscuro' : 'Modo claro');
+            if (icon) {
+                icon.className = resolvedTheme === 'light' ? 'fas fa-moon' : 'fas fa-sun';
+            }
+        }
+    };
+
+    const getPreferredTheme = function() {
+        const savedTheme = localStorage.getItem('theme');
+        if (savedTheme === 'light' || savedTheme === 'dark') {
+            return savedTheme;
+        }
+        return window.matchMedia && window.matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark';
+    };
+
+    applyTheme(getPreferredTheme());
+
     // 1. Menú Móvil (Hamburguesa)
     const navToggle = document.getElementById('navToggle');
     const navLinks = document.getElementById('navLinks');
@@ -50,6 +74,20 @@ window.onload = function() {
         });
     }
 
+    const themeToggle = document.getElementById('themeToggle');
+    if (themeToggle) {
+        themeToggle.addEventListener('click', function(e) {
+            e.stopPropagation();
+            const currentTheme = document.documentElement.getAttribute('data-theme') === 'light' ? 'light' : 'dark';
+            const nextTheme = currentTheme === 'light' ? 'dark' : 'light';
+            localStorage.setItem('theme', nextTheme);
+            applyTheme(nextTheme);
+            if (navbar) {
+                navbar.style.background = window.scrollY > 50 ? 'var(--bg-navbar-scrolled)' : 'var(--bg-navbar)';
+            }
+        });
+    }
+
     // Cerrar el menú de idioma si se hace clic en cualquier otro sitio
     document.addEventListener('click', function(e) {
         if (langDropdown && langDropdown.classList.contains('show')) {
@@ -84,10 +122,10 @@ window.onload = function() {
     if (navbarEl) {
         window.addEventListener('scroll', function() {
             if (window.scrollY > 50) {
-                navbarEl.style.background = 'rgba(15, 23, 42, 0.98)';
-                navbarEl.style.boxShadow = '0 4px 30px rgba(0,0,0,0.4)';
+                navbarEl.style.background = 'var(--bg-navbar-scrolled)';
+                navbarEl.style.boxShadow = '0 4px 30px var(--shadow-main)';
             } else {
-                navbarEl.style.background = 'rgba(15, 23, 42, 0.9)';
+                navbarEl.style.background = 'var(--bg-navbar)';
                 navbarEl.style.boxShadow = 'none';
             }
         }, { passive: true });

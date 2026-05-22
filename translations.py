@@ -1,45 +1,143 @@
-LEGAL_BODY_ES = """<h3>1.- DATOS DEL RESPONSABLE TITULAR DEL SITIO WEB</h3>
-<p>En cumplimiento de lo establecido en la Ley 34/2002 de Servicios de la Sociedad de la Información y de Comercio Electrónico, se informa que el titular de este sitio web es <strong>TIGAFAB, S.L.</strong>, con N.I.F. B84063854 y domicilio social en C/ de las Ciencias 51, 28942 Fuenlabrada, Madrid. Inscrita en el Registro Mercantil de Madrid con fecha 22 de diciembre de 2004, tomo 20.785, folio 166, sección 8, hoja M-368536.</p>
+LEGAL_BODY_ES = """<p>En TIGAFAB sabemos que lo más importante es la satisfacción de nuestros clientes y para nosotros los clientes son la gran apuesta de valor, el verdadero aval de la compañía y la mayor garantía de continuidad. Es por este motivo que nuestro compromiso es ofrecer un servicio que cumpla y supere sus expectativas. Nuestra estrategia de empresa la desarrollamos en función de las necesidades de nuestro cliente, y para llegar a alcanzar dichas metas tenemos establecido el compromiso de implantar en todos los niveles de la organización una cultura orientada al cliente, de tal modo que sabremos cuáles son sus necesidades y como actuar sobre ellas. Les agradecemos la confianza que nos han brindado durante toda nuestra trayectoria.</p>
+<p>En el presente Aviso Legal, el Usuario, podrá encontrar toda la información relativa a las condiciones legales que definen las relaciones entre los usuarios y el responsable de la página web accesible en la dirección URL www.tigafab-traductores.com (en adelante, el Sitio Web), que TIGAFAB, S.L. pone a disposición de los usuarios de Internet. La utilización del sitio web implica la aceptación plena y sin reservas de todas y cada una de las disposiciones incluidas en este Aviso Legal. En consecuencia, el usuario del sitio web debe leer atentamente el presente Aviso Legal en cada una de las ocasiones en que se proponga utilizar la web, ya que el texto podría sufrir modificaciones a criterio del titular de la web, o a causa de un cambio legislativo, jurisprudencial o en la práctica empresarial.</p>
+
+<h3>1.- DATOS DEL RESPONSABLE TITULAR DEL SITIO WEB</h3>
+<p>Nombre del titular: TIGAFAB, S.L.<br>
+Domicilio social: C/ De las Ciencias, 51, 28942. Fuenlabrada, Madrid<br>
+C.I.F.: B86142155<br>
+Teléfono de contacto: 663114546<br>
+Correo electrónico: rgpd@tigafab-traductores.com</p>
+<p>TIGAFAB, S.L., es el responsable del Sitio Web y se compromete a cumplir con todos los requisitos nacionales y europeos que regulan el uso de los datos personales de los usuarios. Este Sitio Web garantiza la protección y confidencialidad de los datos personales que nos proporcionen de acuerdo con lo dispuesto en el Reglamento General de Protección de Datos de Carácter Personal (UE) 2016/679 del Parlamento Europeo y del Consejo, de 27 de abril de 2016, en la Ley Orgánica 3/2018, de Protección de Datos Personales y garantía de los derechos digitales y la Ley de Servicios de la Sociedad de la Información y Comercio Electrónico 34/2002 de 11 de Julio (LSSI-CE)</p>
 
 <h3>2.- OBJETO</h3>
-<p>El sitio web facilita a los usuarios del mismo el acceso a información y servicios prestados por TIGAFAB S.L. a aquellas personas u organizaciones interesadas en los mismos.</p>
+<p>El Sitio Web facilita a los usuarios del mismo el acceso a información y servicios prestados por TIGAFAB, S.L. a aquellas personas u organizaciones interesadas en los mismos. El acceso y la utilización del Sitio Web atribuye la condición de usuario del Sitio Web (en adelante, el "Usuario") e implica la aceptación de todas las condiciones incluidas en este Aviso Legal así como de sus modificaciones. La prestación del servicio del Sitio Web tiene una duración limitada al momento en el que el Usuario se encuentre conectado al Sitio Web o a alguno de los servicios que a través del mismo se facilitan. Por tanto, el Usuario debe leer atentamente el presente Aviso Legal en cada una de las ocasiones en que se proponga utilizar el Sitio Web, ya que éste y sus condiciones de uso recogidas en el presente Aviso Legal pueden sufrir modificaciones.</p>
 
 <h3>3.- ACCESO Y UTILIZACIÓN DE LA WEB</h3>
-<p>3.1.- Carácter gratuito del acceso y utilización de la web. El acceso a la web tiene carácter gratuito para los usuarios de la misma.<br>
-3.2.- Registro de usuarios. Con carácter general el acceso y utilización de la web no exige la previa suscripción o registro de los usuarios de la misma.</p>
+<p>3.1.- Carácter gratuito del acceso y utilización de la web. El acceso a la web tiene carácter gratuito para los usuarios de la misma, salvo en lo relativo al coste de la conexión a través de la red de telecomunicaciones suministrada por el proveedor de acceso contratado por los usuarios.</p>
+<p>3.2.- Registro de usuarios. Con carácter general el acceso y utilización de la web no exige la previa suscripción o registro de los usuarios de la misma.</p>
+<p>3.3.- Los usuarios garantizan y responden, en cualquier caso, de la exactitud, vigencia y autenticidad de los datos personales facilitados, y se comprometen a mantenerlos debidamente actualizados. El usuario acepta proporcionar información completa y correcta en el formulario de contacto o suscripción.</p>
+<p>En el caso de los menores de trece años se requiere el consentimiento de los padres o tutores para el tratamiento de sus datos personales. En ningún caso se recabarán del menor de edad datos relativos a la situación profesional, económica o a la intimidad de los otros miembros de la familia, sin el consentimiento de éstos. Si eres menor de trece años y has accedido a este sitio web sin avisar a tus padres no debes registrarte como usuario. En esta web se respetan y cuidan los datos personales de los usuarios. Como usuario debes saber que tus derechos están garantizados.</p>
 
 <h3>4.- CONTENIDOS DE LA WEB</h3>
-<p>El idioma utilizado por el titular en la web será el castellano. TIGAFAB, S.L. no se responsabiliza de la no comprensión o entendimiento del idioma de la web por el usuario, ni de sus consecuencias. TIGAFAB, S.L. podrá modificar los contenidos sin previo aviso, así como suprimir y cambiar éstos dentro de la web.</p>
+<p>El idioma utilizado por el titular en la web será el castellano. TIGAFAB, S.L. no se responsabiliza de la no comprensión o entendimiento del idioma de la web por el usuario, ni de sus consecuencias. TIGAFAB, S.L. podrá modificar los contenidos sin previo aviso, así como suprimir y cambiar éstos dentro de la web, como la forma en que se accede a éstos, sin justificación alguna y libremente, no responsabilizándose de las consecuencias que los mismos puedan ocasionar a los usuarios. Se prohíbe el uso de los contenidos de la web para promocionar, contratar o divulgar publicidad o información propia o de terceras personas sin la autorización de TIGAFAB, S.L., ni remitir publicidad o información valiéndose para ello de los servicios o información que se ponen a disposición de los usuarios, independientemente de si la utilización es gratuita o no. Los enlaces o hiperenlaces que incorporen terceros en sus páginas web, dirigidos a esta web, serán para la apertura de la página web completa, no pudiendo manifestar, directa o indirectamente, indicaciones falsas, inexactas o confusas, ni incurrir en acciones desleales o ilícitas en contra de TIGAFAB, S.L.</p>
 
 <h3>5.- MEDIDAS DE SEGURIDAD</h3>
-<p>Los datos personales comunicados por el usuario podrán ser almacenados en bases de datos automatizadas o no, cuya titularidad corresponde en exclusiva a TIGAFAB, S.L., asumiendo todas las medidas de índole técnica, organizativa y de seguridad que garanticen la confidencialidad, integridad y calidad de la información.</p>
+<p>Los datos personales comunicados por el usuario podrán ser almacenados en bases de datos automatizadas o no, cuya titularidad corresponde en exclusiva a TIGAFAB, S.L., asumiendo todas las medidas de índole técnica, organizativa y de seguridad que garanticen la confidencialidad, integridad y calidad de la información contenida en las mismas de acuerdo con lo establecido en las normativas vigentes en materia de protección de datos de carácter personal.</p>
 
 <h3>6.- LIMITACIÓN DE RESPONSABILIDAD</h3>
-<p>Tanto el acceso a la web como el uso no consentido que pueda efectuarse de la información contenida en la misma es de la exclusiva responsabilidad de quien lo realiza. TIGAFAB, S.L. no responderá de ninguna consecuencia, daño o perjuicio que pudieran derivarse de dicho acceso o uso.</p>
+<p>Tanto el acceso a la web como el uso no consentido que pueda efectuarse de la información contenida en la misma es de la exclusiva responsabilidad de quien lo realiza. TIGAFAB, S.L. no responderá de ninguna consecuencia, daño o perjuicio que pudieran derivarse de dicho acceso o uso. TIGAFAB, S.L. no se hace responsable de los errores de seguridad, que se puedan producir ni de los daños que puedan causarse al sistema informático del usuario (hardware y software), o a los ficheros o documentos almacenados en el mismo, como consecuencia de: - la presencia de un virus en el ordenador del usuario que sea utilizado para la conexión a los servicios y contenidos de la web. - un mal funcionamiento del navegador. - y/o del uso de versiones no actualizadas del mismo. TIGAFAB, S.L. no se hace responsable de la fiabilidad y rapidez de los hiperenlaces que se incorporen en la web para la apertura de otras. TIGAFAB, S.L. no garantiza la utilidad de estos enlaces, ni se responsabiliza de los contenidos o servicios a los que pueda acceder el usuario por medio de estos enlaces, ni del buen funcionamiento de estas webs. TIGAFAB, S.L. no será responsable de los virus o demás programas informáticos que deterioren o puedan deteriorar los sistemas o equipos informáticos de los usuarios al acceder a su web u otras webs a las que se haya accedido mediante enlaces de esta web.</p>
 
-<h3>7.- PROPIEDAD INTELECTUAL E INDUSTRIAL</h3>
-<p>El usuario conoce y acepta que todos los contenidos y/o cualesquiera otros elementos del sitio web son propiedad de TIGAFAB, S.L. Cualquier uso de la web o sus contenidos deberá tener un carácter exclusivamente particular.</p>
+<h3>7.- EMPLEO DE LA TECNOLOGÍA "COOKIE"</h3>
+<p>El Sitio Web puede emplear cookies o tecnologías similares que se regirán por lo establecido en la Política de Cookies, accesible en todo momento y respetando la confidencialidad e intimidad del usuario, siendo parte integrante del presente Aviso Legal.</p>
 
-<h3>8.- LEGISLACIÓN APLICABLE Y JURISDICCIÓN COMPETENTE</h3>
-<p>El presente Aviso Legal se interpretará y regirá de conformidad con la legislación española. TIGAFAB, S.L. y los usuarios, con renuncia expresa a cualquier otro fuero, se someten al de los juzgados y tribunales del domicilio de MADRID.</p>"""
+<h3>8.- NAVEGACIÓN</h3>
+<p>Los servidores de Internet pueden recoger datos no identificables, que puedan incluir, direcciones IP, y otros datos que no pueden ser utilizados para identificar al usuario. Su dirección IP se almacenará en los logs de acceso de forma automática y con la única finalidad de permitir el tránsito por Internet, siendo necesario que su equipo facilite esta dirección IP cuando navega por Internet para que las comunicaciones puedan realizarse. Así mismo, la dirección IP podrá ser utilizada para realizar estadísticas, de manera anonimizada, sobre el número de visitantes de esta web y su procedencia, de forma totalmente transparente a su navegación.</p>
+
+<h3>9.- PROPIEDAD INTELECTUAL E INDUSTRIAL</h3>
+<p>El usuario conoce y acepta que todos los contenidos y/o cualesquiera otros elementos del sitio web son propiedad de TIGAFAB, S.L., y se compromete a respetar los derechos de propiedad intelectual e industrial titularidad de TIGAFAB, S.L. y/o de terceros. Cualquier uso de la web o sus contenidos deberá tener un carácter exclusivamente particular Está reservado exclusivamente a TIGAFAB, S.L., cualquier otro uso que suponga la copia, reproducción, distribución, transformación, comunicación pública o cualquier otra acción similar, de todo o parte de los contenidos de la web, por lo que ningún usuario podrá llevar a cabo estas acciones sin la autorización previa y por escrito de TIGAFAB, S.L..</p>
+
+<h3>10.- LEGISLACIÓN APLICABLE Y JURISDICCIÓN COMPETENTE</h3>
+<p>El presente Aviso Legal se interpretará y regirá de conformidad con la legislación española. TIGAFAB, S.L. y los usuarios, con renuncia expresa a cualquier otro fuero que pudiera corresponderles, se someten al de los juzgados y tribunales del domicilio del usuario para cualquier controversia que pudiera derivarse del acceso o uso de la web. En el caso de que el usuario tenga su domicilio fuera de España, TIGAFAB, S.L. y el usuario, se someten, con renuncia expresa a cualquier otro fuero, a los juzgados y tribunales del domicilio de MADRID.</p>"""
 
 PRIVACY_BODY_ES = """<h3>POLÍTICA DE PRIVACIDAD Y PROTECCIÓN DE DATOS</h3>
-<p>De conformidad con lo dispuesto en el Reglamento (UE) 2016/679 (RGPD) y la Ley Orgánica 3/2018 (LOPDGDD), se informa:</p>
+<p>En TIGAFAB sabemos que lo más importante es la satisfacción de nuestros clientes y para nosotros los clientes son la gran apuesta de valor, el verdadero aval de la compañía y la mayor garantía de continuidad. Es por este motivo que nuestro compromiso es ofrecer un servicio que cumpla y supere sus expectativas. Nuestra estrategia de empresa la desarrollamos en función de las necesidades de nuestro cliente, y para llegar a alcanzar dichas metas tenemos establecido el compromiso de implantar en todos los niveles de la organización una cultura orientada al cliente, de tal modo que sabremos cuáles son sus necesidades y como actuar sobre ellas. Les agradecemos la confianza que nos han brindado durante toda nuestra trayectoria.</p>
+<p>En el marco de la relación de prestación de servicios en el ámbito de la Ley Orgánica 3/2018, de 5 de diciembre, de Protección de Datos Personales y garantía de los derechos digitales, del Real Decreto 1720/2007, de 21 de diciembre, por el que se aprueba el Reglamento de desarrollo de la misma, así como en el Reglamento (UE) 2016/679 del Parlamento Europeo y del Consejo, de 27 de abril de 2016, relativo a la protección de las personas físicas en lo que respecta al tratamiento de datos personales, por el que se deroga la directiva 95/46/CE (en adelante, RGPD), de la Ley 34/2002, de 11 de julio, de servicios de la sociedad de la información y de comercio electrónico (en adelante, LSSI-CE) y de la Ley Orgánica 3/2018, de Protección de Datos Personales y garantía de los derechos digitales TIGAFAB, S.L. garantiza la protección y confidencialidad de los datos personales, de cualquier tipo que nos proporcionen nuestros clientes, de acuerdo con lo dispuesto en el Reglamento General de Protección de Datos de Carácter Personal.</p>
+<p>La Política de Protección de Datos de TIGAFAB, S.L. descansa en el principio de responsabilidad proactiva, según el cual el Responsable del tratamiento es responsable del cumplimiento del marco normativo y jurisprudencial, siendo capaz de demostrarlo ante las autoridades de control correspondientes.</p>
+<p>Los datos facilitados serán tratados en los términos establecidos en el RGPD, en este sentido TIGAFAB, S.L. ha adoptado los niveles de protección que legalmente se exigen, y ha instalado todas las medidas técnicas a su alcance para evitar la pérdida, mal uso, alteración, acceso no autorizado por terceros, expuestos a continuación. No obstante, el usuario debe ser consciente de que las medidas de seguridad en Internet no son inexpugnables.</p>
 
-<h3>Responsable del Tratamiento</h3>
-<p><strong>FATIMA BENAMAR BAHAMAD</strong>, con NIF: X2474479H y domicilio en Calle de las Ciencias 51, 28942 Fuenlabrada (Madrid).</p>
+<h3>Responsable del tratamiento: ¿Quiénes somos?</h3>
+<p>Denominación: TIGAFAB, S.L. CIF: B86142155 Actividad: Dirección: C/ DE LAS CIENCIAS, 51, 28942. FUENLABRADA, MADRID Teléfono: 663114546 Correo electrónico: rgpd@tigafab-traductores.com Somos una sociedad inscrita en el Registro Mercantil de MADRID; Tomo xxxxx; Folio xxxx; Sección XXXX; Hoja XXXXX;</p>
 
-<h3>Finalidad del tratamiento</h3>
-<p>Mantenimiento de la relación comercial y el desempeño de tareas de información, traducción, gestión documental y otras actividades propias de Tigafab S.L.</p>
+<h3>Finalidad del tratamiento: ¿Para qué usaremos sus datos?</h3>
+<p>Todos los datos facilitados por nuestros clientes y/o visitantes en la web de TIGAFAB, S.L. o a su personal, serán incluidos en registro de actividades de tratamiento de datos de carácter personal, creado y mantenido bajo la responsabilidad de TIGAFAB, S.L., imprescindibles para prestar los servicios solicitados por los usuarios, o para resolver las dudas o cuestiones planteadas por nuestros visitantes. Nuestra política es no elaborar perfiles sobre los usuarios de nuestros servicios.</p>
 
-<h3>Legitimación</h3>
-<p>El tratamiento de sus datos se realiza con las siguientes bases jurídicas: la solicitud de información y/o la contratación de los servicios de TIGAFAB S.L.</p>
+<h3>Legitimidad del tratamiento: ¿Por qué necesitamos sus datos?</h3>
+<p>a) Relación contractual: Es la que aplica cuando compra uno de nuestros productos o contrata alguno de nuestros servicios.<br>
+b) Interés legítimo: Para atender a las consultas y reclamaciones que nos plantee y para gestionar el cobro de las cantidades adeudadas.<br>
+c) Su consentimiento: Si es usuario de nuestra web, mediante la marcación de la casilla que figura en el formulario de contacto, nos autoriza a que le remitamos las comunicaciones necesarias para dar respuesta a la consulta o solicitud de información planteada.</p>
 
-<h3>Derechos</h3>
-<p>Cualquier persona tiene derecho a obtener confirmación sobre si estamos tratando sus datos. Los interesados tienen derecho a acceder a sus datos personales, así como a solicitar la rectificación de los datos inexactos o, en su caso, solicitar su supresión.</p>
+<h3>Destinatarios: ¿Con quién compartimos sus datos?</h3>
+<p>No cedemos sus datos personales a nadie, a excepción de aquellas entidades públicas o privadas a las cuales estemos obligados a facilitar sus datos personales con motivo del cumplimiento de alguna ley. Por poner un ejemplo, la Ley Tributaria obliga a facilitar a la Agencia Tributaria determinada información sobre operaciones económicas que superen una determinada cantidad.</p>
+<p>En el caso de que, al margen de los supuestos comentados, necesitemos dar a conocer su información personal a otras entidades, le solicitaremos previamente su permiso a través de opciones claras que le permitirán decidir a este respecto.</p>
 
-<h3>Política de Cookies</h3>
-<p>El sitio web utiliza cookies técnicas y de terceros (Google Analytics) para mejorar la experiencia de navegación. Usted puede configurar su navegador para impedir la instalación de cookies, aunque esto puede afectar al funcionamiento de la web.</p>"""
+<h3>Comunicación: ¿Dónde podríamos enviar tus datos?</h3>
+<p>No realizaremos transferencias internacionales de sus datos personales para ninguna de las finalidades indicadas.</p>
+
+<h3>Conservación: ¿Cuánto tiempo mantendremos tus datos?</h3>
+<p>Solo conservaremos sus datos personales durante el tiempo que resulte necesario para lograr los fines para los que fueron recabados. A la hora de determinar el oportuno periodo de conservación, examinamos los riesgos que conlleva el tratamiento, así como nuestras obligaciones contractuales, legales y normativas, las políticas internas de conservación de datos y nuestros intereses de negocio legítimos descritos en el presente Aviso de Privacidad y Política de Cookies.</p>
+<p>En este sentido, TIGAFAB, S.L. conservará los datos personales una vez terminada su relación con Ud., debidamente bloqueados, durante el plazo de prescripción de las acciones que pudieran derivarse de la relación mantenida con el interesado.</p>
+<p>Una vez bloqueados, sus datos resultarán inaccesibles para TIGAFAB, S.L., y no serán tratados excepto para su puesta a disposición a las Administraciones públicas, Jueces y Tribunales, para la atención de las posibles responsabilidades nacidas de los tratamientos, así como para el ejercicio y defensa de reclamaciones ante la Agencia Española de Protección de Datos.</p>
+
+<h3>Seguridad: ¿Cómo vamos a proteger sus datos?</h3>
+<p>Empleamos todos los esfuerzos razonables para mantener la confidencialidad de la información personal que se trate en nuestros sistemas. Mantenemos estrictos niveles de seguridad para proteger los datos de carácter personal que procesamos frente a pérdidas fortuitas y a accesos, tratamientos o revelaciones no autorizados, habida cuenta del estado de la tecnología, la naturaleza y los riesgos a que están expuestos los datos. No obstante, no podemos responsabilizarnos del uso que Ud. haga de los datos (incluido usuario y contraseña) que utilice en nuestra web. Nuestro personal sigue estrictas normas de privacidad y en el caso de que contratemos a terceros para prestar servicios de soporte, les exigimos que acaten las mismas normas y nos permitan auditarles para verificar su cumplimiento.</p>
+
+<h3>Sus derechos: ¿Qué derechos puede ejercer como interesado?</h3>
+<p>Le informamos que podrá ejercer los siguientes derechos:<br>
+a) Derecho de acceso a sus datos personales, para saber cuáles están siendo objeto de tratamiento y las operaciones de tratamiento llevadas a cabo con ellos;<br>
+b) Derecho de rectificación de cualquier dato personal inexacto;<br>
+c) Derecho de supresión de sus datos personales, cuando esto sea posible (por ejemplo, por imperativo legal);<br>
+d) Derecho de limitación del tratamiento de sus datos personales cuando la exactitud, la legalidad o la necesidad del tratamiento de los datos resulte dudosa, en cuyo caso, podremos conservarlos para el ejercicio o la defensa de reclamaciones.<br>
+e) Derecho de oposición al tratamiento de sus datos personales, cuando la base legal que nos habilite para su tratamiento de las indicadas sea nuestro interés legítimo. TIGAFAB, S.L. dejará de tratar tus datos salvo que tenga un interés legítimo o sea necesario para la defensa de reclamaciones.<br>
+f) Derecho a la portabilidad de sus datos, cuando la base legal que nos habilite para su tratamiento sea la existencia de una relación contractual o su consentimiento.<br>
+g) Derecho a revocar el consentimiento otorgado a TIGAFAB, S.L.</p>
+<p>Para ejercitar sus derechos, puede hacerlo de manera gratuita y en cualquier momento, contactando con nosotros en la dirección C/ DE LAS CIENCIAS, 51, 28942. FUENLABRADA, MADRID, adjuntando copia de su DNI.</p>
+
+<h3>Tutela de derechos: ¿Dónde puede formular una reclamación?</h3>
+<p>En caso de que entienda que sus derechos han sido desatendidos por nuestra entidad, puede formular una reclamación en la Agencia Española de Protección de Datos, a través de alguno de los medios siguientes:<br>
+.- Sede electrónica: https://www.aepd.es<br>
+.- Correo postal: Agencia Española de Protección de Datos, C/ Jorge Juan, 6, 28001, Madrid<br>
+.- Teléfono: 901.100.099 y 912.663.517</p>
+<p>Formular una reclamación en la Agencia Española de Protección de Datos no conlleva ningún coste y no es necesaria la asistencia de abogado ni procurador.</p>
+
+<h3>Actualizaciones: ¿Qué cambios puede haber en esta Política de Privacidad?</h3>
+<p>TIGAFAB, S.L. se reserva el derecho a modificar la presente política para adaptarla a novedades legislativas o jurisprudenciales que puedan afectar el cumplimiento de la misma. Con objeto de garantizar el cumplimiento de la normativa sobre protección de datos de carácter personal, TIGAFAB, S.L. ha recibido los servicios de consultoría y asesoramiento por parte de ClickDatos.</p>
+
+<h3>POLÍTICA DE COOKIES</h3>
+<p>En la web www.tigafab-traductores.com (en adelante, el Sitio Web) utilizamos cookies para facilitar la relación de los visitantes con nuestro contenido y para permitir elaborar estadísticas sobre las visitantes que recibimos. Le informamos que podemos utilizar cookies con la finalidad de facilitar su navegación a través del Sitio Web, distinguirle de otros usuarios, proporcionarle una mejor experiencia en el uso del mismo, e identificar problemas para mejorar nuestro Sitio Web. Asimismo, en caso de que preste su consentimiento, utilizaremos cookies que nos permitan obtener más información acerca de sus preferencias y personalizar nuestro Sitio Web de conformidad con sus intereses individuales.</p>
+
+<h3>¿Qué son las cookies?</h3>
+<p>Se denominan cookies a unos pequeños archivos que se graban en el navegador utilizado por cada visitante de nuestra web para que el servidor pueda recordar la visita de ese usuario con posterioridad cuando vuelva a acceder a nuestros contenidos. Esta información no revela su identidad, ni dato personal alguno, ni accede al contenido almacenado en su pc, pero sí que permite a nuestro sistema identificarle a usted como un usuario determinado que ya visitó la web con anterioridad, visualizó determinadas páginas, etc. y además permite guardar sus preferencias personales e información técnica como por ejemplo las visitas realizadas o páginas concretas que visite. En cumplimiento de la Directiva 2009/136/CE, desarrollada en nuestro ordenamiento por el apartado segundo del artículo 22 de la Ley de Servicios de Sociedad de la Información, siguiendo las directrices de la Agencia Española de Protección de Datos, procedemos a informarle detalladamente del uso que se realiza en nuestra web. La presente política de cookies tiene por finalidad informarle de manera clara y precisa sobre las cookies que se utilizan en nuestro Sitio Web (la "Política de Cookies"). Respecto de las cookies de terceros, es decir aquellas que son ajenas a nuestro sitio web, no podemos hacernos responsables del contenido y veracidad de las políticas de privacidad que ellos incluyen por lo que la información que le ofrecemos es siempre con referencia a la fuente. A continuación, se realiza una clasificación de las cookies en función de una serie de categorías. No obstante es necesario tener en cuenta que una misma cookie puede estar incluida en más de una categoría.</p>
+
+<h3>Tipos de cookies según la entidad que las gestiona</h3>
+<p>- Cookies propias: Son aquéllas que se envían al equipo terminal del usuario desde un equipo o dominio gestionado por el propio editor y desde el que se presta el servicio solicitado por el usuario.<br>
+- Cookies de terceros: Son aquéllas que se envían al equipo terminal del usuario desde un equipo o dominio que no es gestionado por el editor, sino por otra entidad que trata los datos</p>
+
+<h3>Tipos de cookies según el plazo de tiempo que permanecen activas</h3>
+<p>- Cookies de sesión: Son un tipo de cookies diseñadas para recabar y almacenar datos mientras el usuario accede a una página web.<br>
+- Cookies persistentes: Son un tipo de cookies en el que los datos siguen almacenados en el terminal y pueden ser accedidos y tratados durante un periodo definido por el responsable de la cookie, y que puede ir de unos minutos a varios años.</p>
+
+<h3>Tipos de cookies según su finalidad</h3>
+<p>- Cookies técnicas: Aquéllas que permiten al usuario la navegación a través de una página web, plataforma o aplicación y la utilización de las diferentes opciones o servicios que en ella existan como, por ejemplo, controlar el tráfico y la comunicación de datos, identificar la sesión, acceder a partes de acceso restringido, recordar los elementos que integran un pedido, realizar el proceso de compra de un pedido, realizar la solicitud de inscripción o participación en un evento, utilizar elementos de seguridad durante la navegación, almacenar contenidos para la difusión de videos o sonido o compartir contenidos a través de redes sociales.<br>
+- Cookies de personalización: Son aquéllas que permiten al usuario acceder al servicio con algunas características de carácter general predefinidas en función de una serie de criterios en el terminal del usuario como por ejemplo serian el idioma, el tipo de navegador a través del cual accede al servicio, la configuración regional desde donde accede al servicio, etc.<br>
+- Cookies publicitarias: Son aquéllas que permiten la gestión, de la forma más eficaz posible, de los espacios publicitarios que, en su caso, el editor haya incluido en una página web, aplicación o plataforma desde la que presta el servicio solicitado en base a criterios como el contenido editado o la frecuencia en la que se muestran los anuncios.<br>
+- Cookies de publicidad comportamental: Son aquéllas que permiten la gestión, de la forma más eficaz posible, de los espacios publicitarios que, en su caso, el editor haya incluido en una página web, aplicación o plataforma desde la que presta el servicio solicitado. Estas cookies almacenan información del comportamiento de los usuarios obtenida a través de la observación continuada de sus hábitos de navegación, lo que permite desarrollar un perfil específico para mostrar publicidad en función del mismo.<br>
+- Cookies de análisis: Son aquéllas que permiten al responsable de las mismas, el seguimiento y análisis del comportamiento de los usuarios de los sitios web a los que están vinculadas. La información recogida mediante este tipo de cookies se utiliza en la medición de la actividad de los sitios web, aplicación o plataforma y para la elaboración de perfiles de navegación de los usuarios de dichos sitios, aplicaciones y plataformas, con el fin de introducir mejoras en función del análisis de los datos de uso que hacen los usuarios del servicio.</p>
+<p>Respecto al tratamiento de datos recabados a través de las cookies de análisis, a pesar de que no están exentas del deber de obtener un consentimiento informado para su uso, es poco probable que representen un riesgo para la privacidad de los usuarios siempre que se trate de cookies de primera parte, que traten datos agregados con una finalidad estrictamente estadística, que se facilite información sobre sus uso y se incluya la posibilidad de que los usuarios manifiesten su negativa sobre su utilización.</p>
+<p>Actualmente, la mayoría de los navegadores vienen configurados por defecto para bloquear la instalación de cookies de publicidad o terceros en su equipo. El usuario puede ampliar las restricciones de origen, impidiendo la entrada de cualquier tipo de cookie, o eliminar dichas restricciones, aceptando la entrada de cualquier tipo de cookies. Si está interesado en admitir cookies de publicidad o de terceros, podrá configurar su navegador a tal fin.</p>
+<p>La aceptación realizada por el usuario, haciendo click en el botón de ACEPTAR mostrado en la información inicial sobre cookies, implica que está consintiendo expresamente al responsable para su utilización, pudiendo ejercer sus derechos y revocar su consentimiento en cualquier momento, a través de solicitud a TIGAFAB, S.L.. A continuación le informamos detalladamente todas las cookies que podrían llegar a instalarse desde nuestro sitio web. En función de su navegación, de la configuración de su navegador y de la aceptación o rechazo de las mismas, podrán instalarse todas o sólo algunas de ellas.</p>
+
+<h3>COOKIES UTILIZADAS</h3>
+<table style="width:100%; border-collapse:collapse; margin:20px 0;">
+<tr style="background:var(--primary); color:white;"><th style="padding:12px; text-align:left; border:1px solid var(--primary);">Cookie</th><th style="padding:12px; text-align:left; border:1px solid var(--primary);">Entidad</th><th style="padding:12px; text-align:left; border:1px solid var(--primary);">Más información</th></tr>
+<tr style="background:var(--bg-surface);"><td style="padding:12px; border:1px solid var(--glass-border);">__utma</td><td style="padding:12px; border:1px solid var(--glass-border);">Terceros</td><td style="padding:12px; border:1px solid var(--glass-border);">Análisis. Cookie de Google para distinguir usuarios y sesiones. Conservación: 2 años.</td></tr>
+<tr style="background:var(--bg-main);"><td style="padding:12px; border:1px solid var(--glass-border);">__utmb</td><td style="padding:12px; border:1px solid var(--glass-border);">Terceros</td><td style="padding:12px; border:1px solid var(--glass-border);">Análisis. Cookie de Google para determinar nuevas sesiones o visitas. Conservación: 30 minutos</td></tr>
+<tr style="background:var(--bg-surface);"><td style="padding:12px; border:1px solid var(--glass-border);">__utmc</td><td style="padding:12px; border:1px solid var(--glass-border);">Terceros</td><td style="padding:12px; border:1px solid var(--glass-border);">Análisis. Cookie de Google para determinar si el usuario está en una nueva sesión o visita. Conservación: Durante la sesión</td></tr>
+<tr style="background:var(--bg-main);"><td style="padding:12px; border:1px solid var(--glass-border);">__utmt</td><td style="padding:12px; border:1px solid var(--glass-border);">Terceros</td><td style="padding:12px; border:1px solid var(--glass-border);">Análisis. Cookie de Google para limitar el porcentaje de solicitudes. Conservación: 10 minutos</td></tr>
+<tr style="background:var(--bg-surface);"><td style="padding:12px; border:1px solid var(--glass-border);">__utmz</td><td style="padding:12px; border:1px solid var(--glass-border);">Terceros</td><td style="padding:12px; border:1px solid var(--glass-border);">Análisis. Cookie de Google para almacenar la fuente de tráfico o campaña de llegada del usuario. Conservación: 6 meses</td></tr>
+</table>
+
+<p>Es posible que actualicemos la Política de Cookies de nuestro Sitio Web, por ello le recomendamos revisar esta política cada vez que acceda a nuestro Sitio Web con el objetivo de estar adecuadamente informado sobre cómo y para qué usamos las cookies</p>
+<p>La finalidad de las cookies es la de facilitar al Usuario un acceso más rápido a los Servicios seleccionados.</p>
+<p>Si usted no desea que se guarden cookies en su navegador o prefiere recibir una información cada vez que una cookie solicite instalarse, puede configurar sus opciones de navegación para que se haga de esa forma. La mayor parte de los navegadores permiten la gestión de las cookies de 3 formas diferentes:<br>
+- Las cookies son siempre rechazadas;<br>
+- El navegador pregunta si el usuario desea instalar cada cookie;<br>
+- Las cookies son siempre aceptadas;</p>
+<p>Su navegador también puede incluir la posibilidad de seleccionar con detalle las cookies que desea que se instalen en su ordenador. En concreto, el usuario puede normalmente aceptar alguna de las siguientes opciones:<br>
+- Rechazar las cookies de determinados dominios;<br>
+- Rechazar las cookies de terceros;<br>
+- Aceptar cookies como no persistentes (se eliminan cuando el navegador se cierra);<br>
+- Permitir al servidor crear cookies para un dominio diferente.</p>
+<p>Para permitir, conocer, bloquear o eliminar las cookies instaladas en su equipo puede hacerlo mediante la configuración de las opciones del navegador instalado en su ordenador.</p>"""
 
 LEGAL_BODY_EN = """<h3>1.- DATA OF THE OWNER RESPONSIBLE FOR THE WEBSITE</h3>
 <p>In compliance with the provisions of Law 34/2002 of Services of the Information Society and Electronic Commerce, it is reported that the owner of this website is <strong>TIGAFAB, S.L.</strong>, with N.I.F. B84063854 and registered office at C/ de las Ciencias 51, 28942 Fuenlabrada, Madrid. Registered in the Mercantile Registry of Madrid on December 22, 2004, volume 20,785, folio 166, section 8, sheet M-368536.</p>
@@ -216,22 +314,22 @@ PRIVACY_BODY_DE = """<h3>DATENSCHUTZERKLÄRUNG UND DATENSCHUTZ</h3>
 TRANSLATIONS = {
     'es': {
         'nav_home': "Inicio", 'nav_about': "Quiénes Somos", 'nav_services': "Servicios", 'nav_clients': "Clientes", 'nav_contact': "Contacto", 'nav_lang': "Idioma",
-        'hero_title': "Excelencia en Traducción", 'hero_subtitle': "ÁRABE • ESPAÑOL • INGLÉS • ALEMÁN • FRANCÉS",
+        'hero_title': "Excelencia en Traducción", 'hero_subtitle': "ÁRABE • ESPAÑOL • INGLÉS • FRANCÉS",
         'home_cta_btn': "SOLICITAR PRESUPUESTO",
         'clients_title': "Nuestros Clientes",
         'clients_subtitle': "Nuestro compromiso es un servicio de calidad",
         'clients_btn': "Ver Lista Completa",
         'clients_text': "En TIGAFAB sabemos que lo más importante es la satisfacción de nuestros clientes y para nosotros los clientes son la gran apuesta de valor, el verdadero aval de la compañía y la mayor garantía de continuidad. Es por este motivo que nuestro compromiso es ofrecer un servicio que cumpla y supere sus expectativas. Nuestra estrategia de empresa la desarrollamos en función de las necesidades de nuestro cliente, y para llegar a alcanzar dichas metas tenemos establecido el compromiso de implantar en todos los niveles de la organización una cultura orientada al cliente, de tal modo que sabremos cuáles son sus necesidades y como actuar sobre ellas. Les agradecemos la confianza que nos han brindado durante toda nuestra trayectoria.",
         'about_title': "Quiénes Somos", 'about_subtitle': "Traducciones, Interpretación, Gestión y Asesoramiento",
-        'about_text': "Somos un despacho de traductores e intérpretes oficiales, jurados, nativos profesionales, encabezados por doña Fatima Benamar, con más de <span class='dyn-years'>15</span> años de experiencia. Ofrecemos a nuestros clientes un servicio rápido, personalizado, puntualidad, máxima calidad, confidencialidad, asesoramiento, trato directo y tarifas ajustadas.",
+        'about_text': "Somos un despacho de traductores e intérpretes oficiales, jurados, nativos profesionales, encabezados por doña Fatima Benamar, con más de <span class='dyn-years'>25</span> años de experiencia. Ofrecemos a nuestros clientes un servicio rápido, personalizado, puntualidad, máxima calidad, confidencialidad, asesoramiento, trato directo y tarifas ajustadas.",
         'about_cat_1': "TRADUCCIÓN - INTERPRETACIÓN",
-        'about_langs': "Arabe, Español, Inglés, Alemán y Francés",
+        'about_langs': "Arabe, Español, Inglés y Francés",
         'about_name': "FATIMA BENAMAR BAHAMAD",
         'about_role': "Traductora, interprete, gestora de documentos mercantiles, visados y asesora",
         'about_cat_2': "GESTIÓN - ASESORAMIENTO",
         'about_desc_short': "TIGAFAB ofrece un asesoramiento íntegro y profesional para empresas que buscan expandirse internacionalmente, con especial foco en mercados estratégicos y gestión documental compleja.",
         'home_section_title': "Tradición y Rigor",
-        'h1': "Somos un despacho de traductores e interpretes oficiales, jurados, nativos profesionales, encabezados por doña Fatima Benamar, con más de <span class='dyn-years'>15</span> años de experiencia.",
+        'h1': "Somos un despacho de traductores e interpretes oficiales, jurados, nativos profesionales, encabezados por doña Fatima Benamar, con más de <span class='dyn-years'>25</span> años de experiencia.",
         'h2': "OFRECEMOS un servicio integral en traducción jurada y asesoramiento para la tramitación de todos sus documentos.",
         'h3': "A través de nuestro asesoramiento y atención personalizada le garantizamos una tramitación correcta. De esta forma se ahorrará mucho tiempo, dinero y disgustos.",
         'h4': "Siempre satisfacemos a nuestros clientes. Y nos comprometemos a entregar el trabajo en el plazo acordado.",
@@ -240,8 +338,8 @@ TRANSLATIONS = {
         'nav_location': "Localización",
         'loc_title': "Nuestras Sedes",
         'loc_subtitle': "Encuéntranos en Madrid y Fuenlabrada",
-        'loc_branch_1': "Sede Fuenlabrada",
-        'loc_branch_2': "Sede Madrid Centro",
+        'loc_branch_1': "Oficina Madrid Centro",
+        'loc_branch_2': "Oficina Fuenlabrada",
         'loc_how_to_get': "Cómo llegar",
         'srv_header_main': "Nuestras Especialidades",
         'srv_header_sub': "Servicios de élite en Traducción y Gestión Internacional",
@@ -280,14 +378,26 @@ TRANSLATIONS = {
             "Damos el apoyo técnico sobre todos los asuntos para el registro y la apertura de su empresa en Libia"
         ],
         'srv_libia_btn': "Información Mercado Libia",
+        'srv_homologacion_title': "Homologación de Estudios de Países Árabes",
+        'srv_homologacion_desc': "Asesoramiento completo para la homologación de títulos académicos y estudios realizados en países árabes, facilitando el reconocimiento oficial en España.",
+        'srv_homologacion_list': [
+            "Homologación de títulos universitarios de países árabes",
+            "Tramitación de certificados académicos y notas",
+            "Traducción jurada de expedientes educativos",
+            "Asesoramiento en requisitos del Ministerio de Educación",
+            "Gestión de documentación complementaria necesaria"
+        ],
+        'srv_homologacion_btn': "Solicitar Asesoramiento",
         'hero_contact_title': "Contacte con Nosotros",
-        'contact_title': "Oficinas y Delegaciones",
-        'info_address_title_1': "Delegación Fuenlabrada", 'info_address_text_1': "C/ de las Ciencias, 51. 28942 Fuenlabrada, Madrid",
-        'info_address_title_2': "Delegación Madrid Capital", 'info_address_text_2': "C/ Mauricio Legendre, 5 - Local 11. 28046 Madrid",
+        'thanks_title': "¡Gracias por contactarnos!",
+        'thanks_message': "Hemos recibido tu mensaje correctamente. Nos pondremos en contacto contigo lo antes posible.",
+        'thanks_btn': "Volver al inicio",
+        'contact_title': "Oficinas",
+        'info_address_title_1': "Oficina en Madrid Central", 'info_address_text_1': "C/ Mauricio Legendre, 5 - Local 11. 28046 Madrid",
+        'info_address_title_2': "Oficina Fuenlabrada", 'info_address_text_2': "C/ de las Ciencias, 51. 28942 Fuenlabrada, Madrid",
         'info_email_title': "Correos Electrónicos", 'info_emails': ["fatima@tigafab-traductores.com", "fatima.benamar@yahoo.es"],
-        'info_phone_title': "Teléfonos de Contacto", 'info_phones': ["+34 91 606 20 20 (Fuenlabrada)", "+34 663 11 45 46 (Móvil)"],
-        'info_fax_title': "Fax Corporativo", 'info_fax': "+34 914 86 47 50",
-        'form_name': "Nombre Completo", 'form_email': "Correo Electrónico", 'form_phone': "Teléfono", 'form_message': "Mensaje...", 'form_btn': "ENVIAR SOLICITUD",
+        'info_phone_title': "Teléfonos de Contacto", 'info_phones': ["+34 663 11 45 46 (Móvil)"],
+        'form_name': "Nombre Completo", 'form_email': "Correo Electrónico", 'form_phone': "Teléfono", 'form_message': "Mensaje...", 'form_file': "Adjuntar documento (opcional)", 'form_btn': "ENVIAR SOLICITUD",
         'reviews_title': "Confianza Global", 'exp_verificadas': "EXPERIENCIAS VERIFICADAS",
         'reviews_data': [
             ("María G. (Google)", "Servicio impecable y muy profesional. Fátima resolvió la traducción jurada de mis documentos en tiempo récord para un trámite urgente. Totalmente recomendados."),
@@ -299,15 +409,15 @@ TRANSLATIONS = {
             ("Empresa K. (Google)", "Puntualidad británica y un nivel de confidencialidad brutal. Trabajar con doña Fátima tranquiliza todas nuestras gestiones internacionales."),
             ("Youssef L. (Google)", "No hay competencia real en los plazos que manejan. Todo el paquete de traducciones juradas del árabe listo impecablemente.")
         ],
-        'footer_rights': "© 2026 TIGAFAB S.L. Boutique de Traducción Jurada.", 'footer_credits': "Desarrollado por SynthiaOps",
-        'legal_title': "Aviso Legal", 'privacy_title': "Privacidad",
+        'footer_rights': "© 2026 TIGAFAB S.L. Oficina de Traducción Jurada.", 'footer_credits': "Desarrollado por SynthiaOps",
+        'legal_title': "Aviso Legal", 'privacy_title': "Privacidad y Cookies",
         'legal_body': LEGAL_BODY_ES,
         'privacy_body': PRIVACY_BODY_ES
     },
     'ar': {
         'legal_body': LEGAL_BODY_AR, 'privacy_body': PRIVACY_BODY_AR,
         'nav_home': "الرئيسية", 'nav_about': "من نحن", 'nav_services': "خدماتنا", 'nav_clients': "عملاؤنا", 'nav_contact': "اتصل بنا", 'nav_lang': "اللغة",
-        'hero_title': "رواد الترجمة المعتمدة", 'hero_subtitle': "العربية • الإسبانية • الإنجليزية • الألمانية • الفرنسية",
+        'hero_title': "رواد الترجمة المعتمدة", 'hero_subtitle': "العربية • الإسبانية • الإنجليزية • الفرنسية",
         'home_cta_btn': "طلب عرض سعر",
         'srv_header_main': "نطاقات تخصصنا",
         'srv_header_sub': "خدمات نخبة في الترجمة والإدارة الدولية",
@@ -316,15 +426,15 @@ TRANSLATIONS = {
         'clients_btn': "عرض القائمة الكاملة",
         'clients_text': "في تيجافاب، ندرك أن أهم شيء هو رضا عملائنا. بالنسبة لنا، العملاء هم الرهان الحقيقي للقيمة والضمان الأكبر للاستمرارية. ولهذا السبب، فإن التزامنا هو تقديم خدمة تلبي توقعاتكم وتتجاوزها. نشكركم على الثقة التي منحتمونا إياها طوال مسيرتنا.",
         'about_title': "من نحن", 'about_subtitle': "الترجمة، الترجمة الفورية، الإدارة والاستشارات",
-        'about_text': "مكتب مترجمين ومترجمين شفويين رسميين ومحلفين ومحترفين، تترأسنا السيدة فاطمة بن عمار، بخبرة تزيد عن <span class='dyn-years'>15</span> عاماً. نقدم لعملائنا خدمة سريعة وشخصية، دقة في المواعيد، جودة قصوى، وسرية تامة.",
+        'about_text': "مكتب مترجمين ومترجمين شفويين رسميين ومحلفين ومحترفين، تترأسنا السيدة فاطمة بن عمار، بخبرة تزيد عن <span class='dyn-years'>25</span> عاماً. نقدم لعملائنا خدمة سريعة وشخصية، دقة في المواعيد، جودة قصوى، وسرية تامة.",
         'about_cat_1': "الترجمة - الترجمة الفورية",
-        'about_langs': "العربية، الإسبانية، الإنجليزية، الألمانية والفرنسية",
+        'about_langs': "العربية، الإسبانية، الإنجليزية والفرنسية",
         'about_name': "فاطمة بن عمار باحماد",
         'about_role': "مترجمة، مترجمة فورية، مسؤولة وثائق تجارية، تأشيرات ومستشارة دولية",
         'about_cat_2': "الإدارة - الاستشارات",
         'about_desc_short': "تقدم تيجافاب استشارات متكاملة ومهنية للشركات التي تسعى للتوسع دولياً، مع تركيز خاص على الأسواق الاستراتيجية وإدارة الوثائق المعقدة.",
         'home_section_title': "التقاليد والدقة",
-        'h1': "نحن مكتب ترجمة ومترجمين شفويين معتمدين رسمياً، ومحترفين من أهل اللغة، تترأسنا السيدة فاطمة بن عمار، بخبرة تمتد لأكثر من <span class='dyn-years'>15</span> عاماً.",
+        'h1': "نحن مكتب ترجمة ومترجمين شفويين معتمدين رسمياً، ومحترفين من أهل اللغة، تترأسنا السيدة فاطمة بن عمار، بخبرة تمتد لأكثر من <span class='dyn-years'>25</span> عاماً.",
         'h2': "نقدم خدمة شاملة في الترجمة المعتمدة والاستشارات لإنجاز جميع وثائقكم.",
         'h3': "من خلال استشاراتنا واهتمامنا الشخصي، نضمن لكم إنجاز معاملاتكم بشكل صحيح، مما يوفر لكم الكثير من الوقت والمال والمتاعب.",
         'h4': "نحن نرضي عملائنا دائماً، ونلتزم بتسليم العمل في الموعد المتفق عليه.",
@@ -333,8 +443,8 @@ TRANSLATIONS = {
         'nav_location': "موقعنا",
         'loc_title': "مكاتبنا",
         'loc_subtitle': "تجدنا في مدريد وفوينلابرادا",
-        'loc_branch_1': "فرع فوينلابرادا",
-        'loc_branch_2': "فرع وسط مدريد",
+        'loc_branch_1': "مكتب وسط مدريد",
+        'loc_branch_2': "مكتب فوينلابرادا",
         'loc_how_to_get': "كيف تجدنا",
         'srv_jurada_title': "الترجمات المحلفة والمعتمدة",
         'srv_jurada_list': [
@@ -371,14 +481,26 @@ TRANSLATIONS = {
             "تقديم الدعم الفني في جميع المسائل المتعلقة بتسجيل وفتح شركتكم في ليبيا"
         ],
         'srv_libia_btn': "معلومات حول السوق الليبي",
+        'srv_homologacion_title': "معادلة الشهادات من الدول العربية",
+        'srv_homologacion_desc': "استشارة شاملة لمعادلة الشهادات الأكاديمية والدراسات المنجزة في الدول العربية، لتسهيل الاعتراف الرسمي بها في إسبانيا.",
+        'srv_homologacion_list': [
+            "معادلة الشهادات الجامعية من الدول العربية",
+            "تقديم طلبات الشهادات الأكاديمية والعلامات",
+            "الترجمة المعتمدة للملفات التعليمية",
+            "الاستشارة في متطلبات وزارة التعليم",
+            "إدارة الوثائق التكميلية اللازمة"
+        ],
+        'srv_homologacion_btn': "طلب استشارة",
         'hero_contact_title': "اتصل بنا",
-        'contact_title': "مكاتبنا ووفودنا",
-        'info_address_title_1': "فرع فوينلابرادا (مدريد)", 'info_address_text_1': "شارع دي لاس ثينسياس، 51. 28942 فوينلابرادا، مدريد",
-        'info_address_title_2': "فرع وسط مدريد", 'info_address_text_2': "شارع ماوريسيو ليجيندري، 5 - محل 11. 28046 مدريد",
+        'thanks_title': "شكراً لتواصلك معنا!",
+        'thanks_message': "لقد استلمنا رسالتك بنجاح. سنتواصل معك في أقرب وقت ممكن.",
+        'thanks_btn': "العودة إلى الصفحة الرئيسية",
+        'contact_title': "مكاتبنا",
+        'info_address_title_1': "مكتب وسط مدريد", 'info_address_text_1': "شارع ماوريسيو ليجيندري، 5 - محل 11. 28046 مدريد",
+        'info_address_title_2': "مكتب فوينلابرادا (مدريد)", 'info_address_text_2': "شارع دي لاس ثينسياس، 51. 28942 فوينلابرادا، مدريد",
         'info_email_title': "البريد الإلكتروني", 'info_emails': ["fatima@tigafab-traductores.com", "fatima.benamar@yahoo.es"],
-        'info_phone_title': "هواتف الاتصال", 'info_phones': ["+34 91 606 20 20 (المكتب)", "+34 663 11 45 46 (مباشر)"],
-        'info_fax_title': "الفاكس", 'info_fax': "+34 914 86 47 50",
-        'form_name': "الاسم الكامل", 'form_email': "البريد الإلكتروني", 'form_phone': "رقم الهاتف", 'form_message': "رسالتك...", 'form_btn': "إرسال الطلب",
+        'info_phone_title': "هواتف الاتصال", 'info_phones': ["+34 663 11 45 46 (مباشر)"],
+        'form_name': "الاسم الكامل", 'form_email': "البريد الإلكتروني", 'form_phone': "رقم الهاتف", 'form_message': "رسالتك...", 'form_file': "إرفاق ملف (اختياري)", 'form_btn': "إرسال الطلب",
         'reviews_title': "ثقة عالمية", 'exp_verificadas': "تجارب موثوقة",
         'reviews_data': [
             ("ماريا ج. (Google)", "خدمة لا تشوبها شائبة واحترافية للغاية. أنجزت فاطمة الترجمة المحلفة لوثائقي في وقت قياسي لإجراء عاجل. موصى به بشدة."),
@@ -391,12 +513,12 @@ TRANSLATIONS = {
             ("يوسف ل. (Google)", "لا توجد منافسة حقيقية في المواعيد النهائية التي يلتزمون بها. كانت حزمة الترجمة المحلفة للغة العربية جاهزة بشكل لا تشوبه شائبة.")
         ],
         'footer_rights': "© ٢٠٢٦ تيجافاب. مكتب ترجمة دولي معتمد.", 'footer_credits': "تم التطوير بواسطة SynthiaOps",
-        'legal_title': "إشعار قانوني", 'privacy_title': "الخصوصية",
+        'legal_title': "إشعار قانوني", 'privacy_title': "الخصوصية وملفات تعريف الارتباط",
     },
     'en': {
         'legal_body': LEGAL_BODY_EN, 'privacy_body': PRIVACY_BODY_EN,
         'nav_home': "Home", 'nav_about': "About Us", 'nav_services': "Services", 'nav_clients': "Clients", 'nav_contact': "Contact", 'nav_lang': "Language",
-        'hero_title': "Translation Excellence", 'hero_subtitle': "ARABIC • SPANISH • ENGLISH • GERMAN • FRENCH",
+        'hero_title': "Translation Excellence", 'hero_subtitle': "ARABIC • SPANISH • ENGLISH • FRENCH",
         'home_cta_btn': "REQUEST A QUOTE",
         'srv_header_main': "Our Specialties",
         'srv_header_sub': "Elite services in translation and international management",
@@ -405,15 +527,15 @@ TRANSLATIONS = {
         'clients_btn': "View Full List",
         'clients_text': "At TIGAFAB, customer satisfaction is our top priority. We thank you for the trust you have placed in us.",
         'about_title': "About Us", 'about_subtitle': "Translations, Interpretation, Management, and Advisory",
-        'about_text': "We are an office of official, sworn, and professional native translators and interpreters, headed by Ms. Fatima Benamar, with more than <span class='dyn-years'>15</span> years of experience.",
+        'about_text': "We are an office of official, sworn, and professional native translators and interpreters, headed by Ms. Fatima Benamar, with more than <span class='dyn-years'>25</span> years of experience.",
         'about_cat_1': "TRANSLATION - INTERPRETATION",
-        'about_langs': "Arabic, Spanish, English, German and French",
+        'about_langs': "Arabic, Spanish, English and French",
         'about_name': "FATIMA BENAMAR BAHAMAD",
         'about_role': "Translator, interpreter, commercial document manager, visas and advisor",
         'about_cat_2': "MANAGEMENT - ADVISORY",
         'about_desc_short': "TIGAFAB offers integral and professional advice for companies seeking international expansion, with a special focus on strategic markets and complex document management.",
         'home_section_title': "Tradition and Rigor",
-        'h1': "We are an office of official, sworn, and professional native translators and interpreters, headed by Ms. Fatima Benamar, with more than <span class='dyn-years'>15</span> years of experience.",
+        'h1': "We are an office of official, sworn, and professional native translators and interpreters, headed by Ms. Fatima Benamar, with more than <span class='dyn-years'>25</span> years of experience.",
         'h2': "WE OFFER an integral service in sworn translation and advisory for the processing of all your documents.",
         'h3': "Through our advisory and personalized attention, we guarantee correct processing. This way you will save a lot of time, money, and trouble.",
         'h4': "We always satisfy our customers. And we commit to delivering the work within the agreed period.",
@@ -422,8 +544,8 @@ TRANSLATIONS = {
         'nav_location': "Location",
         'loc_title': "Our Branches",
         'loc_subtitle': "Find us in Madrid and Fuenlabrada",
-        'loc_branch_1': "Fuenlabrada Branch",
-        'loc_branch_2': "Madrid Central Branch",
+        'loc_branch_1': "Madrid Central Office",
+        'loc_branch_2': "Fuenlabrada Office",
         'loc_how_to_get': "How to get there",
         'srv_jurada_title': "Sworn Translations",
         'srv_jurada_list': [
@@ -460,14 +582,26 @@ TRANSLATIONS = {
             "We provide technical support on all matters for the registration and opening of your company in Libya"
         ],
         'srv_libia_btn': "Libya Market Info",
+        'srv_homologacion_title': "Recognition of Degrees from Arab Countries",
+        'srv_homologacion_desc': "Comprehensive advisory for the recognition and homologation of academic degrees and studies completed in Arab countries, facilitating official validation in Spain.",
+        'srv_homologacion_list': [
+            "Recognition of university degrees from Arab countries",
+            "Processing of academic certificates and transcripts",
+            "Sworn translation of educational records",
+            "Advisory on Ministry of Education requirements",
+            "Management of necessary complementary documentation"
+        ],
+        'srv_homologacion_btn': "Request Advisory",
         'hero_contact_title': "Contact Us",
+        'thanks_title': "Thank you for contacting us!",
+        'thanks_message': "We have received your message successfully. We will get back to you as soon as possible.",
+        'thanks_btn': "Back to Home",
         'contact_title': "Our Offices",
-        'info_address_title_1': "Fuenlabrada Branch", 'info_address_text_1': "C/ de las Ciencias, 51. 28942 Madrid",
-        'info_address_title_2': "Madrid Central Branch", 'info_address_text_2': "C/ Mauricio Legendre, 5",
+        'info_address_title_1': "Office in Central Madrid", 'info_address_text_1': "C/ Mauricio Legendre, 5",
+        'info_address_title_2': "Fuenlabrada Office", 'info_address_text_2': "C/ de las Ciencias, 51. 28942 Madrid",
         'info_email_title': "Email Addresses", 'info_emails': ["fatima@tigafab-traductores.com", "fatima.benamar@yahoo.es"],
-        'info_phone_title': "Contact Phones", 'info_phones': ["+34 91 606 20 20", "+34 663 11 45 46"],
-        'info_fax_title': "Fax", 'info_fax': "+34 914 86 47 50",
-        'form_name': "Full Name", 'form_email': "Email", 'form_phone': "Phone", 'form_message': "Message...", 'form_btn': "SEND REQUEST",
+        'info_phone_title': "Contact Phones", 'info_phones': ["+34 663 11 45 46"],
+        'form_name': "Full Name", 'form_email': "Email", 'form_phone': "Phone", 'form_message': "Message...", 'form_file': "Attach document (optional)", 'form_btn': "SEND REQUEST",
         'reviews_title': "Global Trust", 'exp_verificadas': "VERIFIED REVIEWS",
         'reviews_data': [
             ("María G. (Google)", "Impeccable and very professional service. Fatima resolved the sworn translation of my documents in record time for an urgent procedure. Highly recommended."),
@@ -479,28 +613,28 @@ TRANSLATIONS = {
             ("Company K. (Google)", "British punctuality and a brutal level of confidentiality. Working with Ms. Fatima reassures all our international procedures."),
             ("Youssef L. (Google)", "There is no real competition in the deadlines they handle. The entire package of sworn Arabic translations was impeccably ready.")
         ],
-        'footer_rights': "© 2026 TIGAFAB S.L. Sworn Translation Boutique.", 'footer_credits': "Developed by SynthiaOps",
-        'legal_title': "Legal Notice", 'privacy_title': "Privacy",
+        'footer_rights': "© 2026 TIGAFAB S.L. Official Translation Office.", 'footer_credits': "Developed by SynthiaOps",
+        'legal_title': "Legal Notice", 'privacy_title': "Privacy and Cookies",
     },
     'fr': {
         'legal_body': LEGAL_BODY_FR, 'privacy_body': PRIVACY_BODY_FR,
         'nav_home': "Accueil", 'nav_about': "Qui Sommes-Nous", 'nav_services': "Services", 'nav_clients': "Clients", 'nav_contact': "Contact", 'nav_lang': "Langue",
-        'hero_title': "Excellence en Traduction", 'hero_subtitle': "ARABE • ESPAGNOL • ANGLAIS • ALLEMAND • FRANÇAIS",
+        'hero_title': "Excellence en Traduction", 'hero_subtitle': "ARABE • ESPAGNOL • ANGLAIS • FRANÇAIS",
         'home_cta_btn': "DEMANDER UN DEVIS",
         'clients_title': "Nos Clients",
         'clients_subtitle': "Notre engagement est un service de qualité",
         'clients_btn': "Voir la Liste Complexe",
         'clients_text': "Chez TIGAFAB, nous savons que le plus important est la satisfaction de nos clients. Nous vous remercions de votre confiance.",
         'about_title': "Qui Sommes-Nous", 'about_subtitle': "Traduction, Interprétation, Gestion et Conseil",
-        'about_text': "Nous sommes un cabinet de traducteurs et interprètes officiels, assermentés, natifs professionnels, dirigés par Mme Fatima Benamar, avec plus de <span class='dyn-years'>15</span> ans d'expérience.",
+        'about_text': "Nous sommes un cabinet de traducteurs et interprètes officiels, assermentés, natifs professionnels, dirigés par Mme Fatima Benamar, avec plus de <span class='dyn-years'>25</span> ans d'expérience.",
         'about_cat_1': "TRADUCTION - INTERPRÉTATION",
-        'about_langs': "Arabe, Espagnol, Anglais, Allemand et Français",
+        'about_langs': "Arabe, Espagnol, Anglais et Français",
         'about_name': "FATIMA BENAMAR BAHAMAD",
         'about_role': "Traductrice, interprète, gestionnaire de documents commerciaux, visas et conseillère",
         'about_cat_2': "GESTION - CONSEIL",
         'about_desc_short': "TIGAFAB offre des conseils intégraux et professionnels aux entreprises cherchant une expansion internationale, avec un accent particulier sur les marchés stratégiques et la gestion de documents complexes.",
         'home_section_title': "Tradition et Rigueur",
-        'h1': "Nous sommes un cabinet de traducteurs et interprètes officiels, assermentés, natifs professionnels, dirigés par Mme Fatima Benamar, avec plus de <span class='dyn-years'>15</span> ans d'expérience.",
+        'h1': "Nous sommes un cabinet de traducteurs et interprètes officiels, assermentés, natifs professionnels, dirigés par Mme Fatima Benamar, avec plus de <span class='dyn-years'>25</span> ans d'expérience.",
         'h2': "NOUS OFFRONS un service complet de traduction assermentée et de conseil pour le traitement de tous vos documents.",
         'h3': "Grâce à nos conseils et à notre attention personnalisée, nous garantissons un traitement correct. De cette façon, vous économiserez beaucoup de temps y d'argent.",
         'h4': "Nous satisfaisons toujours nos clients. Et nous nous engageons à livrer le travail dans les délais convenus.",
@@ -509,8 +643,8 @@ TRANSLATIONS = {
         'nav_location': "Localisation",
         'loc_title': "Nos Sièges",
         'loc_subtitle': "Retrouvez-nous à Madrid et Fuenlabrada",
-        'loc_branch_1': "Siège de Fuenlabrada",
-        'loc_branch_2': "Siège Madrid Centre",
+        'loc_branch_1': "Bureau Madrid Centre",
+        'loc_branch_2': "Bureau Fuenlabrada",
         'loc_how_to_get': "Comment s'y rendre",
         'srv_header_main': "Nos Spécialités",
         'srv_header_sub': "Services d'élite en Traduction et Gestion Internationale",
@@ -559,21 +693,33 @@ TRANSLATIONS = {
             "Nous offrons un soutien technique sur toutes les questions relatives à l'enregistrement et à l'ouverture de votre entreprise en Libye"
         ],
         'srv_libia_btn': "Infos Marché Libye",
+        'srv_homologacion_title': "Reconnaissance des Diplômes des Pays Arabes",
+        'srv_homologacion_desc': "Conseil complet pour la reconnaissance et l'homologation des diplômes académiques et des études réalisées dans les pays arabes, facilitant la validation officielle en Espagne.",
+        'srv_homologacion_list': [
+            "Reconnaissance des diplômes universitaires des pays arabes",
+            "Traitement des certificats académiques et des relevés de notes",
+            "Traduction assermentée des dossiers éducatifs",
+            "Conseil sur les exigences du Ministère de l'Éducation",
+            "Gestion de la documentation complémentaire nécessaire"
+        ],
+        'srv_homologacion_btn': "Demander un Conseil",
         'hero_contact_title': "Contactez-Nous",
-        'contact_title': "Bureaux et Délégations",
-        'info_address_title_1': "Délégation Fuenlabrada", 'info_address_text_1': "C/ de las Ciencias, 51. 28942 Madrid",
-        'info_address_title_2': "Délégation Madrid Centre", 'info_address_text_2': "C/ Mauricio Legendre, 5",
+        'thanks_title': "Merci de nous avoir contactés!",
+        'thanks_message': "Nous avons bien reçu votre message. Nous vous recontacterons dans les plus brefs délais.",
+        'thanks_btn': "Retour à l'accueil",
+        'contact_title': "Bureaux",
+        'info_address_title_1': "Bureau Madrid Centre", 'info_address_text_1': "C/ Mauricio Legendre, 5",
+        'info_address_title_2': "Bureau Fuenlabrada", 'info_address_text_2': "C/ de las Ciencias, 51. 28942 Madrid",
         'info_email_title': "Emails", 'info_emails': ["fatima@tigafab-traductores.com", "fatima.benamar@yahoo.es"],
-        'info_phone_title': "Téléphones", 'info_phones': ["+34 91 606 20 20", "+34 663 11 45 46"],
-        'info_fax_title': "Fax", 'info_fax': "+34 914 86 47 50",
-        'form_name': "Nom Complet", 'form_email': "Email Address", 'form_phone': "Téléphone", 'form_message': "Message...", 'form_btn': "ENVIAR LA DEMANDE",
-        'footer_rights': "© 2026 TIGAFAB S.L. Boutique de Traduction Assermentée.", 'footer_credits': "Développé par SynthiaOps",
-        'legal_title': "Mentions Légales", 'privacy_title': "Confidentialité"
+        'info_phone_title': "Téléphones", 'info_phones': ["+34 663 11 45 46"],
+        'form_name': "Nom Complet", 'form_email': "Email Address", 'form_phone': "Téléphone", 'form_message': "Message...", 'form_file': "Joindre un document (facultatif)", 'form_btn': "ENVIAR LA DEMANDE",
+        'footer_rights': "© 2026 TIGAFAB S.L. Bureau de Traduction Assermentée.", 'footer_credits': "Développé par SynthiaOps",
+        'legal_title': "Mentions Légales", 'privacy_title': "Confidentialité et Cookies"
     },
     'de': {
         'legal_body': LEGAL_BODY_DE, 'privacy_body': PRIVACY_BODY_DE,
         'nav_home': "Startseite", 'nav_about': "Über uns", 'nav_services': "Dienstleistungen", 'nav_clients': "Kunden", 'nav_contact': "Kontakt", 'nav_lang': "Sprache",
-        'hero_title': "Exzellenz in Übersetzung", 'hero_subtitle': "ARABISCH • SPANISCH • ENGLISCH • DEUTSCH • FRANZÖSISCH",
+        'hero_title': "Exzellenz in Übersetzung", 'hero_subtitle': "ARABISCH • SPANISCH • ENGLISCH • FRANZÖSISCH",
         'home_cta_btn': "ANGEBOT ANFORDERN",
         'clients_title': "Unsere Kunden",
         'clients_subtitle': "Qualität ist unser Versprechen",
@@ -582,13 +728,13 @@ TRANSLATIONS = {
         'about_title': "Über uns", 'about_subtitle': "Übersetzung, Dolmetschen, Management und Beratung",
         'about_text': "Wir sind ein Büro von offiziellen, beeidigten, professionellen muttersprachlichen Übersetzern und Dolmetschern unter der Leitung von Frau Fatima Benamar.",
         'about_cat_1': "ÜBERSETZUNG - DOLMETSCHEN",
-        'about_langs': "Arabisch, Spanisch, Englisch, Deutsch und Französisch",
+        'about_langs': "Arabisch, Spanisch, Englisch und Französisch",
         'about_name': "FATIMA BENAMAR BAHAMAD",
         'about_role': "Übersetzerin, Dolmetscherin, Managerin für Handelsdokumente, Visa und Beraterin",
         'about_cat_2': "MANAGEMENT - BERATUNG",
         'about_desc_short': "TIGAFAB bietet umfassende und professionelle Beratung für Unternehmen, die eine internationale Expansion anstreben, mit besonderem Fokus auf strategische Märkte und gemeinsamem Dokumentenmanagement.",
         'home_section_title': "Tradition und Strenge",
-        'h1': "Wir sind ein Büro von offiziellen, beeidigten, professionellen muttersprachlichen Übersetzern und Dolmetschern unter der Leitung von Frau Fatima Benamar, <span class='dyn-years'>15</span> Jahre Erfahrung.",
+        'h1': "Wir sind ein Büro von offiziellen, beeidigten, professionellen muttersprachlichen Übersetzern und Dolmetschern unter der Leitung von Frau Fatima Benamar, <span class='dyn-years'>25</span> Jahre Erfahrung.",
         'h2': "WIR BIETEN einen umfassenden Service für beglaubigte Übersetzungen und Beratung bei der Bearbeitung all Ihrer Dokumente.",
         'h3': "Durch unsere Beratung und persönliche Betreuung garantieren wir eine korrekte Abwicklung. Auf diese Weise sparen Sie viel Zeit y Geld.",
         'h4': "Wir stellen unsere Kunden immer zufrieden. Und wir verpflichten uns, die Arbeit innerhalb der vereinbarten Frist abzuliefern.",
@@ -597,8 +743,8 @@ TRANSLATIONS = {
         'nav_location': "Standort",
         'loc_title': "Unsere Standorte",
         'loc_subtitle': "Finden Sie uns in Madrid und Fuenlabrada",
-        'loc_branch_1': "Niederlassung Fuenlabrada",
-        'loc_branch_2': "Niederlassung Madrid Zentrum",
+        'loc_branch_1': "Büro Madrid Zentrum",
+        'loc_branch_2': "Büro Fuenlabrada",
         'loc_how_to_get': "Anfahrt",
         'srv_jurada_title': "Beglaubigte Übersetzungen",
         'srv_jurada_list': [
@@ -637,12 +783,11 @@ TRANSLATIONS = {
         'srv_libia_btn': "Libyen Marktinfos",
         'hero_contact_title': "Kontakt",
         'contact_title': "Niederlassungen",
-        'info_address_title_1': "Delegation Fuenlabrada", 'info_address_text_1': "C/ de las Ciencias, 51. 28942 Madrid",
-        'info_address_title_2': "Delegation Madrid Hauptstadt", 'info_address_text_2': "C/ Mauricio Legendre, 5",
+        'info_address_title_1': "Büro Madrid Zentrum", 'info_address_text_1': "C/ Mauricio Legendre, 5",
+        'info_address_title_2': "Büro Fuenlabrada", 'info_address_text_2': "C/ de las Ciencias, 51. 28942 Madrid",
         'info_email_title': "E-Mail-Adressen", 'info_emails': ["fatima@tigafab-traductores.com", "fatima.benamar@yahoo.es"],
-        'info_phone_title': "Telefone", 'info_phones': ["+34 91 606 20 20", "+34 663 11 45 46"],
-        'info_fax_title': "Fax", 'info_fax': "+34 914 86 47 50",
-        'form_name': "Name", 'form_email': "E-Mail", 'form_phone': "Telefon", 'form_message': "Nachricht...", 'form_btn': "ANFRAGE SENDEN",
+        'info_phone_title': "Telefone", 'info_phones': ["+34 663 11 45 46"],
+        'form_name': "Name", 'form_email': "E-Mail", 'form_phone': "Telefon", 'form_message': "Nachricht...", 'form_file': "Dokument anhängen (optional)", 'form_btn': "ANFRAGE SENDEN",
         'reviews_title': "Weltweites Vertrauen", 'exp_verificadas': "GEPRÜFTE BEWERTUNGEN",
         'reviews_data': [
             ("María G. (Google)", "Tadelloser und sehr professioneller Service. Fatima hat die beglaubigte Übersetzung meiner Dokumente in Rekordzeit für ein eiliges Verfahren erledigt. Sehr zu empfehlen."),
@@ -654,7 +799,7 @@ TRANSLATIONS = {
             ("Empresa K. (Google)", "Britische Pünktlichkeit und ein enormes Maß an Vertraulichkeit. Die Zusammenarbeit mit Frau Fatima beruhigt alle unsere internationalen Abläufe."),
             ("Youssef L. (Google)", "Es gibt keine wirkliche Konkurrenz bei den Fristen, die sie einhalten. Das gesamte Paket der beglaubigten Arabisch-Übersetzungen war tadellos fertig.")
         ],
-        'footer_rights': "© 2026 TIGAFAB S.L. Boutique für beglaubigte Übersetzungen.", 'footer_credits': "Entwickelt von SynthiaOps",
-        'legal_title': "Impressum", 'privacy_title': "Datenschutz"
+        'footer_rights': "© 2026 TIGAFAB S.L. Büro für beglaubigte Übersetzungen.", 'footer_credits': "Entwickelt von SynthiaOps",
+        'legal_title': "Impressum", 'privacy_title': "Datenschutz und Cookies"
     }
 }
