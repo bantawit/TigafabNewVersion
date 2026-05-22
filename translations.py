@@ -397,7 +397,7 @@ TRANSLATIONS = {
         'info_address_title_2': "Oficina Fuenlabrada", 'info_address_text_2': "C/ de las Ciencias, 51. 28942 Fuenlabrada, Madrid",
         'info_email_title': "Correos Electrónicos", 'info_emails': ["fatima@tigafab-traductores.com", "fatima.benamar@yahoo.es"],
         'info_phone_title': "Teléfonos de Contacto", 'info_phones': ["+34 663 11 45 46 (Móvil)"],
-        'form_name': "Nombre Completo", 'form_email': "Correo Electrónico", 'form_phone': "Teléfono", 'form_message': "Mensaje...", 'form_file': "Adjuntar documento (opcional)", 'form_btn': "ENVIAR SOLICITUD",
+        'form_name': "Nombre Completo", 'form_email': "Correo Electrónico", 'form_phone': "Teléfono", 'form_message': "Mensaje...", 'form_file': "Adjuntar documento (opcional)", 'form_file_text': "Elegir archivo", 'form_btn': "ENVIAR SOLICITUD", 'whatsapp_disabled': "WhatsApp fuera de servicio temporalmente",
         'reviews_title': "Confianza Global", 'exp_verificadas': "EXPERIENCIAS VERIFICADAS",
         'reviews_data': [
             ("María G. (Google)", "Servicio impecable y muy profesional. Fátima resolvió la traducción jurada de mis documentos en tiempo récord para un trámite urgente. Totalmente recomendados."),
@@ -500,7 +500,7 @@ TRANSLATIONS = {
         'info_address_title_2': "مكتب فوينلابرادا (مدريد)", 'info_address_text_2': "شارع دي لاس ثينسياس، 51. 28942 فوينلابرادا، مدريد",
         'info_email_title': "البريد الإلكتروني", 'info_emails': ["fatima@tigafab-traductores.com", "fatima.benamar@yahoo.es"],
         'info_phone_title': "هواتف الاتصال", 'info_phones': ["+34 663 11 45 46 (مباشر)"],
-        'form_name': "الاسم الكامل", 'form_email': "البريد الإلكتروني", 'form_phone': "رقم الهاتف", 'form_message': "رسالتك...", 'form_file': "إرفاق ملف (اختياري)", 'form_btn': "إرسال الطلب",
+        'form_name': "الاسم الكامل", 'form_email': "البريد الإلكتروني", 'form_phone': "رقم الهاتف", 'form_message': "رسالتك...", 'form_file': "إرفاق ملف (اختياري)", 'form_file_text': "اختر ملف", 'form_btn': "إرسال الطلب", 'whatsapp_disabled': "واتساب خارج الخدمة مؤقتاً",
         'reviews_title': "ثقة عالمية", 'exp_verificadas': "تجارب موثوقة",
         'reviews_data': [
             ("ماريا ج. (Google)", "خدمة لا تشوبها شائبة واحترافية للغاية. أنجزت فاطمة الترجمة المحلفة لوثائقي في وقت قياسي لإجراء عاجل. موصى به بشدة."),
@@ -601,7 +601,7 @@ TRANSLATIONS = {
         'info_address_title_2': "Fuenlabrada Office", 'info_address_text_2': "C/ de las Ciencias, 51. 28942 Madrid",
         'info_email_title': "Email Addresses", 'info_emails': ["fatima@tigafab-traductores.com", "fatima.benamar@yahoo.es"],
         'info_phone_title': "Contact Phones", 'info_phones': ["+34 663 11 45 46"],
-        'form_name': "Full Name", 'form_email': "Email", 'form_phone': "Phone", 'form_message': "Message...", 'form_file': "Attach document (optional)", 'form_btn': "SEND REQUEST",
+        'form_name': "Full Name", 'form_email': "Email", 'form_phone': "Phone", 'form_message': "Message...", 'form_file': "Attach document (optional)", 'form_file_text': "Choose file", 'form_btn': "SEND REQUEST", 'whatsapp_disabled': "WhatsApp temporarily out of service",
         'reviews_title': "Global Trust", 'exp_verificadas': "VERIFIED REVIEWS",
         'reviews_data': [
             ("María G. (Google)", "Impeccable and very professional service. Fatima resolved the sworn translation of my documents in record time for an urgent procedure. Highly recommended."),
@@ -712,7 +712,7 @@ TRANSLATIONS = {
         'info_address_title_2': "Bureau Fuenlabrada", 'info_address_text_2': "C/ de las Ciencias, 51. 28942 Madrid",
         'info_email_title': "Emails", 'info_emails': ["fatima@tigafab-traductores.com", "fatima.benamar@yahoo.es"],
         'info_phone_title': "Téléphones", 'info_phones': ["+34 663 11 45 46"],
-        'form_name': "Nom Complet", 'form_email': "Email Address", 'form_phone': "Téléphone", 'form_message': "Message...", 'form_file': "Joindre un document (facultatif)", 'form_btn': "ENVIAR LA DEMANDE",
+        'form_name': "Nom Complet", 'form_email': "Email Address", 'form_phone': "Téléphone", 'form_message': "Message...", 'form_file': "Joindre un document (facultatif)", 'form_file_text': "Choisir un fichier", 'form_btn': "ENVIAR LA DEMANDE", 'whatsapp_disabled': "WhatsApp temporairement hors service",
         'footer_rights': "© 2026 TIGAFAB S.L. Bureau de Traduction Assermentée.", 'footer_credits': "Développé par SynthiaOps",
         'legal_title': "Mentions Légales", 'privacy_title': "Confidentialité et Cookies"
     },

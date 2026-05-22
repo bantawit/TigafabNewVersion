@@ -141,5 +141,39 @@ window.onload = function() {
         el.textContent = yearsExp;
     });
 
+    // File upload name display
+    const fileInput = document.getElementById('fileInput');
+    const fileNameDisplay = document.getElementById('fileName');
+    if (fileInput && fileNameDisplay) {
+        fileInput.addEventListener('change', function(e) {
+            if (e.target.files.length > 0) {
+                fileNameDisplay.textContent = e.target.files[0].name;
+            } else {
+                fileNameDisplay.textContent = '';
+            }
+        });
+    }
+
+    // WhatsApp disabled tooltip translation and click prevention
+    const whatsappBtn = document.querySelector('.whatsapp-float[data-tooltip]');
+    if (whatsappBtn) {
+        const tooltipText = whatsappBtn.getAttribute('data-tooltip');
+        if (tooltipText && tooltipText.startsWith('t-')) {
+            const translationKey = tooltipText.replace('t-', '').replace('-', '_');
+            if (window.translations && window.translations[lang] && window.translations[lang][translationKey]) {
+                whatsappBtn.setAttribute('data-tooltip', window.translations[lang][translationKey]);
+            }
+        }
+        
+        // Prevent click if disabled
+        if (whatsappBtn.classList.contains('whatsapp-disabled')) {
+            whatsappBtn.addEventListener('click', function(e) {
+                e.preventDefault();
+                e.stopPropagation();
+                return false;
+            });
+        }
+    }
+
     console.log(`Tigafab Engine Ready ✓ | ${yearsExp} años de experiencia`);
 };
