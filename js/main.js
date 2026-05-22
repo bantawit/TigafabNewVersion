@@ -132,8 +132,8 @@ window.onload = function() {
     }
 
     // 5. Dynamic Years of Experience Calculator
-    // Founded: 2011 — updates automatically every year without any manual change
-    const FOUNDED_YEAR = 2011;
+    // Founded: 2001 — updates automatically every year without any manual change
+    const FOUNDED_YEAR = 2001;
     const currentYear = new Date().getFullYear();
     const yearsExp = currentYear - FOUNDED_YEAR;
 
