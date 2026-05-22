@@ -175,5 +175,48 @@ window.onload = function() {
         }
     }
 
+    // Language selector: maintain current page when switching language
+    if (langDropdown) {
+        const currentPage = window.location.pathname.split('/').pop() || 'index.html';
+        const currentPath = window.location.pathname;
+        const langLinks = langDropdown.querySelectorAll('a');
+        
+        // Determine current language from path
+        let currentLang = 'es';
+        if (currentPath.match(/\/en\//)) currentLang = 'en';
+        else if (currentPath.match(/\/fr\//)) currentLang = 'fr';
+        else if (currentPath.match(/\/ar\//)) currentLang = 'ar';
+        
+        langLinks.forEach(link => {
+            const href = link.getAttribute('href');
+            if (href) {
+                // Determine target language from the original href
+                let targetLang = 'es';
+                if (href.match(/\/en\//)) targetLang = 'en';
+                else if (href.match(/\/fr\//)) targetLang = 'fr';
+                else if (href.match(/\/ar\//)) targetLang = 'ar';
+                
+                // Build correct path based on current and target language
+                if (currentLang === 'es') {
+                    // Currently in Spanish (root)
+                    if (targetLang === 'es') {
+                        link.setAttribute('href', currentPage);
+                    } else {
+                        link.setAttribute('href', `${targetLang}/${currentPage}`);
+                    }
+                } else {
+                    // Currently in a language folder
+                    if (targetLang === 'es') {
+                        link.setAttribute('href', `../${currentPage}`);
+                    } else if (targetLang === currentLang) {
+                        link.setAttribute('href', currentPage);
+                    } else {
+                        link.setAttribute('href', `../${targetLang}/${currentPage}`);
+                    }
+                }
+            }
+        });
+    }
+
     console.log(`Tigafab Engine Ready ✓ | ${yearsExp} años de experiencia`);
 };
