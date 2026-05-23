@@ -330,20 +330,14 @@ h1, h2, h3 { font-family: var(--font-heading); }
     /* Compact language selector: hide text, show only globe icon */
     .lang-current {
         padding: 8px 12px;
-        font-size: 0;          /* Hide text */
-        gap: 0;
         min-width: 40px;
         justify-content: center;
     }
-    .lang-current::before {
-        content: '\f0ac';      /* Font Awesome globe icon */
-        font-family: 'Font Awesome 6 Free';
-        font-weight: 900;
-        font-size: 1.2rem;
-        color: var(--text-strong);
+    .lang-current span {
+        display: none;  /* Hide text span */
     }
     .lang-current .fa-chevron-down {
-        display: none;         /* Hide arrow */
+        display: none;  /* Hide arrow */
     }
     .lang-dropdown {
         right: 0;
