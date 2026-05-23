@@ -139,134 +139,278 @@ g) Derecho a revocar el consentimiento otorgado a TIGAFAB, S.L.</p>
 - Permitir al servidor crear cookies para un dominio diferente.</p>
 <p>Para permitir, conocer, bloquear o eliminar las cookies instaladas en su equipo puede hacerlo mediante la configuración de las opciones del navegador instalado en su ordenador.</p>"""
 
-LEGAL_BODY_EN = """<h3>1.- DATA OF THE OWNER RESPONSIBLE FOR THE WEBSITE</h3>
-<p>In compliance with the provisions of Law 34/2002 of Services of the Information Society and Electronic Commerce, it is reported that the owner of this website is <strong>TIGAFAB, S.L.</strong>, with N.I.F. B84063854 and registered office at C/ de las Ciencias 51, 28942 Fuenlabrada, Madrid. Registered in the Mercantile Registry of Madrid on December 22, 2004, volume 20,785, folio 166, section 8, sheet M-368536.</p>
+LEGAL_BODY_EN = """<p>At TIGAFAB we know that the most important thing is the satisfaction of our clients and for us clients are the great value proposition, the true endorsement of the company and the greatest guarantee of continuity. For this reason, our commitment is to offer a service that meets and exceeds their expectations. We develop our corporate strategy based on the needs of our clients, and to achieve these goals we have established the commitment to implement a customer-oriented culture at all levels of the organization, so that we will know what their needs are and how to act on them. We thank you for the trust you have placed in us throughout our trajectory.</p>
+<p>In this Legal Notice, the User will be able to find all the information regarding the legal conditions that define the relationships between the users and the person responsible for the website accessible at the URL www.tigafab-traductores.com (hereinafter, the Website), which TIGAFAB, S.L. makes available to Internet users. The use of the website implies full and unreserved acceptance of each and every one of the provisions included in this Legal Notice. Consequently, the user of the website must carefully read this Legal Notice on each occasion in which they propose to use the web, since the text may undergo modifications at the discretion of the owner of the web, or due to a legislative, jurisprudential change or in business practice.</p>
+
+<h3>1.- DATA OF THE OWNER RESPONSIBLE FOR THE WEBSITE</h3>
+<p>Name of the owner: TIGAFAB, S.L.<br>
+Registered office: C/ De las Ciencias, 51, 28942. Fuenlabrada, Madrid<br>
+C.I.F.: B86142155<br>
+Contact phone: 663114546<br>
+Email: rgpd@tigafab-traductores.com</p>
+<p>TIGAFAB, S.L., is the person responsible for the Website and undertakes to comply with all national and European requirements that regulate the use of users' personal data. This Website guarantees the protection and confidentiality of the personal data provided to us in accordance with the provisions of the General Regulation on the Protection of Personal Data (EU) 2016/679 of the European Parliament and of the Council, of April 27, 2016, in Organic Law 3/2018, on the Protection of Personal Data and guarantee of digital rights and the Law on Services of the Information Society and Electronic Commerce 34/2002 of July 11 (LSSI-CE)</p>
 
 <h3>2.- OBJECT</h3>
-<p>The website provides users access to information and services provided by TIGAFAB S.L. to those persons or organizations interested in them.</p>
+<p>The Website facilitates access to information and services provided by TIGAFAB, S.L. to those persons or organizations interested in them. Access to and use of the Website confers the status of user of the Website (hereinafter, the "User") and implies acceptance of all the conditions included in this Legal Notice as well as its modifications. The provision of the Website service is limited to the moment in which the User is connected to the Website or to any of the services provided through it. Therefore, the User must carefully read this Legal Notice on each occasion in which they propose to use the Website, since it and its conditions of use collected in this Legal Notice may undergo modifications.</p>
 
 <h3>3.- ACCESS AND USE OF THE WEB</h3>
-<p>3.1.- Free nature of access and use of the web. Access to the web is free for users.<br>
-3.2.- User registration. In general, access and use of the website do not require prior subscription or registration of users.</p>
+<p>3.1.- Free nature of access and use of the web. Access to the web is free for users of the same, except in relation to the cost of connection through the telecommunications network supplied by the access provider contracted by the users.</p>
+<p>3.2.- User registration. In general, access and use of the web does not require prior subscription or registration of users of the same.</p>
+<p>3.3.- Users guarantee and respond, in any case, for the accuracy, validity and authenticity of the personal data provided, and undertake to keep them duly updated. The user accepts providing complete and correct information in the contact or subscription form.</p>
+<p>In the case of minors under thirteen years of age, the consent of parents or guardians is required for the processing of their personal data. In no case will data relating to the professional, economic situation or the privacy of other family members be collected from the minor without their consent. If you are under thirteen years of age and have accessed this website without notifying your parents, you must not register as a user. On this website, the personal data of users are respected and cared for. As a user you must know that your rights are guaranteed.</p>
 
 <h3>4.- WEB CONTENT</h3>
-<p>The language used by the owner on the web will be Spanish. TIGAFAB, S.L. is not responsible for the non-understanding of the language of the web by the user, nor for its consequences. TIGAFAB, S.L. may modify the contents without prior notice, as well as delete and change these within the web.</p>
+<p>The language used by the owner on the web will be Spanish. TIGAFAB, S.L. is not responsible for the non-comprehension or understanding of the language of the web by the user, nor for its consequences. TIGAFAB, S.L. may modify the contents without prior notice, as well as delete and change these within the web, as well as the way in which they are accessed, without any justification and freely, not assuming responsibility for the consequences that the same may cause to users. The use of the contents of the web to promote, contract or disseminate advertising or information of one's own or of third parties without the authorization of TIGAFAB, S.L. is prohibited, nor to send advertising or information using for this purpose the services or information that are made available to users, regardless of whether the use is free or not. The links or hyperlinks that third parties incorporate on their web pages, directed to this web, will be for the opening of the complete web page, not being able to manifest, directly or indirectly, false, inaccurate or confusing indications, nor to incur unfair or illicit actions against TIGAFAB, S.L.</p>
 
 <h3>5.- SECURITY MEASURES</h3>
-<p>Personal data communicated by the user may be stored in automated or non-automated databases, the ownership of which corresponds exclusively to TIGAFAB, S.L., assuming all technical, organizational and security measures that guarantee the confidentiality, integrity and quality of the information.</p>
+<p>The personal data communicated by the user may be stored in automated or non-automated databases, the ownership of which corresponds exclusively to TIGAFAB, S.L., assuming all technical, organizational and security measures that guarantee the confidentiality, integrity and quality of the information contained therein in accordance with the provisions of current regulations on the protection of personal data.</p>
 
 <h3>6.- LIMITATION OF LIABILITY</h3>
-<p>Both access to the web and the unconsented use that may be made of the information contained therein is the exclusive responsibility of the person who performs it. TIGAFAB, S.L. will not be liable for any consequence, damage or prejudice that may derive from said access or use.</p>
+<p>Both access to the web and the unconsented use that may be made of the information contained therein is the exclusive responsibility of the person who performs it. TIGAFAB, S.L. will not be liable for any consequence, damage or prejudice that may derive from said access or use. TIGAFAB, S.L. is not responsible for security errors that may occur, nor for damages that may be caused to the user's computer system (hardware and software), or to the files or documents stored therein, as a consequence of: - the presence of a virus on the user's computer that is used to connect to the services and contents of the web. - a malfunction of the browser. - and/or the use of non-updated versions thereof. TIGAFAB, S.L. is not responsible for the reliability and speed of the hyperlinks that are incorporated in the web for the opening of others. TIGAFAB, S.L. does not guarantee the usefulness of these links, nor is it responsible for the contents or services to which the user may access through these links, nor for the proper functioning of these websites. TIGAFAB, S.L. will not be responsible for viruses or other computer programs that deteriorate or may deteriorate the systems or computer equipment of users when accessing their web or other websites that have been accessed through links from this web.</p>
 
-<h3>7.- INTELLECTUAL AND INDUSTRIAL PROPERTY</h3>
-<p>The user knows and accepts that all the contents and/or any other elements of the website are the property of TIGAFAB, S.L. Any use of the website or its contents must be exclusively private.</p>
+<h3>7.- USE OF "COOKIE" TECHNOLOGY</h3>
+<p>The Website may employ cookies or similar technologies that will be governed by the provisions of the Cookie Policy, accessible at all times and respecting the confidentiality and privacy of the user, being an integral part of this Legal Notice.</p>
 
-<h3>8.- APPLICABLE LEGISLATION AND COMPETENT JURISDICTION</h3>
-<p>This Legal Notice will be interpreted and governed in accordance with Spanish legislation. TIGAFAB, S.L. and the users submit to the courts and tribunals of MADRID.</p>"""
+<h3>8.- NAVIGATION</h3>
+<p>Internet servers may collect non-identifiable data, which may include IP addresses, and other data that cannot be used to identify the user. Your IP address will be stored in access logs automatically and with the sole purpose of allowing transit over the Internet, being necessary for your equipment to provide this IP address when browsing the Internet so that communications can be carried out. Likewise, the IP address may be used to carry out statistics, in an anonymized manner, on the number of visitors to this web and their origin, in a totally transparent manner to your navigation.</p>
+
+<h3>9.- INTELLECTUAL AND INDUSTRIAL PROPERTY</h3>
+<p>The user knows and accepts that all the contents and/or any other elements of the website are the property of TIGAFAB, S.L., and undertakes to respect the intellectual and industrial property rights owned by TIGAFAB, S.L. and/or third parties. Any use of the web or its contents must have an exclusively private nature. Any other use that implies copying, reproduction, distribution, transformation, public communication or any other similar action, of all or part of the contents of the web, is reserved exclusively to TIGAFAB, S.L., so that no user may carry out these actions without the prior and written authorization of TIGAFAB, S.L..</p>
+
+<h3>10.- APPLICABLE LEGISLATION AND COMPETENT JURISDICTION</h3>
+<p>This Legal Notice shall be interpreted and governed in accordance with Spanish legislation. TIGAFAB, S.L. and the users, with express waiver to any other jurisdiction that may correspond to them, submit to the courts and tribunals of the user's domicile for any controversy that may derive from the access or use of the web. In the event that the user has their domicile outside of Spain, TIGAFAB, S.L. and the user submit, with express waiver to any other jurisdiction, to the courts and tribunals of the domicile of MADRID.</p>"""
 
 PRIVACY_BODY_EN = """<h3>PRIVACY AND DATA PROTECTION POLICY</h3>
-<p>In accordance with the provisions of Regulation (EU) 2016/679 (GDPR) and Organic Law 3/2018 (LOPDGDD), we inform you:</p>
+<p>At TIGAFAB we know that the most important thing is the satisfaction of our clients and for us clients are the great value proposition, the true endorsement of the company and the greatest guarantee of continuity. For this reason, our commitment is to offer a service that meets and exceeds their expectations. We develop our corporate strategy based on the needs of our clients, and to achieve these goals we have established the commitment to implement a customer-oriented culture at all levels of the organization, so that we will know what their needs are and how to act on them. We thank you for the trust you have placed in us throughout our trajectory.</p>
+<p>Within the framework of the service provision relationship in the scope of Organic Law 3/2018, of December 5, on the Protection of Personal Data and guarantee of digital rights, of Royal Decree 1720/2007, of December 21, which approves the Development Regulation of the same, as well as in Regulation (EU) 2016/679 of the European Parliament and of the Council, of April 27, 2016, relating to the protection of natural persons with regard to the processing of personal data, repealing Directive 95/46/EC (hereinafter, GDPR), of Law 34/2002, of July 11, on services of the information society and electronic commerce (hereinafter, LSSI-CE) and of Organic Law 3/2018, on the Protection of Personal Data and guarantee of digital rights, TIGAFAB, S.L. guarantees the protection and confidentiality of personal data, of any type that our clients provide us with, in accordance with the provisions of the General Regulation on the Protection of Personal Data.</p>
+<p>The Data Protection Policy of TIGAFAB, S.L. rests on the principle of proactive responsibility, according to which the Data Controller is responsible for compliance with the regulatory and jurisprudential framework, being able to demonstrate it before the corresponding control authorities.</p>
+<p>The data provided will be processed in the terms established in the GDPR, in this sense TIGAFAB, S.L. has adopted the levels of protection that are legally required, and has installed all the technical measures within its reach to avoid loss, misuse, alteration, unauthorized access by third parties, exposed below. However, the user must be aware that security measures on the Internet are not impregnable.</p>
 
-<h3>Data Controller</h3>
-<p><strong>FATIMA BENAMAR BAHAMAD</strong>, with NIF: X2474479H and address at Calle de las Ciencias 51, 28942 Fuenlabrada (Madrid).</p>
+<h3>Data Controller: Who are we?</h3>
+<p>Name: TIGAFAB, S.L. CIF: B86142155 Activity: Address: C/ DE LAS CIENCIAS, 51, 28942. FUENLABRADA, MADRID Phone: 663114546 Email: rgpd@tigafab-traductores.com We are a company registered in the Mercantile Registry of MADRID; Volume xxxxx; Folio xxxx; Section XXXX; Sheet XXXXX;</p>
 
-<h3>Purpose of the treatment</h3>
-<p>Maintenance of the commercial relationship and the performance of information, translation, document management and other activities typical of Tigafab S.L.</p>
+<h3>Purpose of the processing: What will we use your data for?</h3>
+<p>All data provided by our clients and/or visitors on the TIGAFAB, S.L. website or to its staff will be included in a register of personal data processing activities, created and maintained under the responsibility of TIGAFAB, S.L., essential to provide the services requested by users, or to resolve doubts or questions raised by our visitors. Our policy is not to elaborate profiles on users of our services.</p>
 
-<h3>Legal Basis</h3>
-<p>The processing of your data is carried out with the following legal bases: the request for information and/or the contracting of the services of TIGAFAB S.L.</p>
+<h3>Legitimacy of the processing: Why do we need your data?</h3>
+<p>a) Contractual relationship: This applies when you purchase one of our products or contract one of our services.<br>
+b) Legitimate interest: To attend to the queries and claims that you raise and to manage the collection of amounts owed.<br>
+c) Your consent: If you are a user of our website, by checking the box that appears in the contact form, you authorize us to send you the necessary communications to respond to the query or request for information raised.</p>
 
-<h3>Rights</h3>
-<p>Anyone has the right to obtain confirmation as to whether we are processing their data. Interested parties have the right to access their personal data, as well as to request the rectification of inaccurate data or, where appropriate, request its erasure.</p>
+<h3>Recipients: With whom do we share your data?</h3>
+<p>We do not transfer your personal data to anyone, except to those public or private entities to which we are obliged to provide your personal data due to compliance with some law. For example, the Tax Law requires providing the Tax Agency with certain information on economic operations that exceed a certain amount.</p>
+<p>In the event that, apart from the cases mentioned, we need to disclose your personal information to other entities, we will request your permission in advance through clear options that will allow you to decide in this regard.</p>
 
-<h3>Cookies Policy</h3>
-<p>The website uses technical and third-party cookies (Google Analytics) to improve the browsing experience. You can configure your browser to prevent the installation of cookies, although this may affect the functioning of the web.</p>"""
+<h3>Communication: Where could we send your data?</h3>
+<p>We will not make international transfers of your personal data for any of the indicated purposes.</p>
 
-LEGAL_BODY_AR = """<h3>١- بيانات المالك المسؤول عن الموقع</h3>
-<p>امتثالاً لأحكام القانون ٣٤/٢٠٠٢ بشأن خدمات مجتمع المعلومات والتجارة الإلكترونية، يحيطكم العلم بأن مالك هذا الموقع هو <strong>TIGAFAB, S.L.</strong>، الحامل للرقم الضريبي B84063854 والمقر الاجتماعي في C/ de las Ciencias 51, 28942 Fuenlabrada, Madrid. مسجلة في السجل التجاري بمدريد بتاريخ ٢٢ ديسمبر ٢٠٠٤، المجلد ٢٠,٧٨٥، الصفحة ١٦٦، القسم ٨، الورقة M-368536.</p>
+<h3>Conservation: How long will we keep your data?</h3>
+<p>We will only keep your personal data for as long as necessary to achieve the purposes for which they were collected. When determining the appropriate conservation period, we examine the risks involved in the processing, as well as our contractual, legal and regulatory obligations, internal data conservation policies and our legitimate business interests described in this Privacy Notice and Cookie Policy.</p>
+<p>In this sense, TIGAFAB, S.L. will keep personal data once your relationship with us has ended, duly blocked, during the statute of limitations period for actions that may derive from the relationship maintained with the interested party.</p>
+<p>Once blocked, your data will be inaccessible to TIGAFAB, S.L., and will not be processed except for their provision to Public Administrations, Judges and Courts, for the attention of possible liabilities arising from the processing, as well as for the exercise and defense of claims before the Spanish Data Protection Agency.</p>
+
+<h3>Security: How are we going to protect your data?</h3>
+<p>We employ all reasonable efforts to maintain the confidentiality of personal information processed in our systems. We maintain strict security levels to protect personal data that we process against accidental losses and unauthorized access, processing or disclosures, given the state of technology, the nature and the risks to which the data are exposed. However, we cannot be responsible for the use you make of the data (including user and password) that you use on our website. Our staff follows strict privacy rules and in the event that we hire third parties to provide support services, we require them to comply with the same rules and allow us to audit them to verify their compliance.</p>
+
+<h3>Your rights: What rights can you exercise as an interested party?</h3>
+<p>We inform you that you can exercise the following rights:<br>
+a) Right of access to your personal data, to know which are being processed and the processing operations carried out with them;<br>
+b) Right of rectification of any inaccurate personal data;<br>
+c) Right of erasure of your personal data, when this is possible (for example, by legal imperative);<br>
+d) Right to restriction of processing of your personal data when the accuracy, legality or necessity of the data processing is doubtful, in which case, we may keep them for the exercise or defense of claims.<br>
+e) Right to object to the processing of your personal data, when the legal basis that enables us for their processing of those indicated is our legitimate interest. TIGAFAB, S.L. will stop processing your data unless it has a legitimate interest or is necessary for the defense of claims.<br>
+f) Right to data portability, when the legal basis that enables us for their processing is the existence of a contractual relationship or your consent.<br>
+g) Right to revoke the consent granted to TIGAFAB, S.L.</p>
+<p>To exercise your rights, you can do so free of charge and at any time, contacting us at the address C/ DE LAS CIENCIAS, 51, 28942. FUENLABRADA, MADRID, attaching a copy of your ID.</p>
+
+<h3>Protection of rights: Where can you file a complaint?</h3>
+<p>In the event that you understand that your rights have been disregarded by our entity, you can file a complaint with the Spanish Data Protection Agency, through any of the following means:<br>
+.- Electronic headquarters: https://www.aepd.es<br>
+.- Postal mail: Spanish Data Protection Agency, C/ Jorge Juan, 6, 28001, Madrid<br>
+.- Telephone: 901.100.099 and 912.663.517</p>
+<p>Filing a complaint with the Spanish Data Protection Agency does not entail any cost and the assistance of a lawyer or attorney is not necessary.</p>"""
+
+LEGAL_BODY_AR = """<p>في تيجافاب نعلم أن الأهم هو رضا عملائنا، وبالنسبة لنا العملاء هم الرهان الكبير للقيمة، والضمان الحقيقي للشركة، وأكبر ضمان للاستمرارية. ولهذا السبب، فإن التزامنا هو تقديم خدمة تلبي توقعاتكم وتتجاوزها. نطور استراتيجية شركتنا بناءً على احتياجات عملائنا، ولتحقيق هذه الأهداف، قمنا بوضع التزام بتنفيذ ثقافة موجهة للعميل على جميع مستويات المنظمة، بحيث نعرف ما هي احتياجاتهم وكيفية التصرف تجاهها. نشكركم على الثقة التي منحتمونا إياها طوال مسيرتنا.</p>
+<p>في هذا الإشعار القانوني، يمكن للمستخدم العثور على جميع المعلومات المتعلقة بالشروط القانونية التي تحدد العلاقات بين المستخدمين والمسؤول عن الموقع الإلكتروني المتاح على العنوان www.tigafab-traductores.com (فيما يلي، "الموقع الإلكتروني")، الذي تضعه شركة تيجافاب (TIGAFAB, S.L.) تحت تصرف مستخدمي الإنترنت. يشير استخدام الموقع الإلكتروني إلى القبول الكامل وبدون تحفظ لجميع الأحكام الواردة في هذا الإشعار القانوني. وبالتالي، يجب على مستخدم الموقع الإلكتروني قراءة هذا الإشعار القانوني بعناية في كل مرة يرغب فيها في استخدام الموقع، حيث قد يخضع النص لتعديلات حسب تقدير مالك الموقع، أو بسبب تغيير تشريعي أو قضائي أو في الممارسة التجارية.</p>
+
+<h3>١- بيانات المالك المسؤول عن الموقع الإلكتروني</h3>
+<p>اسم المالك: تيجافاب (TIGAFAB, S.L.)<br>
+المقر الاجتماعي: C/ De las Ciencias, 51, 28942. Fuenlabrada, Madrid<br>
+الرقم الضريبي: B86142155<br>
+هاتف الاتصال: 663114546<br>
+البريد الإلكتروني: rgpd@tigafab-traductores.com</p>
+<p>تيجافاب (TIGAFAB, S.L.) هي المسؤولة عن الموقع الإلكتروني وتلتزم بالامتثال لجميع المتطلبات الوطنية والأوروبية التي تنظم استخدام البيانات الشخصية للمستخدمين. يضمن هذا الموقع الإلكتروني حماية وسرية البيانات الشخصية التي تقدمونها لنا وفقاً لأحكام اللائحة العامة لحماية البيانات الشخصية (الاتحاد الأوروبي) 2016/679 للبرلمان الأوروبي والمجلس، بتاريخ 27 أبريل 2016، والقانون العضوي 3/2018، لحماية البيانات الشخصية وضمان الحقوق الرقمية وقانون خدمات مجتمع المعلومات والتجارة الإلكترونية 34/2002 بتاريخ 11 يوليو (LSSI-CE)</p>
 
 <h3>٢- الغرض</h3>
-<p>يوفر الموقع للمستخدمين إمكانية الوصول إلى المعلومات والخدمات التي تقدمها شركة تيجافاب (TIGAFAB S.L) للأشخاص أو المؤسسات المهتمة بها.</p>
+<p>ييسر الموقع الإلكتروني للمستخدمين الوصول إلى المعلومات والخدمات التي تقدمها شركة تيجافاب (TIGAFAB, S.L.) للأشخاص أو المنظمات المهتمة بها. يمنح الوصول إلى الموقع الإلكتروني واستخدامه صفة مستخدم الموقع الإلكتروني (فيما يلي، "المستخدم") ويتضمن القبول بجميع الشروط الواردة في هذا الإشعار القانوني وكذلك تعديلاته. يقتصر تقديم خدمة الموقع الإلكتروني على اللحظة التي يكون فيها المستخدم متصلاً بالموقع الإلكتروني أو بأي من الخدمات المقدمة من خلاله. لذلك، يجب على المستخدم قراءة هذا الإشعار القانوني بعناية في كل مرة يرغب فيها في استخدام الموقع الإلكتروني، حيث قد يخضع هو وشروط استخدام الواردة في هذا الإشعار القانوني لتعديلات.</p>
 
 <h3>٣- الوصول إلى الموقع واستخدامه</h3>
-<p>٣.١- مجانية الوصول واستخدام الموقع. الوصول إلى الموقع مجاني للمستخدمين.<br>
-٣.٢- تسجيل المستخدمين. بصفة عامة، لا يتطلب الوصول إلى الموقع واستخدامه اشتراكاً أو تسجيلاً مسبقاً للمستخدمين.</p>
+<p>٣.١- الطابع المجاني للوصول واستخدام الموقع. الوصول إلى الموقع مجاني لمستخدميه، باستثناء ما يتعلق بتكلفة الاتصال عبر شبكة الاتصالات السلكية واللاسلكية المقدمة من قبل مزود الخدمة المتعاقد معه المستخدمون.</p>
+<p>٣.٢- تسجيل المستخدمين. بشكل عام، لا يتطلب الوصول إلى الموقع واستخدامه الاشتراك أو التسجيل المسبق لمستخدميه.</p>
+<p>٣.٣- يضمن المستخدمون ويتحملون المسؤولية، في أي حال، عن دقة وصراحة وأصالة البيانات الشخصية المقدمة، ويتعهدون بالحفاظ عليها محدثة بشكل صحيح. يقبل المستخدم تقديم معلومات كاملة وصحيحة في نموذج الاتصال أو الاشتراك.</p>
+<p>في حالة القاصرين الذين تقل أعمارهم عن ثلاثة عشر عاماً، يلزم الحصول على موافقة الوالدين أو الأوصياء لمعالجة بياناتهم الشخصية. ولن يتم جمع بيانات تتعلق بالوضع المهني أو الاقتصادي أو خصوصية أفراد الأسرة الآخرين من القاصر دون موافقتهم. إذا كنت أقل من ثلاثة عشر عاماً ووصلت إلى هذا الموقع الإلكتروني دون إبلاغ والديك، فلا يجب عليك التسجيل كمستخدم. في هذا الموقع، يتم احترام والعناية بالبيانات الشخصية للمستخدمين. كمستخدم يجب أن تعلم أن حقوقك مضمونة.</p>
 
 <h3>٤- محتويات الموقع</h3>
-<p>اللغة الأساسية المستخدمة من قبل المالك في الموقع هي الإسبانية. تيجافاب ليست مسؤولة عن عدم فهم المستخدم للغة الموقع أو عن العواقب المترتبة على ذلك. يحق لتيجافاب تعديل المحتويات دون إشعار مسبق، وكذلك حذفها أو تغييرها.</p>
+<p>اللغة المستخدمة من قبل المالك في الموقع ستكون الإسبانية. لا تتحمل شركة تيجافاب (TIGAFAB, S.L.) المسؤولية عن عدم فهم أو فهم لغة الموقع من قبل المستخدم، ولا عن عواقبها. يمكن لشركة تيجافاب (TIGAFAB, S.L.) تعديل المحتويات دون إشعار مسبق، وكذلك حذفها وتغييرها داخل الموقع، وكذلك الطريقة التي يتم الوصول إليها، دون أي مبرر وبحرية، دون تحمل المسؤولية عن العواقب التي قد تسببها للمستخدمين. يُحظر استخدام محتويات الموقع للترويج أو التعاقد أو نشر إعلانات أو معلومات خاصة أو لأطراف ثالثة دون إذن من شركة تيجافاب (TIGAFAB, S.L.)، ولا إرسال إعلانات أو معلومات باستخدام الخدمات أو المعلومات المتاحة للمستخدمين لهذا الغرض، بغض النظر عما إذا كان الاستخدام مجانياً أم لا. ستكون الروابط أو الارتباطات التشعبية التي يدمجها أطراف ثالثة في صفحات الويب الخاصة بهم، الموجهة إلى هذا الموقع، لفتح صفحة الويب الكاملة، دون أن يتمكن من الإدلاء، بشكل مباشر أو غير مباشر، بإشارات كاذبة أو غير دقيقة أو مربكة، ولا الانخراط في أعمال غير مشروعة أو غير قانونية ضد شركة تيجافاب (TIGAFAB, S.L.).</p>
 
 <h3>٥- التدابير الأمنية</h3>
-<p>قد يتم تخزين البيانات الشخصية التي يقدمها المستخدم في قواعد بيانات آلية أو غير آلية، وتعود ملكيتها حصرياً لشركة تيجافاب، مع اتخاذ كافة التدابير التقنية والتنظيمية والأمنية التي تضمن سرية المعلومات وسلامتها وجودتها.</p>
+<p>قد يتم تخزين البيانات الشخصية التي يبلغ عنها المستخدم في قواعد بيانات آلية أو غير آلية، وتعود ملكيتها حصرياً لشركة تيجافاب (TIGAFAB, S.L.)، مع تحمل جميع التدابير التقنية والتنظيمية والأمنية التي تضمن سرية وسلامة وجودة المعلومات الواردة فيها وفقاً لأحكام اللوائح المعمول بها في حماية البيانات الشخصية.</p>
 
 <h3>٦- تحديد المسؤولية</h3>
-<p>يقع الدخول إلى الموقع والاستخدام غير المصرح به للمعلومات الواردة فيه على المسؤولية الحصرية لمن يقوم بذلك. لن تكون تيجافاب مسؤولة عن أي عواقب أو أضرار قد تنجم عن هذا الدخول أو الاستخدام.</p>
+<p>يقع كل من الوصول إلى الموقع والاستخدام غير المصرح به الذي قد يتم للمعلومات الواردة فيه على المسؤولية الحصرية للشخص الذي يقوم بذلك. لن تتحمل شركة تيجافاب (TIGAFAB, S.L.) المسؤولية عن أي عاقبة أو ضرر أو ضرر قد ينشأ عن هذا الوصول أو الاستخدام. لا تتحمل شركة تيجافاب (TIGAFAB, S.L.) المسؤولية عن أخطاء الأمن التي قد تحدث، ولا عن الأضرار التي قد تلحق بنظام الكمبيوتر الخاص بالمستخدم (الأجهزة والبرامج)، أو بالملفات أو المستندات المخزنة فيه، نتيجة ل: - وجود فيروس في كمبيوتر المستخدم الذي يستخدم للاتصال بخدمات ومحتويات الموقع. - سوء عمل المتصفح. - و/أو استخدام إصدارات غير محدثة منه. لا تتحمل شركة تيجافاب (TIGAFAB, S.L.) المسؤولية عن موثوقية وسرعة الروابط التشعبية المدمجة في الموقع لفتح روابط أخرى. لا تضمن شركة تيجافاب (TIGAFAB, S.L.) فائدة هذه الروابط، ولا تتحمل المسؤولية عن المحتويات أو الخدمات التي قد يصل إليها المستخدم من خلال هذه الروابط، ولا عن التشغيل الصحيح لهذه المواقع الإلكترونية. لن تتحمل شركة تيجافاب (TIGAFAB, S.L.) المسؤولية عن الفيروسات أو البرامج الأخرى التي تضر أو قد تضر بأنظمة أو معدات الكمبيوتر للمستخدمين عند الوصول إلى موقعها الإلكتروني أو مواقع أخرى تم الوصول إليها عبر روابط من هذا الموقع.</p>
 
-<h3>٧- الملكية الفكرية والصناعية</h3>
-<p>يعلم المستخدم ويقبل بأن جميع المحتويات و/أو أي عناصر أخرى في الموقع هي ملك لشركة تيجافاب. يجب أن يكون أي استخدام للموقع أو محتوياته ذا طابع خاص وحصري.</p>
+<h3>٧- استخدام تقنية "ملفات تعريف الارتباط"</h3>
+<p>قد يستخدم الموقع الإلكتروني ملفات تعريف الارتباط أو تقنيات مماثلة التي ستخضع لأحكام سياسة ملفات تعريف الارتباط، المتاحة في جميع الأوقات مع احترام سرية وخصوصية المستخدم، وتكون جزءاً لا يتجزأ من هذا الإشعار القانوني.</p>
 
-<h3>٨- التشريعات المعمول بها والاختصاص القضائي</h3>
-<p>يخضع هذا الإشعار القانوني ويفسر وفقاً للتشريعات الإسبانية. تخضع تيجافاب والمستخدمون للمحاكم والهيئات القضائية في مدريد.</p>"""
+<h3>٨- التنقل</h3>
+<p>قد تجمع خوادم الإنترنت بيانات غير قابلة للتعريف، والتي قد تتضمن عناوين IP، وبيانات أخرى لا يمكن استخدامها لتحديد هوية المستخدم. سيتم تخزين عنوان IP الخاص بك في سجلات الوصول تلقائياً وبالغرض الوحيد السماح بالمرور عبر الإنترنت، مما يتطلب من جهازك توفير عنوان IP هذا عند التصفح عبر الإنترنت حتى تتمكن الاتصالات من القيام بذلك. وبالمثل، يمكن استخدام عنوان IP لإجراء إحصائيات، بشكل مجهول، على عدد زوار هذا الموقع وأصلهم، بطريقة شفافة تماماً لتصفحك.</p>
+
+<h3>٩- الملكية الفكرية والصناعية</h3>
+<p>يعلم المستخدم ويقبل أن جميع المحتويات و/أو أي عناصر أخرى في الموقع الإلكتروني هي ملك لشركة تيجافاب (TIGAFAB, S.L.)، ويتعهد باحترام حقوق الملكية الفكرية والصناعية المملوكة لشركة تيجافاب (TIGAFAB, S.L.) و/أو أطراف ثالثة. يجب أن يكون أي استخدام للموقع أو محتوياته ذا طابع خاص حصري. أي استخدام آخر يتضمن النسخ أو الاستنساخ أو التوزيع أو التحويل أو الاتصال العام أو أي إجراء مشابه آخر، لكل أو جزء من محتويات الموقع، محجوز حصرياً لشركة تيجافاب (TIGAFAB, S.L.)، بحيث لا يمكن لأي مستخدم القيام بهذه الإجراءات دون الإذن المسبق والمكتوب من شركة تيجافاب (TIGAFAB, S.L.).</p>
+
+<h3>١٠- التشريعات المعمول بها والاختصاص القضائي المختص</h3>
+<p>سيتم تفسير هذا الإشعار القانوني والعمل به وفقاً للتشريعات الإسبانية. تقدم شركة تيجافاب (TIGAFAB, S.L.) والمستخدمون، مع التنازل الصريح عن أي اختصاص آخر قد يكون لهم، إلى محاكم وهيئات القضاء في محل إقامة المستخدم لأي نزاع قد ينشأ عن الوصول إلى الموقع أو استخدامه. في حالة أن يكون للمستخدم محل إقامته خارج إسبانيا، تقدم شركة تيجافاب (TIGAFAB, S.L.) والمستخدم، مع التنازل الصريح عن أي اختصاص آخر، إلى محاكم وهيئات القضاء في محل إقامة مدريد.</p>"""
 
 PRIVACY_BODY_AR = """<h3>سياسة الخصوصية وحماية البيانات</h3>
-<p>وفقاً لأحكام اللائحة (الاتحاد الأوروبي) ٢٠١٦/٦٧٩ (RGPD) والقانون العضوي ٣/٢٠١٨ (LOPDGDD)، نحيطكم علماً بما يلي:</p>
+<p>في تيجافاب نعلم أن الأهم هو رضا عملائنا، وبالنسبة لنا العملاء هم الرهان الكبير للقيمة، والضمان الحقيقي للشركة، وأكبر ضمان للاستمرارية. ولهذا السبب، فإن التزامنا هو تقديم خدمة تلبي توقعاتكم وتتجاوزها. نطور استراتيجية شركتنا بناءً على احتياجات عملائنا، ولتحقيق هذه الأهداف، قمنا بوضع التزام بتنفيذ ثقافة موجهة للعميل على جميع مستويات المنظمة، بحيث نعرف ما هي احتياجاتهم وكيفية التصرف تجاهها. نشكركم على الثقة التي منحتمونا إياها طوال مسيرتنا.</p>
+<p>في إطار علاقة تقديم الخدمات في نطاق القانون العضوي 3/2018، المؤرخ في 5 ديسمبر، لحماية البيانات الشخصية وضمان الحقوق الرقمية، والمرسوم الملكي 1720/2007، المؤرخ في 21 ديسمبر، الذي يوافق على اللائحة التنموية لنفسه، وكذلك في اللائحة (الاتحاد الأوروبي) 2016/679 للبرلمان الأوروبي والمجلس، المؤرخ في 27 أبريل 2016، المتعلق بحماية الأشخاص الطبيعيين فيما يتعلق بمعالجة البيانات الشخصية، والذي يلغي التوجيه 95/46/المجموعة الأوروبية (فيما يلي، RGPD)، وقانون 34/2002، المؤرخ في 11 يوليو، لخدمات مجتمع المعلومات والتجارة الإلكترونية (فيما يلي، LSSI-CE) والقانون العضوي 3/2018، لحماية البيانات الشخصية وضمان الحقوق الرقمية، تضمن شركة تيجافاب (TIGAFAB, S.L.) حماية وسرية البيانات الشخصية، من أي نوع يقدمه لنا عملاؤنا، وفقاً لأحكام اللائحة العامة لحماية البيانات الشخصية.</p>
+<p>تستند سياسة حماية البيانات لشركة تيجافاب (TIGAFAB, S.L.) إلى مبدأ المسؤولية الاستباقية، وفقاً للمسؤول عن المعالجة مسؤول عن الامتثال للإطار التنظيمي والقضائي، مع القدرة على إثبات ذلك أمام السلطات الرقابية المختصة.</p>
+<p>سيتم معالجة البيانات المقدمة في الشروط المنصوص عليها في RGPD، وبهذا المعنى تبنت شركة تيجافاب (TIGAFAB, S.L.) مستويات الحماية المطلوبة قانونياً، وركبت جميع التدابير التقنية في متناولها لتجنب فقدان البيانات أو سوء استخدامها أو تغييرها أو الوصول غير المصرح به من قبل أطراف ثالثة، كما هو موضح أدناه. ومع ذلك، يجب أن يكون المستخدم واعياً بأن تدابير الأمن على الإنترنت ليست منيعة.</p>
 
-<h3>المسؤول عن المعالجة</h3>
-<p><strong>فاطمة بن عمار باحماد</strong>، حاملة الرقم الضريبي X2474479H والعنوان في Calle de las Ciencias 51, 28942 Fuenlabrada (Madrid).</p>
+<h3>المسؤول عن المعالجة: من نحن؟</h3>
+<p>الاسم: تيجافاب (TIGAFAB, S.L.) الرقم الضريبي: B86142155 النشاط: العنوان: C/ DE LAS CIENCIAS, 51, 28942. FUENLABRADA, MADRID الهاتف: 663114546 البريد الإلكتروني: rgpd@tigafab-traductores.com نحن شركة مسجلة في السجل التجاري بمدريد؛ المجلد xxxxx؛ الصفحة xxxx؛ القسم XXXX؛ الورقة XXXXX؛</p>
 
-<h3>الغرض من المعالجة</h3>
-<p>الحفاظ على العلاقة التجارية والقيام بمهام المعلومات والترجمة وإدارة الوثائق والأنشطة الأخرى الخاصة بشركة تيجافاب.</p>
+<h3>الغرض من المعالجة: ماذا سنستخدم بياناتك لأجله؟</h3>
+<p>جميع البيانات المقدمة من قبل عملائنا و/أو الزوار على موقع شركة تيجافاب (TIGAFAB, S.L.) أو إلى موظفيها، ستدرج في سجل أنشطة معالجة البيانات الشخصية، تم إنشاؤه وصيانته تحت مسؤولية شركة تيجافاب (TIGAFAB, S.L.)، وهو أمر ضروري لتقديم الخدمات المطلوبة من قبل المستخدمين، أو لحل الشكوك أو الأسئلة التي يطرحها زوارنا. سياستنا هي عدم وضع ملفات تعريف للمستخدمين لخدماتنا.</p>
 
-<h3>الشرعية</h3>
-<p>تتم معالجة بياناتك بناءً على الأسس القانونية التالية: طلب المعلومات و/أو التعاقد على خدمات شركة تيجافاب.</p>
+<h3>شرعية المعالجة: لماذا نحتاج بياناتك؟</h3>
+<p>أ) العلاقة التعاقدية: هي التي تنطبق عند شراء أحد منتجاتنا أو التعاقد على أحد خدماتنا.<br>
+ب) المصلحة المشروعة: للرد على الاستفسارات والشكاوى التي تقدمها ولإدارة تحصيل المبالغ المستحقة.<br>
+ج) موافقتك: إذا كنت مستخدماً لموقعنا الإلكتروني، من خلال تحديد المربع الذي يظهر في نموذج الاتصال، تخولنا بإرسال الاتصالات الضرورية للرد على الاستفسار أو طلب المعلومات المقدم.</p>
 
-<h3>الحقوق</h3>
-<p>يحق لأي شخص الحصول على تأكيد بشأن ما إذا كنا نعالج بياناته. يحق لأصحاب العلاقة الوصول إلى بياناتهم الشخصية، وكذلك طلب تصحيح البيانات غير الدقيقة أو طلب حذفها عند الاقتضاء.</p>
+<h3>المستلمون: مع من نشارك بياناتك؟</h3>
+<p>لا ننقل بياناتك الشخصية إلى أي شخص، باستثناء تلك الكيانات العامة أو الخاصة التي نكون ملزمين بتقديم بياناتك الشخصية بسبب الامتثال لقانون معين. على سبيل المثال، يلزم القانون الضريبي بتقديم وكالة الضرائب معلومات معينة عن العمليات الاقتصارية التي تتجاوز مبلغاً معيناً.</p>
+<p>في حالة أننا، إلى جانب الحالات المذكورة، نحتاج إلى الكشف عن معلوماتك الشخصية لكيانات أخرى، سنطلب إذنك مسبقاً من خلال خيارات واضحة التي ستسمح لك بالقرار في هذا الصدد.</p>
 
-<h3>سياسة ملفات تعريف الارتباط (Cookies)</h3>
-<p>يستخدم الموقع ملفات تعريف الارتباط التقنية والخاصة بأطراف ثالثة (Google Analytics) لتحسين تجربة التصفح. يمكنك ضبط متصفحك لمنع تثبيت ملفات تعريف الارتباط، على الرغم من أن هذا قد يؤثر على عمل الموقع.</p>"""
+<h3>الاتصال: أين يمكننا إرسال بياناتك؟</h3>
+<p>لن نقوم بإجراء عمليات نقل دولية لبياناتك الشخصية لأي من الأغراض المذكورة.</p>
 
-LEGAL_BODY_FR = """<h3>1.- DONNÉES DU PROPRIÉTAIRE RESPONSABLE DU SITE WEB</h3>
-<p>Conformément aux dispositions de la loi 34/2002 sur les services de la société de l'information et du commerce électronique, il est indiqué que le propriétaire de ce site web est <strong>TIGAFAB, S.L.</strong>, avec N.I.F. B84063854 et siège social à C/ de las Ciencias 51, 28942 Fuenlabrada, Madrid. Inscrite au Registre du Commerce de Madrid le 22 décembre 2004, tome 20.785, folio 166, section 8, page M-368536.</p>
+<h3>الحفظ: كم من الوقت سنحتفظ ببياناتك؟</h3>
+<p>سنحتفظ فقط ببياناتك الشخصية طالما كان ذلك ضرورياً لتحقيق الأغراض التي تم جمعها من أجلها. عند تحديد فترة الحفظ المناسبة، نفحص المخاطر التي تنطوي عليها المعالجة، وكذلك التزاماتنا التعاقدية والقانونية والتنظيمية، وسياسات الحفظ الداخلية للبيانات ومصالحنا التجارية المشروعة الموضحة في هذا الإشعار الخاص بالخصوصية وسياسة ملفات تعريف الارتباط.</p>
+<p>بهذا المعنى، ستحتفظ شركة تيجافاب (TIGAFAB, S.L.) بالبيانات الشخصية بمجرد انتهاء علاقتك معنا، محظورة بشكل صحيح، خلال فترة التقادم للإجراءات التي قد تنشأ عن العلاقة المتمعة مع الطرف المعني.</p>
+<p>بمجرد حظرها، ستكون بياناتك غير متاحة لشركة تيجافاب (TIGAFAB, S.L.)، ولن يتم معالجتها إلا لتقديمها للإدارات العامة والقضاة والمحاكم، لمعالجة المسؤوليات المحتملة الناشئة عن المعالجات، وكذلك لممارسة والدفاع عن المطالبات أمام الوكالة الإسبانية لحماية البيانات.</p>
+
+<h3>الأمن: كيف سنحمي بياناتك؟</h3>
+<p>نبذل جميع الجهود المعقولة للحفاظ على سرية المعلومات الشخصية التي تتم معالجتها في أنظمتنا. نحافظ على مستويات أمن صارمة لحماية البيانات الشخصية التي نعالجها من الخسائر العرضية والوصول أو المعالجة أو الكشف غير المصرح به، بالنظر لحالة التكنولوجيا، وطبيعة والمخاطر التي تتعرض لها البيانات. ومع ذلك، لا يمكننا تحمل المسؤولية عن الاستخدام الذي تقوم به للبيانات (بما في ذلك المستخدم وكلمة المرور) التي تستخدمها في موقعنا الإلكتروني. يتبع موظفونا قواعد خصوصية صارمة وفي حالة تعاقبنا مع أطراف ثالثة لتقديم خدمات الدعم، نطلب منهم الامتثال لنفس القواعد والسماح لنا بتدقيقهم للتحقق من امتثالهم.</p>
+
+<h3>حقوقك: ما هي الحقوق التي يمكنك ممارستها كطرف معني؟</h3>
+<p>نخبرك أنه يمكنك ممارسة الحقوق التالية:<br>
+أ) حق الوصول إلى بياناتك الشخصية، لمعرفة أي منها يخضع للمعالجة والعمليات التي يتم إجراؤها عليها؛<br>
+ب) حق تصحيح أي بيان شخصي غير دقيق؛<br>
+ج) حق حذف بياناتك الشخصية، عندما يكون ذلك ممكناً (على سبيل المثال، بسبب إلزام قانوني)؛<br>
+د) حق تقييد معالجة بياناتك الشخصية عندما تكون دقة أو شرعية أو ضرورة معالجة البيانات موضع شك، وفي هذه الحالة، قد نحتفظ بها لممارسة أو الدفاع عن المطالبات.<br>
+هـ) حق الاعتراض على معالجة بياناتك الشخصية، عندما تكون الأساس القانوني الذي يخولنا لمعالجتها من بين المذكورة هو مصلحتنا المشروعة. ستتوقف شركة تيجافاب (TIGAFAB, S.L.) عن معالجة بياناتك إلا إذا كان لديها مصلحة مشروعة أو كان ذلك ضرورياً للدفاع عن المطالبات.<br>
+و) حق قابلية نقل البيانات، عندما يكون الأساس القانوني الذي يخولنا لمعالجتها هو وجود علاقة تعاقدية أو موافقتك.<br>
+ز) حق سحب الموافقة الممنوحة لشركة تيجافاب (TIGAFAB, S.L.).</p>
+<p>لممارسة حقوقك، يمكنك القيام بذلك مجاناً وفي أي وقت، بالاتصال بنا على العنوان C/ DE LAS CIENCIAS, 51, 28942. FUENLABRADA, MADRID، مرفقاً نسخة من بطاقة الهوية الخاصة بك.</p>
+
+<h3>حماية الحقوق: أين يمكن تقديم شكوى؟</h3>
+<p>في حالة أنك تفهم أن حقوقك تم تجاهلها من قبل كياننا، يمكنك تقديم شكوى إلى الوكالة الإسبانية لحماية البيانات، من خلال أي من الوسائل التالية:<br>
+.- المقر الإلكتروني: https://www.aepd.es<br>
+.- البريد البريدي: الوكالة الإسبانية لحماية البيانات، C/ Jorge Juan, 6, 28001, Madrid<br>
+.- الهاتف: 901.100.099 و 912.663.517</p>
+<p>تقديم شكوى إلى الوكالة الإسبانية لحماية البيانات لا ينطوي على أي تكلفة ولا يلزم وجود محامٍ أو وكيل.</p>"""
+
+LEGAL_BODY_FR = """<p>Chez TIGAFAB, nous savons que le plus important est la satisfaction de nos clients et pour nous les clients sont le grand enjeu de valeur, la véritable caution de l'entreprise et la plus grande garantie de continuité. C'est pour cette raison que notre engagement est d'offrir un service qui réponde et dépasse leurs attentes. Nous développons notre stratégie d'entreprise en fonction des besoins de nos clients, et pour atteindre ces objectifs, nous avons établi l'engagement d'implanter une culture orientée client à tous les niveaux de l'organisation, de sorte que nous saurons quels sont leurs besoins et comment agir sur eux. Nous vous remercions de la confiance que vous nous avez accordée tout au long de notre parcours.</p>
+<p>Dans le présent Avis Légal, l'Utilisateur pourra trouver toutes les informations relatives aux conditions légales qui définissent les relations entre les utilisateurs et le responsable du site web accessible à l'URL www.tigafab-traductores.com (ci-après, le Site Web), que TIGAFAB, S.L. met à la disposition des utilisateurs d'Internet. L'utilisation du site web implique l'acceptation pleine et sans réserve de chacune des dispositions incluses dans cet Avis Légal. Par conséquent, l'utilisateur du site web doit lire attentivement le présent Avis Légal à chacune des occasions où il se propose d'utiliser le web, car le texte pourrait subir des modifications à la discrétion du titulaire du web, ou en raison d'un changement législatif, jurisprudentiel ou dans la pratique commerciale.</p>
+
+<h3>1.- DONNÉES DU PROPRIÉTAIRE RESPONSABLE DU SITE WEB</h3>
+<p>Nom du titulaire: TIGAFAB, S.L.<br>
+Siège social: C/ De las Ciencias, 51, 28942. Fuenlabrada, Madrid<br>
+C.I.F.: B86142155<br>
+Téléphone de contact: 663114546<br>
+Courrier électronique: rgpd@tigafab-traductores.com</p>
+<p>TIGAFAB, S.L., est le responsable du Site Web et s'engage à respecter toutes les exigences nationales et européennes qui régissent l'utilisation des données personnelles des utilisateurs. Ce Site Web garantit la protection et la confidentialité des données personnelles qui nous sont fournies conformément aux dispositions du Règlement Général sur la Protection des Données Personnelles (UE) 2016/679 du Parlement Européen et du Conseil, du 27 avril 2016, dans la Loi Organique 3/2018, sur la Protection des Données Personnelles et garantie des droits numériques et la Loi sur les Services de la Société de l'Information et du Commerce Électronique 34/2002 du 11 Juillet (LSSI-CE)</p>
 
 <h3>2.- OBJET</h3>
-<p>Le site web facilite l'accès des utilisateurs aux informations et services fournis par TIGAFAB S.L. aux personnes ou organisations qui s'y intéressent.</p>
+<p>Le Site Web facilite aux utilisateurs de celui-ci l'accès aux informations et services fournis par TIGAFAB, S.L. aux personnes ou organisations intéressées par ceux-ci. L'accès et l'utilisation du Site Web confèrent la qualité d'utilisateur du Site Web (ci-après, l'"Utilisateur") et impliquent l'acceptation de toutes les conditions incluses dans cet Avis Légal ainsi que de ses modifications. La prestation du service du Site Web a une durée limitée au moment où l'Utilisateur est connecté au Site Web ou à l'un des services qui sont facilités à travers celui-ci. Par conséquent, l'Utilisateur doit lire attentivement le présent Avis Légal à chacune des occasions où il se propose d'utiliser le Site Web, car celui-ci et ses conditions d'utilisation recueillies dans le présent Avis Légal peuvent subir des modifications.</p>
 
 <h3>3.- ACCÈS ET UTILISATION DU WEB</h3>
-<p>3.1.- Caractère gratuit de l'accès et de l'utilisation du web. L'accès au web est gratuit pour ses utilisateurs.<br>
-3.2.- Enregistrement des utilisateurs. En général, l'accès et l'utilisation du site ne nécessitent pas d'abonnement ou d'enregistrement préalable des utilisateurs.</p>
+<p>3.1.- Caractère gratuit de l'accès et de l'utilisation du web. L'accès au web a un caractère gratuit pour les utilisateurs de celui-ci, sauf en ce qui concerne le coût de la connexion à travers le réseau de télécommunications fourni par le fournisseur d'accès contracté par les utilisateurs.</p>
+<p>3.2.- Enregistrement des utilisateurs. En général, l'accès et l'utilisation du web n'exigent pas l'abonnement ou l'enregistrement préalable des utilisateurs de celui-ci.</p>
+<p>3.3.- Les utilisateurs garantissent et répondent, dans tous les cas, de l'exactitude, de la validité et de l'authenticité des données personnelles fournies, et s'engagent à les maintenir dûment mises à jour. L'utilisateur accepte de fournir des informations complètes et correctes dans le formulaire de contact ou d'abonnement.</p>
+<p>Dans le cas des mineurs de moins de treize ans, le consentement des parents ou tuteurs est requis pour le traitement de leurs données personnelles. En aucun cas ne seront recueillies auprès du mineur des données relatives à la situation professionnelle, économique ou à l'intimité des autres membres de la famille, sans le consentement de ceux-ci. Si vous êtes mineur de moins de treize ans et avez accédé à ce site web sans en avertir vos parents, vous ne devez pas vous enregistrer comme utilisateur. Sur ce site web, les données personnelles des utilisateurs sont respectées et soignées. En tant qu'utilisateur, vous devez savoir que vos droits sont garantis.</p>
 
 <h3>4.- CONTENUS DU WEB</h3>
-<p>La langue utilisée par le propriétaire sur le web sera l'espagnol. TIGAFAB, S.L. n'est pas responsable de la non-compréhension de la langue du web par l'utilisateur, ni de ses conséquences. TIGAFAB, S.L. peut modifier les contenus sans préavis, ainsi que les supprimer ou les changer au sein du web.</p>
+<p>La langue utilisée par le titulaire sur le web sera le castillan. TIGAFAB, S.L. ne se responsabilise pas de la non-compréhension ou de la non-compréhension de la langue du web par l'utilisateur, ni de ses conséquences. TIGAFAB, S.L. pourra modifier les contenus sans préavis, ainsi que les supprimer et changer ceux-ci à l'intérieur du web, comme la forme dont on y accède, sans aucune justification et librement, ne se responsabilisant pas des conséquences que les mêmes pourraient occasionner aux utilisateurs. Il est interdit d'utiliser les contenus du web pour promouvoir, contracter ou divulguer de la publicité ou des informations propres ou de tierces personnes sans l'autorisation de TIGAFAB, S.L., ni d'envoyer de la publicité ou des informations en se servant pour cela des services ou informations qui sont mis à la disposition des utilisateurs, indépendamment de si l'utilisation est gratuite ou non. Les liens ou hyperliens qui incorporent des tiers dans leurs pages web, dirigés vers ce web, seront pour l'ouverture de la page web complète, ne pouvant manifester, directement ou indirectement, des indications fausses, inexactes ou confuses, ni encourir dans des actions déloyales ou illicites contre TIGAFAB, S.L.</p>
 
 <h3>5.- MESURES DE SÉCURITÉ</h3>
-<p>Les données personnelles communiquées par l'utilisateur peuvent être stockées dans des bases de données automatisées ou non, dont la propriété correspond exclusivement à TIGAFAB, S.L., en assumant toutes les mesures de nature technique, organisationnelle et de sécurité.</p>
+<p>Les données personnelles communiquées par l'utilisateur pourront être stockées dans des bases de données automatisées ou non, dont la titularité correspond exclusivement à TIGAFAB, S.L., en assumant toutes les mesures de nature technique, organisationnelle et de sécurité qui garantissent la confidentialité, l'intégrité et la qualité de l'information contenue dans celles-ci conformément à ce qui est établi dans les normatives en vigueur en matière de protection de données à caractère personnel.</p>
 
 <h3>6.- LIMITATION DE RESPONSABILITÉ</h3>
-<p>L'accès au web ainsi que l'utilisation non consentie qui peut être faite des informations contenues dans celui-ci relèvent de la responsabilité exclusive de la personne qui les réalise. TIGAFAB, S.L. ne sera pas responsable des conséquences ou dommages pouvant découler de cet accès ou de cette utilisation.</p>
+<p>Tant l'accès au web que l'utilisation non consentie qui peut être effectuée de l'information contenue dans celui-ci est de la responsabilité exclusive de qui le réalise. TIGAFAB, S.L. ne répondra d'aucune conséquence, dommage ou préjudice qui pourrait dériver dudit accès ou utilisation. TIGAFAB, S.L. ne se fait pas responsable des erreurs de sécurité, qui peuvent se produire ni des dommages qui peuvent être causés au système informatique de l'utilisateur (hardware et software), ou aux fichiers ou documents stockés dans celui-ci, comme conséquence de: - la présence d'un virus dans l'ordinateur de l'utilisateur qui est utilisé pour la connexion aux services et contenus du web. - un mauvais fonctionnement du navigateur. - et/ou de l'utilisation de versions non mises à jour du même. TIGAFAB, S.L. ne se fait pas responsable de la fiabilité et de la rapidité des hyperliens qui s'incorporent dans le web pour l'ouverture d'autres. TIGAFAB, S.L. ne garantit pas l'utilité de ces liens, ni ne se responsabilise des contenus ou services auxquels l'utilisateur peut accéder au moyen de ces liens, ni du bon fonctionnement de ces webs. TIGAFAB, S.L. ne sera pas responsable des virus ou autres programmes informatiques qui détériorent ou peuvent détériorer les systèmes ou équipements informatiques des utilisateurs en accédant à son web ou d'autres webs auxquels on a accédé au moyen de liens de ce web.</p>
 
-<h3>7.- PROPRIÉTÉ INTELLECTUELLE ET INDUSTRIELLE</h3>
-<p>L'utilisateur reconnaît et accepte que tous les contenus et/ou tout autre élément du site web sont la propriété de TIGAFAB, S.L. Toute utilisation du web ou de ses contenus doit avoir un caractère exclusivement privé.</p>
+<h3>7.- EMPLOI DE LA TECHNOLOGIE "COOKIE"</h3>
+<p>Le Site Web peut employer des cookies ou technologies similaires qui seront régis par ce qui est établi dans la Politique de Cookies, accessible à tout moment et en respectant la confidentialité et l'intimité de l'utilisateur, étant partie intégrante du présent Avis Légal.</p>
 
-<h3>8.- LÉGISLATION APPLICABLE ET JURIDICTION COMPÉTENTE</h3>
-<p>Les présentes mentions légales seront interprétées et régies conformément à la législation espagnole. TIGAFAB, S.L. et les utilisateurs se soumettent aux cours et tribunaux de MADRID.</p>"""
+<h3>8.- NAVIGATION</h3>
+<p>Les serveurs Internet peuvent recueillir des données non identifiables, qui peuvent inclure, des adresses IP, et d'autres données qui ne peuvent pas être utilisées pour identifier l'utilisateur. Votre adresse IP sera stockée dans les logs d'accès de forme automatique et avec la seule finalité de permettre le transit par Internet, étant nécessaire que votre équipe facilite cette adresse IP quand on navigue par Internet pour que les communications puissent se réaliser. De même, l'adresse IP pourra être utilisée pour réaliser des statistiques, de manière anonymisée, sur le nombre de visiteurs de ce web et leur provenance, de forme totalement transparente à votre navigation.</p>
+
+<h3>9.- PROPRIÉTÉ INTELLECTUELLE ET INDUSTRIELLE</h3>
+<p>L'utilisateur connaît et accepte que tous les contenus et/ou quels que soient d'autres éléments du site web sont la propriété de TIGAFAB, S.L., et s'engage à respecter les droits de propriété intellectuelle et industrielle titularité de TIGAFAB, S.L. et/ou de tiers. Tout usage du web ou de ses contenus devra avoir un caractère exclusivement particulier. Est réservé exclusivement à TIGAFAB, S.L., tout autre usage qui suppose la copie, reproduction, distribution, transformation, communication publique ou toute autre action similaire, de tout ou partie des contenus du web, par quoi aucun utilisateur ne pourra pas réaliser ces actions sans l'autorisation préalable et par écrit de TIGAFAB, S.L..</p>
+
+<h3>10.- LÉGISLATION APPLICABLE ET JURIDICTION COMPÉTENTE</h3>
+<p>Le présent Avis Légal sera interprété et régi conformément à la législation espagnole. TIGAFAB, S.L. et les utilisateurs, avec renonciation expresse à tout autre for qui pourrait leur correspondre, se soumettent à celui des tribunaux et cours du domicile de l'utilisateur pour toute controverse qui pourrait dériver de l'accès ou usage du web. Dans le cas où l'utilisateur aurait son domicile hors d'Espagne, TIGAFAB, S.L. et l'utilisateur, se soumettent, avec renonciation expresse à tout autre for, aux tribunaux et cours du domicile de MADRID.</p>"""
 
 PRIVACY_BODY_FR = """<h3>POLITIQUE DE CONFIDENTIALITÉ ET PROTECTION DES DONNÉES</h3>
-<p>Conformément aux dispositions du Règlement (UE) 2016/679 (RGPD) et de la loi organique 3/2018 (LOPDGDD), nous vous informons :</p>
+<p>Chez TIGAFAB, nous savons que le plus important est la satisfaction de nos clients et pour nous les clients sont le grand enjeu de valeur, la véritable caution de l'entreprise et la plus grande garantie de continuité. C'est pour cette raison que notre engagement est d'offrir un service qui réponde et dépasse leurs attentes. Nous développons notre stratégie d'entreprise en fonction des besoins de nos clients, et pour atteindre ces objectifs, nous avons établi l'engagement d'implanter une culture orientée client à tous les niveaux de l'organisation, de sorte que nous saurons quels sont leurs besoins et comment agir sur eux. Nous vous remercions de la confiance que vous nous avez accordée tout au long de notre parcours.</p>
+<p>Dans le cadre de la relation de prestation de services dans le domaine de la Loi Organique 3/2018, du 5 décembre, sur la Protection des Données Personnelles et garantie des droits numériques, du Décret Royal 1720/2007, du 21 décembre, qui approuve le Règlement de développement de la même, ainsi que dans le Règlement (UE) 2016/679 du Parlement Européen et du Conseil, du 27 avril 2016, relatif à la protection des personnes physiques en ce qui concerne le traitement des données personnelles, par lequel est abrogée la directive 95/46/CE (ci-après, RGPD), de la Loi 34/2002, du 11 juillet, de services de la société de l'information et de commerce électronique (ci-après, LSSI-CE) et de la Loi Organique 3/2018, sur la Protection des Données Personnelles et garantie des droits numériques, TIGAFAB, S.L. garantit la protection et la confidentialité des données personnelles, de tout type que nous fournissent nos clients, conformément aux dispositions du Règlement Général sur la Protection des Données Personnelles.</p>
+<p>La Politique de Protection des Données de TIGAFAB, S.L. repose sur le principe de responsabilité proactive, selon lequel le Responsable du traitement est responsable du respect du cadre normatif et jurisprudentiel, étant capable de le démontrer devant les autorités de contrôle correspondantes.</p>
+<p>Les données fournies seront traitées dans les termes établis dans le RGPD, en ce sens TIGAFAB, S.L. a adopté les niveaux de protection qui sont légalement exigés, et a installé toutes les mesures techniques à sa portée pour éviter la perte, le mauvais usage, l'altération, l'accès non autorisé par des tiers, exposés ci-dessous. Cependant, l'utilisateur doit être conscient que les mesures de sécurité sur Internet ne sont pas imprenables.</p>
 
-<h3>Responsable du traitement</h3>
-<p><strong>FATIMA BENAMAR BAHAMAD</strong>, avec NIF : X2474479H et domicile à Calle de las Ciencias 51, 28942 Fuenlabrada (Madrid).</p>
+<h3>Responsable du traitement: Qui sommes-nous?</h3>
+<p>Dénomination: TIGAFAB, S.L. CIF: B86142155 Activité: Adresse: C/ DE LAS CIENCIAS, 51, 28942. FUENLABRADA, MADRID Téléphone: 663114546 Courrier électronique: rgpd@tigafab-traductores.com Nous sommes une société inscrite au Registre du Commerce de MADRID; Tome xxxxx; Folio xxxx; Section XXXX; Feuille XXXXX;</p>
 
-<h3>Finalité du traitement</h3>
-<p>Maintien de la relation commerciale et exécution des tâches d'information, de traduction, de gestion documentaire et d'autres activités propres à Tigafab S.L.</p>
+<h3>Finalité du traitement: Pour quoi utiliserons-nous vos données?</h3>
+<p>Toutes les données fournies par nos clients et/ou visiteurs sur le site web de TIGAFAB, S.L. ou à son personnel, seront incluses dans un registre d'activités de traitement de données personnelles, créé et maintenu sous la responsabilité de TIGAFAB, S.L., indispensables pour fournir les services demandés par les utilisateurs, ou pour résoudre les doutes ou questions posées par nos visiteurs. Notre politique est de ne pas élaborer de profils sur les utilisateurs de nos services.</p>
 
-<h3>Légitimation</h3>
-<p>Le traitement de vos données est effectué sur les bases juridiques suivantes : la demande d'information et/ou la souscription des services de TIGAFAB S.L.</p>
+<h3>Légitimité du traitement: Pourquoi avons-nous besoin de vos données?</h3>
+<p>a) Relation contractuelle: C'est celle qui s'applique lorsque vous achetez l'un de nos produits ou contractez l'un de nos services.<br>
+b) Intérêt légitime: Pour répondre aux consultations et réclamations que vous nous posez et pour gérer le recouvrement des sommes dues.<br>
+c) Votre consentement: Si vous êtes utilisateur de notre site web, en cochant la case qui figure dans le formulaire de contact, vous nous autorisez à vous envoyer les communications nécessaires pour répondre à la consultation ou demande d'information posée.</p>
 
-<h3>Droits</h3>
-<p>Toute personne a le droit d'obtenir la confirmation que nous traitons ou non ses données. Les personnes concernées ont le droit d'accéder à leurs données personnelles, ainsi que de demander la rectification de données inexactes ou, le cas échéant, de demander leur suppression.</p>
+<h3>Destinataires: Avec qui partageons-nous vos données?</h3>
+<p>Nous ne cédons pas vos données personnelles à personne, sauf à ces entités publiques ou privées auxquelles nous sommes obligés de fournir vos données personnelles en raison du respect de quelque loi. Pour donner un exemple, la Loi Fiscale oblige à fournir à l'Agence Fiscale certaines informations sur les opérations économiques qui dépassent une certaine quantité.</p>
+<p>Dans le cas où, en plus des cas commentés, nous aurions besoin de donner à connaître votre information personnelle à d'autres entités, nous solliciterons préalablement votre permission à travers des options claires qui vous permettront de décider à cet égard.</p>
 
-<h3>Politique de Cookies</h3>
-<p>Le site web utilise des cookies techniques et de tiers (Google Analytics) pour améliorer l'expérience de navigation. Vous pouvez configurer votre navigateur pour empêcher l'installation de cookies, bien que cela puisse affecter le fonctionnement du web.</p>"""
+<h3>Communication: Où pourrions-nous envoyer vos données?</h3>
+<p>Nous ne réaliserons pas de transferts internationaux de vos données personnelles pour aucune des finalités indiquées.</p>
+
+<h3>Conservation: Combien de temps maintiendrons-nous vos données?</h3>
+<p>Nous ne conserverons vos données personnelles que pendant le temps nécessaire pour atteindre les fins pour lesquelles elles ont été recueillies. Au moment de déterminer la période de conservation appropriée, nous examinons les risques que comporte le traitement, ainsi que nos obligations contractuelles, légales et normatives, les politiques internes de conservation de données et nos intérêts d'affaires légitimes décrits dans le présent Avis de Confidentialité et Politique de Cookies.</p>
+<p>Dans ce sens, TIGAFAB, S.L. conservera les données personnelles une fois terminée sa relation avec vous, dûment bloquées, pendant le délai de prescription des actions qui pourraient dériver de la relation maintenue avec l'intéressé.</p>
+<p>Une fois bloquées, vos données seront inaccessibles pour TIGAFAB, S.L., et ne seront pas traitées sauf pour leur mise à disposition aux Administrations publiques, Juges et Tribunaux, pour l'attention des possibles responsabilités nées des traitements, ainsi que pour l'exercice et la défense de réclamations devant l'Agence Espagnole de Protection des Données.</p>
+
+<h3>Sécurité: Comment allons-nous protéger vos données?</h3>
+<p>Nous employons tous les efforts raisonnables pour maintenir la confidentialité de l'information personnelle qui est traitée dans nos systèmes. Nous maintenons des niveaux de sécurité stricts pour protéger les données personnelles que nous traitons face aux pertes fortuites et aux accès, traitements ou révélations non autorisés, compte tenu de l'état de la technologie, la nature et les risques auxquels les données sont exposées. Cependant, nous ne pouvons pas nous responsabiliser de l'usage que vous fassiez des données (y compris utilisateur et mot de passe) que vous utilisez sur notre site web. Notre personnel suit des normes strictes de confidentialité et dans le cas où nous contractons à des tiers pour fournir des services de support, nous leur exigeons qu'ils respectent les mêmes normes et nous permettent de les auditer pour vérifier leur respect.</p>
+
+<h3>Vos droits: Quels droits pouvez-vous exercer comme intéressé?</h3>
+<p>Nous vous informons que vous pourrez exercer les droits suivants:<br>
+a) Droit d'accès à vos données personnelles, pour savoir lesquelles sont en cours de traitement et les opérations de traitement réalisées avec elles;<br>
+b) Droit de rectification de toute donnée personnelle inexacte;<br>
+c) Droit de suppression de vos données personnelles, quand cela est possible (par exemple, par impératif légal);<br>
+d) Droit de limitation du traitement de vos données personnelles quand l'exactitude, la légalité ou la nécessité du traitement des données résulte douteuse, dans ce cas, nous pourrons les conserver pour l'exercice ou la défense de réclamations.<br>
+e) Droit d'opposition au traitement de vos données personnelles, quand la base légale qui nous habilite pour leur traitement des indiquées est notre intérêt légitime. TIGAFAB, S.L. cessera de traiter vos données sauf si elle a un intérêt légitime ou est nécessaire pour la défense de réclamations.<br>
+f) Droit à la portabilité de vos données, quand la base légale qui nous habilite pour leur traitement est l'existence d'une relation contractuelle ou votre consentement.<br>
+g) Droit de révoquer le consentement accordé à TIGAFAB, S.L.</p>
+<p>Pour exercer vos droits, vous pouvez le faire de manière gratuite et à tout moment, en nous contactant à l'adresse C/ DE LAS CIENCIAS, 51, 28942. FUENLABRADA, MADRID, en joignant une copie de votre DNI.</p>
+
+<h3>Tutelle des droits: Où pouvez-vous formuler une réclamation?</h3>
+<p>Dans le cas où vous comprenez que vos droits ont été méconnus par notre entité, vous pouvez formuler une réclamation à l'Agence Espagnole de Protection des Données, à travers l'un des moyens suivants:<br>
+.- Siège électronique: https://www.aepd.es<br>
+.- Courrier postal: Agence Espagnole de Protection des Données, C/ Jorge Juan, 6, 28001, Madrid<br>
+.- Téléphone: 901.100.099 et 912.663.517</p>
+<p>Formuler une réclamation à l'Agence Espagnole de Protection des Données n'entraîne aucun coût et n'est pas nécessaire l'assistance d'avocat ni de procureur.</p>"""
 
 LEGAL_BODY_DE = """<h3>1.- DATEN DES VERANTWORTLICHEN EIGENTÜMERS DER WEBSITE</h3>
 <p>In Übereinstimmung mit den Bestimmungen des Gesetzes 34/2002 über Dienste der Informationsgesellschaft und den elektronischen Geschäftsverkehr wird mitgeteilt, dass der Eigentümer dieser Website <strong>TIGAFAB, S.L.</strong> ist, mit der N.I.F. B84063854 und dem eingetragenen Sitz in C/ de las Ciencias 51, 28942 Fuenlabrada, Madrid. Eingetragen im Handelsregister von Madrid am 22. Dezember 2004, Band 20.785, Folio 166, Abteilung 8, Blatt M-368536.</p>

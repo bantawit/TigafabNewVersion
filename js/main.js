@@ -175,7 +175,9 @@ window.onload = function() {
         }
     }
 
-    // Language selector: maintain current page when switching language
+    // Language selector: maintain current page when switching language (DISABLED)
+    // This feature was causing issues with language switching
+    /*
     if (langDropdown) {
         const currentPage = window.location.pathname.split('/').pop() || 'index.html';
         const currentPath = window.location.pathname;
@@ -217,6 +219,7 @@ window.onload = function() {
             }
         });
     }
+    */
 
     console.log(`Tigafab Engine Ready ✓ | ${yearsExp} años de experiencia`);
 };
