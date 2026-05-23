@@ -300,6 +300,7 @@ h1, h2, h3 { font-family: var(--font-heading); }
     .nav-toggle {
         display: flex;
         order: -1;   /* Move hamburger before logo */
+        margin-right: 1rem;
     }
     .logo {
         order: 0;       /* Logo in the middle */
@@ -308,6 +309,7 @@ h1, h2, h3 { font-family: var(--font-heading); }
     .nav-actions {
         order: 1;       /* Language selector last (right) */
         margin-inline-start: auto;
+        margin-left: 1rem;
     }
 
     /* Mobile menu panel - uses transform so RTL override is clean */

@@ -23,10 +23,12 @@ def get_review_cards(lang_dict):
     cards = "".join([f'<div class="review-card-premium"><div style="color:#c2a35d; margin-bottom:1.1rem;"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div><p>{txt}</p><div style="font-weight:700; color:var(--primary); font-size:0.9rem; border-top:1px solid rgba(255,255,255,0.1); padding-top:1rem;">{name}</div></div>' for name, txt in reviews_list])
     return cards * 2 # Infinite loop effect (duplicate once for -50% translateX)
 
-def get_clients_html(rel_path):
+def get_clients_html(rel_path, limit=None):
     client_dir = os.path.join(BASE_DIR, "img/clients")
     if not os.path.exists(client_dir): return ""
     imgs = sorted([f for f in os.listdir(client_dir) if f.lower().endswith(('.png', '.jpg', '.jpeg', '.gif'))])
+    if limit:
+        imgs = imgs[:limit]
     return "".join([f'<div class="client-logo-box" data-aos="zoom-in"><img src="{rel_path}img/clients/{img}" alt="Cliente Tigafab"></div>' for img in imgs])
 
 def generate_page(lang, filename, title_key, content):
@@ -54,7 +56,7 @@ for lang in LANG_FOLDERS:
     
     <section class="bg-home-clients" style="padding:5rem 0 10rem 0;"><div class="container">
     <div style="text-align:center; margin-bottom:5rem;" data-aos="fade-up"><h2>t-clients-title</h2><p style="letter-spacing:2px; font-weight:700; color:var(--primary);">t-clients-subtitle</p></div>
-    <div class="clients-grid" style="opacity:0.8;">{get_clients_html(rel_path)}</div>
+    <div class="clients-grid" style="opacity:0.8;">{get_clients_html(rel_path, limit=10)}</div>
     <div style="text-align:center; margin-top:4rem;"><a href="clientes.html" class="btn-premium" style="padding:1rem 2rem; font-size:0.9rem;">t-clients-btn</a></div>
     </div></section>
 
