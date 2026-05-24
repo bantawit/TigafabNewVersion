@@ -573,7 +573,7 @@ TRANSLATIONS = {
             ("Empresa K. (Google)", "Puntualidad británica y un nivel de confidencialidad brutal. Trabajar con doña Fátima tranquiliza todas nuestras gestiones internacionales."),
             ("Youssef L. (Google)", "No hay competencia real en los plazos que manejan. Todo el paquete de traducciones juradas del Árabe listo impecablemente.")
         ],
-        'footer_rights': "© 2026 TIGAFAB S.L. Oficina de Traducción Jurada.", 'footer_credits': "Desarrollado por SynthiaOps",
+        'footer_rights': "© 2026 TIGAFAB S.L. Agencia de Traducción Legal y Jurada. All Rights Reserved.", 'footer_credits': "Desarrollado por SynthiaOps",
         'legal_title': "Aviso Legal", 'privacy_title': "Privacidad y Cookies",
         'legal_body': LEGAL_BODY_ES,
         'privacy_body': PRIVACY_BODY_ES
@@ -696,7 +696,7 @@ TRANSLATIONS = {
             ("الشركة K. (Google)", "دقة بريطانية ومستوى عالٍ جدًا من السرية. العمل مع السيدة فاطمة يطمئن جميع إجراءاتنا الدولية."),
             ("يوسف ل. (Google)", "لا توجد منافسة حقيقية في المواعيد النهائية التي يلتزمون بها. كانت حزمة الترجمة المحلفة للغة العربية جاهزة بشكل لا تشوبه شائبة.")
         ],
-        'footer_rights': "© ٢٠٢٦ تيجافاب. مكتب ترجمة دولي معتمد.", 'footer_credits': "تم التطوير بواسطة SynthiaOps",
+        'footer_rights': "© ٢٠٢٦ تيجافاب. وكالة ترجمة قانونية ومعتمدة. جميع الحقوق محفوظة.", 'footer_credits': "تم التطوير بواسطة SynthiaOps",
         'legal_title': "إشعار قانوني", 'privacy_title': "الخصوصية وملفات تعريف الارتباط",
     },
     'en': {
@@ -817,7 +817,7 @@ TRANSLATIONS = {
             ("Company K. (Google)", "British punctuality and a brutal level of confidentiality. Working with Ms. Fatima reassures all our international procedures."),
             ("Youssef L. (Google)", "There is no real competition in the deadlines they handle. The entire package of sworn Arabic translations was impeccably ready.")
         ],
-        'footer_rights': "© 2026 TIGAFAB S.L. Official Translation Office.", 'footer_credits': "Developed by SynthiaOps",
+        'footer_rights': "© 2026 TIGAFAB S.L. Legal and Sworn Translation Agency. All Rights Reserved.", 'footer_credits': "Developed by SynthiaOps",
         'legal_title': "Legal Notice", 'privacy_title': "Privacy and Cookies",
     },
     'fr': {
@@ -937,7 +937,7 @@ TRANSLATIONS = {
         'info_email_title': "Emails", 'info_emails': ["fatima@tigafab-traductores.com"],
         'info_phone_title': "Téléphones", 'info_phones': ["+34 663 11 45 46"],
         'form_name': "Nom Complet", 'form_email': "Email Address", 'form_phone': "Téléphone", 'form_message': "Message...", 'form_file': "Joindre un document (facultatif)", 'form_file_text': "Choisir un fichier", 'form_btn': "ENVIAR LA DEMANDE", 'whatsapp_disabled': "WhatsApp temporairement hors service",
-        'footer_rights': "© 2026 TIGAFAB S.L. Bureau de Traduction Assermentée.", 'footer_credits': "Développé par SynthiaOps",
+        'footer_rights': "© 2026 TIGAFAB S.L. Agence de Traduction Légale et Assermentée. Tous droits réservés.", 'footer_credits': "Développé par SynthiaOps",
         'legal_title': "Mentions Légales", 'privacy_title': "Confidentialité et Cookies"
     },
     'de': {
@@ -1042,7 +1042,7 @@ TRANSLATIONS = {
             ("Empresa K. (Google)", "Britische Pünktlichkeit und ein enormes Maß an Vertraulichkeit. Die Zusammenarbeit mit Frau Fatima beruhigt alle unsere internationalen Abläufe."),
             ("Youssef L. (Google)", "Es gibt keine wirkliche Konkurrenz bei den Fristen, die sie einhalten. Das gesamte Paket der beglaubigten Arabisch-Übersetzungen war tadellos fertig.")
         ],
-        'footer_rights': "© 2026 TIGAFAB S.L. Büro für beglaubigte Übersetzungen.", 'footer_credits': "Entwickelt von SynthiaOps",
+        'footer_rights': "© 2026 TIGAFAB S.L. Rechts- und beeidigte Übersetzungsagentur. Alle Rechte vorbehalten.", 'footer_credits': "Entwickelt von SynthiaOps",
         'legal_title': "Impressum", 'privacy_title': "Datenschutz und Cookies"
     }
 }

@@ -607,6 +607,11 @@ h1, h2, h3 { font-family: var(--font-heading); }
     justify-content: center;
     filter: grayscale(1) opacity(0.6);
     transition: transform 0.3s ease;
+    border-radius: 25px;
+    padding: 8px;
+    background: rgba(255,255,255,0.03);
+    border: 1px solid rgba(255,255,255,0.08);
+    overflow: hidden;
 }
 
 .map-box-premium {
@@ -640,12 +645,17 @@ h1, h2, h3 { font-family: var(--font-heading); }
 
 .client-logo-box:hover {
     filter: grayscale(0) opacity(1);
-    transform: scale(1.1);
+    transform: scale(1.3);
+    z-index: 10;
+    background: rgba(255,255,255,0.1);
+    border-color: rgba(194,163,93,0.5);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
 }
 .client-logo-box img {
     max-width: 100%;
     max-height: 100%;
     object-fit: contain;
+    border-radius: 10px;
 }
 
 [data-theme="light"] .hero-home {
