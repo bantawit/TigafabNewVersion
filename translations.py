@@ -573,7 +573,7 @@ TRANSLATIONS = {
             ("Empresa K. (Google)", "Puntualidad británica y un nivel de confidencialidad brutal. Trabajar con doña Fátima tranquiliza todas nuestras gestiones internacionales."),
             ("Youssef L. (Google)", "No hay competencia real en los plazos que manejan. Todo el paquete de traducciones juradas del Árabe listo impecablemente.")
         ],
-        'footer_rights': "© 2026 TIGAFAB S.L. Agencia de Traducción Legal y Jurada. All Rights Reserved.", 'footer_credits': "Desarrollado por SynthiaOps",
+        'footer_rights': "© 2026 TIGAFAB S.L. Agencia de Traducción Jurídica y Jurada. All Rights Reserved.", 'footer_credits': "Desarrollado por SynthiaOps",
         'legal_title': "Aviso Legal", 'privacy_title': "Privacidad y Cookies",
         'legal_body': LEGAL_BODY_ES,
         'privacy_body': PRIVACY_BODY_ES
