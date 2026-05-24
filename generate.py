@@ -54,6 +54,67 @@ for lang in LANG_FOLDERS:
     home = f"""<section class="hero hero-home"><div class="container" data-aos="fade-up"><p>t-hero-subtitle</p><h1>t-hero-title</h1><a href="contacto.html" class="btn-premium">t-home-cta-btn</a></div></section>
     <section class="bg-home-about" style="padding:10rem 0;"><div class="container" style="max-width:1150px;"><div style="display:grid; grid-template-columns:1.2fr 1fr; gap:5rem; align-items:start;"><div data-aos="fade-right"><h2>t-home-section-title</h2><p style="font-size:1.3rem; line-height:1.8; margin-bottom:2.5rem;">t-h1</p><div style="background:rgba(194,163,93,0.1); border-left:4px solid var(--primary); padding:2.5rem; margin-bottom:2.5rem;"><p style="font-size:1.5rem; font-weight:700; color:var(--primary); margin-bottom:1rem;">t-h2</p><p style="color:#f8fafc; font-size:1.1rem; line-height:1.6;">t-h3</p></div><p style="font-style:italic; color:#94a3b8; font-size:1.1rem;">t-h4</p></div><div data-aos="fade-left" style="background:rgba(255,255,255,0.02); border:1px solid var(--glass-border); padding:3.5rem; border-radius:24px; box-shadow: 0 10px 30px rgba(0,0,0,0.2);"><p style="margin-bottom:2.5rem; font-size:1.2rem; color:#f8fafc; line-height:1.8;">t-h5</p><div style="text-align:center; margin:2rem 0;"><img src="{rel_path}img/maec-logo.png" alt="Ministerio de Asuntos Exteriores, Unión Europea y Cooperación" style="max-width:300px; height:auto;"></div><p style="font-size:1.2rem; color:#94a3b8; line-height:1.8;">t-h6</p></div></div></div></section>
     
+    <section style="padding:8rem 0; background: linear-gradient(135deg, rgba(194,163,93,0.05) 0%, rgba(15,23,42,0.8) 100%);"><div class="container">
+    <div style="text-align:center; margin-bottom:5rem;" data-aos="fade-up"><h2 style="font-size:2.5rem; margin-bottom:1rem; color:white;">t-benefit-title</h2></div>
+    <div style="display:grid; grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); gap:2rem;">
+        <div class="benefit-card" data-aos="fade-up" data-aos-delay="100" style="background:rgba(255,255,255,0.03); border:1px solid var(--glass-border); padding:3rem; border-radius:20px; transition: all 0.3s ease; cursor:pointer;" onmouseover="this.style.transform='translateY(-5px)'; this.style.borderColor='var(--primary)';" onmouseout="this.style.transform='translateY(0)'; this.style.borderColor='var(--glass-border)';">
+            <div style="display:flex; align-items:center; gap:1.5rem; margin-bottom:1.5rem;">
+                <i class="fas fa-award" style="font-size:2.5rem; color:var(--primary);"></i>
+                <h3 style="font-size:1.5rem; color:white;">t-benefit-1-title</h3>
+            </div>
+            <p style="color:#94a3b8; font-size:1.1rem;">t-benefit-1-desc</p>
+        </div>
+        <div class="benefit-card" data-aos="fade-up" data-aos-delay="150" style="background:rgba(255,255,255,0.03); border:1px solid var(--glass-border); padding:3rem; border-radius:20px; transition: all 0.3s ease; cursor:pointer;" onmouseover="this.style.transform='translateY(-5px)'; this.style.borderColor='var(--primary)';" onmouseout="this.style.transform='translateY(0)'; this.style.borderColor='var(--glass-border)';">
+            <div style="display:flex; align-items:center; gap:1.5rem; margin-bottom:1.5rem;">
+                <i class="fas fa-gem" style="font-size:2.5rem; color:var(--primary);"></i>
+                <h3 style="font-size:1.5rem; color:white;">t-benefit-2-title</h3>
+            </div>
+            <p style="color:#94a3b8; font-size:1.1rem;">t-benefit-2-desc</p>
+        </div>
+        <div class="benefit-card" data-aos="fade-up" data-aos-delay="200" style="background:rgba(255,255,255,0.03); border:1px solid var(--glass-border); padding:3rem; border-radius:20px; transition: all 0.3s ease; cursor:pointer;" onmouseover="this.style.transform='translateY(-5px)'; this.style.borderColor='var(--primary)';" onmouseout="this.style.transform='translateY(0)'; this.style.borderColor='var(--glass-border)';">
+            <div style="display:flex; align-items:center; gap:1.5rem; margin-bottom:1.5rem;">
+                <i class="fas fa-certificate" style="font-size:2.5rem; color:var(--primary);"></i>
+                <h3 style="font-size:1.5rem; color:white;">t-benefit-3-title</h3>
+            </div>
+            <p style="color:#94a3b8; font-size:1.1rem;">t-benefit-3-title</p>
+        </div>
+        <div class="benefit-card" data-aos="fade-up" data-aos-delay="250" style="background:rgba(255,255,255,0.03); border:1px solid var(--glass-border); padding:3rem; border-radius:20px; transition: all 0.3s ease; cursor:pointer;" onmouseover="this.style.transform='translateY(-5px)'; this.style.borderColor='var(--primary)';" onmouseout="this.style.transform='translateY(0)'; this.style.borderColor='var(--glass-border)';">
+            <div style="display:flex; align-items:center; gap:1.5rem; margin-bottom:1.5rem;">
+                <i class="fas fa-handshake" style="font-size:2.5rem; color:var(--primary);"></i>
+                <h3 style="font-size:1.5rem; color:white;">t-benefit-4-title</h3>
+            </div>
+            <p style="color:#94a3b8; font-size:1.1rem;">t-benefit-4-desc</p>
+        </div>
+        <div class="benefit-card" data-aos="fade-up" data-aos-delay="300" style="background:rgba(255,255,255,0.03); border:1px solid var(--glass-border); padding:3rem; border-radius:20px; transition: all 0.3s ease; cursor:pointer;" onmouseover="this.style.transform='translateY(-5px)'; this.style.borderColor='var(--primary)';" onmouseout="this.style.transform='translateY(0)'; this.style.borderColor='var(--glass-border)';">
+            <div style="display:flex; align-items:center; gap:1.5rem; margin-bottom:1.5rem;">
+                <i class="fas fa-tags" style="font-size:2.5rem; color:var(--primary);"></i>
+                <h3 style="font-size:1.5rem; color:white;">t-benefit-5-title</h3>
+            </div>
+            <p style="color:#94a3b8; font-size:1.1rem;">t-benefit-5-desc</p>
+        </div>
+        <div class="benefit-card" data-aos="fade-up" data-aos-delay="350" style="background:rgba(255,255,255,0.03); border:1px solid var(--glass-border); padding:3rem; border-radius:20px; transition: all 0.3s ease; cursor:pointer;" onmouseover="this.style.transform='translateY(-5px)'; this.style.borderColor='var(--primary)';" onmouseout="this.style.transform='translateY(0)'; this.style.borderColor='var(--glass-border)';">
+            <div style="display:flex; align-items:center; gap:1.5rem; margin-bottom:1.5rem;">
+                <i class="fas fa-clock" style="font-size:2.5rem; color:var(--primary);"></i>
+                <h3 style="font-size:1.5rem; color:white;">t-benefit-6-title</h3>
+            </div>
+            <p style="color:#94a3b8; font-size:1.1rem;">t-benefit-6-desc</p>
+        </div>
+        <div class="benefit-card" data-aos="fade-up" data-aos-delay="400" style="background:rgba(255,255,255,0.03); border:1px solid var(--glass-border); padding:3rem; border-radius:20px; transition: all 0.3s ease; cursor:pointer;" onmouseover="this.style.transform='translateY(-5px)'; this.style.borderColor='var(--primary)';" onmouseout="this.style.transform='translateY(0)'; this.style.borderColor='var(--glass-border)';">
+            <div style="display:flex; align-items:center; gap:1.5rem; margin-bottom:1.5rem;">
+                <i class="fas fa-shield-alt" style="font-size:2.5rem; color:var(--primary);"></i>
+                <h3 style="font-size:1.5rem; color:white;">t-benefit-7-title</h3>
+            </div>
+            <p style="color:#94a3b8; font-size:1.1rem;">t-benefit-7-desc</p>
+        </div>
+        <div class="benefit-card" data-aos="fade-up" data-aos-delay="450" style="background:rgba(255,255,255,0.03); border:1px solid var(--glass-border); padding:3rem; border-radius:20px; transition: all 0.3s ease; cursor:pointer;" onmouseover="this.style.transform='translateY(-5px)'; this.style.borderColor='var(--primary)';" onmouseout="this.style.transform='translateY(0)'; this.style.borderColor='var(--glass-border)';">
+            <div style="display:flex; align-items:center; gap:1.5rem; margin-bottom:1.5rem;">
+                <i class="fas fa-headset" style="font-size:2.5rem; color:var(--primary);"></i>
+                <h3 style="font-size:1.5rem; color:white;">t-benefit-8-title</h3>
+            </div>
+            <p style="color:#94a3b8; font-size:1.1rem;">t-benefit-8-desc</p>
+        </div>
+    </div></div></section>
+    
     <section class="bg-home-clients" style="padding:5rem 0 10rem 0;"><div class="container">
     <div style="text-align:center; margin-bottom:5rem;" data-aos="fade-up"><h2>t-clients-title</h2><p style="letter-spacing:2px; font-weight:700; color:var(--primary);">t-clients-subtitle</p></div>
     <div class="clients-grid" style="opacity:0.8;">{get_clients_html(rel_path, limit=10)}</div>
@@ -72,7 +133,7 @@ for lang in LANG_FOLDERS:
             <div class="fatima-overlay" style="position:absolute; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.4); z-index:0; transition: opacity 0.3s ease;"></div>
             <div class="fatima-content" style="position:relative; z-index:1; transition: opacity 0.3s ease;">
                 <h2 style="font-size:1.8rem; margin-bottom:0.5rem; color:white;">t-about-name</h2>
-                <p style="color:var(--primary); font-weight:700; font-size:1.1rem; margin-bottom:2rem;">t-about-role</p>
+                <p style="color:var(--primary); font-weight:700; font-size:1.1rem; margin-bottom:0;">t-about-role</p>
                 <div style="border-top:1px solid rgba(255,255,255,0.1); padding-top:2rem;">
                     <p style="color:white !important; line-height:1.8;">t-about-text</p>
                 </div>

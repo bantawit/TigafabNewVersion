@@ -293,7 +293,7 @@ window.translations = {
     btn_back: "Retour aux Services",
     
     hero_title: "Traduction & Interprétation",
-    hero_subtitle: "Arabe, Espagnol, Anglais, Allemand et Français",
+    hero_subtitle: "Árabe, Espagnol, Anglais, Allemand et Français",
     hero_desc: "Traductrice, interprète, gestionnaire de documents commerciaux, visas et consultante.",
     
     home_welcome: "Bienvenue sur notre site",
