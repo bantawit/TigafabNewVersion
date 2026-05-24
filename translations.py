@@ -46,7 +46,7 @@ PRIVACY_BODY_ES = """<h3>POLÍTICA DE PRIVACIDAD Y PROTECCIÓN DE DATOS</h3>
 <p>Los datos facilitados serán tratados en los términos establecidos en el RGPD, en este sentido TIGAFAB, S.L. ha adoptado los niveles de protección que legalmente se exigen, y ha instalado todas las medidas técnicas a su alcance para evitar la pérdida, mal uso, alteración, acceso no autorizado por terceros, expuestos a continuación. No obstante, el usuario debe ser consciente de que las medidas de seguridad en Internet no son inexpugnables.</p>
 
 <h3>Responsable del tratamiento: ¿Quiénes somos?</h3>
-<p>Denominación: TIGAFAB, S.L. CIF: B86142155 Actividad: Dirección: C/ DE LAS CIENCIAS, 51, 28942. FUENLABRADA, MADRID Teléfono: 663114546 Correo electrónico: rgpd@tigafab-traductores.com Somos una sociedad inscrita en el Registro Mercantil de MADRID; Tomo xxxxx; Folio xxxx; Sección XXXX; Hoja XXXXX;</p>
+<p>Denominación: TIGAFAB, S.L. CIF: B86142155 Actividad: Dirección: C/ DE LAS CIENCIAS, 51, 28942. FUENLABRADA, MADRID Teléfono: 663114546 Correo electrónico: rgpd@tigafab-traductores.com Somos una sociedad inscrita en el Registro Mercantil de MADRID; Tomo 28612; Libro 0; Folio 136; Sección 8; Hoja M-515226;</p>
 
 <h3>Finalidad del tratamiento: ¿Para qué usaremos sus datos?</h3>
 <p>Todos los datos facilitados por nuestros clientes y/o visitantes en la web de TIGAFAB, S.L. o a su personal, serán incluidos en registro de actividades de tratamiento de datos de carácter personal, creado y mantenido bajo la responsabilidad de TIGAFAB, S.L., imprescindibles para prestar los servicios solicitados por los usuarios, o para resolver las dudas o cuestiones planteadas por nuestros visitantes. Nuestra política es no elaborar perfiles sobre los usuarios de nuestros servicios.</p>
@@ -187,7 +187,7 @@ PRIVACY_BODY_EN = """<h3>PRIVACY AND DATA PROTECTION POLICY</h3>
 <p>The data provided will be processed in the terms established in the GDPR, in this sense TIGAFAB, S.L. has adopted the levels of protection that are legally required, and has installed all the technical measures within its reach to avoid loss, misuse, alteration, unauthorized access by third parties, exposed below. However, the user must be aware that security measures on the Internet are not impregnable.</p>
 
 <h3>Data Controller: Who are we?</h3>
-<p>Name: TIGAFAB, S.L. CIF: B86142155 Activity: Address: C/ DE LAS CIENCIAS, 51, 28942. FUENLABRADA, MADRID Phone: 663114546 Email: rgpd@tigafab-traductores.com We are a company registered in the Mercantile Registry of MADRID; Volume xxxxx; Folio xxxx; Section XXXX; Sheet XXXXX;</p>
+<p>Name: TIGAFAB, S.L. CIF: B86142155 Activity: Address: C/ DE LAS CIENCIAS, 51, 28942. FUENLABRADA, MADRID Phone: 663114546 Email: rgpd@tigafab-traductores.com We are a company registered in the Mercantile Registry of MADRID; Volume 28612; Book 0; Folio 136; Section 8; Sheet M-515226;</p>
 
 <h3>Purpose of the processing: What will we use your data for?</h3>
 <p>All data provided by our clients and/or visitors on the TIGAFAB, S.L. website or to its staff will be included in a register of personal data processing activities, created and maintained under the responsibility of TIGAFAB, S.L., essential to provide the services requested by users, or to resolve doubts or questions raised by our visitors. Our policy is not to elaborate profiles on users of our services.</p>
@@ -278,7 +278,7 @@ PRIVACY_BODY_AR = """<h3>سياسة الخصوصية وحماية البيانا
 <p>سيتم معالجة البيانات المقدمة في الشروط المنصوص عليها في RGPD، وبهذا المعنى تبنت شركة تيجافاب (TIGAFAB, S.L.) مستويات الحماية المطلوبة قانونياً، وركبت جميع التدابير التقنية في متناولها لتجنب فقدان البيانات أو سوء استخدامها أو تغييرها أو الوصول غير المصرح به من قبل أطراف ثالثة، كما هو موضح أدناه. ومع ذلك، يجب أن يكون المستخدم واعياً بأن تدابير الأمن على الإنترنت ليست منيعة.</p>
 
 <h3>المسؤول عن المعالجة: من نحن؟</h3>
-<p>الاسم: تيجافاب (TIGAFAB, S.L.) الرقم الضريبي: B86142155 النشاط: العنوان: C/ DE LAS CIENCIAS, 51, 28942. FUENLABRADA, MADRID الهاتف: 663114546 البريد الإلكتروني: rgpd@tigafab-traductores.com نحن شركة مسجلة في السجل التجاري بمدريد؛ المجلد xxxxx؛ الصفحة xxxx؛ القسم XXXX؛ الورقة XXXXX؛</p>
+<p>الاسم: تيجافاب (TIGAFAB, S.L.) الرقم الضريبي: B86142155 النشاط: العنوان: C/ DE LAS CIENCIAS, 51, 28942. FUENLABRADA, MADRID الهاتف: 663114546 البريد الإلكتروني: rgpd@tigafab-traductores.com نحن شركة مسجلة في السجل التجاري بمدريد؛ المجلد 28612؛ الكتاب 0؛ الصفحة 136؛ القسم 8؛ الورقة M-515226؛</p>
 
 <h3>الغرض من المعالجة: ماذا سنستخدم بياناتك لأجله؟</h3>
 <p>جميع البيانات المقدمة من قبل عملائنا و/أو الزوار على موقع شركة تيجافاب (TIGAFAB, S.L.) أو إلى موظفيها، ستدرج في سجل أنشطة معالجة البيانات الشخصية، تم إنشاؤه وصيانته تحت مسؤولية شركة تيجافاب (TIGAFAB, S.L.)، وهو أمر ضروري لتقديم الخدمات المطلوبة من قبل المستخدمين، أو لحل الشكوك أو الأسئلة التي يطرحها زوارنا. سياستنا هي عدم وضع ملفات تعريف للمستخدمين لخدماتنا.</p>
@@ -369,7 +369,7 @@ PRIVACY_BODY_FR = """<h3>POLITIQUE DE CONFIDENTIALITÉ ET PROTECTION DES DONNÉE
 <p>Les données fournies seront traitées dans les termes établis dans le RGPD, en ce sens TIGAFAB, S.L. a adopté les niveaux de protection qui sont légalement exigés, et a installé toutes les mesures techniques à sa portée pour éviter la perte, le mauvais usage, l'altération, l'accès non autorisé par des tiers, exposés ci-dessous. Cependant, l'utilisateur doit être conscient que les mesures de sécurité sur Internet ne sont pas imprenables.</p>
 
 <h3>Responsable du traitement: Qui sommes-nous?</h3>
-<p>Dénomination: TIGAFAB, S.L. CIF: B86142155 Activité: Adresse: C/ DE LAS CIENCIAS, 51, 28942. FUENLABRADA, MADRID Téléphone: 663114546 Courrier électronique: rgpd@tigafab-traductores.com Nous sommes une société inscrite au Registre du Commerce de MADRID; Tome xxxxx; Folio xxxx; Section XXXX; Feuille XXXXX;</p>
+<p>Dénomination: TIGAFAB, S.L. CIF: B86142155 Activité: Adresse: C/ DE LAS CIENCIAS, 51, 28942. FUENLABRADA, MADRID Téléphone: 663114546 Courrier électronique: rgpd@tigafab-traductores.com Nous sommes une société inscrite au Registre du Commerce de MADRID; Tome 28612; Livre 0; Folio 136; Section 8; Feuille M-515226;</p>
 
 <h3>Finalité du traitement: Pour quoi utiliserons-nous vos données?</h3>
 <p>Toutes les données fournies par nos clients et/ou visiteurs sur le site web de TIGAFAB, S.L. ou à son personnel, seront incluses dans un registre d'activités de traitement de données personnelles, créé et maintenu sous la responsabilité de TIGAFAB, S.L., indispensables pour fournir les services demandés par les utilisateurs, ou pour résoudre les doutes ou questions posées par nos visiteurs. Notre politique est de ne pas élaborer de profils sur les utilisateurs de nos services.</p>
@@ -461,7 +461,7 @@ TRANSLATIONS = {
         'hero_title': "Excelencia en Traducción", 'hero_subtitle': "ÁRABE • ESPAÑOL • INGLÉS • FRANCÉS",
         'home_cta_btn': "SOLICITAR PRESUPUESTO",
         'clients_title': "Nuestros Clientes",
-        'clients_subtitle': "Nuestro compromiso es un servicio de calidad",
+        'clients_subtitle': "Nuestras traducciones están avaladas por muchas empresas españolas e internacionales y organismos oficiales españoles y embajadas.",
         'clients_btn': "Ver Lista Completa",
         'clients_text': "En TIGAFAB sabemos que lo más importante es la satisfacción de nuestros clientes y para nosotros los clientes son la gran apuesta de valor, el verdadero aval de la compañía y la mayor garantía de continuidad. Es por este motivo que nuestro compromiso es ofrecer un servicio que cumpla y supere sus expectativas. Nuestra estrategia de empresa la desarrollamos en función de las necesidades de nuestro cliente, y para llegar a alcanzar dichas metas tenemos establecido el compromiso de implantar en todos los niveles de la organización una cultura orientada al cliente, de tal modo que sabremos cuáles son sus necesidades y como actuar sobre ellas. Les agradecemos la confianza que nos han brindado durante toda nuestra trayectoria.",
         'about_title': "Quiénes Somos", 'about_subtitle': "Traducciones, Interpretación, Gestión y Asesoramiento",
@@ -472,20 +472,20 @@ TRANSLATIONS = {
         'about_role': "Traductora, interprete, gestora de documentos mercantiles, visados y asesora",
         'about_cat_2': "GESTIÓN - ASESORAMIENTO",
         'about_desc_short': "TIGAFAB ofrece un asesoramiento íntegro y profesional para empresas que buscan expandirse internacionalmente, con especial foco en mercados estratégicos y gestión documental compleja.",
-        'home_section_title': "Tradición y Rigor",
-        'h1': "Somos un despacho de traductores e interpretes oficiales, jurados, nativos profesionales, encabezados por doña Fatima Benamar, con más de <span class='dyn-years'>25</span> años de experiencia.",
+        'home_section_title': "Traductores jurados y profesionales",
+        'h1': "Somos una agencia de traducción, compuesta por sus propios traductores e intérpretes oficiales, jurados, nativos, dirigida por doña Fatima Benamar Bahamad, con más de <span class='dyn-years'>25</span> años de experiencia en prestar servicio de traducción a particulares, empresas e instituciones públicas y privadas.",
         'h2': "OFRECEMOS un servicio integral en traducción jurada y asesoramiento para la tramitación de todos sus documentos.",
         'h3': "A través de nuestro asesoramiento y atención personalizada le garantizamos una tramitación correcta. De esta forma se ahorrará mucho tiempo, dinero y disgustos.",
         'h4': "Siempre satisfacemos a nuestros clientes. Y nos comprometemos a entregar el trabajo en el plazo acordado.",
-        'h5': "Empresas constructoras en el país LIBIA, agentes y empresarios con proyectos adjudicados.",
-        'h6': "Tarifas competitivas y aval de grandes empresas españolas e internacionales.",
+        'h5': "Nuestros traductores e intérpretes jurados están reconocidos y acreditados por el Ministerio de Asuntos Exteriores, Unión Europea y Cooperación (MAEC):",
+        'h6': "Nuestra traducción jurada es oficial y está aceptada y reconocida por todos los organismos oficiales públicos y privados del Estado Español: ministerios de Asuntos Exteriores, de Justicia, de Educación, de Sanidad, de Agricultura, registros civiles, juzgados, notarios, etc., además de embajadas y consulados extranjeros acreditados en España y embajadas y consulados españoles en el extranjero.",
         'nav_location': "Dónde estamos",
         'loc_title': "Nuestras Sedes",
         'loc_subtitle': "Encuéntranos en Madrid y Fuenlabrada",
         'loc_branch_1': "Oficina Madrid Centro",
         'loc_branch_2': "Oficina Fuenlabrada",
         'loc_how_to_get': "Cómo llegar",
-        'srv_header_main': "Nuestras Especialidades",
+        'srv_header_main': "NUESTROS SERVICIOS",
         'srv_header_sub': "Servicios de élite en Traducción y Gestión Internacional",
         'srv_jurada_title': "Traducciones Juradas",
         'srv_jurada_list': [
@@ -503,12 +503,15 @@ TRANSLATIONS = {
             "Listados de precios", "Correspondencias", "Cartas", "Notas", "Informes", "Y cualquier otro documento"
         ],
         'srv_organismos_title': "Gestión ante Organismos Oficiales",
+        'srv_organismos_desc': "Realizamos la legalización de documentos en Madrid ante todos los organismos",
         'srv_organismos_list': [
             "Ministerio de asuntos exteriores", "Ministerio de justicia", "Ministerio de sanidad",
-            "Ministerio de agricultura", "Cámara de comercio de Madrid", "Consejo superior de cámaras de comercio",
+            "Ministerio de agricultura", "Cámara de comercio de Madrid", "Cámara de Comercio de España",
             "Colegio de notarios de Madrid", "Todas las embajadas y consulados (Libia, Argelia, Irán, Egipto, China, ...)",
             "Y cualquier ministerio u organismo público o privado"
         ],
+        'srv_legalizacion_title': "Legalización y Apostilla de documentos españoles",
+        'srv_legalizacion_desc': "Realizamos la legalización de documentos en Madrid ante todos los organismos",
         'srv_visados_title': "Gestión de Visados",
         'srv_visados_list': [
             "Tramitamos su visado en cualquier consulado extranjero en España (Libia, Argelia, Irán, Egipto, China, ...)",
@@ -522,14 +525,15 @@ TRANSLATIONS = {
             "Damos el apoyo técnico sobre todos los asuntos para el registro y la apertura de su empresa en Libia"
         ],
         'srv_libia_btn': "Información Mercado Libia",
-        'srv_homologacion_title': "Homologación de Estudios de Países Árabes",
-        'srv_homologacion_desc': "Asesoramiento completo para la homologación de títulos académicos y estudios realizados en países árabes, facilitando el reconocimiento oficial en España.",
+        'srv_homologacion_title': "Homologación y Convalidación de Títulos y Estudios Extranjeros",
+        'srv_homologacion_desc': "Asesoramiento completo y tramitación de solicitudes y expedientes ante el Ministerio de Educación o Universidades para la homologación de títulos académicos y/o convalidación de estudios realizados en el extranjero, para su reconocimiento oficial en España.",
         'srv_homologacion_list': [
-            "Homologación de títulos universitarios de países árabes",
+            "Homologación de títulos universitarios",
+            "Homologación de títulos de bachiller",
+            "Convalidación de estudios no universitarios",
             "Tramitación de certificados académicos y notas",
             "Traducción jurada de expedientes educativos",
-            "Asesoramiento en requisitos del Ministerio de Educación",
-            "Gestión de documentación complementaria necesaria"
+            "Asesoramiento en requisitos del Ministerio de Educación"
         ],
         'srv_homologacion_btn': "Solicitar Asesoramiento",
         'hero_contact_title': "Contacte con Nosotros",
@@ -563,10 +567,10 @@ TRANSLATIONS = {
         'nav_home': "الرئيسية", 'nav_about': "من نحن", 'nav_services': "خدماتنا", 'nav_clients': "عملاؤنا", 'nav_contact': "اتصل بنا", 'nav_lang': "اللغة",
         'hero_title': "رواد الترجمة المعتمدة", 'hero_subtitle': "العربية • الإسبانية • الإنجليزية • الفرنسية",
         'home_cta_btn': "طلب عرض سعر",
-        'srv_header_main': "نطاقات تخصصنا",
+        'srv_header_main': "خدماتنا",
         'srv_header_sub': "خدمات نخبة في الترجمة والإدارة الدولية",
         'clients_title': "عملاؤنا الكرام",
-        'clients_subtitle': "التزامنا هو تقديم خدمة عالية الجودة",
+        'clients_subtitle': "ترجماتنا مدعومة من قبل العديد من الشركات الإسبانية والدولية والهيئات الرسمية الإسبانية والسفارات.",
         'clients_btn': "عرض القائمة الكاملة",
         'clients_text': "في تيجافاب، نعلم أن الأهم هو رضا عملائنا. بالنسبة لنا، العملاء هم الرهان الكبير للقيمة، والضمان الحقيقي للشركة، وأكبر ضمان للاستمرارية. ولهذا السبب، فإن التزامنا هو تقديم خدمة تلبي توقعاتكم وتتجاوزها. نطور استراتيجية شركتنا بناءً على احتياجات عملائنا، ولتحقيق هذه الأهداف، قمنا بوضع التزام بتنفيذ ثقافة موجهة للعميل على جميع مستويات المنظمة، بحيث نعرف ما هي احتياجاتهم وكيفية التصرف تجاهها. نشكركم على الثقة التي منحتمونا إياها طوال مسيرتنا.",
         'about_title': "من نحن", 'about_subtitle': "الترجمة، الترجمة الفورية، الإدارة والاستشارات",
@@ -577,13 +581,13 @@ TRANSLATIONS = {
         'about_role': "مترجمة، مترجمة فورية، مسؤولة وثائق تجارية، تأشيرات ومستشارة دولية",
         'about_cat_2': "الإدارة - الاستشارات",
         'about_desc_short': "تقدم تيجافاب استشارات متكاملة ومهنية للشركات التي تسعى للتوسع دولياً، مع تركيز خاص على الأسواق الاستراتيجية وإدارة الوثائق المعقدة.",
-        'home_section_title': "التقاليد والدقة",
-        'h1': "نحن مكتب ترجمة ومترجمين شفويين معتمدين رسمياً، ومحترفين من أهل اللغة، تترأسنا السيدة فاطمة بن عمار، بخبرة تمتد لأكثر من <span class='dyn-years'>25</span> عاماً.",
+        'home_section_title': "مترجمون معتمدون ومحترفون",
+        'h1': "نحن وكالة ترجمة، تتكون من مترجمين ومترجمين فوريين رسميين ومعتمدين وناطقين باللغة الأم، تترأسها السيدة فاطمة بن عمار باحماد، بخبرة تزيد عن <span class='dyn-years'>25</span> عاماً في تقديم خدمات الترجمة للأفراد والشركات والمؤسسات العامة والخاصة.",
         'h2': "نقدم خدمة شاملة في الترجمة المعتمدة والاستشارات لإنجاز جميع وثائقكم.",
         'h3': "من خلال استشاراتنا واهتمامنا الشخصي، نضمن لكم إنجاز معاملاتكم بشكل صحيح، مما يوفر لكم الكثير من الوقت والمال والمتاعب.",
         'h4': "نحن نرضي عملائنا دائماً، ونلتزم بتسليم العمل في الموعد المتفق عليه.",
-        'h5': "خدمات لشركات البناء في دولة ليبيا، مع توفير وكلاء ورجال أعمال لديهم مشاريع قائمة.",
-        'h6': "أسعار تنافسية ودعم من كبرى الشركات الإسبانية والدولية.",
+        'h5': "مترجمونا ومترجمونا الفوريون المعتمدون معترف بهم ومصدق عليهم من قبل وزارة الشؤون الخارجية والاتحاد الأوروبي والتعاون (MAEC):",
+        'h6': "ترجمتنا المعتمدة رسمية ومقبولة ومعترف بها من قبل جميع الهيئات الرسمية العامة والخاصة في الدولة الإسبانية: وزارات الشؤون الخارجية، والعدل، والتعليم، والصحة، والزراعة، السجلات المدنية، المحاكم، الموثقين، إلخ، بالإضافة إلى السفارات والقنصليات الأجنبية المعتمدة في إسبانيا والسفارات والقنصليات الإسبانية في الخارج.",
         'nav_location': "أين نحن",
         'loc_title': "مكاتبنا",
         'loc_subtitle': "تجدنا في مدريد وفوينلابرادا",
@@ -606,12 +610,15 @@ TRANSLATIONS = {
             "قوائم الأسعار", "المراسلات التجارية", "الخطابات", "الملاحظات", "التقارير", "وأي وثيقة أخرى"
         ],
         'srv_organismos_title': "الإجراءات لدى الهيئات الرسمية",
+        'srv_organismos_desc': "نقوم بالتقنين الوثائق في مدريد أمام جميع الهيئات",
         'srv_organismos_list': [
             "وزارة الشؤون الخارجية", "وزارة العدل", "وزارة الصحة",
-            "وزارة الزراعة", "غرفة تجارة مدريد", "المجلس الأعلى لغرف التجارة",
+            "وزارة الزراعة", "غرفة تجارة مدريد", "غرفة تجارة إسبانيا",
             "نقابة الموثقين بمدريد", "جميع السفارات والقنصليات (ليبيا، الجزائر، إيران، مصر، الصين، ...)",
             "وأي وزارة أو منظمة عامة أو خاصة"
         ],
+        'srv_legalizacion_title': "التقنين والتصديق على الوثائق الإسبانية",
+        'srv_legalizacion_desc': "نقوم بالتقنين الوثائق في مدريد أمام جميع الهيئات",
         'srv_visados_title': "إدارة التأشيرات",
         'srv_visados_list': [
             "نقوم بمعالجة تأشيرتك في أي قنصلية أجنبية في إسبانيا (ليبيا، الجزائر، إيران، مصر، الصين، ...)",
@@ -625,14 +632,15 @@ TRANSLATIONS = {
             "تقديم الدعم الفني في جميع المسائل المتعلقة بتسجيل وفتح شركتكم في ليبيا"
         ],
         'srv_libia_btn': "معلومات حول السوق الليبي",
-        'srv_homologacion_title': "معادلة الشهادات من الدول العربية",
-        'srv_homologacion_desc': "استشارة شاملة لمعادلة الشهادات الأكاديمية والدراسات المنجزة في الدول العربية، لتسهيل الاعتراف الرسمي بها في إسبانيا.",
+        'srv_homologacion_title': "معادلة والمصادقة على الشهادات والدراسات الأجنبية",
+        'srv_homologacion_desc': "استشارة شاملة ومعالجة الطلبات والملفات أمام وزارة التعليم أو الجامعات لمعادلة الشهادات الأكاديمية و/أو مصادقة الدراسات المنجزة في الخارج، للاعتراف الرسمي بها في إسبانيا.",
         'srv_homologacion_list': [
-            "معادلة الشهادات الجامعية من الدول العربية",
+            "معادلة الشهادات الجامعية",
+            "معادلة شهادات البكالوريا",
+            "مصادقة الدراسات غير الجامعية",
             "تقديم طلبات الشهادات الأكاديمية والعلامات",
             "الترجمة المعتمدة للملفات التعليمية",
-            "الاستشارة في متطلبات وزارة التعليم",
-            "إدارة الوثائق التكميلية اللازمة"
+            "الاستشارة في متطلبات وزارة التعليم"
         ],
         'srv_homologacion_btn': "طلب استشارة",
         'hero_contact_title': "اتصل بنا",
@@ -664,10 +672,10 @@ TRANSLATIONS = {
         'nav_home': "Home", 'nav_about': "About Us", 'nav_services': "Services", 'nav_clients': "Clients", 'nav_contact': "Contact", 'nav_lang': "Language",
         'hero_title': "Translation Excellence", 'hero_subtitle': "ARABIC • SPANISH • ENGLISH • FRENCH",
         'home_cta_btn': "REQUEST A QUOTE",
-        'srv_header_main': "Our Specialties",
+        'srv_header_main': "OUR SERVICES",
         'srv_header_sub': "Elite services in translation and international management",
         'clients_title': "Our Clients",
-        'clients_subtitle': "Our commitment is a quality service",
+        'clients_subtitle': "Our translations are endorsed by many Spanish and international companies and Spanish official bodies and embassies.",
         'clients_btn': "View Full List",
         'clients_text': "At TIGAFAB, we know that the most important thing is the satisfaction of our clients. For us, clients are the great value proposition, the true endorsement of the company, and the greatest guarantee of continuity. For this reason, our commitment is to offer a service that meets and exceeds their expectations. We develop our corporate strategy based on the needs of our clients, and to achieve these goals we have established the commitment to implement a customer-oriented culture at all levels of the organization, so that we will know what their needs are and how to act on them. We thank you for the trust you have placed in us throughout our trajectory.",
         'about_title': "About Us", 'about_subtitle': "Translations, Interpretation, Management, and Advisory",
@@ -678,13 +686,13 @@ TRANSLATIONS = {
         'about_role': "Translator, interpreter, commercial document manager, visas and advisor",
         'about_cat_2': "MANAGEMENT - ADVISORY",
         'about_desc_short': "TIGAFAB offers integral and professional advice for companies seeking international expansion, with a special focus on strategic markets and complex document management.",
-        'home_section_title': "Tradition and Rigor",
-        'h1': "We are an office of official, sworn, and professional native translators and interpreters, headed by Ms. Fatima Benamar, with more than <span class='dyn-years'>25</span> years of experience.",
+        'home_section_title': "Sworn and Professional Translators",
+        'h1': "We are a translation agency, composed of our own official, sworn, native translators and interpreters, directed by Ms. Fatima Benamar Bahamad, with more than <span class='dyn-years'>25</span> years of experience providing translation services to individuals, companies, and public and private institutions.",
         'h2': "WE OFFER an integral service in sworn translation and advisory for the processing of all your documents.",
         'h3': "Through our advisory and personalized attention, we guarantee correct processing. This way you will save a lot of time, money, and trouble.",
         'h4': "We always satisfy our customers. And we commit to delivering the work within the agreed period.",
-        'h5': "Construction companies in LIBYA, agents and businessmen with awarded projects.",
-        'h6': "Competitive prices and the endorsement of many large Spanish and international companies.",
+        'h5': "Our sworn translators and interpreters are recognized and accredited by the Ministry of Foreign Affairs, European Union and Cooperation (MAEC):",
+        'h6': "Our sworn translation is official and is accepted and recognized by all public and private official bodies of the Spanish State: Ministries of Foreign Affairs, Justice, Education, Health, Agriculture, civil registries, courts, notaries, etc., in addition to foreign embassies and consulates accredited in Spain and Spanish embassies and consulates abroad.",
         'nav_location': "Where We Are",
         'loc_title': "Our Branches",
         'loc_subtitle': "Find us in Madrid and Fuenlabrada",
@@ -707,12 +715,15 @@ TRANSLATIONS = {
             "Price lists", "Correspondences", "Letters", "Notes", "Reports", "And any other document"
         ],
         'srv_organismos_title': "Document Management at Official Bodies",
+        'srv_organismos_desc': "We carry out document legalization in Madrid before all official bodies",
         'srv_organismos_list': [
             "Ministry of Foreign Affairs", "Ministry of Justice", "Ministry of Health",
-            "Ministry of Agriculture", "Madrid Chamber of Commerce", "Superior Council of Chambers of Commerce",
+            "Ministry of Agriculture", "Madrid Chamber of Commerce", "Chamber of Commerce of Spain",
             "Madrid Notary Association", "All Embassies and Consulates (Libya, Algeria, Iran, Egypt, China, ...)",
             "And any ministry or public or private organism"
         ],
+        'srv_legalizacion_title': "Legalization and Apostille of Spanish Documents",
+        'srv_legalizacion_desc': "We carry out document legalization in Madrid before all official bodies",
         'srv_visados_title': "Visa Management",
         'srv_visados_list': [
             "We process your visa at any foreign consulate in Spain (Libya, Algeria, Iran, Egypt, China, ...)",
@@ -726,14 +737,15 @@ TRANSLATIONS = {
             "We provide technical support on all matters for the registration and opening of your company in Libya"
         ],
         'srv_libia_btn': "Libya Market Info",
-        'srv_homologacion_title': "Recognition of Degrees from Arab Countries",
-        'srv_homologacion_desc': "Comprehensive advisory for the recognition and homologation of academic degrees and studies completed in Arab countries, facilitating official validation in Spain.",
+        'srv_homologacion_title': "Recognition and Validation of Foreign Degrees and Studies",
+        'srv_homologacion_desc': "Comprehensive advisory and processing of applications and files before the Ministry of Education or Universities for the recognition of academic degrees and/or validation of studies completed abroad, for their official recognition in Spain.",
         'srv_homologacion_list': [
-            "Recognition of university degrees from Arab countries",
+            "Recognition of university degrees",
+            "Recognition of high school diplomas",
+            "Validation of non-university studies",
             "Processing of academic certificates and transcripts",
             "Sworn translation of educational records",
-            "Advisory on Ministry of Education requirements",
-            "Management of necessary complementary documentation"
+            "Advisory on Ministry of Education requirements"
         ],
         'srv_homologacion_btn': "Request Advisory",
         'hero_contact_title': "Contact Us",
@@ -766,7 +778,7 @@ TRANSLATIONS = {
         'hero_title': "Excellence en Traduction", 'hero_subtitle': "ARABE • ESPAGNOL • ANGLAIS • FRANÇAIS",
         'home_cta_btn': "DEMANDER UN DEVIS",
         'clients_title': "Nos Clients",
-        'clients_subtitle': "Notre engagement est un service de qualité",
+        'clients_subtitle': "Nos traductions sont avalées par de nombreuses entreprises espagnoles et internationales et les organismes officiels espagnols et ambassades.",
         'clients_btn': "Voir la Liste Complexe",
         'clients_text': "Chez TIGAFAB, nous savons que le plus important est la satisfaction de nos clients. Pour nous, les clients sont le grand enjeu de valeur, la véritable caution de l'entreprise et la plus grande garantie de continuité. C'est pour cette raison que notre engagement est d'offrir un service qui réponde et dépasse leurs attentes. Nous développons notre stratégie d'entreprise en fonction des besoins de nos clients, et pour atteindre ces objectifs, nous avons établi l'engagement d'implanter une culture orientée client à tous les niveaux de l'organisation, de sorte que nous saurons quels sont leurs besoins et comment agir sur eux. Nous vous remercions de la confiance que vous nous avez accordée tout au long de notre parcours.",
         'about_title': "Qui Sommes-Nous", 'about_subtitle': "Traduction, Interprétation, Gestion et Conseil",
@@ -777,20 +789,20 @@ TRANSLATIONS = {
         'about_role': "Traductrice, interprète, gestionnaire de documents commerciaux, visas et conseillère",
         'about_cat_2': "GESTION - CONSEIL",
         'about_desc_short': "TIGAFAB offre des conseils intégraux et professionnels aux entreprises cherchant une expansion internationale, avec un accent particulier sur les marchés stratégiques et la gestion de documents complexes.",
-        'home_section_title': "Tradition et Rigueur",
-        'h1': "Nous sommes un cabinet de traducteurs et interprètes officiels, assermentés, natifs professionnels, dirigés par Mme Fatima Benamar, avec plus de <span class='dyn-years'>25</span> ans d'expérience.",
+        'home_section_title': "Traducteurs assermentés et professionnels",
+        'h1': "Nous sommes une agence de traduction, composée de nos propres traducteurs et interprètes officiels, assermentés, natifs, dirigée par Mme Fatima Benamar Bahamad, avec plus de <span class='dyn-years'>25</span> ans d'expérience dans la prestation de services de traduction aux particuliers, entreprises et institutions publiques et privées.",
         'h2': "NOUS OFFRONS un service complet de traduction assermentée et de conseil pour le traitement de tous vos documents.",
         'h3': "Grâce à nos conseils et à notre attention personnalisée, nous garantissons un traitement correct. De cette façon, vous économiserez beaucoup de temps y d'argent.",
         'h4': "Nous satisfaisons toujours nos clients. Et nous nous engageons à livrer le travail dans les délais convenus.",
-        'h5': "Entreprises de construction en LIBYE, agents et entrepreneurs ayant des projets attribués.",
-        'h6': "Tarifs compétitifs et l'aval de grandes entreprises espagnoles et internationales.",
+        'h5': "Nos traducteurs et interprètes assermentés sont reconnus et accrédités par le Ministère des Affaires Étrangères, de l'Union Européenne et de la Coopération (MAEC):",
+        'h6': "Notre traduction assermentée est officielle et est acceptée et reconnue par tous les organismes officiels publics et privés de l'État Espagnol: ministères des Affaires Étrangères, de la Justice, de l'Éducation, de la Santé, de l'Agriculture, registres civils, tribunaux, notaires, etc., en plus des ambassades et consulats étrangers accrédités en Espagne et des ambassades et consulats espagnols à l'étranger.",
         'nav_location': "Où Sommes-Nous",
         'loc_title': "Nos Sièges",
         'loc_subtitle': "Retrouvez-nous à Madrid et Fuenlabrada",
         'loc_branch_1': "Bureau Madrid Centre",
         'loc_branch_2': "Bureau Fuenlabrada",
         'loc_how_to_get': "Comment s'y rendre",
-        'srv_header_main': "Nos Spécialités",
+        'srv_header_main': "NOS SERVICES",
         'srv_header_sub': "Services d'élite en Traduction et Gestion Internationale",
         'srv_jurada_title': "Traductions Assermentées",
         'srv_jurada_list': [
@@ -808,12 +820,15 @@ TRANSLATIONS = {
             "Listes de prix", "Correspondances", "Lettres", "Notes", "Rapports", "Et tout autre document"
         ],
         'srv_organismos_title': "Gestion auprès d'organismes officiels",
+        'srv_organismos_desc': "Nous réalisons la légalisation de documents à Madrid devant tous les organismes",
         'srv_organismos_list': [
             "Ministère des affaires étrangères", "Ministère de la justice", "Ministère de la santé",
-            "Ministère de l'agriculture", "Chambre de commerce de Madrid", "Conseil supérieur des chambres de commerce",
+            "Ministère de l'agriculture", "Chambre de commerce de Madrid", "Chambre de Commerce d'Espagne",
             "Collège des notaires de Madrid", "Toutes les ambassades et consulats (Libya, Argelia, Irán, Egipto, China, ...)",
             "Et tout ministère ou organisme public ou privé"
         ],
+        'srv_legalizacion_title': "Légalisation et Apostille de documents espagnols",
+        'srv_legalizacion_desc': "Nous réalisons la légalisation de documents à Madrid devant tous les organismes",
         'reviews_data': [
             ("María G. (Google)", "Service impeccable et professionnel. Fatima a résolu la traduction assermentée de mes documents en un temps record pour une procédure urgente. Hautement recommandé."),
             ("Groupe de Construction (Google)", "Nous faisons confiance à Tigafab depuis des années pour nos visas et traductions techniques vers l'arabe de nos dossiers d'entreprise. Rapides et efficaces."),
@@ -837,14 +852,15 @@ TRANSLATIONS = {
             "Nous offrons un soutien technique sur toutes les questions relatives à l'enregistrement et à l'ouverture de votre entreprise en Libye"
         ],
         'srv_libia_btn': "Infos Marché Libye",
-        'srv_homologacion_title': "Reconnaissance des Diplômes des Pays Arabes",
-        'srv_homologacion_desc': "Conseil complet pour la reconnaissance et l'homologation des diplômes académiques et des études réalisées dans les pays arabes, facilitant la validation officielle en Espagne.",
+        'srv_homologacion_title': "Reconnaissance et Validation des Diplômes et Études Étrangers",
+        'srv_homologacion_desc': "Conseil complet et traitement des demandes et dossiers devant le Ministère de l'Éducation ou les Universités pour la reconnaissance des diplômes académiques et/ou la validation des études réalisées à l'étranger, pour leur reconnaissance officielle en Espagne.",
         'srv_homologacion_list': [
-            "Reconnaissance des diplômes universitaires des pays arabes",
-            "Traitement des certificats académiques et des relevés de notes",
+            "Reconnaissance des diplômes universitaires",
+            "Reconnaissance des diplômes de baccalauréat",
+            "Validation des études non universitaires",
+            "Traitement des certificats académiques et relevés de notes",
             "Traduction assermentée des dossiers éducatifs",
-            "Conseil sur les exigences du Ministère de l'Éducation",
-            "Gestion de la documentation complémentaire nécessaire"
+            "Conseil sur les exigences du Ministère de l'Éducation"
         ],
         'srv_homologacion_btn': "Demander un Conseil",
         'hero_contact_title': "Contactez-Nous",
@@ -866,7 +882,7 @@ TRANSLATIONS = {
         'hero_title': "Exzellenz in Übersetzung", 'hero_subtitle': "ARABISCH • SPANISCH • ENGLISCH • FRANZÖSISCH",
         'home_cta_btn': "ANGEBOT ANFORDERN",
         'clients_title': "Unsere Kunden",
-        'clients_subtitle': "Qualität ist unser Versprechen",
+        'clients_subtitle': "Unsere Übersetzungen werden von vielen spanischen und internationalen Unternehmen sowie spanischen offiziellen Stellen und Botschaften unterstützt.",
         'clients_btn': "Vollständige Liste anzeigen",
         'clients_text': "Bei TIGAFAB hat die Kundenzufriedenheit oberste Priorität. Wir danken Ihnen für Ihr Vertrauen.",
         'about_title': "Über uns", 'about_subtitle': "Übersetzung, Dolmetschen, Management und Beratung",
@@ -877,13 +893,13 @@ TRANSLATIONS = {
         'about_role': "Übersetzerin, Dolmetscherin, Managerin für Handelsdokumente, Visa und Beraterin",
         'about_cat_2': "MANAGEMENT - BERATUNG",
         'about_desc_short': "TIGAFAB bietet umfassende und professionelle Beratung für Unternehmen, die eine internationale Expansion anstreben, mit besonderem Fokus auf strategische Märkte und gemeinsamem Dokumentenmanagement.",
-        'home_section_title': "Tradition und Strenge",
-        'h1': "Wir sind ein Büro von offiziellen, beeidigten, professionellen muttersprachlichen Übersetzern und Dolmetschern unter der Leitung von Frau Fatima Benamar, <span class='dyn-years'>25</span> Jahre Erfahrung.",
+        'home_section_title': "Beeidigte und professionelle Übersetzer",
+        'h1': "Wir sind eine Übersetzungsagentur, bestehend aus unseren eigenen offiziellen, beeidigten, muttersprachlichen Übersetzern und Dolmetschern, unter der Leitung von Frau Fatima Benamar Bahamad, mit mehr als <span class='dyn-years'>25</span> Jahren Erfahrung in der Bereitstellung von Übersetzungsdiensten für Privatpersonen, Unternehmen sowie öffentliche und private Einrichtungen.",
         'h2': "WIR BIETEN einen umfassenden Service für beglaubigte Übersetzungen und Beratung bei der Bearbeitung all Ihrer Dokumente.",
         'h3': "Durch unsere Beratung und persönliche Betreuung garantieren wir eine korrekte Abwicklung. Auf diese Weise sparen Sie viel Zeit y Geld.",
         'h4': "Wir stellen unsere Kunden immer zufrieden. Und wir verpflichten uns, die Arbeit innerhalb der vereinbarten Frist abzuliefern.",
-        'h5': "Bauunternehmen in LIBYEN, Agenten und Unternehmer mit vergebenen Projekten.",
-        'h6': "Wettbewerbsfähige Preise und die Unterstützung großer spanischer und internationaler Unternehmen.",
+        'h5': "Unsere beeidigten Übersetzer und Dolmetscher sind vom Ministerium für Auswärtige Angelegenheiten, Europäische Union und Zusammenarbeit (MAEC) anerkannt und akkreditiert:",
+        'h6': "Unsere beeidigte Übersetzung ist offiziell und wird von allen öffentlichen und privaten offiziellen Stellen des spanischen Staates anerkannt: Ministerien für Auswärtige Angelegenheiten, Justiz, Bildung, Gesundheit, Landwirtschaft, Standesämter, Gerichte, Notare usw., sowie von ausländischen Botschaften und Konsulaten in Spanien und spanischen Botschaften und Konsulaten im Ausland.",
         'nav_location': "Standort",
         'loc_title': "Unsere Standorte",
         'loc_subtitle': "Finden Sie uns in Madrid und Fuenlabrada",
@@ -906,12 +922,15 @@ TRANSLATIONS = {
             "Preislisten", "Korrespondenz", "Briefe", "Notizen", "Berichte", "Und jedes andere Dokument"
         ],
         'srv_organismos_title': "Dokumentenmanagement bei Offiziellen Stellen",
+        'srv_organismos_desc': "Wir führen die Dokumentenlegalisierung in Madrid vor allen offiziellen Stellen durch",
         'srv_organismos_list': [
             "Außenministerium", "Justizministerium", "Gesundheitsministerium",
-            "Landwirtschaftsministerium", "Handelskammer Madrid", "Oberster Rat der Handelskammern",
+            "Landwirtschaftsministerium", "Handelskammer Madrid", "Handelskammer Spanien",
             "Notarkammer Madrid", "Alle Botschaften und Konsulate (Libyen, Algerien, Iran, Ägypten, China, ...)",
             "Und jedes Ministerium oder jede öffentliche oder private Organisation"
         ],
+        'srv_legalizacion_title': "Legalisierung und Apostille spanischer Dokumente",
+        'srv_legalizacion_desc': "Wir führen die Dokumentenlegalisierung in Madrid vor allen offiziellen Stellen durch",
         'srv_visados_title': "Visum-Management",
         'srv_visados_list': [
             "Wir bearbeiten Ihr Visum bei jedem ausländischen Konsulat in Spanien (Libyen, Algerien, Iran, Ägypten, China, ...)",

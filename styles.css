@@ -350,6 +350,7 @@ h1, h2, h3 { font-family: var(--font-heading); }
         justify-content: center;
         display: flex !important;
         align-items: center !important;
+        min-height: 40px;
     }
     .lang-current span {
         display: none;  /* Hide text span */
@@ -359,14 +360,19 @@ h1, h2, h3 { font-family: var(--font-heading); }
     }
     .lang-current i {
         display: block !important;
-        font-size: 1.2rem;
+        font-size: 1.4rem;
+        width: 40px;
+        height: 40px;
+        display: flex !important;
+        align-items: center !important;
+        justify-content: center !important;
     }
     .lang-dropdown {
         right: 0;
         left: auto;
         inset-inline-end: 0;
         inset-inline-start: auto;
-        z-index: 1003;
+        z-index: 1005;
     }
 }
 
@@ -411,19 +417,23 @@ h1, h2, h3 { font-family: var(--font-heading); }
     }
 }
 
-.lang-selector { position: relative; margin-inline-start: auto; z-index: 1002; }
+.lang-selector { position: relative; margin-inline-start: auto; z-index: 1005; pointer-events: auto; }
 .nav-actions {
   display: flex;
   align-items: center;
   gap: 0.75rem;
   margin-inline-start: auto;
-  z-index: 1002;
+  z-index: 1005;
+  pointer-events: auto;
 }
 .lang-current { 
   display: flex; align-items: center; gap: 8px; cursor: pointer;
   padding: 8px 20px; border: 1px solid var(--glass-border);
   border-radius: 50px; background: var(--bg-surface);
   color: var(--text-strong) !important; font-size: 0.85rem; font-weight: 700; transition: 0.3s;
+  pointer-events: auto;
+  position: relative;
+  z-index: 1006;
 }
 .lang-current:hover { background: var(--bg-surface-hover); border-color: var(--primary); }
 
@@ -453,8 +463,9 @@ h1, h2, h3 { font-family: var(--font-heading); }
   border: 1px solid var(--glass-border); border-radius: 12px;
   min-width: 140px; padding: 10px; display: none;
   box-shadow: 0 10px 30px var(--shadow-main);
+  z-index: 9999;
 }
-.lang-dropdown.show { display: block; animation: slideIn 0.3s ease; }
+.lang-dropdown.show { display: block !important; animation: slideIn 0.3s ease; }
 .lang-dropdown a { 
   display: block; padding: 10px 15px; color: var(--text-strong) !important;
   text-decoration: none !important; font-size: 0.85rem;
