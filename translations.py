@@ -580,7 +580,7 @@ TRANSLATIONS = {
     },
     'ar': {
         'legal_body': LEGAL_BODY_AR, 'privacy_body': PRIVACY_BODY_AR,
-        'nav_home': "الرئيسية", 'nav_about': "من نحن", 'nav_services': "خدماتنا", 'nav_clients': "عملاؤنا", 'nav_location': "فروعنا", 'nav_contact': "تواصل معنا", 'nav_lang': "اللغة",
+        'nav_home': "الرئيسية", 'nav_about': "من نحن", 'nav_services': "خدماتنا", 'nav_clients': "عملاؤنا", 'nav_location': "أين نحن", 'nav_contact': "تواصل معنا", 'nav_lang': "اللغة",
         'hero_title': "رواد الترجمة المحلفة والمعتمدة", 'hero_subtitle': "العربية والاسبانية والانجليزية والفرنسية",
         'home_cta_btn': "طلب عرض مالي",
         'srv_header_main': "خدماتنا",
