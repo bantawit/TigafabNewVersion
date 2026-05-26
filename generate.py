@@ -13,11 +13,42 @@ def get_nav(lang, rel_path):
     nav_dir = "rtl" if lang == "ar" else "ltr"
     return f"""<nav id="navbar" dir="ltr"><div class="container nav-container"><a href="index.html" class="logo">TIGAFAB<span>.</span></a><div class="nav-toggle" id="navToggle"><span></span><span></span><span></span></div><ul class="nav-links" id="navLinks" dir="{nav_dir}"><li><a href="index.html">{t['nav_home']}</a></li><li><a href="quienes-somos.html">{t['nav_about']}</a></li><li><a href="servicios.html">{t['nav_services']}</a></li><li><a href="clientes.html">{t['nav_clients']}</a></li><li><a href="localizacion.html">{t['nav_location']}</a></li><li><a href="contacto.html">{t['nav_contact']}</a></li></ul><div class="nav-actions"><button class="theme-toggle" id="themeToggle" type="button" aria-label="Cambiar a modo claro" title="Modo claro"><i class="fas fa-sun"></i></button><div class="lang-selector" id="langSelector"><div class="lang-current"><i class="fas fa-globe"></i> <span>{t['nav_lang']}</span> <i class="fas fa-chevron-down"></i></div><div class="lang-dropdown" id="langDropdown">{links}</div></div></div></div></nav>"""
 
-def get_list_html(key, lang):
+def get_visa_docs_html(rel_path, lang):
+    country_names = {
+        'es': ["Libia", "Argelia", "Egipto", "Arabia Saudita", "Yemen", "Mauritania", "China"],
+        'en': ["Libya", "Algeria", "Egypt", "Saudi Arabia", "Yemen", "Mauritania", "China"],
+        'fr': ["Libye", "Algérie", "Égypte", "Arabie saoudite", "Yémen", "Mauritanie", "Chine"],
+        'ar': ["ليبيا", "الجزائر", "مصر", "السعودية", "اليمن", "موريتانيا", "الصين"],
+    }
+    prefixes = {
+        'es': "Impresos visados de",
+        'en': "Visa forms for",
+        'fr': "Formulaires de visa pour",
+        'ar': "نماذج تأشيرات",
+    }
+    files = [
+        "formularios_visados_LIBIA_230812.pdf",
+        "formulario_visado_argelia.pdf",
+        "impresopara_el_Consulado_de_Egipto.pdf",
+        "impreso_de_Arabia_Saudi.pdf",
+        "formulario_de_visado_de_Yemen.pdf",
+        "FORMULARIO_PARA_EL_VISADO_MAURITANIA_160112.doc",
+        "formulario_de_visado_para_China_160112.pdf",
+    ]
+    docs = zip(country_names.get(lang, country_names['es']), files)
+    links = ", ".join([f'<a href="{rel_path}img/docs/{file}" target="_blank" rel="noopener noreferrer">{country}</a>' for country, file in docs])
+    return f"{prefixes.get(lang, prefixes['es'])} {links}"
+
+def get_list_html(key, lang, rel_path=""):
     t = TRANSLATIONS.get(lang, TRANSLATIONS['es'])
     items = t.get(key, [])
     if not items and lang != 'es': items = TRANSLATIONS['es'].get(key, []) # Fallback to Spanish if missing
-    return "".join([f"<li>{x}</li>" for x in items])
+    html_items = []
+    for index, x in enumerate(items):
+        if key == 'srv_visados_list' and index == 1:
+            x = get_visa_docs_html(rel_path, lang)
+        html_items.append(f"<li>{x}</li>")
+    return "".join(html_items)
 
 def get_review_cards(lang_dict):
     reviews_list = lang_dict.get('reviews_data', [])
@@ -180,7 +211,7 @@ for lang in LANG_FOLDERS:
     <div class="service-premium-box" data-aos="fade-up" data-aos-delay="100"><i class="fas fa-file-invoice"></i><h3>t-srv-tecnica-title</h3><ul class="service-list-detailed">{get_list_html('srv_tecnica_list', lang)}</ul></div>
     <div class="service-premium-box" data-aos="fade-up" data-aos-delay="200"><i class="fas fa-landmark"></i><h3>t-srv-organismos-title</h3><p class="service-desc">t-srv-organismos-desc</p><ul class="service-list-detailed">{get_list_html('srv_organismos_list', lang)}</ul></div>
     <div class="service-premium-box" data-aos="fade-up" data-aos-delay="250"><i class="fas fa-certificate"></i><h3>t-srv-legalizacion-title</h3><p class="service-desc">t-srv-legalizacion-desc</p></div>
-    <div class="service-premium-box" data-aos="fade-up" data-aos-delay="300"><i class="fas fa-id-card"></i><h3>t-srv-visados-title</h3><ul class="service-list-detailed">{get_list_html('srv_visados_list', lang)}</ul></div>
+    <div class="service-premium-box" data-aos="fade-up" data-aos-delay="300"><i class="fas fa-id-card"></i><h3>t-srv-visados-title</h3><ul class="service-list-detailed">{get_list_html('srv_visados_list', lang, rel_path)}</ul></div>
     <div class="service-premium-box featured-arab" style="grid-column: 1 / -1;" data-aos="zoom-in"><div style="display:grid; grid-template-columns: auto 1fr; gap:4rem; align-items:center;"><i class="fas fa-graduation-cap" style="font-size:4rem;"></i><div><h3>t-srv-homologacion-title</h3><p style="font-size:1.2rem; color:#c2a35d; font-weight:700; margin-bottom:1.5rem;">t-srv-homologacion-desc</p><ul class="service-list-detailed" style="column-count: 1; margin-bottom:2rem;">{get_list_html('srv_homologacion_list', lang)}</ul><a href="contacto.html" class="btn-premium" style="display:inline-block;">t-srv-homologacion-btn</a></div></div></div>
     <div class="service-premium-box featured-libia" style="grid-column: 1 / -1;" data-aos="zoom-in"><div style="display:grid; grid-template-columns: auto 1fr; gap:4rem; align-items:center;"><i class="fas fa-globe-africa" style="font-size:4rem;"></i><div><h3>t-srv-libia-title</h3><p style="font-size:1.2rem; color:#c2a35d; font-weight:700; margin-bottom:1.5rem;">t-srv-libia-desc</p><ul class="service-list-detailed" style="column-count: 1; margin-bottom:2rem;">{get_list_html('srv_libia_list', lang)}</ul><a href="contacto.html" class="btn-premium" style="display:inline-block;">t-srv-libia-btn</a></div></div></div>
     </div></div></section>"""
