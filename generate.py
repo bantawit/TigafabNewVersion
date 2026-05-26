@@ -134,7 +134,8 @@ for lang in LANG_FOLDERS:
             <div class="fatima-overlay" style="position:absolute; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.4); z-index:0; transition: opacity 0.3s ease;"></div>
             <div class="fatima-content" style="position:relative; z-index:1; transition: opacity 0.3s ease;">
                 <h2 style="font-size:1.8rem; margin-bottom:0.5rem; color:white;">t-about-name</h2>
-                <p style="color:var(--primary); font-weight:700; font-size:1.1rem; margin-bottom:0;">t-about-role</p>
+                <p style="color:var(--primary); font-weight:700; font-size:1.1rem; margin-bottom:0.3rem;">t-about-role</p>
+                <p style="color:var(--primary); font-weight:700; font-size:1rem; margin-bottom:1.5rem;">t-about-company</p>
                 <div style="border-top:1px solid rgba(255,255,255,0.1); padding-top:2rem;">
                     <p style="color:white !important; line-height:1.8;">t-about-text</p>
                 </div>
