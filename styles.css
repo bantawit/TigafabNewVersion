@@ -80,11 +80,77 @@
     color: var(--text-muted); margin-bottom: 0.8rem; font-size: 0.95rem; 
     padding-inline-start: 1.5rem; position: relative; line-height: 1.4;
 }
-.service-list-detailed li::before { 
-    content: "→"; position: absolute; inset-inline-start: 0; color: var(--primary); font-weight: bold;
+.service-list-detailed li::before {
+    content: "•"; position: absolute; inset-inline-start: 0; color: var(--primary); font-weight: bold;
 }
 [dir="rtl"] .service-list-detailed li::before {
-    content: "←";
+    content: "•";
+}
+
+.visa-country-link {
+    color: var(--primary) !important;
+    text-decoration: underline !important;
+    text-decoration-color: var(--primary) !important;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+.visa-country-link:hover {
+    color: #fff !important;
+    text-decoration-color: #fff !important;
+}
+
+/* Notification Toast System */
+.notification-toast {
+    position: fixed;
+    top: 100px;
+    right: 20px;
+    background: var(--bg-surface);
+    border: 1px solid var(--glass-border);
+    border-radius: 12px;
+    padding: 1rem 1.5rem;
+    box-shadow: 0 8px 32px var(--shadow-main);
+    z-index: 10000;
+    opacity: 0;
+    transform: translateX(100px);
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    max-width: 400px;
+}
+
+.notification-toast.show {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.notification-content {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.notification-content i {
+    font-size: 1.2rem;
+}
+
+.notification-error {
+    border-left: 4px solid #ef4444;
+}
+
+.notification-error i {
+    color: #ef4444;
+}
+
+.notification-info {
+    border-left: 4px solid var(--primary);
+}
+
+.notification-info i {
+    color: var(--primary);
+}
+
+.notification-content span {
+    color: var(--text-main);
+    font-size: 0.95rem;
+    font-weight: 500;
 }
 
 .featured-libia {

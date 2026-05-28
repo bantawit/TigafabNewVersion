@@ -461,11 +461,11 @@ TRANSLATIONS = {
         'hero_title': "Excelencia en Traducción", 'hero_subtitle': "ÁRABE • ESPAÑOL • INGLÉS • FRANCÉS",
         'home_cta_btn': "SOLICITAR PRESUPUESTO",
         'clients_title': "Nuestros Clientes",
-        'clients_subtitle': "Nuestras traducciones están avaladas por muchas empresas españolas e internacionales y organismos oficiales españoles y embajadas.",
+        'clients_subtitle': "Nuestras traducciones están avaladas por muchas empresas españolas e internacionales, así como por organismos oficiales españoles y embajadas.",
         'clients_btn': "Ver Lista Completa",
-        'clients_text': "En TIGAFAB sabemos que lo más importante es la satisfacción de nuestros clientes y para nosotros los clientes son la gran apuesta de valor, el verdadero aval de la compañía y la mayor garantía de continuidad. Es por este motivo que nuestro compromiso es ofrecer un servicio que cumpla y supere sus expectativas. Nuestra estrategia de empresa la desarrollamos en función de las necesidades de nuestro cliente, y para llegar a alcanzar dichas metas tenemos establecido el compromiso de implantar en todos los niveles de la organización una cultura orientada al cliente, de tal modo que sabremos cuáles son sus necesidades y como actuar sobre ellas. Les agradecemos la confianza que nos han brindado durante toda nuestra trayectoria.",
+        'clients_text': "En TIGAFAB sabemos que lo más importante es la satisfacción de nuestros clientes y para nosotros los clientes son la gran apuesta de valor, el verdadero aval de la compañía y la mayor garantía de continuidad. Por este motivo, nuestro compromiso es ofrecer un servicio que supere sus expectativas. Nuestra estrategia de empresa la desarrollamos en función de las necesidades de nuestro cliente y, para llegar a alcanzar dichas metas, tenemos establecido el compromiso de implantar en todos los niveles de la organización una cultura orientada al cliente, de tal modo que sabremos cuáles son sus necesidades y cómo actuar sobre ellas. Les agradecemos la confianza que nos han brindado durante toda nuestra trayectoria.",
         'about_title': "Quiénes Somos", 'about_subtitle': "Traductores Jurados y profesionales",
-        'about_text': "Somos una agencia de traducción, compuesta por sus propios traductores e intérpretes oficiales, jurados, nativos, dirigida por Doña Fátima Benamar Bahamad, con más de 25 años de experiencia en prestar servicio de traducción a particulares, empresas e instituciones públicas y privadas.<br><br>Ofrecemos a nuestros clientes un servicio rápido, personalizado, puntualidad, máxima calidad, confidencialidad, asesoramiento, trato directo y tarifas ajustadas.",
+        'about_text': "Somos una agencia de traducción, compuesta por sus propios traductores e intérpretes oficiales, jurados, nativos, dirigida por Fátima Benamar Bahamad, con más de 25 años de experiencia en prestar servicio de traducción a particulares, empresas e instituciones públicas y privadas.<br><br>Ofrecemos a nuestros clientes un servicio rápido y personalizado.<br><br>Para nosotros es importante la puntualidad, la calidad, la confidencialidad, el asesoramiento personalizado y el trato directo.",
         'about_cat_1': "TRADUCCIÓN - INTERPRETACIÓN",
         'about_langs': "Árabe, Español, Inglés y Francés",
         'about_name': "Fátima Benamar Bahamad",
@@ -474,7 +474,7 @@ TRANSLATIONS = {
         'about_cat_2': "GESTIÓN - ASESORAMIENTO",
         'about_desc_short': "TIGAFAB ofrece un asesoramiento íntegro y profesional para empresas que buscan expandirse internacionalmente, con especial foco en mercados estratégicos y gestión documental compleja.",
         'home_section_title': "Traductores Jurados y Profesionales",
-        'h1': "Somos una agencia de traducción, compuesta por sus propios traductores e intérpretes oficiales, jurados, nativos, dirigida por doña Fátima Benamar Bahamad, con más de <span class='dyn-years'>25</span> años de experiencia en prestar servicio de traducción a particulares, empresas e instituciones públicas y privadas.",
+        'h1': "Somos una agencia de traducción que cuenta con sus propios traductores e intérpretes oficiales, jurados y nativos con más de <span class='dyn-years'>25</span> años de experiencia prestando servicios a particulares, empresas e instituciones públicas y privadas.",
         'h2': "OFRECEMOS un servicio integral en traducción jurada y asesoramiento para la tramitación de todos sus documentos.",
         'h3': "A través de nuestro asesoramiento y atención personalizada le garantizamos una tramitación correcta. De esta forma se ahorrará mucho tiempo, dinero y disgustos.",
         'h4': "Siempre satisfacemos a nuestros clientes. Y nos comprometemos a entregar el trabajo en el plazo acordado.",
@@ -482,7 +482,7 @@ TRANSLATIONS = {
         'h6': "Nuestra traducción jurada es oficial y está aceptada y reconocida por todos los organismos oficiales públicos y privados del Estado Español: Ministerios de Asuntos Exteriores, de Justicia, de Educación, de Sanidad, de Agricultura, registros civiles, juzgados, notarios, etc., además de embajadas y consulados extranjeros acreditados en España y embajadas y consulados españoles en el extranjero.",
         'benefit_title': "¿Por qué elegir TIGAFAB?",
         'benefit_1_title': "Trayectoria impecable",
-        'benefit_1_desc': "Más de 25 años",
+        'benefit_1_desc': "Más de 25 años en el sector",
         'benefit_2_title': "Calidad premium",
         'benefit_2_desc': "Traducción jurada 100 % oficial",
         'benefit_3_title': "Nuestros traductores e intérpretes jurados están reconocidos y acreditados por el Ministerio de Asuntos Exteriores, Unión Europea y Cooperación (MAEC)",
@@ -506,10 +506,10 @@ TRANSLATIONS = {
         'srv_header_sub': "Servicios de élite en Traducción y Gestión Internacional",
         'srv_jurada_title': "Traducciones Juradas",
         'srv_jurada_list': [
-            "Pasaportes al Árabe", "Escrituras", "Contratos", "Poderes", "Estatutos de sociedades",
+            "Pasaportes al árabe", "Escrituras", "Contratos", "Poderes", "Estatutos de sociedades",
             "Auditorías y cuentas anuales", "Autorizaciones", "Escrituras de actas de manifestaciones",
-            "Certificados de cámara de comercio", "Certificados de registro mercantil", "Certificados de origen",
-            "Facturas comerciales", "Certificados y fitos sanitarios", "Acuerdos sociales",
+            "Certificados de Cámara de Comercio", "Certificados de Registro Mercantil", "Certificados de origen",
+            "Facturas comerciales", "Certificados fitosanitarios", "Acuerdos sociales",
             "Certificados de nacimiento", "Certificados de divorcio", "Certificados de defunción",
             "Libros de familia", "Certificados penales", "Títulos y expedientes académicos",
             "Certificados médicos", "Y otros documentos"
@@ -523,25 +523,24 @@ TRANSLATIONS = {
         'srv_organismos_desc': "Realizamos la legalización de documentos en Madrid ante todos los organismos",
         'srv_organismos_list': [
             "Ministerio de Asuntos Exteriores", "Ministerio de Justicia", "Ministerio de Sanidad",
-            "Ministerio de Agricultura", "Cámara de comercio de Madrid", "Cámara de Comercio de España",
-            "Colegio de notarios de Madrid", "Todas las embajadas y consulados (Libia, Argelia, Irán, Egipto, China, ...)",
-            "Y cualquier Ministerio u organismo público o privado"
+            "Ministerio de Agricultura", "Cámara de Comercio de Madrid", "Cámara de Comercio de España",
+            "Colegio de Notarios de Madrid", "Todas las embajadas y consulados (Libia, Argelia, Irán, Egipto, China, ...)",
+            "Y cualquier ministerio u organismo público o privado"
         ],
         'srv_legalizacion_title': "Legalización y Apostilla de documentos españoles",
         'srv_legalizacion_desc': "Realizamos la legalización de documentos en Madrid ante todos los organismos",
         'srv_visados_title': "Gestión de Visados",
         'srv_visados_list': [
-            "Tramitamos su visado en cualquier consulado extranjero en España (Libia, Argelia, Irán, Egipto, China, ...)",
-            "Impresos visados de Libia, Argelia, Egipto, Arabia Saudita, Yemen, Mauritania, China",
-            "Pincha sobre el país correspondiente para poder descargar el formulario"
+            "Tramitamos su visado en cualquier consulado extranjero en Madrid",
+            "Pincha sobre el país correspondiente para poder descargar el formulario: Libia, Argelia, Egipto, Arabia Saudita, Yemen, Mauritania, China"
         ],
         'srv_libia_title': "Asesoramiento a Empresas",
-        'srv_libia_desc': "Introducimos y asesoramos a las empresas españolas y extranjeras que desean trabajar o abrir filial, delegación o sucursal o instalarse como sede central en Libia.",
+        'srv_libia_desc': "Introducimos y asesoramos a las empresas españolas y extranjeras que desean trabajar o abrir una filial, delegación o sucursal o instalar su sede central en Libia.",
         'srv_libia_list': [
             "Proporcionamos contactos en Libia",
             "Damos el apoyo técnico sobre todos los asuntos para el registro y la apertura de su empresa en Libia"
         ],
-        'srv_libia_btn': "Información Mercado Libia",
+        'srv_libia_btn': "Información sobre el mercado en Libia",
         'srv_homologacion_title': "Homologación y Convalidación de Títulos y Estudios Extranjeros",
         'srv_homologacion_desc': "Asesoramiento completo y tramitación de solicitudes y expedientes ante el Ministerio de Educación o Universidades para la homologación de títulos académicos y/o convalidación de estudios realizados en el extranjero, para su reconocimiento oficial en España.",
         'srv_homologacion_list': [
@@ -560,9 +559,9 @@ TRANSLATIONS = {
         'contact_title': "Oficinas",
         'info_address_title_1': "Oficina en Madrid Central", 'info_address_text_1': "C/ Mauricio Legendre, 5 - Local 11. 28046 Madrid",
         'info_address_title_2': "Oficina Fuenlabrada", 'info_address_text_2': "C/ de las Ciencias, 51. 28942 Fuenlabrada, Madrid",
-        'info_email_title': "Correos Electrónicos", 'info_emails': ["fatima@tigafab-traductores.com"],
-        'info_phone_title': "Teléfonos de Contacto", 'info_phones': ["+34 663 11 45 46 (Móvil)"],
-        'form_name': "Nombre Completo", 'form_email': "Correo Electrónico", 'form_phone': "Teléfono", 'form_message': "Mensaje...", 'form_file': "Adjuntar documento (opcional)", 'form_file_text': "Elegir archivo", 'form_btn': "ENVIAR SOLICITUD", 'whatsapp_disabled': "WhatsApp fuera de servicio temporalmente",
+        'info_email_title': "Correo Electrónico", 'info_emails': ["fatima@tigafab-traductores.com"],
+        'info_phone_title': "Teléfono de Contacto", 'info_phones': ["+34 663 11 45 46 (Móvil)"],
+        'form_name': "Nombre Completo", 'form_email': "Correo Electrónico", 'form_phone': "Teléfono", 'form_language': "Idioma de traducción", 'form_message': "Mensaje...", 'form_file': "Adjuntar documentos (opcional)", 'form_file_text': "Elegir archivos", 'form_file_info': "Máximo 5 archivos. Formatos: PDF, DOC, DOCX, ZIP. Tamaño máximo: 10MB por archivo.", 'form_btn': "ENVIAR SOLICITUD", 'whatsapp_disabled': "WhatsApp fuera de servicio temporalmente",
         'reviews_title': "Confianza Global", 'exp_verificadas': "EXPERIENCIAS VERIFICADAS",
         'reviews_data': [
             ("María G. (Google)", "Servicio impecable y muy profesional. Fátima resolvió la traducción jurada de mis documentos en tiempo récord para un trámite urgente. Totalmente recomendados."),
@@ -665,7 +664,7 @@ TRANSLATIONS = {
             "توفير جهات اتصال في ليبيا",
             "تقديم الدعم الفني في جميع المسائل المتعلقة بتسجيل وفتح شركتكم في ليبيا"
         ],
-        'srv_libia_btn': "معلومات حول السوق الليبي",
+        'srv_libia_btn': "معلومات حول السوق في ليبيا",
         'srv_homologacion_title': "معادلة الشهادات من الدول العربية",
         'srv_homologacion_desc': "استشارة شاملة لمعادلة الشهادات الأكاديمية والدراسات المنجزة في الدول العربية، لتسهيل الاعتراف الرسمي بها في إسبانيا.",
         'srv_homologacion_list': [
@@ -686,7 +685,7 @@ TRANSLATIONS = {
         'info_address_title_2': "مكتب فوينلابرادا (مدريد)", 'info_address_text_2': "C/ de las Ciencias, 51. 28942 Fuenlabrada, Madrid",
         'info_email_title': "البريد الإلكتروني", 'info_emails': ["fatima@tigafab-traductores.com"],
         'info_phone_title': "هواتف الاتصال", 'info_phones': ["+34 663 11 45 46 (مباشر)"],
-        'form_name': "الاسم الكامل", 'form_email': "البريد الإلكتروني", 'form_phone': "رقم الهاتف", 'form_message': "رسالتك...", 'form_file': "إرفاق ملف (اختياري)", 'form_file_text': "اختر ملف", 'form_btn': "إرسال الطلب", 'whatsapp_disabled': "واتساب خارج الخدمة مؤقتاً",
+        'form_name': "الاسم الكامل", 'form_email': "البريد الإلكتروني", 'form_phone': "رقم الهاتف", 'form_language': "لغة الترجمة", 'form_message': "رسالتك...", 'form_file': "إرفاق ملفات (اختياري)", 'form_file_text': "اختر ملفات", 'form_file_info': "حد أقصى 5 ملفات. الصيغ: PDF، DOC، DOCX. الحد الأقصى للحجم: 10 ميجابايت لكل ملف.", 'form_btn': "إرسال الطلب", 'whatsapp_disabled': "واتساب خارج الخدمة مؤقتاً",
         'reviews_title': "ثقة عالمية", 'exp_verificadas': "تجارب موثوقة",
         'reviews_data': [
             ("ماريا ج. (Google)", "خدمة لا تشوبها شائبة واحترافية للغاية. أنجزت فاطمة الترجمة المحلفة لوثائقي في وقت قياسي لإجراء عاجل. موصى به بشدة."),
@@ -787,7 +786,7 @@ TRANSLATIONS = {
             "We provide contacts in Libya",
             "We provide technical support on all matters for the registration and opening of your company in Libya"
         ],
-        'srv_libia_btn': "Libya Market Info",
+        'srv_libia_btn': "Information about the Libya market",
         'srv_homologacion_title': "Recognition and Validation of Foreign Degrees and Studies",
         'srv_homologacion_desc': "Comprehensive advisory and processing of applications and files before the Ministry of Education or Universities for the recognition of academic degrees and/or validation of studies completed abroad, for their official recognition in Spain.",
         'srv_homologacion_list': [
@@ -808,7 +807,7 @@ TRANSLATIONS = {
         'info_address_title_2': "Fuenlabrada Office", 'info_address_text_2': "C/ de las Ciencias, 51. 28942 Madrid",
         'info_email_title': "Email Addresses", 'info_emails': ["fatima@tigafab-traductores.com"],
         'info_phone_title': "Contact Phones", 'info_phones': ["+34 663 11 45 46"],
-        'form_name': "Full Name", 'form_email': "Email", 'form_phone': "Phone", 'form_message': "Message...", 'form_file': "Attach document (optional)", 'form_file_text': "Choose file", 'form_btn': "SEND REQUEST", 'whatsapp_disabled': "WhatsApp temporarily out of service",
+        'form_name': "Full Name", 'form_email': "Email", 'form_phone': "Phone", 'form_language': "Translation Language", 'form_message': "Message...", 'form_file': "Attach documents (optional)", 'form_file_text': "Choose files", 'form_file_info': "Maximum 5 files. Formats: PDF, DOC, DOCX, ZIP. Maximum size: 10MB per file.", 'form_btn': "SEND REQUEST", 'whatsapp_disabled': "WhatsApp temporarily out of service",
         'reviews_title': "Global Trust", 'exp_verificadas': "VERIFIED REVIEWS",
         'reviews_data': [
             ("María G. (Google)", "Impeccable and very professional service. Fatima resolved the sworn translation of my documents in record time for an urgent procedure. Highly recommended."),
@@ -919,7 +918,7 @@ TRANSLATIONS = {
             "Nous fournissons des contacts en Libye",
             "Nous offrons un soutien technique sur toutes les questions relatives à l'enregistrement et à l'ouverture de votre entreprise en Libye"
         ],
-        'srv_libia_btn': "Infos Marché Libye",
+        'srv_libia_btn': "Informations sur le marché libyen",
         'srv_homologacion_title': "Reconnaissance et Validation des Diplômes et Études Étrangers",
         'srv_homologacion_desc': "Conseil complet et traitement des demandes et dossiers devant le Ministère de l'Éducation ou les Universités pour la reconnaissance des diplômes académiques et/ou la validation des études réalisées à l'étranger, pour leur reconnaissance officielle en Espagne.",
         'srv_homologacion_list': [
@@ -940,7 +939,7 @@ TRANSLATIONS = {
         'info_address_title_2': "Bureau Fuenlabrada", 'info_address_text_2': "C/ de las Ciencias, 51. 28942 Madrid",
         'info_email_title': "Emails", 'info_emails': ["fatima@tigafab-traductores.com"],
         'info_phone_title': "Téléphones", 'info_phones': ["+34 663 11 45 46"],
-        'form_name': "Nom Complet", 'form_email': "Email Address", 'form_phone': "Téléphone", 'form_message': "Message...", 'form_file': "Joindre un document (facultatif)", 'form_file_text': "Choisir un fichier", 'form_btn': "ENVIAR LA DEMANDE", 'whatsapp_disabled': "WhatsApp temporairement hors service",
+        'form_name': "Nom Complet", 'form_email': "Email Address", 'form_phone': "Téléphone", 'form_language': "Langue de traduction", 'form_message': "Message...", 'form_file': "Joindre des documents (facultatif)", 'form_file_text': "Choisir des fichiers", 'form_file_info': "Maximum 5 fichiers. Formats: PDF, DOC, DOCX, ZIP. Taille maximale: 10MB par fichier.", 'form_btn': "ENVOYER LA DEMANDE", 'whatsapp_disabled': "WhatsApp temporairement hors service",
         'footer_rights': "© 2026 TIGAFAB S.L. Agence de Traduction Légale et Assermentée. Tous droits réservés.", 'footer_credits': "Développé par SynthiaOps",
         'legal_title': "Mentions Légales", 'privacy_title': "Confidentialité et Cookies"
     },
@@ -1027,14 +1026,14 @@ TRANSLATIONS = {
             "Wir vermitteln Kontakte in Libyen",
             "Wir bieten technische Unterstützung in allen Angelegenheiten rund um die Registrierung und Eröffnung Ihres Unternehmens in Libyen"
         ],
-        'srv_libia_btn': "Libyen Marktinfos",
+        'srv_libia_btn': "Informationen über den libyschen Markt",
         'hero_contact_title': "Kontakt",
         'contact_title': "Niederlassungen",
         'info_address_title_1': "Büro Madrid Zentrum", 'info_address_text_1': "C/ Mauricio Legendre, 5",
         'info_address_title_2': "Büro Fuenlabrada", 'info_address_text_2': "C/ de las Ciencias, 51. 28942 Madrid",
         'info_email_title': "E-Mail-Adressen", 'info_emails': ["fatima@tigafab-traductores.com"],
         'info_phone_title': "Telefone", 'info_phones': ["+34 663 11 45 46"],
-        'form_name': "Name", 'form_email': "E-Mail", 'form_phone': "Telefon", 'form_message': "Nachricht...", 'form_file': "Dokument anhängen (optional)", 'form_btn': "ANFRAGE SENDEN",
+        'form_name': "Name", 'form_email': "E-Mail", 'form_phone': "Telefon", 'form_language': "Übersetzungssprache", 'form_message': "Nachricht...", 'form_file': "Dokumente anhängen (optional)", 'form_file_info': "Maximal 5 Dateien. Formate: PDF, DOC, DOCX, ZIP. Maximale Größe: 10MB pro Datei.", 'form_btn': "ANFRAGE SENDEN",
         'reviews_title': "Weltweites Vertrauen", 'exp_verificadas': "GEPRÜFTE BEWERTUNGEN",
         'reviews_data': [
             ("María G. (Google)", "Tadelloser und sehr professioneller Service. Fatima hat die beglaubigte Übersetzung meiner Dokumente in Rekordzeit für ein eiliges Verfahren erledigt. Sehr zu empfehlen."),

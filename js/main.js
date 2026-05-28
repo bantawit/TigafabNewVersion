@@ -141,17 +141,120 @@ window.onload = function() {
         el.textContent = yearsExp;
     });
 
-    // File upload name display
+    // File upload name display and validation
     const fileInput = document.getElementById('fileInput');
     const fileNameDisplay = document.getElementById('fileName');
+    const contactForm = document.querySelector('form[action="send-email.php"]');
+    
     if (fileInput && fileNameDisplay) {
         fileInput.addEventListener('change', function(e) {
-            if (e.target.files.length > 0) {
-                fileNameDisplay.textContent = e.target.files[0].name;
+            const files = e.target.files;
+            if (files.length > 0) {
+                const names = Array.from(files).map(f => f.name).join(', ');
+                fileNameDisplay.textContent = names.length > 50 ? names.substring(0, 50) + '...' : names;
+                
+                // Validate files
+                const allowedExtensions = ['pdf', 'doc', 'docx', 'zip'];
+                const maxSize = 10 * 1024 * 1024; // 10MB
+                let invalidFiles = [];
+                let oversizedFiles = [];
+                
+                for (let i = 0; i < files.length; i++) {
+                    const file = files[i];
+                    const ext = file.name.split('.').pop().toLowerCase();
+                    
+                    if (!allowedExtensions.includes(ext)) {
+                        invalidFiles.push(file.name);
+                    }
+                    if (file.size > maxSize) {
+                        oversizedFiles.push(file.name);
+                    }
+                }
+                
+                if (invalidFiles.length > 0) {
+                    showNotification('Formato no permitido. Solo se aceptan: PDF, DOC, DOCX, ZIP', 'error');
+                    fileInput.value = '';
+                    fileNameDisplay.textContent = '';
+                    return;
+                }
+                
+                if (oversizedFiles.length > 0) {
+                    showNotification('El archivo excede el tamaño máximo de 10MB', 'error');
+                    fileInput.value = '';
+                    fileNameDisplay.textContent = '';
+                    return;
+                }
+                
+                if (files.length > 5) {
+                    showNotification('Máximo 5 archivos permitidos', 'error');
+                    fileInput.value = '';
+                    fileNameDisplay.textContent = '';
+                    return;
+                }
             } else {
                 fileNameDisplay.textContent = '';
             }
         });
+    }
+    
+    // Form submission with elegant error handling
+    if (contactForm) {
+        contactForm.addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const formData = new FormData(contactForm);
+            const submitBtn = contactForm.querySelector('button[type="submit"]');
+            const originalText = submitBtn.textContent;
+            
+            submitBtn.disabled = true;
+            submitBtn.textContent = 'Enviando...';
+            
+            fetch('send-email.php', {
+                method: 'POST',
+                body: formData
+            })
+            .then(response => {
+                if (response.ok) {
+                    window.location.href = 'gracias.html';
+                } else {
+                    return response.json().then(data => {
+                        throw new Error(data.message || 'Error al enviar el formulario');
+                    });
+                }
+            })
+            .catch(error => {
+                showNotification(error.message, 'error');
+                submitBtn.disabled = false;
+                submitBtn.textContent = originalText;
+            });
+        });
+    }
+    
+    // Elegant notification system
+    function showNotification(message, type = 'info') {
+        // Remove existing notification
+        const existing = document.querySelector('.notification-toast');
+        if (existing) existing.remove();
+        
+        const notification = document.createElement('div');
+        notification.className = `notification-toast notification-${type}`;
+        notification.innerHTML = `
+            <div class="notification-content">
+                <i class="fas fa-${type === 'error' ? 'exclamation-circle' : 'check-circle'}"></i>
+                <span>${message}</span>
+            </div>
+        `;
+        
+        document.body.appendChild(notification);
+        
+        // Animate in
+        setTimeout(() => notification.classList.add('show'), 10);
+        
+        // Auto remove
+        setTimeout(() => {
+            notification.classList.remove('show');
+            setTimeout(() => notification.remove(), 300);
+        }, 4000);
     }
 
     // WhatsApp disabled tooltip translation and click prevention
