@@ -21,11 +21,19 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $phone = htmlspecialchars(isset($_POST['phone']) ? $_POST['phone'] : '');
     $language = htmlspecialchars(isset($_POST['language']) ? $_POST['language'] : '');
     $message = htmlspecialchars(isset($_POST['message']) ? $_POST['message'] : '');
+    $privacy = isset($_POST['privacy']) ? $_POST['privacy'] : '';
     
     // Validar campos requeridos
     if (empty($name) || empty($email) || empty($message)) {
         http_response_code(400);
         echo json_encode(['success' => false, 'message' => 'Por favor completa todos los campos requeridos']);
+        exit;
+    }
+    
+    // Validar checkbox de privacidad
+    if (empty($privacy)) {
+        http_response_code(400);
+        echo json_encode(['success' => false, 'message' => 'Debes aceptar el aviso legal, la política de privacidad y cookies']);
         exit;
     }
     
