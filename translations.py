@@ -561,7 +561,7 @@ TRANSLATIONS = {
         'info_address_title_2': "Oficina Fuenlabrada", 'info_address_text_2': "C/ de las Ciencias, 51. 28942 Fuenlabrada, Madrid",
         'info_email_title': "Correo Electrónico", 'info_emails': ["fatima@tigafab-traductores.com"],
         'info_phone_title': "Teléfono de Contacto", 'info_phones': ["+34 663 11 45 46 (Móvil)"],
-        'form_name': "Nombre Completo", 'form_email': "Correo Electrónico", 'form_phone': "Teléfono", 'form_language': "Idioma de traducción", 'form_message': "Mensaje...", 'form_file': "Adjuntar documentos (opcional)", 'form_file_text': "Elegir archivos", 'form_file_info': "Máximo 5 archivos. Formatos: PDF, DOC, DOCX, ZIP. Tamaño máximo: 10MB por archivo.", 'form_privacy': "He leído y acepto el aviso legal, la política de privacidad y cookies", 'form_btn': "ENVIAR SOLICITUD", 'whatsapp_disabled': "WhatsApp fuera de servicio temporalmente",
+        'form_name': "Nombre Completo", 'form_email': "Correo Electrónico", 'form_phone': "Teléfono", 'form_language': "Idioma de traducción", 'form_message': "Mensaje...", 'form_file': "Adjuntar documentos (opcional)", 'form_file_text': "Elegir archivos", 'form_file_info': "Máximo 5 archivos. Formatos: PDF, DOC, DOCX, ZIP. Tamaño máximo: 10MB por archivo.", 'form_privacy': "He leído y acepto el <a href=\"aviso-legal.html\" target=\"_blank\">aviso legal</a>, la <a href=\"politica-privacidad-cookies.html\" target=\"_blank\">política de privacidad y cookies</a>", 'form_btn': "ENVIAR SOLICITUD", 'whatsapp_disabled': "WhatsApp fuera de servicio temporalmente",
         'reviews_title': "Confianza Global", 'exp_verificadas': "EXPERIENCIAS VERIFICADAS",
         'reviews_data': [
             ("María G. (Google)", "Servicio impecable y muy profesional. Fátima resolvió la traducción jurada de mis documentos en tiempo récord para un trámite urgente. Totalmente recomendados."),
@@ -685,7 +685,7 @@ TRANSLATIONS = {
         'info_address_title_2': "مكتب فوينلابرادا (مدريد)", 'info_address_text_2': "C/ de las Ciencias, 51. 28942 Fuenlabrada, Madrid",
         'info_email_title': "البريد الإلكتروني", 'info_emails': ["fatima@tigafab-traductores.com"],
         'info_phone_title': "هواتف الاتصال", 'info_phones': ["+34 663 11 45 46 (مباشر)"],
-        'form_name': "الاسم الكامل", 'form_email': "البريد الإلكتروني", 'form_phone': "رقم الهاتف", 'form_language': "لغة الترجمة", 'form_message': "رسالتك...", 'form_file': "إرفاق ملفات (اختياري)", 'form_file_text': "اختر ملفات", 'form_file_info': "حد أقصى 5 ملفات. الصيغ: PDF، DOC، DOCX، ZIP. الحد الأقصى للحجم: 10 ميجابايت لكل ملف.", 'form_privacy': "لقد قرأت وقبلت الإشعار القانوني وسياسة الخصوصية وملفات تعريف الارتباط", 'form_btn': "إرسال الطلب", 'whatsapp_disabled': "واتساب خارج الخدمة مؤقتاً",
+        'form_name': "الاسم الكامل", 'form_email': "البريد الإلكتروني", 'form_phone': "رقم الهاتف", 'form_language': "لغة الترجمة", 'form_message': "رسالتك...", 'form_file': "إرفاق ملفات (اختياري)", 'form_file_text': "اختر ملفات", 'form_file_info': "حد أقصى 5 ملفات. الصيغ: PDF، DOC، DOCX، ZIP. الحد الأقصى للحجم: 10 ميجابايت لكل ملف.", 'form_privacy': "لقد قرأت وقبلت <a href=\"aviso-legal.html\" target=\"_blank\">الإشعار القانوني</a> و<a href=\"politica-privacidad-cookies.html\" target=\"_blank\">سياسة الخصوصية وملفات تعريف الارتباط</a>", 'form_btn': "إرسال الطلب", 'whatsapp_disabled': "واتساب خارج الخدمة مؤقتاً",
         'reviews_title': "ثقة عالمية", 'exp_verificadas': "تجارب موثوقة",
         'reviews_data': [
             ("ماريا ج. (Google)", "خدمة لا تشوبها شائبة واحترافية للغاية. أنجزت فاطمة الترجمة المحلفة لوثائقي في وقت قياسي لإجراء عاجل. موصى به بشدة."),
@@ -807,7 +807,7 @@ TRANSLATIONS = {
         'info_address_title_2': "Fuenlabrada Office", 'info_address_text_2': "C/ de las Ciencias, 51. 28942 Madrid",
         'info_email_title': "Email Addresses", 'info_emails': ["fatima@tigafab-traductores.com"],
         'info_phone_title': "Contact Phones", 'info_phones': ["+34 663 11 45 46"],
-        'form_name': "Full Name", 'form_email': "Email", 'form_phone': "Phone", 'form_language': "Translation Language", 'form_message': "Message...", 'form_file': "Attach documents (optional)", 'form_file_text': "Choose files", 'form_file_info': "Maximum 5 files. Formats: PDF, DOC, DOCX, ZIP. Maximum size: 10MB per file.", 'form_privacy': "I have read and accept the legal notice, privacy policy and cookies", 'form_btn': "SEND REQUEST", 'whatsapp_disabled': "WhatsApp temporarily out of service",
+        'form_name': "Full Name", 'form_email': "Email", 'form_phone': "Phone", 'form_language': "Translation Language", 'form_message': "Message...", 'form_file': "Attach documents (optional)", 'form_file_text': "Choose files", 'form_file_info': "Maximum 5 files. Formats: PDF, DOC, DOCX, ZIP. Maximum size: 10MB per file.", 'form_privacy': "I have read and accept the <a href=\"aviso-legal.html\" target=\"_blank\">legal notice</a>, <a href=\"politica-privacidad-cookies.html\" target=\"_blank\">privacy policy and cookies</a>", 'form_btn': "SEND REQUEST", 'whatsapp_disabled': "WhatsApp temporarily out of service",
         'reviews_title': "Global Trust", 'exp_verificadas': "VERIFIED REVIEWS",
         'reviews_data': [
             ("María G. (Google)", "Impeccable and very professional service. Fatima resolved the sworn translation of my documents in record time for an urgent procedure. Highly recommended."),
@@ -939,7 +939,7 @@ TRANSLATIONS = {
         'info_address_title_2': "Bureau Fuenlabrada", 'info_address_text_2': "C/ de las Ciencias, 51. 28942 Madrid",
         'info_email_title': "Emails", 'info_emails': ["fatima@tigafab-traductores.com"],
         'info_phone_title': "Téléphones", 'info_phones': ["+34 663 11 45 46"],
-        'form_name': "Nom Complet", 'form_email': "Email Address", 'form_phone': "Téléphone", 'form_language': "Langue de traduction", 'form_message': "Message...", 'form_file': "Joindre des documents (facultatif)", 'form_file_text': "Choisir des fichiers", 'form_file_info': "Maximum 5 fichiers. Formats: PDF, DOC, DOCX, ZIP. Taille maximale: 10MB par fichier.", 'form_privacy': "J'ai lu et j'accepte l'avis légal, la politique de confidentialité et les cookies", 'form_btn': "ENVOYER LA DEMANDE", 'whatsapp_disabled': "WhatsApp temporairement hors service",
+        'form_name': "Nom Complet", 'form_email': "Email Address", 'form_phone': "Téléphone", 'form_language': "Langue de traduction", 'form_message': "Message...", 'form_file': "Joindre des documents (facultatif)", 'form_file_text': "Choisir des fichiers", 'form_file_info': "Maximum 5 fichiers. Formats: PDF, DOC, DOCX, ZIP. Taille maximale: 10MB par fichier.", 'form_privacy': "J'ai lu et j'accepte l'<a href=\"aviso-legal.html\" target=\"_blank\">avis légal</a>, la <a href=\"politica-privacidad-cookies.html\" target=\"_blank\">politique de confidentialité et les cookies</a>", 'form_btn': "ENVOYER LA DEMANDE", 'whatsapp_disabled': "WhatsApp temporairement hors service",
         'footer_rights': "© 2026 TIGAFAB S.L. Agence de Traduction Légale et Assermentée. Tous droits réservés.", 'footer_credits': "Développé par SynthiaOps",
         'legal_title': "Mentions Légales", 'privacy_title': "Confidentialité et Cookies"
     },
@@ -1033,7 +1033,7 @@ TRANSLATIONS = {
         'info_address_title_2': "Büro Fuenlabrada", 'info_address_text_2': "C/ de las Ciencias, 51. 28942 Madrid",
         'info_email_title': "E-Mail-Adressen", 'info_emails': ["fatima@tigafab-traductores.com"],
         'info_phone_title': "Telefone", 'info_phones': ["+34 663 11 45 46"],
-        'form_name': "Name", 'form_email': "E-Mail", 'form_phone': "Telefon", 'form_language': "Übersetzungssprache", 'form_message': "Nachricht...", 'form_file': "Dokumente anhängen (optional)", 'form_file_info': "Maximal 5 Dateien. Formate: PDF, DOC, DOCX, ZIP. Maximale Größe: 10MB pro Datei.", 'form_privacy': "Ich habe das Impressum, die Datenschutzrichtlinie und die Cookie-Richtlinie gelesen und akzeptiert", 'form_btn': "ANFRAGE SENDEN",
+        'form_name': "Name", 'form_email': "E-Mail", 'form_phone': "Telefon", 'form_language': "Übersetzungssprache", 'form_message': "Nachricht...", 'form_file': "Dokumente anhängen (optional)", 'form_file_info': "Maximal 5 Dateien. Formate: PDF, DOC, DOCX, ZIP. Maximale Größe: 10MB pro Datei.", 'form_privacy': "Ich habe das <a href=\"aviso-legal.html\" target=\"_blank\">Impressum</a>, die <a href=\"politica-privacidad-cookies.html\" target=\"_blank\">Datenschutzrichtlinie und die Cookie-Richtlinie</a> gelesen und akzeptiert", 'form_btn': "ANFRAGE SENDEN",
         'reviews_title': "Weltweites Vertrauen", 'exp_verificadas': "GEPRÜFTE BEWERTUNGEN",
         'reviews_data': [
             ("María G. (Google)", "Tadelloser und sehr professioneller Service. Fatima hat die beglaubigte Übersetzung meiner Dokumente in Rekordzeit für ein eiliges Verfahren erledigt. Sehr zu empfehlen."),
