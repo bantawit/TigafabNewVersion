@@ -213,13 +213,12 @@ window.onload = function() {
                 method: 'POST',
                 body: formData
             })
-            .then(response => {
-                if (response.ok) {
-                    window.location.href = 'gracias.html';
+            .then(response => response.json())
+            .then(data => {
+                if (data.success) {
+                    window.location.href = data.redirect || 'gracias.html';
                 } else {
-                    return response.json().then(data => {
-                        throw new Error(data.message || 'Error al enviar el formulario');
-                    });
+                    throw new Error(data.message || 'Error al enviar el formulario');
                 }
             })
             .catch(error => {

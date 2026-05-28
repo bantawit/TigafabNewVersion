@@ -178,8 +178,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         
         // Enviar correo
         if ($mail->send()) {
-            // Redirigir a página de gracias
-            header('Location: gracias.html');
+            // Devolver JSON de éxito en lugar de redirección
+            echo json_encode(['success' => true, 'redirect' => 'gracias.html']);
             exit;
         } else {
             http_response_code(500);
