@@ -106,6 +106,10 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                             <div class='label'>Mensaje:</div>
                             <div class='value'>$message</div>
                         </div>
+                        <div class='field'>
+                            <div class='label'>Aceptación Política de Privacidad:</div>
+                            <div class='value'>" . (!empty($privacy) ? '✓ Sí, ha aceptado el aviso legal, la política de privacidad y cookies' : '✗ No') . "</div>
+                        </div>
                     </div>
                     <div class='footer'>
                         <p>Este correo fue enviado desde el formulario de contacto de tigafab-traductores.com</p>
