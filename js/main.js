@@ -144,7 +144,6 @@ window.onload = function() {
     // File upload name display and validation
     const fileInput = document.getElementById('fileInput');
     const fileNameDisplay = document.getElementById('fileName');
-    const contactForm = document.querySelector('form[action="send-email.php"]');
     
     if (fileInput && fileNameDisplay) {
         fileInput.addEventListener('change', function(e) {
@@ -194,38 +193,6 @@ window.onload = function() {
             } else {
                 fileNameDisplay.textContent = '';
             }
-        });
-    }
-    
-    // Form submission with elegant error handling
-    if (contactForm) {
-        contactForm.addEventListener('submit', function(e) {
-            e.preventDefault();
-            
-            const formData = new FormData(contactForm);
-            const submitBtn = contactForm.querySelector('button[type="submit"]');
-            const originalText = submitBtn.textContent;
-            
-            submitBtn.disabled = true;
-            submitBtn.textContent = 'Enviando...';
-            
-            fetch('send-email.php', {
-                method: 'POST',
-                body: formData
-            })
-            .then(response => response.json())
-            .then(data => {
-                if (data.success) {
-                    window.location.href = data.redirect || 'gracias.html';
-                } else {
-                    throw new Error(data.message || 'Error al enviar el formulario');
-                }
-            })
-            .catch(error => {
-                showNotification(error.message, 'error');
-                submitBtn.disabled = false;
-                submitBtn.textContent = originalText;
-            });
         });
     }
     

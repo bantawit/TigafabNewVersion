@@ -16,9 +16,6 @@ $subject = 'Nuevo contacto desde web TIGAFAB';
 
 // Procesar formulario
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-    // Set JSON header for all responses
-    header('Content-Type: application/json');
-    
     $name = htmlspecialchars(isset($_POST['name']) ? $_POST['name'] : '');
     $email = htmlspecialchars(isset($_POST['email']) ? $_POST['email'] : '');
     $phone = htmlspecialchars(isset($_POST['phone']) ? $_POST['phone'] : '');
@@ -181,8 +178,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         
         // Enviar correo
         if ($mail->send()) {
-            // Devolver JSON de éxito en lugar de redirección
-            echo json_encode(['success' => true, 'redirect' => 'gracias.html']);
+            // Redirigir a página de gracias
+            header('Location: gracias.html');
             exit;
         } else {
             http_response_code(500);
