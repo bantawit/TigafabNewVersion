@@ -28,3 +28,4 @@ jobs:
             **/translations.py
             **/README.md
             **/*.md
+          security: loose
