@@ -57,6 +57,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         $mail->Port = $smtp_port;
         
         // Configuración del correo
+        $mail->CharSet = 'UTF-8';
+        $mail->Encoding = 'base64';
         $mail->setFrom($from_email, $from_name);
         $mail->addAddress($to_email);
         $mail->addReplyTo($email, $name);
